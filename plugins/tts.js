@@ -1,25 +1,9062 @@
-export const css=".wh-full{width:100%;height:100%}.m-auto{margin:auto}.bottom-0{bottom:0}.right-5{right:5px}.overflow-hidden{overflow:hidden}.absolute{position:absolute}.mt-2{margin-top:.5rem}.block{display:block}.h-full{height:100%}.min-h10{min-height:2.5rem}.w-full{width:100%}.w80{width:20rem}.flex{display:flex}.flex-1{flex:1 1 0%}.flex-col{flex-direction:column}.select-text{-webkit-user-select:text;user-select:text}.resize-none{resize:none}.space-x-2>:not([hidden])~:not([hidden]){--un-space-x-reverse:0;margin-left:calc(.5rem * calc(1 - var(--un-space-x-reverse)));margin-right:calc(.5rem * var(--un-space-x-reverse))}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rounded-md{border-radius:.375rem}.p2{padding:.5rem}.pb1{padding-bottom:.25rem}.pb2{padding-bottom:.5rem}.text-xs{font-size:.75rem;line-height:1rem}.text-blue-400{--un-text-opacity:1;color:rgb(96 165 250 / var(--un-text-opacity))}.text-gray-400{--un-text-opacity:1;color:rgb(156 163 175 / var(--un-text-opacity))}.text-gray-500{--un-text-opacity:1;color:rgb(107 114 128 / var(--un-text-opacity))}.hover\\:text-blue-500:hover{--un-text-opacity:1;color:rgb(59 130 246 / var(--un-text-opacity))}.hover\\:text-gray-700:hover{--un-text-opacity:1;color:rgb(55 65 81 / var(--un-text-opacity))}.font-bold{font-weight:700}.font-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.hover\\:underline:hover{text-decoration-line:underline}\n\n";var ho=Object.defineProperty;var mo=(e,t,r)=>t in e?ho(e,t,{enumerable:!0,configurable:!0,writable:!0,value:r}):e[t]=r;var se=(e,t,r)=>(mo(e,typeof t!="symbol"?t+"":t,r),r);var Nr=typeof global=="object"&&global&&global.Object===Object&&global,fo=typeof self=="object"&&self&&self.Object===Object&&self,Ve=Nr||fo||Function("return this")(),be=Ve.Symbol,pr=Object.prototype,So=pr.hasOwnProperty,No=pr.toString,ke=be?be.toStringTag:void 0;function po(e){var t=So.call(e,ke),r=e[ke];try{e[ke]=void 0;var o=!0}catch{}var a=No.call(e);return o&&(t?e[ke]=r:delete e[ke]),a}var go=Object.prototype,yo=go.toString;function Co(e){return yo.call(e)}var To="[object Null]",vo="[object Undefined]",Rt=be?be.toStringTag:void 0;function _e(e){return e==null?e===void 0?vo:To:Rt&&Rt in Object(e)?po(e):Co(e)}function Fe(e){return e!=null&&typeof e=="object"}var bo="[object Symbol]";function yt(e){return typeof e=="symbol"||Fe(e)&&_e(e)==bo}function Mo(e,t){for(var r=-1,o=e==null?0:e.length,a=Array(o);++r<o;)a[r]=t(e[r],r,e);return a}var Me=Array.isArray,Go=1/0,Bt=be?be.prototype:void 0,Ut=Bt?Bt.toString:void 0;function gr(e){if(typeof e=="string")return e;if(Me(e))return Mo(e,gr)+"";if(yt(e))return Ut?Ut.call(e):"";var t=e+"";return t=="0"&&1/e==-Go?"-0":t}function oe(e){var t=typeof e;return e!=null&&(t=="object"||t=="function")}function yr(e){return e}var Vo="[object AsyncFunction]",Fo="[object Function]",Ao="[object GeneratorFunction]",Po="[object Proxy]";function Ct(e){if(!oe(e))return!1;var t=_e(e);return t==Fo||t==Ao||t==Vo||t==Po}var at=Ve["__core-js_shared__"],Dt=function(){var e=/[^.]+$/.exec(at&&at.keys&&at.keys.IE_PROTO||"");return e?"Symbol(src)_1."+e:""}();function ko(e){return!!Dt&&Dt in e}var xo=Function.prototype,wo=xo.toString;function Eo(e){if(e!=null){try{return wo.call(e)}catch{}try{return e+""}catch{}}return""}var Lo=/[\\^$.*+?()[\]{}|]/g,Oo=/^\[object .+?Constructor\]$/,_o=Function.prototype,zo=Object.prototype,Io=_o.toString,Ro=zo.hasOwnProperty,Bo=RegExp("^"+Io.call(Ro).replace(Lo,"\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g,"$1.*?")+"$");function Uo(e){if(!oe(e)||ko(e))return!1;var t=Ct(e)?Bo:Oo;return t.test(Eo(e))}function Do(e,t){return e==null?void 0:e[t]}function Tt(e,t){var r=Do(e,t);return Uo(r)?r:void 0}var Ht=Object.create,Ho=function(){function e(){}return function(t){if(!oe(t))return{};if(Ht)return Ht(t);e.prototype=t;var r=new e;return e.prototype=void 0,r}}();function Cr(e,t,r){switch(r.length){case 0:return e.call(t);case 1:return e.call(t,r[0]);case 2:return e.call(t,r[0],r[1]);case 3:return e.call(t,r[0],r[1],r[2])}return e.apply(t,r)}function jo(e,t){var r=-1,o=e.length;for(t||(t=Array(o));++r<o;)t[r]=e[r];return t}var Ko=800,Yo=16,Jo=Date.now;function $o(e){var t=0,r=0;return function(){var o=Jo(),a=Yo-(o-r);if(r=o,a>0){if(++t>=Ko)return arguments[0]}else t=0;return e.apply(void 0,arguments)}}function Zo(e){return function(){return e}}var Ye=function(){try{var e=Tt(Object,"defineProperty");return e({},"",{}),e}catch{}}(),qo=Ye?function(e,t){return Ye(e,"toString",{configurable:!0,enumerable:!1,value:Zo(t),writable:!0})}:yr;const Wo=qo;var Xo=$o(Wo),Qo=9007199254740991,ea=/^(?:0|[1-9]\d*)$/;function vt(e,t){var r=typeof e;return t=t??Qo,!!t&&(r=="number"||r!="symbol"&&ea.test(e))&&e>-1&&e%1==0&&e<t}function bt(e,t,r){t=="__proto__"&&Ye?Ye(e,t,{configurable:!0,enumerable:!0,value:r,writable:!0}):e[t]=r}function $e(e,t){return e===t||e!==e&&t!==t}var ta=Object.prototype,ra=ta.hasOwnProperty;function Tr(e,t,r){var o=e[t];(!(ra.call(e,t)&&$e(o,r))||r===void 0&&!(t in e))&&bt(e,t,r)}function oa(e,t,r,o){var a=!r;r||(r={});for(var n=-1,l=t.length;++n<l;){var m=t[n],p=o?o(r[m],e[m],m,r,e):void 0;p===void 0&&(p=e[m]),a?bt(r,m,p):Tr(r,m,p)}return r}var jt=Math.max;function aa(e,t,r){return t=jt(t===void 0?e.length-1:t,0),function(){for(var o=arguments,a=-1,n=jt(o.length-t,0),l=Array(n);++a<n;)l[a]=o[t+a];a=-1;for(var m=Array(t+1);++a<t;)m[a]=o[a];return m[t]=r(l),Cr(e,this,m)}}function vr(e,t){return Xo(aa(e,t,yr),e+"")}var ia=9007199254740991;function br(e){return typeof e=="number"&&e>-1&&e%1==0&&e<=ia}function Mt(e){return e!=null&&br(e.length)&&!Ct(e)}function na(e,t,r){if(!oe(r))return!1;var o=typeof t;return(o=="number"?Mt(r)&&vt(t,r.length):o=="string"&&t in r)?$e(r[t],e):!1}function sa(e){return vr(function(t,r){var o=-1,a=r.length,n=a>1?r[a-1]:void 0,l=a>2?r[2]:void 0;for(n=e.length>3&&typeof n=="function"?(a--,n):void 0,l&&na(r[0],r[1],l)&&(n=a<3?void 0:n,a=1),t=Object(t);++o<a;){var m=r[o];m&&e(t,m,o,n)}return t})}var la=Object.prototype;function Mr(e){var t=e&&e.constructor,r=typeof t=="function"&&t.prototype||la;return e===r}function ca(e,t){for(var r=-1,o=Array(e);++r<e;)o[r]=t(r);return o}var ua="[object Arguments]";function Kt(e){return Fe(e)&&_e(e)==ua}var Gr=Object.prototype,da=Gr.hasOwnProperty,ha=Gr.propertyIsEnumerable,ma=Kt(function(){return arguments}())?Kt:function(e){return Fe(e)&&da.call(e,"callee")&&!ha.call(e,"callee")};const ut=ma;function fa(){return!1}var Vr=typeof exports=="object"&&exports&&!exports.nodeType&&exports,Yt=Vr&&typeof module=="object"&&module&&!module.nodeType&&module,Sa=Yt&&Yt.exports===Vr,Jt=Sa?Ve.Buffer:void 0,Na=Jt?Jt.isBuffer:void 0,Fr=Na||fa,pa="[object Arguments]",ga="[object Array]",ya="[object Boolean]",Ca="[object Date]",Ta="[object Error]",va="[object Function]",ba="[object Map]",Ma="[object Number]",Ga="[object Object]",Va="[object RegExp]",Fa="[object Set]",Aa="[object String]",Pa="[object WeakMap]",ka="[object ArrayBuffer]",xa="[object DataView]",wa="[object Float32Array]",Ea="[object Float64Array]",La="[object Int8Array]",Oa="[object Int16Array]",_a="[object Int32Array]",za="[object Uint8Array]",Ia="[object Uint8ClampedArray]",Ra="[object Uint16Array]",Ba="[object Uint32Array]",j={};j[wa]=j[Ea]=j[La]=j[Oa]=j[_a]=j[za]=j[Ia]=j[Ra]=j[Ba]=!0;j[pa]=j[ga]=j[ka]=j[ya]=j[xa]=j[Ca]=j[Ta]=j[va]=j[ba]=j[Ma]=j[Ga]=j[Va]=j[Fa]=j[Aa]=j[Pa]=!1;function Ua(e){return Fe(e)&&br(e.length)&&!!j[_e(e)]}function Da(e){return function(t){return e(t)}}var Ar=typeof exports=="object"&&exports&&!exports.nodeType&&exports,Ee=Ar&&typeof module=="object"&&module&&!module.nodeType&&module,Ha=Ee&&Ee.exports===Ar,it=Ha&&Nr.process,$t=function(){try{var e=Ee&&Ee.require&&Ee.require("util").types;return e||it&&it.binding&&it.binding("util")}catch{}}(),Zt=$t&&$t.isTypedArray,Pr=Zt?Da(Zt):Ua,ja=Object.prototype,Ka=ja.hasOwnProperty;function Ya(e,t){var r=Me(e),o=!r&&ut(e),a=!r&&!o&&Fr(e),n=!r&&!o&&!a&&Pr(e),l=r||o||a||n,m=l?ca(e.length,String):[],p=m.length;for(var G in e)(t||Ka.call(e,G))&&!(l&&(G=="length"||a&&(G=="offset"||G=="parent")||n&&(G=="buffer"||G=="byteLength"||G=="byteOffset")||vt(G,p)))&&m.push(G);return m}function Ja(e,t){return function(r){return e(t(r))}}function $a(e){var t=[];if(e!=null)for(var r in Object(e))t.push(r);return t}var Za=Object.prototype,qa=Za.hasOwnProperty;function Wa(e){if(!oe(e))return $a(e);var t=Mr(e),r=[];for(var o in e)o=="constructor"&&(t||!qa.call(e,o))||r.push(o);return r}function kr(e){return Mt(e)?Ya(e,!0):Wa(e)}var Xa=/\.|\[(?:[^[\]]*|(["'])(?:(?!\1)[^\\]|\\.)*?\1)\]/,Qa=/^\w*$/;function ei(e,t){if(Me(e))return!1;var r=typeof e;return r=="number"||r=="symbol"||r=="boolean"||e==null||yt(e)?!0:Qa.test(e)||!Xa.test(e)||t!=null&&e in Object(t)}var Le=Tt(Object,"create");function ti(){this.__data__=Le?Le(null):{},this.size=0}function ri(e){var t=this.has(e)&&delete this.__data__[e];return this.size-=t?1:0,t}var oi="__lodash_hash_undefined__",ai=Object.prototype,ii=ai.hasOwnProperty;function ni(e){var t=this.__data__;if(Le){var r=t[e];return r===oi?void 0:r}return ii.call(t,e)?t[e]:void 0}var si=Object.prototype,li=si.hasOwnProperty;function ci(e){var t=this.__data__;return Le?t[e]!==void 0:li.call(t,e)}var ui="__lodash_hash_undefined__";function di(e,t){var r=this.__data__;return this.size+=this.has(e)?0:1,r[e]=Le&&t===void 0?ui:t,this}function Se(e){var t=-1,r=e==null?0:e.length;for(this.clear();++t<r;){var o=e[t];this.set(o[0],o[1])}}Se.prototype.clear=ti;Se.prototype.delete=ri;Se.prototype.get=ni;Se.prototype.has=ci;Se.prototype.set=di;function hi(){this.__data__=[],this.size=0}function Ze(e,t){for(var r=e.length;r--;)if($e(e[r][0],t))return r;return-1}var mi=Array.prototype,fi=mi.splice;function Si(e){var t=this.__data__,r=Ze(t,e);if(r<0)return!1;var o=t.length-1;return r==o?t.pop():fi.call(t,r,1),--this.size,!0}function Ni(e){var t=this.__data__,r=Ze(t,e);return r<0?void 0:t[r][1]}function pi(e){return Ze(this.__data__,e)>-1}function gi(e,t){var r=this.__data__,o=Ze(r,e);return o<0?(++this.size,r.push([e,t])):r[o][1]=t,this}function de(e){var t=-1,r=e==null?0:e.length;for(this.clear();++t<r;){var o=e[t];this.set(o[0],o[1])}}de.prototype.clear=hi;de.prototype.delete=Si;de.prototype.get=Ni;de.prototype.has=pi;de.prototype.set=gi;var xr=Tt(Ve,"Map");function yi(){this.size=0,this.__data__={hash:new Se,map:new(xr||de),string:new Se}}function Ci(e){var t=typeof e;return t=="string"||t=="number"||t=="symbol"||t=="boolean"?e!=="__proto__":e===null}function qe(e,t){var r=e.__data__;return Ci(t)?r[typeof t=="string"?"string":"hash"]:r.map}function Ti(e){var t=qe(this,e).delete(e);return this.size-=t?1:0,t}function vi(e){return qe(this,e).get(e)}function bi(e){return qe(this,e).has(e)}function Mi(e,t){var r=qe(this,e),o=r.size;return r.set(e,t),this.size+=r.size==o?0:1,this}function fe(e){var t=-1,r=e==null?0:e.length;for(this.clear();++t<r;){var o=e[t];this.set(o[0],o[1])}}fe.prototype.clear=yi;fe.prototype.delete=Ti;fe.prototype.get=vi;fe.prototype.has=bi;fe.prototype.set=Mi;var Gi="Expected a function";function Gt(e,t){if(typeof e!="function"||t!=null&&typeof t!="function")throw new TypeError(Gi);var r=function(){var o=arguments,a=t?t.apply(this,o):o[0],n=r.cache;if(n.has(a))return n.get(a);var l=e.apply(this,o);return r.cache=n.set(a,l)||n,l};return r.cache=new(Gt.Cache||fe),r}Gt.Cache=fe;var Vi=500;function Fi(e){var t=Gt(e,function(o){return r.size===Vi&&r.clear(),o}),r=t.cache;return t}var Ai=/[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|$))/g,Pi=/\\(\\)?/g,ki=Fi(function(e){var t=[];return e.charCodeAt(0)===46&&t.push(""),e.replace(Ai,function(r,o,a,n){t.push(a?n.replace(Pi,"$1"):o||r)}),t});function xi(e){return e==null?"":gr(e)}function wr(e,t){return Me(e)?e:ei(e,t)?[e]:ki(xi(e))}var wi=1/0;function Er(e){if(typeof e=="string"||yt(e))return e;var t=e+"";return t=="0"&&1/e==-wi?"-0":t}function Ei(e,t){t=wr(t,e);for(var r=0,o=t.length;e!=null&&r<o;)e=e[Er(t[r++])];return r&&r==o?e:void 0}function Li(e,t,r){var o=e==null?void 0:Ei(e,t);return o===void 0?r:o}var Lr=Ja(Object.getPrototypeOf,Object),Oi="[object Object]",_i=Function.prototype,zi=Object.prototype,Or=_i.toString,Ii=zi.hasOwnProperty,Ri=Or.call(Object);function Bi(e){if(!Fe(e)||_e(e)!=Oi)return!1;var t=Lr(e);if(t===null)return!0;var r=Ii.call(t,"constructor")&&t.constructor;return typeof r=="function"&&r instanceof r&&Or.call(r)==Ri}function Ui(){this.__data__=new de,this.size=0}function Di(e){var t=this.__data__,r=t.delete(e);return this.size=t.size,r}function Hi(e){return this.__data__.get(e)}function ji(e){return this.__data__.has(e)}var Ki=200;function Yi(e,t){var r=this.__data__;if(r instanceof de){var o=r.__data__;if(!xr||o.length<Ki-1)return o.push([e,t]),this.size=++r.size,this;r=this.__data__=new fe(o)}return r.set(e,t),this.size=r.size,this}function Ae(e){var t=this.__data__=new de(e);this.size=t.size}Ae.prototype.clear=Ui;Ae.prototype.delete=Di;Ae.prototype.get=Hi;Ae.prototype.has=ji;Ae.prototype.set=Yi;var _r=typeof exports=="object"&&exports&&!exports.nodeType&&exports,qt=_r&&typeof module=="object"&&module&&!module.nodeType&&module,Ji=qt&&qt.exports===_r,Wt=Ji?Ve.Buffer:void 0,Xt=Wt?Wt.allocUnsafe:void 0;function $i(e,t){if(t)return e.slice();var r=e.length,o=Xt?Xt(r):new e.constructor(r);return e.copy(o),o}var Qt=Ve.Uint8Array;function Zi(e){var t=new e.constructor(e.byteLength);return new Qt(t).set(new Qt(e)),t}function qi(e,t){var r=t?Zi(e.buffer):e.buffer;return new e.constructor(r,e.byteOffset,e.length)}function Wi(e){return typeof e.constructor=="function"&&!Mr(e)?Ho(Lr(e)):{}}function Xi(e){return function(t,r,o){for(var a=-1,n=Object(t),l=o(t),m=l.length;m--;){var p=l[e?m:++a];if(r(n[p],p,n)===!1)break}return t}}var Qi=Xi();function dt(e,t,r){(r!==void 0&&!$e(e[t],r)||r===void 0&&!(t in e))&&bt(e,t,r)}function en(e){return Fe(e)&&Mt(e)}function ht(e,t){if(!(t==="constructor"&&typeof e[t]=="function")&&t!="__proto__")return e[t]}function tn(e){return oa(e,kr(e))}function rn(e,t,r,o,a,n,l){var m=ht(e,r),p=ht(t,r),G=l.get(p);if(G){dt(e,r,G);return}var M=n?n(m,p,r+"",e,t,l):void 0,y=M===void 0;if(y){var O=Me(p),z=!O&&Fr(p),g=!O&&!z&&Pr(p);M=p,O||z||g?Me(m)?M=m:en(m)?M=jo(m):z?(y=!1,M=$i(p,!0)):g?(y=!1,M=qi(p,!0)):M=[]:Bi(p)||ut(p)?(M=m,ut(m)?M=tn(m):(!oe(m)||Ct(m))&&(M=Wi(p))):y=!1}y&&(l.set(p,M),a(M,p,o,n,l),l.delete(p)),dt(e,r,M)}function Vt(e,t,r,o,a){e!==t&&Qi(t,function(n,l){if(a||(a=new Ae),oe(n))rn(e,t,l,r,Vt,o,a);else{var m=o?o(ht(e,l),n,l+"",e,t,a):void 0;m===void 0&&(m=n),dt(e,l,m)}},kr)}function zr(e,t,r,o,a,n){return oe(e)&&oe(t)&&(n.set(t,e),Vt(e,t,void 0,zr,n),n.delete(t)),e}var on=sa(function(e,t,r,o){Vt(e,t,r,o)});const an=on;var ge=vr(function(e){return e.push(void 0,zr),Cr(an,void 0,e)});function nn(e,t,r,o){if(!oe(e))return e;t=wr(t,e);for(var a=-1,n=t.length,l=n-1,m=e;m!=null&&++a<n;){var p=Er(t[a]),G=r;if(p==="__proto__"||p==="constructor"||p==="prototype")return e;if(a!=l){var M=m[p];G=o?o(M,p,m):void 0,G===void 0&&(G=oe(M)?M:vt(t[a+1])?[]:{})}Tr(m,p,G),m=m[p]}return e}function sn(e,t,r){return e==null?e:nn(e,t,r)}function er(e,t){var r=document.createElement("a");r.href=window.URL.createObjectURL(e),r.download=t,document.body.appendChild(r),r.click(),document.body.removeChild(r)}function Ir(e,t){return function(){return e.apply(t,arguments)}}const{toString:ln}=Object.prototype,{getPrototypeOf:Ft}=Object,We=(e=>t=>{const r=ln.call(t);return e[r]||(e[r]=r.slice(8,-1).toLowerCase())})(Object.create(null)),ie=e=>(e=e.toLowerCase(),t=>We(t)===e),Xe=e=>t=>typeof t===e,{isArray:Pe}=Array,Oe=Xe("undefined");function cn(e){return e!==null&&!Oe(e)&&e.constructor!==null&&!Oe(e.constructor)&&te(e.constructor.isBuffer)&&e.constructor.isBuffer(e)}const Rr=ie("ArrayBuffer");function un(e){let t;return typeof ArrayBuffer<"u"&&ArrayBuffer.isView?t=ArrayBuffer.isView(e):t=e&&e.buffer&&Rr(e.buffer),t}const dn=Xe("string"),te=Xe("function"),Br=Xe("number"),Qe=e=>e!==null&&typeof e=="object",hn=e=>e===!0||e===!1,He=e=>{if(We(e)!=="object")return!1;const t=Ft(e);return(t===null||t===Object.prototype||Object.getPrototypeOf(t)===null)&&!(Symbol.toStringTag in e)&&!(Symbol.iterator in e)},mn=ie("Date"),fn=ie("File"),Sn=ie("Blob"),Nn=ie("FileList"),pn=e=>Qe(e)&&te(e.pipe),gn=e=>{let t;return e&&(typeof FormData=="function"&&e instanceof FormData||te(e.append)&&((t=We(e))==="formdata"||t==="object"&&te(e.toString)&&e.toString()==="[object FormData]"))},yn=ie("URLSearchParams"),Cn=e=>e.trim?e.trim():e.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,"");function ze(e,t,{allOwnKeys:r=!1}={}){if(e===null||typeof e>"u")return;let o,a;if(typeof e!="object"&&(e=[e]),Pe(e))for(o=0,a=e.length;o<a;o++)t.call(null,e[o],o,e);else{const n=r?Object.getOwnPropertyNames(e):Object.keys(e),l=n.length;let m;for(o=0;o<l;o++)m=n[o],t.call(null,e[m],m,e)}}function Ur(e,t){t=t.toLowerCase();const r=Object.keys(e);let o=r.length,a;for(;o-- >0;)if(a=r[o],t===a.toLowerCase())return a;return null}const Dr=typeof globalThis<"u"?globalThis:typeof self<"u"?self:typeof window<"u"?window:global,Hr=e=>!Oe(e)&&e!==Dr;function mt(){const{caseless:e}=Hr(this)&&this||{},t={},r=(o,a)=>{const n=e&&Ur(t,a)||a;He(t[n])&&He(o)?t[n]=mt(t[n],o):He(o)?t[n]=mt({},o):Pe(o)?t[n]=o.slice():t[n]=o};for(let o=0,a=arguments.length;o<a;o++)arguments[o]&&ze(arguments[o],r);return t}const Tn=(e,t,r,{allOwnKeys:o}={})=>(ze(t,(a,n)=>{r&&te(a)?e[n]=Ir(a,r):e[n]=a},{allOwnKeys:o}),e),vn=e=>(e.charCodeAt(0)===65279&&(e=e.slice(1)),e),bn=(e,t,r,o)=>{e.prototype=Object.create(t.prototype,o),e.prototype.constructor=e,Object.defineProperty(e,"super",{value:t.prototype}),r&&Object.assign(e.prototype,r)},Mn=(e,t,r,o)=>{let a,n,l;const m={};if(t=t||{},e==null)return t;do{for(a=Object.getOwnPropertyNames(e),n=a.length;n-- >0;)l=a[n],(!o||o(l,e,t))&&!m[l]&&(t[l]=e[l],m[l]=!0);e=r!==!1&&Ft(e)}while(e&&(!r||r(e,t))&&e!==Object.prototype);return t},Gn=(e,t,r)=>{e=String(e),(r===void 0||r>e.length)&&(r=e.length),r-=t.length;const o=e.indexOf(t,r);return o!==-1&&o===r},Vn=e=>{if(!e)return null;if(Pe(e))return e;let t=e.length;if(!Br(t))return null;const r=new Array(t);for(;t-- >0;)r[t]=e[t];return r},Fn=(e=>t=>e&&t instanceof e)(typeof Uint8Array<"u"&&Ft(Uint8Array)),An=(e,t)=>{const o=(e&&e[Symbol.iterator]).call(e);let a;for(;(a=o.next())&&!a.done;){const n=a.value;t.call(e,n[0],n[1])}},Pn=(e,t)=>{let r;const o=[];for(;(r=e.exec(t))!==null;)o.push(r);return o},kn=ie("HTMLFormElement"),xn=e=>e.toLowerCase().replace(/[-_\s]([a-z\d])(\w*)/g,function(r,o,a){return o.toUpperCase()+a}),tr=(({hasOwnProperty:e})=>(t,r)=>e.call(t,r))(Object.prototype),wn=ie("RegExp"),jr=(e,t)=>{const r=Object.getOwnPropertyDescriptors(e),o={};ze(r,(a,n)=>{let l;(l=t(a,n,e))!==!1&&(o[n]=l||a)}),Object.defineProperties(e,o)},En=e=>{jr(e,(t,r)=>{if(te(e)&&["arguments","caller","callee"].indexOf(r)!==-1)return!1;const o=e[r];if(te(o)){if(t.enumerable=!1,"writable"in t){t.writable=!1;return}t.set||(t.set=()=>{throw Error("Can not rewrite read-only method '"+r+"'")})}})},Ln=(e,t)=>{const r={},o=a=>{a.forEach(n=>{r[n]=!0})};return Pe(e)?o(e):o(String(e).split(t)),r},On=()=>{},_n=(e,t)=>(e=+e,Number.isFinite(e)?e:t),nt="abcdefghijklmnopqrstuvwxyz",rr="0123456789",Kr={DIGIT:rr,ALPHA:nt,ALPHA_DIGIT:nt+nt.toUpperCase()+rr},zn=(e=16,t=Kr.ALPHA_DIGIT)=>{let r="";const{length:o}=t;for(;e--;)r+=t[Math.random()*o|0];return r};function In(e){return!!(e&&te(e.append)&&e[Symbol.toStringTag]==="FormData"&&e[Symbol.iterator])}const Rn=e=>{const t=new Array(10),r=(o,a)=>{if(Qe(o)){if(t.indexOf(o)>=0)return;if(!("toJSON"in o)){t[a]=o;const n=Pe(o)?[]:{};return ze(o,(l,m)=>{const p=r(l,a+1);!Oe(p)&&(n[m]=p)}),t[a]=void 0,n}}return o};return r(e,0)},Bn=ie("AsyncFunction"),Un=e=>e&&(Qe(e)||te(e))&&te(e.then)&&te(e.catch),b={isArray:Pe,isArrayBuffer:Rr,isBuffer:cn,isFormData:gn,isArrayBufferView:un,isString:dn,isNumber:Br,isBoolean:hn,isObject:Qe,isPlainObject:He,isUndefined:Oe,isDate:mn,isFile:fn,isBlob:Sn,isRegExp:wn,isFunction:te,isStream:pn,isURLSearchParams:yn,isTypedArray:Fn,isFileList:Nn,forEach:ze,merge:mt,extend:Tn,trim:Cn,stripBOM:vn,inherits:bn,toFlatObject:Mn,kindOf:We,kindOfTest:ie,endsWith:Gn,toArray:Vn,forEachEntry:An,matchAll:Pn,isHTMLForm:kn,hasOwnProperty:tr,hasOwnProp:tr,reduceDescriptors:jr,freezeMethods:En,toObjectSet:Ln,toCamelCase:xn,noop:On,toFiniteNumber:_n,findKey:Ur,global:Dr,isContextDefined:Hr,ALPHABET:Kr,generateString:zn,isSpecCompliantForm:In,toJSONObject:Rn,isAsyncFn:Bn,isThenable:Un};function D(e,t,r,o,a){Error.call(this),Error.captureStackTrace?Error.captureStackTrace(this,this.constructor):this.stack=(new Error).stack,this.message=e,this.name="AxiosError",t&&(this.code=t),r&&(this.config=r),o&&(this.request=o),a&&(this.response=a)}b.inherits(D,Error,{toJSON:function(){return{message:this.message,name:this.name,description:this.description,number:this.number,fileName:this.fileName,lineNumber:this.lineNumber,columnNumber:this.columnNumber,stack:this.stack,config:b.toJSONObject(this.config),code:this.code,status:this.response&&this.response.status?this.response.status:null}}});const Yr=D.prototype,Jr={};["ERR_BAD_OPTION_VALUE","ERR_BAD_OPTION","ECONNABORTED","ETIMEDOUT","ERR_NETWORK","ERR_FR_TOO_MANY_REDIRECTS","ERR_DEPRECATED","ERR_BAD_RESPONSE","ERR_BAD_REQUEST","ERR_CANCELED","ERR_NOT_SUPPORT","ERR_INVALID_URL"].forEach(e=>{Jr[e]={value:e}});Object.defineProperties(D,Jr);Object.defineProperty(Yr,"isAxiosError",{value:!0});D.from=(e,t,r,o,a,n)=>{const l=Object.create(Yr);return b.toFlatObject(e,l,function(p){return p!==Error.prototype},m=>m!=="isAxiosError"),D.call(l,e.message,t,r,o,a),l.cause=e,l.name=e.name,n&&Object.assign(l,n),l};const Dn=null;function ft(e){return b.isPlainObject(e)||b.isArray(e)}function $r(e){return b.endsWith(e,"[]")?e.slice(0,-2):e}function or(e,t,r){return e?e.concat(t).map(function(a,n){return a=$r(a),!r&&n?"["+a+"]":a}).join(r?".":""):t}function Hn(e){return b.isArray(e)&&!e.some(ft)}const jn=b.toFlatObject(b,{},null,function(t){return/^is[A-Z]/.test(t)});function et(e,t,r){if(!b.isObject(e))throw new TypeError("target must be an object");t=t||new FormData,r=b.toFlatObject(r,{metaTokens:!0,dots:!1,indexes:!1},!1,function(v,N){return!b.isUndefined(N[v])});const o=r.metaTokens,a=r.visitor||M,n=r.dots,l=r.indexes,p=(r.Blob||typeof Blob<"u"&&Blob)&&b.isSpecCompliantForm(t);if(!b.isFunction(a))throw new TypeError("visitor must be a function");function G(g){if(g===null)return"";if(b.isDate(g))return g.toISOString();if(!p&&b.isBlob(g))throw new D("Blob is not supported. Use a Buffer instead.");return b.isArrayBuffer(g)||b.isTypedArray(g)?p&&typeof Blob=="function"?new Blob([g]):Buffer.from(g):g}function M(g,v,N){let F=g;if(g&&!N&&typeof g=="object"){if(b.endsWith(v,"{}"))v=o?v:v.slice(0,-2),g=JSON.stringify(g);else if(b.isArray(g)&&Hn(g)||(b.isFileList(g)||b.endsWith(v,"[]"))&&(F=b.toArray(g)))return v=$r(v),F.forEach(function(A,V){!(b.isUndefined(A)||A===null)&&t.append(l===!0?or([v],V,n):l===null?v:v+"[]",G(A))}),!1}return ft(g)?!0:(t.append(or(N,v,n),G(g)),!1)}const y=[],O=Object.assign(jn,{defaultVisitor:M,convertValue:G,isVisitable:ft});function z(g,v){if(!b.isUndefined(g)){if(y.indexOf(g)!==-1)throw Error("Circular reference detected in "+v.join("."));y.push(g),b.forEach(g,function(F,x){(!(b.isUndefined(F)||F===null)&&a.call(t,F,b.isString(x)?x.trim():x,v,O))===!0&&z(F,v?v.concat(x):[x])}),y.pop()}}if(!b.isObject(e))throw new TypeError("data must be an object");return z(e),t}function ar(e){const t={"!":"%21","'":"%27","(":"%28",")":"%29","~":"%7E","%20":"+","%00":"\0"};return encodeURIComponent(e).replace(/[!'()~]|%20|%00/g,function(o){return t[o]})}function At(e,t){this._pairs=[],e&&et(e,this,t)}const Zr=At.prototype;Zr.append=function(t,r){this._pairs.push([t,r])};Zr.toString=function(t){const r=t?function(o){return t.call(this,o,ar)}:ar;return this._pairs.map(function(a){return r(a[0])+"="+r(a[1])},"").join("&")};function Kn(e){return encodeURIComponent(e).replace(/%3A/gi,":").replace(/%24/g,"$").replace(/%2C/gi,",").replace(/%20/g,"+").replace(/%5B/gi,"[").replace(/%5D/gi,"]")}function qr(e,t,r){if(!t)return e;const o=r&&r.encode||Kn,a=r&&r.serialize;let n;if(a?n=a(t,r):n=b.isURLSearchParams(t)?t.toString():new At(t,r).toString(o),n){const l=e.indexOf("#");l!==-1&&(e=e.slice(0,l)),e+=(e.indexOf("?")===-1?"?":"&")+n}return e}class ir{constructor(){this.handlers=[]}use(t,r,o){return this.handlers.push({fulfilled:t,rejected:r,synchronous:o?o.synchronous:!1,runWhen:o?o.runWhen:null}),this.handlers.length-1}eject(t){this.handlers[t]&&(this.handlers[t]=null)}clear(){this.handlers&&(this.handlers=[])}forEach(t){b.forEach(this.handlers,function(o){o!==null&&t(o)})}}const Wr={silentJSONParsing:!0,forcedJSONParsing:!0,clarifyTimeoutError:!1},Yn=typeof URLSearchParams<"u"?URLSearchParams:At,Jn=typeof FormData<"u"?FormData:null,$n=typeof Blob<"u"?Blob:null,Zn={isBrowser:!0,classes:{URLSearchParams:Yn,FormData:Jn,Blob:$n},protocols:["http","https","file","blob","url","data"]},Xr=typeof window<"u"&&typeof document<"u",qn=(e=>Xr&&["ReactNative","NativeScript","NS"].indexOf(e)<0)(typeof navigator<"u"&&navigator.product),Wn=typeof WorkerGlobalScope<"u"&&self instanceof WorkerGlobalScope&&typeof self.importScripts=="function",Xn=Object.freeze(Object.defineProperty({__proto__:null,hasBrowserEnv:Xr,hasStandardBrowserEnv:qn,hasStandardBrowserWebWorkerEnv:Wn},Symbol.toStringTag,{value:"Module"})),ae={...Xn,...Zn};function Qn(e,t){return et(e,new ae.classes.URLSearchParams,Object.assign({visitor:function(r,o,a,n){return ae.isNode&&b.isBuffer(r)?(this.append(o,r.toString("base64")),!1):n.defaultVisitor.apply(this,arguments)}},t))}function es(e){return b.matchAll(/\w+|\[(\w*)]/g,e).map(t=>t[0]==="[]"?"":t[1]||t[0])}function ts(e){const t={},r=Object.keys(e);let o;const a=r.length;let n;for(o=0;o<a;o++)n=r[o],t[n]=e[n];return t}function Qr(e){function t(r,o,a,n){let l=r[n++];if(l==="__proto__")return!0;const m=Number.isFinite(+l),p=n>=r.length;return l=!l&&b.isArray(a)?a.length:l,p?(b.hasOwnProp(a,l)?a[l]=[a[l],o]:a[l]=o,!m):((!a[l]||!b.isObject(a[l]))&&(a[l]=[]),t(r,o,a[l],n)&&b.isArray(a[l])&&(a[l]=ts(a[l])),!m)}if(b.isFormData(e)&&b.isFunction(e.entries)){const r={};return b.forEachEntry(e,(o,a)=>{t(es(o),a,r,0)}),r}return null}function rs(e,t,r){if(b.isString(e))try{return(t||JSON.parse)(e),b.trim(e)}catch(o){if(o.name!=="SyntaxError")throw o}return(r||JSON.stringify)(e)}const Pt={transitional:Wr,adapter:["xhr","http"],transformRequest:[function(t,r){const o=r.getContentType()||"",a=o.indexOf("application/json")>-1,n=b.isObject(t);if(n&&b.isHTMLForm(t)&&(t=new FormData(t)),b.isFormData(t))return a&&a?JSON.stringify(Qr(t)):t;if(b.isArrayBuffer(t)||b.isBuffer(t)||b.isStream(t)||b.isFile(t)||b.isBlob(t))return t;if(b.isArrayBufferView(t))return t.buffer;if(b.isURLSearchParams(t))return r.setContentType("application/x-www-form-urlencoded;charset=utf-8",!1),t.toString();let m;if(n){if(o.indexOf("application/x-www-form-urlencoded")>-1)return Qn(t,this.formSerializer).toString();if((m=b.isFileList(t))||o.indexOf("multipart/form-data")>-1){const p=this.env&&this.env.FormData;return et(m?{"files[]":t}:t,p&&new p,this.formSerializer)}}return n||a?(r.setContentType("application/json",!1),rs(t)):t}],transformResponse:[function(t){const r=this.transitional||Pt.transitional,o=r&&r.forcedJSONParsing,a=this.responseType==="json";if(t&&b.isString(t)&&(o&&!this.responseType||a)){const l=!(r&&r.silentJSONParsing)&&a;try{return JSON.parse(t)}catch(m){if(l)throw m.name==="SyntaxError"?D.from(m,D.ERR_BAD_RESPONSE,this,null,this.response):m}}return t}],timeout:0,xsrfCookieName:"XSRF-TOKEN",xsrfHeaderName:"X-XSRF-TOKEN",maxContentLength:-1,maxBodyLength:-1,env:{FormData:ae.classes.FormData,Blob:ae.classes.Blob},validateStatus:function(t){return t>=200&&t<300},headers:{common:{Accept:"application/json, text/plain, */*","Content-Type":void 0}}};b.forEach(["delete","get","head","post","put","patch"],e=>{Pt.headers[e]={}});const kt=Pt,os=b.toObjectSet(["age","authorization","content-length","content-type","etag","expires","from","host","if-modified-since","if-unmodified-since","last-modified","location","max-forwards","proxy-authorization","referer","retry-after","user-agent"]),as=e=>{const t={};let r,o,a;return e&&e.split(`
-`).forEach(function(l){a=l.indexOf(":"),r=l.substring(0,a).trim().toLowerCase(),o=l.substring(a+1).trim(),!(!r||t[r]&&os[r])&&(r==="set-cookie"?t[r]?t[r].push(o):t[r]=[o]:t[r]=t[r]?t[r]+", "+o:o)}),t},nr=Symbol("internals");function xe(e){return e&&String(e).trim().toLowerCase()}function je(e){return e===!1||e==null?e:b.isArray(e)?e.map(je):String(e)}function is(e){const t=Object.create(null),r=/([^\s,;=]+)\s*(?:=\s*([^,;]+))?/g;let o;for(;o=r.exec(e);)t[o[1]]=o[2];return t}const ns=e=>/^[-_a-zA-Z0-9^`|~,!#$%&'*+.]+$/.test(e.trim());function st(e,t,r,o,a){if(b.isFunction(o))return o.call(this,t,r);if(a&&(t=r),!!b.isString(t)){if(b.isString(o))return t.indexOf(o)!==-1;if(b.isRegExp(o))return o.test(t)}}function ss(e){return e.trim().toLowerCase().replace(/([a-z\d])(\w*)/g,(t,r,o)=>r.toUpperCase()+o)}function ls(e,t){const r=b.toCamelCase(" "+t);["get","set","has"].forEach(o=>{Object.defineProperty(e,o+r,{value:function(a,n,l){return this[o].call(this,t,a,n,l)},configurable:!0})})}class tt{constructor(t){t&&this.set(t)}set(t,r,o){const a=this;function n(m,p,G){const M=xe(p);if(!M)throw new Error("header name must be a non-empty string");const y=b.findKey(a,M);(!y||a[y]===void 0||G===!0||G===void 0&&a[y]!==!1)&&(a[y||p]=je(m))}const l=(m,p)=>b.forEach(m,(G,M)=>n(G,M,p));return b.isPlainObject(t)||t instanceof this.constructor?l(t,r):b.isString(t)&&(t=t.trim())&&!ns(t)?l(as(t),r):t!=null&&n(r,t,o),this}get(t,r){if(t=xe(t),t){const o=b.findKey(this,t);if(o){const a=this[o];if(!r)return a;if(r===!0)return is(a);if(b.isFunction(r))return r.call(this,a,o);if(b.isRegExp(r))return r.exec(a);throw new TypeError("parser must be boolean|regexp|function")}}}has(t,r){if(t=xe(t),t){const o=b.findKey(this,t);return!!(o&&this[o]!==void 0&&(!r||st(this,this[o],o,r)))}return!1}delete(t,r){const o=this;let a=!1;function n(l){if(l=xe(l),l){const m=b.findKey(o,l);m&&(!r||st(o,o[m],m,r))&&(delete o[m],a=!0)}}return b.isArray(t)?t.forEach(n):n(t),a}clear(t){const r=Object.keys(this);let o=r.length,a=!1;for(;o--;){const n=r[o];(!t||st(this,this[n],n,t,!0))&&(delete this[n],a=!0)}return a}normalize(t){const r=this,o={};return b.forEach(this,(a,n)=>{const l=b.findKey(o,n);if(l){r[l]=je(a),delete r[n];return}const m=t?ss(n):String(n).trim();m!==n&&delete r[n],r[m]=je(a),o[m]=!0}),this}concat(...t){return this.constructor.concat(this,...t)}toJSON(t){const r=Object.create(null);return b.forEach(this,(o,a)=>{o!=null&&o!==!1&&(r[a]=t&&b.isArray(o)?o.join(", "):o)}),r}[Symbol.iterator](){return Object.entries(this.toJSON())[Symbol.iterator]()}toString(){return Object.entries(this.toJSON()).map(([t,r])=>t+": "+r).join(`
-`)}get[Symbol.toStringTag](){return"AxiosHeaders"}static from(t){return t instanceof this?t:new this(t)}static concat(t,...r){const o=new this(t);return r.forEach(a=>o.set(a)),o}static accessor(t){const o=(this[nr]=this[nr]={accessors:{}}).accessors,a=this.prototype;function n(l){const m=xe(l);o[m]||(ls(a,l),o[m]=!0)}return b.isArray(t)?t.forEach(n):n(t),this}}tt.accessor(["Content-Type","Content-Length","Accept","Accept-Encoding","User-Agent","Authorization"]);b.reduceDescriptors(tt.prototype,({value:e},t)=>{let r=t[0].toUpperCase()+t.slice(1);return{get:()=>e,set(o){this[r]=o}}});b.freezeMethods(tt);const ue=tt;function lt(e,t){const r=this||kt,o=t||r,a=ue.from(o.headers);let n=o.data;return b.forEach(e,function(m){n=m.call(r,n,a.normalize(),t?t.status:void 0)}),a.normalize(),n}function eo(e){return!!(e&&e.__CANCEL__)}function Ie(e,t,r){D.call(this,e??"canceled",D.ERR_CANCELED,t,r),this.name="CanceledError"}b.inherits(Ie,D,{__CANCEL__:!0});function cs(e,t,r){const o=r.config.validateStatus;!r.status||!o||o(r.status)?e(r):t(new D("Request failed with status code "+r.status,[D.ERR_BAD_REQUEST,D.ERR_BAD_RESPONSE][Math.floor(r.status/100)-4],r.config,r.request,r))}const us=ae.hasStandardBrowserEnv?{write(e,t,r,o,a,n){const l=[e+"="+encodeURIComponent(t)];b.isNumber(r)&&l.push("expires="+new Date(r).toGMTString()),b.isString(o)&&l.push("path="+o),b.isString(a)&&l.push("domain="+a),n===!0&&l.push("secure"),document.cookie=l.join("; ")},read(e){const t=document.cookie.match(new RegExp("(^|;\\s*)("+e+")=([^;]*)"));return t?decodeURIComponent(t[3]):null},remove(e){this.write(e,"",Date.now()-864e5)}}:{write(){},read(){return null},remove(){}};function ds(e){return/^([a-z][a-z\d+\-.]*:)?\/\//i.test(e)}function hs(e,t){return t?e.replace(/\/?\/$/,"")+"/"+t.replace(/^\/+/,""):e}function to(e,t){return e&&!ds(t)?hs(e,t):t}const ms=ae.hasStandardBrowserEnv?function(){const t=/(msie|trident)/i.test(navigator.userAgent),r=document.createElement("a");let o;function a(n){let l=n;return t&&(r.setAttribute("href",l),l=r.href),r.setAttribute("href",l),{href:r.href,protocol:r.protocol?r.protocol.replace(/:$/,""):"",host:r.host,search:r.search?r.search.replace(/^\?/,""):"",hash:r.hash?r.hash.replace(/^#/,""):"",hostname:r.hostname,port:r.port,pathname:r.pathname.charAt(0)==="/"?r.pathname:"/"+r.pathname}}return o=a(window.location.href),function(l){const m=b.isString(l)?a(l):l;return m.protocol===o.protocol&&m.host===o.host}}():function(){return function(){return!0}}();function fs(e){const t=/^([-+\w]{1,25})(:?\/\/|:)/.exec(e);return t&&t[1]||""}function Ss(e,t){e=e||10;const r=new Array(e),o=new Array(e);let a=0,n=0,l;return t=t!==void 0?t:1e3,function(p){const G=Date.now(),M=o[n];l||(l=G),r[a]=p,o[a]=G;let y=n,O=0;for(;y!==a;)O+=r[y++],y=y%e;if(a=(a+1)%e,a===n&&(n=(n+1)%e),G-l<t)return;const z=M&&G-M;return z?Math.round(O*1e3/z):void 0}}function sr(e,t){let r=0;const o=Ss(50,250);return a=>{const n=a.loaded,l=a.lengthComputable?a.total:void 0,m=n-r,p=o(m),G=n<=l;r=n;const M={loaded:n,total:l,progress:l?n/l:void 0,bytes:m,rate:p||void 0,estimated:p&&l&&G?(l-n)/p:void 0,event:a};M[t?"download":"upload"]=!0,e(M)}}const Ns=typeof XMLHttpRequest<"u",ps=Ns&&function(e){return new Promise(function(r,o){let a=e.data;const n=ue.from(e.headers).normalize();let{responseType:l,withXSRFToken:m}=e,p;function G(){e.cancelToken&&e.cancelToken.unsubscribe(p),e.signal&&e.signal.removeEventListener("abort",p)}let M;if(b.isFormData(a)){if(ae.hasStandardBrowserEnv||ae.hasStandardBrowserWebWorkerEnv)n.setContentType(!1);else if((M=n.getContentType())!==!1){const[v,...N]=M?M.split(";").map(F=>F.trim()).filter(Boolean):[];n.setContentType([v||"multipart/form-data",...N].join("; "))}}let y=new XMLHttpRequest;if(e.auth){const v=e.auth.username||"",N=e.auth.password?unescape(encodeURIComponent(e.auth.password)):"";n.set("Authorization","Basic "+btoa(v+":"+N))}const O=to(e.baseURL,e.url);y.open(e.method.toUpperCase(),qr(O,e.params,e.paramsSerializer),!0),y.timeout=e.timeout;function z(){if(!y)return;const v=ue.from("getAllResponseHeaders"in y&&y.getAllResponseHeaders()),F={data:!l||l==="text"||l==="json"?y.responseText:y.response,status:y.status,statusText:y.statusText,headers:v,config:e,request:y};cs(function(A){r(A),G()},function(A){o(A),G()},F),y=null}if("onloadend"in y?y.onloadend=z:y.onreadystatechange=function(){!y||y.readyState!==4||y.status===0&&!(y.responseURL&&y.responseURL.indexOf("file:")===0)||setTimeout(z)},y.onabort=function(){y&&(o(new D("Request aborted",D.ECONNABORTED,e,y)),y=null)},y.onerror=function(){o(new D("Network Error",D.ERR_NETWORK,e,y)),y=null},y.ontimeout=function(){let N=e.timeout?"timeout of "+e.timeout+"ms exceeded":"timeout exceeded";const F=e.transitional||Wr;e.timeoutErrorMessage&&(N=e.timeoutErrorMessage),o(new D(N,F.clarifyTimeoutError?D.ETIMEDOUT:D.ECONNABORTED,e,y)),y=null},ae.hasStandardBrowserEnv&&(m&&b.isFunction(m)&&(m=m(e)),m||m!==!1&&ms(O))){const v=e.xsrfHeaderName&&e.xsrfCookieName&&us.read(e.xsrfCookieName);v&&n.set(e.xsrfHeaderName,v)}a===void 0&&n.setContentType(null),"setRequestHeader"in y&&b.forEach(n.toJSON(),function(N,F){y.setRequestHeader(F,N)}),b.isUndefined(e.withCredentials)||(y.withCredentials=!!e.withCredentials),l&&l!=="json"&&(y.responseType=e.responseType),typeof e.onDownloadProgress=="function"&&y.addEventListener("progress",sr(e.onDownloadProgress,!0)),typeof e.onUploadProgress=="function"&&y.upload&&y.upload.addEventListener("progress",sr(e.onUploadProgress)),(e.cancelToken||e.signal)&&(p=v=>{y&&(o(!v||v.type?new Ie(null,e,y):v),y.abort(),y=null)},e.cancelToken&&e.cancelToken.subscribe(p),e.signal&&(e.signal.aborted?p():e.signal.addEventListener("abort",p)));const g=fs(O);if(g&&ae.protocols.indexOf(g)===-1){o(new D("Unsupported protocol "+g+":",D.ERR_BAD_REQUEST,e));return}y.send(a||null)})},St={http:Dn,xhr:ps};b.forEach(St,(e,t)=>{if(e){try{Object.defineProperty(e,"name",{value:t})}catch{}Object.defineProperty(e,"adapterName",{value:t})}});const lr=e=>`- ${e}`,gs=e=>b.isFunction(e)||e===null||e===!1,ro={getAdapter:e=>{e=b.isArray(e)?e:[e];const{length:t}=e;let r,o;const a={};for(let n=0;n<t;n++){r=e[n];let l;if(o=r,!gs(r)&&(o=St[(l=String(r)).toLowerCase()],o===void 0))throw new D(`Unknown adapter '${l}'`);if(o)break;a[l||"#"+n]=o}if(!o){const n=Object.entries(a).map(([m,p])=>`adapter ${m} `+(p===!1?"is not supported by the environment":"is not available in the build"));let l=t?n.length>1?`since :
-`+n.map(lr).join(`
-`):" "+lr(n[0]):"as no adapter specified";throw new D("There is no suitable adapter to dispatch the request "+l,"ERR_NOT_SUPPORT")}return o},adapters:St};function ct(e){if(e.cancelToken&&e.cancelToken.throwIfRequested(),e.signal&&e.signal.aborted)throw new Ie(null,e)}function cr(e){return ct(e),e.headers=ue.from(e.headers),e.data=lt.call(e,e.transformRequest),["post","put","patch"].indexOf(e.method)!==-1&&e.headers.setContentType("application/x-www-form-urlencoded",!1),ro.getAdapter(e.adapter||kt.adapter)(e).then(function(o){return ct(e),o.data=lt.call(e,e.transformResponse,o),o.headers=ue.from(o.headers),o},function(o){return eo(o)||(ct(e),o&&o.response&&(o.response.data=lt.call(e,e.transformResponse,o.response),o.response.headers=ue.from(o.response.headers))),Promise.reject(o)})}const ur=e=>e instanceof ue?e.toJSON():e;function Ge(e,t){t=t||{};const r={};function o(G,M,y){return b.isPlainObject(G)&&b.isPlainObject(M)?b.merge.call({caseless:y},G,M):b.isPlainObject(M)?b.merge({},M):b.isArray(M)?M.slice():M}function a(G,M,y){if(b.isUndefined(M)){if(!b.isUndefined(G))return o(void 0,G,y)}else return o(G,M,y)}function n(G,M){if(!b.isUndefined(M))return o(void 0,M)}function l(G,M){if(b.isUndefined(M)){if(!b.isUndefined(G))return o(void 0,G)}else return o(void 0,M)}function m(G,M,y){if(y in t)return o(G,M);if(y in e)return o(void 0,G)}const p={url:n,method:n,data:n,baseURL:l,transformRequest:l,transformResponse:l,paramsSerializer:l,timeout:l,timeoutMessage:l,withCredentials:l,withXSRFToken:l,adapter:l,responseType:l,xsrfCookieName:l,xsrfHeaderName:l,onUploadProgress:l,onDownloadProgress:l,decompress:l,maxContentLength:l,maxBodyLength:l,beforeRedirect:l,transport:l,httpAgent:l,httpsAgent:l,cancelToken:l,socketPath:l,responseEncoding:l,validateStatus:m,headers:(G,M)=>a(ur(G),ur(M),!0)};return b.forEach(Object.keys(Object.assign({},e,t)),function(M){const y=p[M]||a,O=y(e[M],t[M],M);b.isUndefined(O)&&y!==m||(r[M]=O)}),r}const oo="1.6.5",xt={};["object","boolean","number","function","string","symbol"].forEach((e,t)=>{xt[e]=function(o){return typeof o===e||"a"+(t<1?"n ":" ")+e}});const dr={};xt.transitional=function(t,r,o){function a(n,l){return"[Axios v"+oo+"] Transitional option '"+n+"'"+l+(o?". "+o:"")}return(n,l,m)=>{if(t===!1)throw new D(a(l," has been removed"+(r?" in "+r:"")),D.ERR_DEPRECATED);return r&&!dr[l]&&(dr[l]=!0,console.warn(a(l," has been deprecated since v"+r+" and will be removed in the near future"))),t?t(n,l,m):!0}};function ys(e,t,r){if(typeof e!="object")throw new D("options must be an object",D.ERR_BAD_OPTION_VALUE);const o=Object.keys(e);let a=o.length;for(;a-- >0;){const n=o[a],l=t[n];if(l){const m=e[n],p=m===void 0||l(m,n,e);if(p!==!0)throw new D("option "+n+" must be "+p,D.ERR_BAD_OPTION_VALUE);continue}if(r!==!0)throw new D("Unknown option "+n,D.ERR_BAD_OPTION)}}const Nt={assertOptions:ys,validators:xt},he=Nt.validators;class Je{constructor(t){this.defaults=t,this.interceptors={request:new ir,response:new ir}}request(t,r){typeof t=="string"?(r=r||{},r.url=t):r=t||{},r=Ge(this.defaults,r);const{transitional:o,paramsSerializer:a,headers:n}=r;o!==void 0&&Nt.assertOptions(o,{silentJSONParsing:he.transitional(he.boolean),forcedJSONParsing:he.transitional(he.boolean),clarifyTimeoutError:he.transitional(he.boolean)},!1),a!=null&&(b.isFunction(a)?r.paramsSerializer={serialize:a}:Nt.assertOptions(a,{encode:he.function,serialize:he.function},!0)),r.method=(r.method||this.defaults.method||"get").toLowerCase();let l=n&&b.merge(n.common,n[r.method]);n&&b.forEach(["delete","get","head","post","put","patch","common"],g=>{delete n[g]}),r.headers=ue.concat(l,n);const m=[];let p=!0;this.interceptors.request.forEach(function(v){typeof v.runWhen=="function"&&v.runWhen(r)===!1||(p=p&&v.synchronous,m.unshift(v.fulfilled,v.rejected))});const G=[];this.interceptors.response.forEach(function(v){G.push(v.fulfilled,v.rejected)});let M,y=0,O;if(!p){const g=[cr.bind(this),void 0];for(g.unshift.apply(g,m),g.push.apply(g,G),O=g.length,M=Promise.resolve(r);y<O;)M=M.then(g[y++],g[y++]);return M}O=m.length;let z=r;for(y=0;y<O;){const g=m[y++],v=m[y++];try{z=g(z)}catch(N){v.call(this,N);break}}try{M=cr.call(this,z)}catch(g){return Promise.reject(g)}for(y=0,O=G.length;y<O;)M=M.then(G[y++],G[y++]);return M}getUri(t){t=Ge(this.defaults,t);const r=to(t.baseURL,t.url);return qr(r,t.params,t.paramsSerializer)}}b.forEach(["delete","get","head","options"],function(t){Je.prototype[t]=function(r,o){return this.request(Ge(o||{},{method:t,url:r,data:(o||{}).data}))}});b.forEach(["post","put","patch"],function(t){function r(o){return function(n,l,m){return this.request(Ge(m||{},{method:t,headers:o?{"Content-Type":"multipart/form-data"}:{},url:n,data:l}))}}Je.prototype[t]=r(),Je.prototype[t+"Form"]=r(!0)});const Ke=Je;class wt{constructor(t){if(typeof t!="function")throw new TypeError("executor must be a function.");let r;this.promise=new Promise(function(n){r=n});const o=this;this.promise.then(a=>{if(!o._listeners)return;let n=o._listeners.length;for(;n-- >0;)o._listeners[n](a);o._listeners=null}),this.promise.then=a=>{let n;const l=new Promise(m=>{o.subscribe(m),n=m}).then(a);return l.cancel=function(){o.unsubscribe(n)},l},t(function(n,l,m){o.reason||(o.reason=new Ie(n,l,m),r(o.reason))})}throwIfRequested(){if(this.reason)throw this.reason}subscribe(t){if(this.reason){t(this.reason);return}this._listeners?this._listeners.push(t):this._listeners=[t]}unsubscribe(t){if(!this._listeners)return;const r=this._listeners.indexOf(t);r!==-1&&this._listeners.splice(r,1)}static source(){let t;return{token:new wt(function(a){t=a}),cancel:t}}}const Cs=wt;function Ts(e){return function(r){return e.apply(null,r)}}function vs(e){return b.isObject(e)&&e.isAxiosError===!0}const pt={Continue:100,SwitchingProtocols:101,Processing:102,EarlyHints:103,Ok:200,Created:201,Accepted:202,NonAuthoritativeInformation:203,NoContent:204,ResetContent:205,PartialContent:206,MultiStatus:207,AlreadyReported:208,ImUsed:226,MultipleChoices:300,MovedPermanently:301,Found:302,SeeOther:303,NotModified:304,UseProxy:305,Unused:306,TemporaryRedirect:307,PermanentRedirect:308,BadRequest:400,Unauthorized:401,PaymentRequired:402,Forbidden:403,NotFound:404,MethodNotAllowed:405,NotAcceptable:406,ProxyAuthenticationRequired:407,RequestTimeout:408,Conflict:409,Gone:410,LengthRequired:411,PreconditionFailed:412,PayloadTooLarge:413,UriTooLong:414,UnsupportedMediaType:415,RangeNotSatisfiable:416,ExpectationFailed:417,ImATeapot:418,MisdirectedRequest:421,UnprocessableEntity:422,Locked:423,FailedDependency:424,TooEarly:425,UpgradeRequired:426,PreconditionRequired:428,TooManyRequests:429,RequestHeaderFieldsTooLarge:431,UnavailableForLegalReasons:451,InternalServerError:500,NotImplemented:501,BadGateway:502,ServiceUnavailable:503,GatewayTimeout:504,HttpVersionNotSupported:505,VariantAlsoNegotiates:506,InsufficientStorage:507,LoopDetected:508,NotExtended:510,NetworkAuthenticationRequired:511};Object.entries(pt).forEach(([e,t])=>{pt[t]=e});const bs=pt;function ao(e){const t=new Ke(e),r=Ir(Ke.prototype.request,t);return b.extend(r,Ke.prototype,t,{allOwnKeys:!0}),b.extend(r,t,null,{allOwnKeys:!0}),r.create=function(a){return ao(Ge(e,a))},r}const Z=ao(kt);Z.Axios=Ke;Z.CanceledError=Ie;Z.CancelToken=Cs;Z.isCancel=eo;Z.VERSION=oo;Z.toFormData=et;Z.AxiosError=D;Z.Cancel=Z.CanceledError;Z.all=function(t){return Promise.all(t)};Z.spread=Ts;Z.isAxiosError=vs;Z.mergeConfig=Ge;Z.AxiosHeaders=ue;Z.formToJSON=e=>Qr(b.isHTMLForm(e)?new FormData(e):e);Z.getAdapter=ro.getAdapter;Z.HttpStatusCode=bs;Z.default=Z;function Ms(e){return e&&e.__esModule&&Object.prototype.hasOwnProperty.call(e,"default")?e.default:e}const Gs=new Set(["ENOTFOUND","ENETUNREACH","UNABLE_TO_GET_ISSUER_CERT","UNABLE_TO_GET_CRL","UNABLE_TO_DECRYPT_CERT_SIGNATURE","UNABLE_TO_DECRYPT_CRL_SIGNATURE","UNABLE_TO_DECODE_ISSUER_PUBLIC_KEY","CERT_SIGNATURE_FAILURE","CRL_SIGNATURE_FAILURE","CERT_NOT_YET_VALID","CERT_HAS_EXPIRED","CRL_NOT_YET_VALID","CRL_HAS_EXPIRED","ERROR_IN_CERT_NOT_BEFORE_FIELD","ERROR_IN_CERT_NOT_AFTER_FIELD","ERROR_IN_CRL_LAST_UPDATE_FIELD","ERROR_IN_CRL_NEXT_UPDATE_FIELD","OUT_OF_MEM","DEPTH_ZERO_SELF_SIGNED_CERT","SELF_SIGNED_CERT_IN_CHAIN","UNABLE_TO_GET_ISSUER_CERT_LOCALLY","UNABLE_TO_VERIFY_LEAF_SIGNATURE","CERT_CHAIN_TOO_LONG","CERT_REVOKED","INVALID_CA","PATH_LENGTH_EXCEEDED","INVALID_PURPOSE","CERT_UNTRUSTED","CERT_REJECTED","HOSTNAME_MISMATCH"]);var Vs=e=>!Gs.has(e&&e.code);const Fs=Ms(Vs),io="axios-retry";function no(e){const t=["ERR_CANCELED","ECONNABORTED"];return e.response||!e.code||t.includes(e.code)?!1:Fs(e)}const so=["get","head","options"],As=so.concat(["put","delete"]);function Et(e){return e.code!=="ECONNABORTED"&&(!e.response||e.response.status>=500&&e.response.status<=599)}function Ps(e){var t;return(t=e.config)!=null&&t.method?Et(e)&&so.indexOf(e.config.method)!==-1:!1}function lo(e){var t;return(t=e.config)!=null&&t.method?Et(e)&&As.indexOf(e.config.method)!==-1:!1}function co(e){return no(e)||lo(e)}function ks(){return 0}function xs(e=0,t=void 0,r=100){const o=2**e*r,a=o*.2*Math.random();return o+a}const ws={retries:3,retryCondition:co,retryDelay:ks,shouldResetTimeout:!1,onRetry:()=>{}};function Es(e,t){return{...ws,...t,...e[io]}}function hr(e,t){const r=Es(e,t||{});return r.retryCount=r.retryCount||0,r.lastRequestTime=r.lastRequestTime||Date.now(),e[io]=r,r}function Ls(e,t){e.defaults.agent===t.agent&&delete t.agent,e.defaults.httpAgent===t.httpAgent&&delete t.httpAgent,e.defaults.httpsAgent===t.httpsAgent&&delete t.httpsAgent}async function Os(e,t){const{retries:r,retryCondition:o}=e,a=(e.retryCount||0)<r&&o(t);if(typeof a=="object")try{return await a!==!1}catch{return!1}return a}const Ne=(e,t)=>{const r=e.interceptors.request.use(a=>(hr(a,t),a)),o=e.interceptors.response.use(null,async a=>{const{config:n}=a;if(!n)return Promise.reject(a);const l=hr(n,t);if(await Os(l,a)){l.retryCount+=1;const{retryDelay:m,shouldResetTimeout:p,onRetry:G}=l,M=m(l.retryCount,a);if(Ls(e,n),!p&&n.timeout&&l.lastRequestTime){const y=Date.now()-l.lastRequestTime,O=n.timeout-y-M;if(O<=0)return Promise.reject(a);n.timeout=O}return n.transformRequest=[y=>y],await G(l.retryCount,a,n),new Promise(y=>{setTimeout(()=>y(e(n)),M)})}return Promise.reject(a)});return{requestInterceptorId:r,responseInterceptorId:o}};Ne.isNetworkError=no;Ne.isSafeRequestError=Ps;Ne.isIdempotentRequestError=lo;Ne.isNetworkOrIdempotentRequestError=co;Ne.exponentialDelay=xs;Ne.isRetryableError=Et;const Lt=Z.create({timeout:1e3*300});Ne(Lt,{retries:3});Lt.interceptors.response.use(function(e){return e.data.status&&e.data.status===200?e.data.data:e.data},function(e){return Promise.reject(e)});async function _s(e,t={}){return Lt({url:e,method:"get",...t})}function Be(e){throw new Error('Could not dynamically require "'+e+'". Please configure the dynamicRequireTargets or/and ignoreDynamicRequires option of @rollup/plugin-commonjs appropriately for this require call to work.')}var zs={exports:{}};(function(e,t){(function(r){e.exports=r()})(function(){return function r(o,a,n){function l(G,M){if(!a[G]){if(!o[G]){var y=typeof Be=="function"&&Be;if(!M&&y)return y(G,!0);if(m)return m(G,!0);throw new Error("Cannot find module '"+G+"'")}M=a[G]={exports:{}},o[G][0].call(M.exports,function(O){var z=o[G][1][O];return l(z||O)},M,M.exports,r,o,a,n)}return a[G].exports}for(var m=typeof Be=="function"&&Be,p=0;p<n.length;p++)l(n[p]);return l}({1:[function(r,o,a){(function(n,l,m,p,G,M,y,O,z){var g=r("crypto");function v(f,C){C=x(f,C);var c;return(c=C.algorithm!=="passthrough"?g.createHash(C.algorithm):new L).write===void 0&&(c.write=c.update,c.end=c.update),V(C,c).dispatch(f),c.update||c.end(""),c.digest?c.digest(C.encoding==="buffer"?void 0:C.encoding):(f=c.read(),C.encoding!=="buffer"?f.toString(C.encoding):f)}(a=o.exports=v).sha1=function(f){return v(f)},a.keys=function(f){return v(f,{excludeValues:!0,algorithm:"sha1",encoding:"hex"})},a.MD5=function(f){return v(f,{algorithm:"md5",encoding:"hex"})},a.keysMD5=function(f){return v(f,{algorithm:"md5",encoding:"hex",excludeValues:!0})};var N=g.getHashes?g.getHashes().slice():["sha1","md5"],F=(N.push("passthrough"),["buffer","hex","binary","base64"]);function x(f,C){var c={};if(c.algorithm=(C=C||{}).algorithm||"sha1",c.encoding=C.encoding||"hex",c.excludeValues=!!C.excludeValues,c.algorithm=c.algorithm.toLowerCase(),c.encoding=c.encoding.toLowerCase(),c.ignoreUnknown=C.ignoreUnknown===!0,c.respectType=C.respectType!==!1,c.respectFunctionNames=C.respectFunctionNames!==!1,c.respectFunctionProperties=C.respectFunctionProperties!==!1,c.unorderedArrays=C.unorderedArrays===!0,c.unorderedSets=C.unorderedSets!==!1,c.unorderedObjects=C.unorderedObjects!==!1,c.replacer=C.replacer||void 0,c.excludeKeys=C.excludeKeys||void 0,f===void 0)throw new Error("Object argument required.");for(var d=0;d<N.length;++d)N[d].toLowerCase()===c.algorithm.toLowerCase()&&(c.algorithm=N[d]);if(N.indexOf(c.algorithm)===-1)throw new Error('Algorithm "'+c.algorithm+'"  not supported. supported values: '+N.join(", "));if(F.indexOf(c.encoding)===-1&&c.algorithm!=="passthrough")throw new Error('Encoding "'+c.encoding+'"  not supported. supported values: '+F.join(", "));return c}function A(f){if(typeof f=="function")return/^function\s+\w*\s*\(\s*\)\s*{\s+\[native code\]\s+}$/i.exec(Function.prototype.toString.call(f))!=null}function V(f,C,c){c=c||[];function d(s){return C.update?C.update(s,"utf8"):C.write(s,"utf8")}return{dispatch:function(s){return this["_"+((s=f.replacer?f.replacer(s):s)===null?"null":typeof s)](s)},_object:function(s){var S,T=Object.prototype.toString.call(s),R=/\[object (.*)\]/i.exec(T);if(R=(R=R?R[1]:"unknown:["+T+"]").toLowerCase(),0<=(T=c.indexOf(s)))return this.dispatch("[CIRCULAR:"+T+"]");if(c.push(s),m!==void 0&&m.isBuffer&&m.isBuffer(s))return d("buffer:"),d(s);if(R==="object"||R==="function"||R==="asyncfunction")return T=Object.keys(s),f.unorderedObjects&&(T=T.sort()),f.respectType===!1||A(s)||T.splice(0,0,"prototype","__proto__","constructor"),f.excludeKeys&&(T=T.filter(function(I){return!f.excludeKeys(I)})),d("object:"+T.length+":"),S=this,T.forEach(function(I){S.dispatch(I),d(":"),f.excludeValues||S.dispatch(s[I]),d(",")});if(!this["_"+R]){if(f.ignoreUnknown)return d("["+R+"]");throw new Error('Unknown object type "'+R+'"')}this["_"+R](s)},_array:function(s,I){I=I!==void 0?I:f.unorderedArrays!==!1;var T=this;if(d("array:"+s.length+":"),!I||s.length<=1)return s.forEach(function(B){return T.dispatch(B)});var R=[],I=s.map(function(B){var _=new L,K=c.slice();return V(f,_,K).dispatch(B),R=R.concat(K.slice(c.length)),_.read().toString()});return c=c.concat(R),I.sort(),this._array(I,!1)},_date:function(s){return d("date:"+s.toJSON())},_symbol:function(s){return d("symbol:"+s.toString())},_error:function(s){return d("error:"+s.toString())},_boolean:function(s){return d("bool:"+s.toString())},_string:function(s){d("string:"+s.length+":"),d(s.toString())},_function:function(s){d("fn:"),A(s)?this.dispatch("[native]"):this.dispatch(s.toString()),f.respectFunctionNames!==!1&&this.dispatch("function-name:"+String(s.name)),f.respectFunctionProperties&&this._object(s)},_number:function(s){return d("number:"+s.toString())},_xml:function(s){return d("xml:"+s.toString())},_null:function(){return d("Null")},_undefined:function(){return d("Undefined")},_regexp:function(s){return d("regex:"+s.toString())},_uint8array:function(s){return d("uint8array:"),this.dispatch(Array.prototype.slice.call(s))},_uint8clampedarray:function(s){return d("uint8clampedarray:"),this.dispatch(Array.prototype.slice.call(s))},_int8array:function(s){return d("int8array:"),this.dispatch(Array.prototype.slice.call(s))},_uint16array:function(s){return d("uint16array:"),this.dispatch(Array.prototype.slice.call(s))},_int16array:function(s){return d("int16array:"),this.dispatch(Array.prototype.slice.call(s))},_uint32array:function(s){return d("uint32array:"),this.dispatch(Array.prototype.slice.call(s))},_int32array:function(s){return d("int32array:"),this.dispatch(Array.prototype.slice.call(s))},_float32array:function(s){return d("float32array:"),this.dispatch(Array.prototype.slice.call(s))},_float64array:function(s){return d("float64array:"),this.dispatch(Array.prototype.slice.call(s))},_arraybuffer:function(s){return d("arraybuffer:"),this.dispatch(new Uint8Array(s))},_url:function(s){return d("url:"+s.toString())},_map:function(s){return d("map:"),s=Array.from(s),this._array(s,f.unorderedSets!==!1)},_set:function(s){return d("set:"),s=Array.from(s),this._array(s,f.unorderedSets!==!1)},_file:function(s){return d("file:"),this.dispatch([s.name,s.size,s.type,s.lastModfied])},_blob:function(){if(f.ignoreUnknown)return d("[blob]");throw Error(`Hashing Blob objects is currently not supported
+export const css = ".wh-full{width:100%;height:100%}.m-auto{margin:auto}.bottom-0{bottom:0}.right-5{right:5px}.overflow-hidden{overflow:hidden}.absolute{position:absolute}.mt-2{margin-top:.5rem}.block{display:block}.h-full{height:100%}.min-h10{min-height:2.5rem}.w-full{width:100%}.w80{width:20rem}.flex{display:flex}.flex-1{flex:1 1 0%}.flex-col{flex-direction:column}.select-text{-webkit-user-select:text;user-select:text}.resize-none{resize:none}.space-x-2>:not([hidden])~:not([hidden]){--un-space-x-reverse:0;margin-left:calc(.5rem * calc(1 - var(--un-space-x-reverse)));margin-right:calc(.5rem * var(--un-space-x-reverse))}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rounded-md{border-radius:.375rem}.p2{padding:.5rem}.pb1{padding-bottom:.25rem}.pb2{padding-bottom:.5rem}.text-xs{font-size:.75rem;line-height:1rem}.text-blue-400{--un-text-opacity:1;color:rgb(96 165 250 / var(--un-text-opacity))}.text-gray-400{--un-text-opacity:1;color:rgb(156 163 175 / var(--un-text-opacity))}.text-gray-500{--un-text-opacity:1;color:rgb(107 114 128 / var(--un-text-opacity))}.hover\\:text-blue-500:hover{--un-text-opacity:1;color:rgb(59 130 246 / var(--un-text-opacity))}.hover\\:text-gray-700:hover{--un-text-opacity:1;color:rgb(55 65 81 / var(--un-text-opacity))}.font-bold{font-weight:700}.font-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.hover\\:underline:hover{text-decoration-line:underline}\n\n";
+var ho = Object.defineProperty;
+var mo = (e, t, r) => t in e ? ho(e, t, { enumerable: !0, configurable: !0, writable: !0, value: r }) : e[t] = r;
+var se = (e, t, r) => (mo(e, typeof t != "symbol" ? t + "" : t, r), r);
+var Nr = typeof global == "object" && global && global.Object === Object && global, fo = typeof self == "object" && self && self.Object === Object && self, Ve = Nr || fo || Function("return this")(), be = Ve.Symbol, pr = Object.prototype, So = pr.hasOwnProperty, No = pr.toString, ke = be ? be.toStringTag : void 0;
+function po(e) {
+  var t = So.call(e, ke), r = e[ke];
+  try {
+    e[ke] = void 0;
+    var o = !0;
+  } catch {
+  }
+  var a = No.call(e);
+  return o && (t ? e[ke] = r : delete e[ke]), a;
+}
+var go = Object.prototype, yo = go.toString;
+function Co(e) {
+  return yo.call(e);
+}
+var To = "[object Null]", vo = "[object Undefined]", Rt = be ? be.toStringTag : void 0;
+function _e(e) {
+  return e == null ? e === void 0 ? vo : To : Rt && Rt in Object(e) ? po(e) : Co(e);
+}
+function Fe(e) {
+  return e != null && typeof e == "object";
+}
+var bo = "[object Symbol]";
+function yt(e) {
+  return typeof e == "symbol" || Fe(e) && _e(e) == bo;
+}
+function Mo(e, t) {
+  for (var r = -1, o = e == null ? 0 : e.length, a = Array(o); ++r < o; )
+    a[r] = t(e[r], r, e);
+  return a;
+}
+var Me = Array.isArray, Go = 1 / 0, Bt = be ? be.prototype : void 0, Ut = Bt ? Bt.toString : void 0;
+function gr(e) {
+  if (typeof e == "string")
+    return e;
+  if (Me(e))
+    return Mo(e, gr) + "";
+  if (yt(e))
+    return Ut ? Ut.call(e) : "";
+  var t = e + "";
+  return t == "0" && 1 / e == -Go ? "-0" : t;
+}
+function oe(e) {
+  var t = typeof e;
+  return e != null && (t == "object" || t == "function");
+}
+function yr(e) {
+  return e;
+}
+var Vo = "[object AsyncFunction]", Fo = "[object Function]", Ao = "[object GeneratorFunction]", Po = "[object Proxy]";
+function Ct(e) {
+  if (!oe(e))
+    return !1;
+  var t = _e(e);
+  return t == Fo || t == Ao || t == Vo || t == Po;
+}
+var at = Ve["__core-js_shared__"], Dt = function() {
+  var e = /[^.]+$/.exec(at && at.keys && at.keys.IE_PROTO || "");
+  return e ? "Symbol(src)_1." + e : "";
+}();
+function ko(e) {
+  return !!Dt && Dt in e;
+}
+var xo = Function.prototype, wo = xo.toString;
+function Eo(e) {
+  if (e != null) {
+    try {
+      return wo.call(e);
+    } catch {
+    }
+    try {
+      return e + "";
+    } catch {
+    }
+  }
+  return "";
+}
+var Lo = /[\\^$.*+?()[\]{}|]/g, Oo = /^\[object .+?Constructor\]$/, _o = Function.prototype, zo = Object.prototype, Io = _o.toString, Ro = zo.hasOwnProperty, Bo = RegExp(
+  "^" + Io.call(Ro).replace(Lo, "\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, "$1.*?") + "$"
+);
+function Uo(e) {
+  if (!oe(e) || ko(e))
+    return !1;
+  var t = Ct(e) ? Bo : Oo;
+  return t.test(Eo(e));
+}
+function Do(e, t) {
+  return e == null ? void 0 : e[t];
+}
+function Tt(e, t) {
+  var r = Do(e, t);
+  return Uo(r) ? r : void 0;
+}
+var Ht = Object.create, Ho = /* @__PURE__ */ function() {
+  function e() {
+  }
+  return function(t) {
+    if (!oe(t))
+      return {};
+    if (Ht)
+      return Ht(t);
+    e.prototype = t;
+    var r = new e();
+    return e.prototype = void 0, r;
+  };
+}();
+function Cr(e, t, r) {
+  switch (r.length) {
+    case 0:
+      return e.call(t);
+    case 1:
+      return e.call(t, r[0]);
+    case 2:
+      return e.call(t, r[0], r[1]);
+    case 3:
+      return e.call(t, r[0], r[1], r[2]);
+  }
+  return e.apply(t, r);
+}
+function jo(e, t) {
+  var r = -1, o = e.length;
+  for (t || (t = Array(o)); ++r < o; )
+    t[r] = e[r];
+  return t;
+}
+var Ko = 800, Yo = 16, Jo = Date.now;
+function $o(e) {
+  var t = 0, r = 0;
+  return function() {
+    var o = Jo(), a = Yo - (o - r);
+    if (r = o, a > 0) {
+      if (++t >= Ko)
+        return arguments[0];
+    } else
+      t = 0;
+    return e.apply(void 0, arguments);
+  };
+}
+function Zo(e) {
+  return function() {
+    return e;
+  };
+}
+var Ye = function() {
+  try {
+    var e = Tt(Object, "defineProperty");
+    return e({}, "", {}), e;
+  } catch {
+  }
+}(), qo = Ye ? function(e, t) {
+  return Ye(e, "toString", {
+    configurable: !0,
+    enumerable: !1,
+    value: Zo(t),
+    writable: !0
+  });
+} : yr;
+const Wo = qo;
+var Xo = $o(Wo), Qo = 9007199254740991, ea = /^(?:0|[1-9]\d*)$/;
+function vt(e, t) {
+  var r = typeof e;
+  return t = t ?? Qo, !!t && (r == "number" || r != "symbol" && ea.test(e)) && e > -1 && e % 1 == 0 && e < t;
+}
+function bt(e, t, r) {
+  t == "__proto__" && Ye ? Ye(e, t, {
+    configurable: !0,
+    enumerable: !0,
+    value: r,
+    writable: !0
+  }) : e[t] = r;
+}
+function $e(e, t) {
+  return e === t || e !== e && t !== t;
+}
+var ta = Object.prototype, ra = ta.hasOwnProperty;
+function Tr(e, t, r) {
+  var o = e[t];
+  (!(ra.call(e, t) && $e(o, r)) || r === void 0 && !(t in e)) && bt(e, t, r);
+}
+function oa(e, t, r, o) {
+  var a = !r;
+  r || (r = {});
+  for (var n = -1, l = t.length; ++n < l; ) {
+    var m = t[n], p = o ? o(r[m], e[m], m, r, e) : void 0;
+    p === void 0 && (p = e[m]), a ? bt(r, m, p) : Tr(r, m, p);
+  }
+  return r;
+}
+var jt = Math.max;
+function aa(e, t, r) {
+  return t = jt(t === void 0 ? e.length - 1 : t, 0), function() {
+    for (var o = arguments, a = -1, n = jt(o.length - t, 0), l = Array(n); ++a < n; )
+      l[a] = o[t + a];
+    a = -1;
+    for (var m = Array(t + 1); ++a < t; )
+      m[a] = o[a];
+    return m[t] = r(l), Cr(e, this, m);
+  };
+}
+function vr(e, t) {
+  return Xo(aa(e, t, yr), e + "");
+}
+var ia = 9007199254740991;
+function br(e) {
+  return typeof e == "number" && e > -1 && e % 1 == 0 && e <= ia;
+}
+function Mt(e) {
+  return e != null && br(e.length) && !Ct(e);
+}
+function na(e, t, r) {
+  if (!oe(r))
+    return !1;
+  var o = typeof t;
+  return (o == "number" ? Mt(r) && vt(t, r.length) : o == "string" && t in r) ? $e(r[t], e) : !1;
+}
+function sa(e) {
+  return vr(function(t, r) {
+    var o = -1, a = r.length, n = a > 1 ? r[a - 1] : void 0, l = a > 2 ? r[2] : void 0;
+    for (n = e.length > 3 && typeof n == "function" ? (a--, n) : void 0, l && na(r[0], r[1], l) && (n = a < 3 ? void 0 : n, a = 1), t = Object(t); ++o < a; ) {
+      var m = r[o];
+      m && e(t, m, o, n);
+    }
+    return t;
+  });
+}
+var la = Object.prototype;
+function Mr(e) {
+  var t = e && e.constructor, r = typeof t == "function" && t.prototype || la;
+  return e === r;
+}
+function ca(e, t) {
+  for (var r = -1, o = Array(e); ++r < e; )
+    o[r] = t(r);
+  return o;
+}
+var ua = "[object Arguments]";
+function Kt(e) {
+  return Fe(e) && _e(e) == ua;
+}
+var Gr = Object.prototype, da = Gr.hasOwnProperty, ha = Gr.propertyIsEnumerable, ma = Kt(/* @__PURE__ */ function() {
+  return arguments;
+}()) ? Kt : function(e) {
+  return Fe(e) && da.call(e, "callee") && !ha.call(e, "callee");
+};
+const ut = ma;
+function fa() {
+  return !1;
+}
+var Vr = typeof exports == "object" && exports && !exports.nodeType && exports, Yt = Vr && typeof module == "object" && module && !module.nodeType && module, Sa = Yt && Yt.exports === Vr, Jt = Sa ? Ve.Buffer : void 0, Na = Jt ? Jt.isBuffer : void 0, Fr = Na || fa, pa = "[object Arguments]", ga = "[object Array]", ya = "[object Boolean]", Ca = "[object Date]", Ta = "[object Error]", va = "[object Function]", ba = "[object Map]", Ma = "[object Number]", Ga = "[object Object]", Va = "[object RegExp]", Fa = "[object Set]", Aa = "[object String]", Pa = "[object WeakMap]", ka = "[object ArrayBuffer]", xa = "[object DataView]", wa = "[object Float32Array]", Ea = "[object Float64Array]", La = "[object Int8Array]", Oa = "[object Int16Array]", _a = "[object Int32Array]", za = "[object Uint8Array]", Ia = "[object Uint8ClampedArray]", Ra = "[object Uint16Array]", Ba = "[object Uint32Array]", j = {};
+j[wa] = j[Ea] = j[La] = j[Oa] = j[_a] = j[za] = j[Ia] = j[Ra] = j[Ba] = !0;
+j[pa] = j[ga] = j[ka] = j[ya] = j[xa] = j[Ca] = j[Ta] = j[va] = j[ba] = j[Ma] = j[Ga] = j[Va] = j[Fa] = j[Aa] = j[Pa] = !1;
+function Ua(e) {
+  return Fe(e) && br(e.length) && !!j[_e(e)];
+}
+function Da(e) {
+  return function(t) {
+    return e(t);
+  };
+}
+var Ar = typeof exports == "object" && exports && !exports.nodeType && exports, Ee = Ar && typeof module == "object" && module && !module.nodeType && module, Ha = Ee && Ee.exports === Ar, it = Ha && Nr.process, $t = function() {
+  try {
+    var e = Ee && Ee.require && Ee.require("util").types;
+    return e || it && it.binding && it.binding("util");
+  } catch {
+  }
+}(), Zt = $t && $t.isTypedArray, Pr = Zt ? Da(Zt) : Ua, ja = Object.prototype, Ka = ja.hasOwnProperty;
+function Ya(e, t) {
+  var r = Me(e), o = !r && ut(e), a = !r && !o && Fr(e), n = !r && !o && !a && Pr(e), l = r || o || a || n, m = l ? ca(e.length, String) : [], p = m.length;
+  for (var G in e)
+    (t || Ka.call(e, G)) && !(l && // Safari 9 has enumerable `arguments.length` in strict mode.
+    (G == "length" || // Node.js 0.10 has enumerable non-index properties on buffers.
+    a && (G == "offset" || G == "parent") || // PhantomJS 2 has enumerable non-index properties on typed arrays.
+    n && (G == "buffer" || G == "byteLength" || G == "byteOffset") || // Skip index properties.
+    vt(G, p))) && m.push(G);
+  return m;
+}
+function Ja(e, t) {
+  return function(r) {
+    return e(t(r));
+  };
+}
+function $a(e) {
+  var t = [];
+  if (e != null)
+    for (var r in Object(e))
+      t.push(r);
+  return t;
+}
+var Za = Object.prototype, qa = Za.hasOwnProperty;
+function Wa(e) {
+  if (!oe(e))
+    return $a(e);
+  var t = Mr(e), r = [];
+  for (var o in e)
+    o == "constructor" && (t || !qa.call(e, o)) || r.push(o);
+  return r;
+}
+function kr(e) {
+  return Mt(e) ? Ya(e, !0) : Wa(e);
+}
+var Xa = /\.|\[(?:[^[\]]*|(["'])(?:(?!\1)[^\\]|\\.)*?\1)\]/, Qa = /^\w*$/;
+function ei(e, t) {
+  if (Me(e))
+    return !1;
+  var r = typeof e;
+  return r == "number" || r == "symbol" || r == "boolean" || e == null || yt(e) ? !0 : Qa.test(e) || !Xa.test(e) || t != null && e in Object(t);
+}
+var Le = Tt(Object, "create");
+function ti() {
+  this.__data__ = Le ? Le(null) : {}, this.size = 0;
+}
+function ri(e) {
+  var t = this.has(e) && delete this.__data__[e];
+  return this.size -= t ? 1 : 0, t;
+}
+var oi = "__lodash_hash_undefined__", ai = Object.prototype, ii = ai.hasOwnProperty;
+function ni(e) {
+  var t = this.__data__;
+  if (Le) {
+    var r = t[e];
+    return r === oi ? void 0 : r;
+  }
+  return ii.call(t, e) ? t[e] : void 0;
+}
+var si = Object.prototype, li = si.hasOwnProperty;
+function ci(e) {
+  var t = this.__data__;
+  return Le ? t[e] !== void 0 : li.call(t, e);
+}
+var ui = "__lodash_hash_undefined__";
+function di(e, t) {
+  var r = this.__data__;
+  return this.size += this.has(e) ? 0 : 1, r[e] = Le && t === void 0 ? ui : t, this;
+}
+function Se(e) {
+  var t = -1, r = e == null ? 0 : e.length;
+  for (this.clear(); ++t < r; ) {
+    var o = e[t];
+    this.set(o[0], o[1]);
+  }
+}
+Se.prototype.clear = ti;
+Se.prototype.delete = ri;
+Se.prototype.get = ni;
+Se.prototype.has = ci;
+Se.prototype.set = di;
+function hi() {
+  this.__data__ = [], this.size = 0;
+}
+function Ze(e, t) {
+  for (var r = e.length; r--; )
+    if ($e(e[r][0], t))
+      return r;
+  return -1;
+}
+var mi = Array.prototype, fi = mi.splice;
+function Si(e) {
+  var t = this.__data__, r = Ze(t, e);
+  if (r < 0)
+    return !1;
+  var o = t.length - 1;
+  return r == o ? t.pop() : fi.call(t, r, 1), --this.size, !0;
+}
+function Ni(e) {
+  var t = this.__data__, r = Ze(t, e);
+  return r < 0 ? void 0 : t[r][1];
+}
+function pi(e) {
+  return Ze(this.__data__, e) > -1;
+}
+function gi(e, t) {
+  var r = this.__data__, o = Ze(r, e);
+  return o < 0 ? (++this.size, r.push([e, t])) : r[o][1] = t, this;
+}
+function de(e) {
+  var t = -1, r = e == null ? 0 : e.length;
+  for (this.clear(); ++t < r; ) {
+    var o = e[t];
+    this.set(o[0], o[1]);
+  }
+}
+de.prototype.clear = hi;
+de.prototype.delete = Si;
+de.prototype.get = Ni;
+de.prototype.has = pi;
+de.prototype.set = gi;
+var xr = Tt(Ve, "Map");
+function yi() {
+  this.size = 0, this.__data__ = {
+    hash: new Se(),
+    map: new (xr || de)(),
+    string: new Se()
+  };
+}
+function Ci(e) {
+  var t = typeof e;
+  return t == "string" || t == "number" || t == "symbol" || t == "boolean" ? e !== "__proto__" : e === null;
+}
+function qe(e, t) {
+  var r = e.__data__;
+  return Ci(t) ? r[typeof t == "string" ? "string" : "hash"] : r.map;
+}
+function Ti(e) {
+  var t = qe(this, e).delete(e);
+  return this.size -= t ? 1 : 0, t;
+}
+function vi(e) {
+  return qe(this, e).get(e);
+}
+function bi(e) {
+  return qe(this, e).has(e);
+}
+function Mi(e, t) {
+  var r = qe(this, e), o = r.size;
+  return r.set(e, t), this.size += r.size == o ? 0 : 1, this;
+}
+function fe(e) {
+  var t = -1, r = e == null ? 0 : e.length;
+  for (this.clear(); ++t < r; ) {
+    var o = e[t];
+    this.set(o[0], o[1]);
+  }
+}
+fe.prototype.clear = yi;
+fe.prototype.delete = Ti;
+fe.prototype.get = vi;
+fe.prototype.has = bi;
+fe.prototype.set = Mi;
+var Gi = "Expected a function";
+function Gt(e, t) {
+  if (typeof e != "function" || t != null && typeof t != "function")
+    throw new TypeError(Gi);
+  var r = function() {
+    var o = arguments, a = t ? t.apply(this, o) : o[0], n = r.cache;
+    if (n.has(a))
+      return n.get(a);
+    var l = e.apply(this, o);
+    return r.cache = n.set(a, l) || n, l;
+  };
+  return r.cache = new (Gt.Cache || fe)(), r;
+}
+Gt.Cache = fe;
+var Vi = 500;
+function Fi(e) {
+  var t = Gt(e, function(o) {
+    return r.size === Vi && r.clear(), o;
+  }), r = t.cache;
+  return t;
+}
+var Ai = /[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|$))/g, Pi = /\\(\\)?/g, ki = Fi(function(e) {
+  var t = [];
+  return e.charCodeAt(0) === 46 && t.push(""), e.replace(Ai, function(r, o, a, n) {
+    t.push(a ? n.replace(Pi, "$1") : o || r);
+  }), t;
+});
+function xi(e) {
+  return e == null ? "" : gr(e);
+}
+function wr(e, t) {
+  return Me(e) ? e : ei(e, t) ? [e] : ki(xi(e));
+}
+var wi = 1 / 0;
+function Er(e) {
+  if (typeof e == "string" || yt(e))
+    return e;
+  var t = e + "";
+  return t == "0" && 1 / e == -wi ? "-0" : t;
+}
+function Ei(e, t) {
+  t = wr(t, e);
+  for (var r = 0, o = t.length; e != null && r < o; )
+    e = e[Er(t[r++])];
+  return r && r == o ? e : void 0;
+}
+function Li(e, t, r) {
+  var o = e == null ? void 0 : Ei(e, t);
+  return o === void 0 ? r : o;
+}
+var Lr = Ja(Object.getPrototypeOf, Object), Oi = "[object Object]", _i = Function.prototype, zi = Object.prototype, Or = _i.toString, Ii = zi.hasOwnProperty, Ri = Or.call(Object);
+function Bi(e) {
+  if (!Fe(e) || _e(e) != Oi)
+    return !1;
+  var t = Lr(e);
+  if (t === null)
+    return !0;
+  var r = Ii.call(t, "constructor") && t.constructor;
+  return typeof r == "function" && r instanceof r && Or.call(r) == Ri;
+}
+function Ui() {
+  this.__data__ = new de(), this.size = 0;
+}
+function Di(e) {
+  var t = this.__data__, r = t.delete(e);
+  return this.size = t.size, r;
+}
+function Hi(e) {
+  return this.__data__.get(e);
+}
+function ji(e) {
+  return this.__data__.has(e);
+}
+var Ki = 200;
+function Yi(e, t) {
+  var r = this.__data__;
+  if (r instanceof de) {
+    var o = r.__data__;
+    if (!xr || o.length < Ki - 1)
+      return o.push([e, t]), this.size = ++r.size, this;
+    r = this.__data__ = new fe(o);
+  }
+  return r.set(e, t), this.size = r.size, this;
+}
+function Ae(e) {
+  var t = this.__data__ = new de(e);
+  this.size = t.size;
+}
+Ae.prototype.clear = Ui;
+Ae.prototype.delete = Di;
+Ae.prototype.get = Hi;
+Ae.prototype.has = ji;
+Ae.prototype.set = Yi;
+var _r = typeof exports == "object" && exports && !exports.nodeType && exports, qt = _r && typeof module == "object" && module && !module.nodeType && module, Ji = qt && qt.exports === _r, Wt = Ji ? Ve.Buffer : void 0, Xt = Wt ? Wt.allocUnsafe : void 0;
+function $i(e, t) {
+  if (t)
+    return e.slice();
+  var r = e.length, o = Xt ? Xt(r) : new e.constructor(r);
+  return e.copy(o), o;
+}
+var Qt = Ve.Uint8Array;
+function Zi(e) {
+  var t = new e.constructor(e.byteLength);
+  return new Qt(t).set(new Qt(e)), t;
+}
+function qi(e, t) {
+  var r = t ? Zi(e.buffer) : e.buffer;
+  return new e.constructor(r, e.byteOffset, e.length);
+}
+function Wi(e) {
+  return typeof e.constructor == "function" && !Mr(e) ? Ho(Lr(e)) : {};
+}
+function Xi(e) {
+  return function(t, r, o) {
+    for (var a = -1, n = Object(t), l = o(t), m = l.length; m--; ) {
+      var p = l[e ? m : ++a];
+      if (r(n[p], p, n) === !1)
+        break;
+    }
+    return t;
+  };
+}
+var Qi = Xi();
+function dt(e, t, r) {
+  (r !== void 0 && !$e(e[t], r) || r === void 0 && !(t in e)) && bt(e, t, r);
+}
+function en(e) {
+  return Fe(e) && Mt(e);
+}
+function ht(e, t) {
+  if (!(t === "constructor" && typeof e[t] == "function") && t != "__proto__")
+    return e[t];
+}
+function tn(e) {
+  return oa(e, kr(e));
+}
+function rn(e, t, r, o, a, n, l) {
+  var m = ht(e, r), p = ht(t, r), G = l.get(p);
+  if (G) {
+    dt(e, r, G);
+    return;
+  }
+  var M = n ? n(m, p, r + "", e, t, l) : void 0, y = M === void 0;
+  if (y) {
+    var O = Me(p), z = !O && Fr(p), g = !O && !z && Pr(p);
+    M = p, O || z || g ? Me(m) ? M = m : en(m) ? M = jo(m) : z ? (y = !1, M = $i(p, !0)) : g ? (y = !1, M = qi(p, !0)) : M = [] : Bi(p) || ut(p) ? (M = m, ut(m) ? M = tn(m) : (!oe(m) || Ct(m)) && (M = Wi(p))) : y = !1;
+  }
+  y && (l.set(p, M), a(M, p, o, n, l), l.delete(p)), dt(e, r, M);
+}
+function Vt(e, t, r, o, a) {
+  e !== t && Qi(t, function(n, l) {
+    if (a || (a = new Ae()), oe(n))
+      rn(e, t, l, r, Vt, o, a);
+    else {
+      var m = o ? o(ht(e, l), n, l + "", e, t, a) : void 0;
+      m === void 0 && (m = n), dt(e, l, m);
+    }
+  }, kr);
+}
+function zr(e, t, r, o, a, n) {
+  return oe(e) && oe(t) && (n.set(t, e), Vt(e, t, void 0, zr, n), n.delete(t)), e;
+}
+var on = sa(function(e, t, r, o) {
+  Vt(e, t, r, o);
+});
+const an = on;
+var ge = vr(function(e) {
+  return e.push(void 0, zr), Cr(an, void 0, e);
+});
+function nn(e, t, r, o) {
+  if (!oe(e))
+    return e;
+  t = wr(t, e);
+  for (var a = -1, n = t.length, l = n - 1, m = e; m != null && ++a < n; ) {
+    var p = Er(t[a]), G = r;
+    if (p === "__proto__" || p === "constructor" || p === "prototype")
+      return e;
+    if (a != l) {
+      var M = m[p];
+      G = o ? o(M, p, m) : void 0, G === void 0 && (G = oe(M) ? M : vt(t[a + 1]) ? [] : {});
+    }
+    Tr(m, p, G), m = m[p];
+  }
+  return e;
+}
+function sn(e, t, r) {
+  return e == null ? e : nn(e, t, r);
+}
+function er(e, t) {
+  var r = document.createElement("a");
+  r.href = window.URL.createObjectURL(e), r.download = t, document.body.appendChild(r), r.click(), document.body.removeChild(r);
+}
+function Ir(e, t) {
+  return function() {
+    return e.apply(t, arguments);
+  };
+}
+const { toString: ln } = Object.prototype, { getPrototypeOf: Ft } = Object, We = /* @__PURE__ */ ((e) => (t) => {
+  const r = ln.call(t);
+  return e[r] || (e[r] = r.slice(8, -1).toLowerCase());
+})(/* @__PURE__ */ Object.create(null)), ie = (e) => (e = e.toLowerCase(), (t) => We(t) === e), Xe = (e) => (t) => typeof t === e, { isArray: Pe } = Array, Oe = Xe("undefined");
+function cn(e) {
+  return e !== null && !Oe(e) && e.constructor !== null && !Oe(e.constructor) && te(e.constructor.isBuffer) && e.constructor.isBuffer(e);
+}
+const Rr = ie("ArrayBuffer");
+function un(e) {
+  let t;
+  return typeof ArrayBuffer < "u" && ArrayBuffer.isView ? t = ArrayBuffer.isView(e) : t = e && e.buffer && Rr(e.buffer), t;
+}
+const dn = Xe("string"), te = Xe("function"), Br = Xe("number"), Qe = (e) => e !== null && typeof e == "object", hn = (e) => e === !0 || e === !1, He = (e) => {
+  if (We(e) !== "object")
+    return !1;
+  const t = Ft(e);
+  return (t === null || t === Object.prototype || Object.getPrototypeOf(t) === null) && !(Symbol.toStringTag in e) && !(Symbol.iterator in e);
+}, mn = ie("Date"), fn = ie("File"), Sn = ie("Blob"), Nn = ie("FileList"), pn = (e) => Qe(e) && te(e.pipe), gn = (e) => {
+  let t;
+  return e && (typeof FormData == "function" && e instanceof FormData || te(e.append) && ((t = We(e)) === "formdata" || // detect form-data instance
+  t === "object" && te(e.toString) && e.toString() === "[object FormData]"));
+}, yn = ie("URLSearchParams"), Cn = (e) => e.trim ? e.trim() : e.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, "");
+function ze(e, t, { allOwnKeys: r = !1 } = {}) {
+  if (e === null || typeof e > "u")
+    return;
+  let o, a;
+  if (typeof e != "object" && (e = [e]), Pe(e))
+    for (o = 0, a = e.length; o < a; o++)
+      t.call(null, e[o], o, e);
+  else {
+    const n = r ? Object.getOwnPropertyNames(e) : Object.keys(e), l = n.length;
+    let m;
+    for (o = 0; o < l; o++)
+      m = n[o], t.call(null, e[m], m, e);
+  }
+}
+function Ur(e, t) {
+  t = t.toLowerCase();
+  const r = Object.keys(e);
+  let o = r.length, a;
+  for (; o-- > 0; )
+    if (a = r[o], t === a.toLowerCase())
+      return a;
+  return null;
+}
+const Dr = typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : typeof window < "u" ? window : global, Hr = (e) => !Oe(e) && e !== Dr;
+function mt() {
+  const { caseless: e } = Hr(this) && this || {}, t = {}, r = (o, a) => {
+    const n = e && Ur(t, a) || a;
+    He(t[n]) && He(o) ? t[n] = mt(t[n], o) : He(o) ? t[n] = mt({}, o) : Pe(o) ? t[n] = o.slice() : t[n] = o;
+  };
+  for (let o = 0, a = arguments.length; o < a; o++)
+    arguments[o] && ze(arguments[o], r);
+  return t;
+}
+const Tn = (e, t, r, { allOwnKeys: o } = {}) => (ze(t, (a, n) => {
+  r && te(a) ? e[n] = Ir(a, r) : e[n] = a;
+}, { allOwnKeys: o }), e), vn = (e) => (e.charCodeAt(0) === 65279 && (e = e.slice(1)), e), bn = (e, t, r, o) => {
+  e.prototype = Object.create(t.prototype, o), e.prototype.constructor = e, Object.defineProperty(e, "super", {
+    value: t.prototype
+  }), r && Object.assign(e.prototype, r);
+}, Mn = (e, t, r, o) => {
+  let a, n, l;
+  const m = {};
+  if (t = t || {}, e == null)
+    return t;
+  do {
+    for (a = Object.getOwnPropertyNames(e), n = a.length; n-- > 0; )
+      l = a[n], (!o || o(l, e, t)) && !m[l] && (t[l] = e[l], m[l] = !0);
+    e = r !== !1 && Ft(e);
+  } while (e && (!r || r(e, t)) && e !== Object.prototype);
+  return t;
+}, Gn = (e, t, r) => {
+  e = String(e), (r === void 0 || r > e.length) && (r = e.length), r -= t.length;
+  const o = e.indexOf(t, r);
+  return o !== -1 && o === r;
+}, Vn = (e) => {
+  if (!e)
+    return null;
+  if (Pe(e))
+    return e;
+  let t = e.length;
+  if (!Br(t))
+    return null;
+  const r = new Array(t);
+  for (; t-- > 0; )
+    r[t] = e[t];
+  return r;
+}, Fn = /* @__PURE__ */ ((e) => (t) => e && t instanceof e)(typeof Uint8Array < "u" && Ft(Uint8Array)), An = (e, t) => {
+  const o = (e && e[Symbol.iterator]).call(e);
+  let a;
+  for (; (a = o.next()) && !a.done; ) {
+    const n = a.value;
+    t.call(e, n[0], n[1]);
+  }
+}, Pn = (e, t) => {
+  let r;
+  const o = [];
+  for (; (r = e.exec(t)) !== null; )
+    o.push(r);
+  return o;
+}, kn = ie("HTMLFormElement"), xn = (e) => e.toLowerCase().replace(
+  /[-_\s]([a-z\d])(\w*)/g,
+  function(r, o, a) {
+    return o.toUpperCase() + a;
+  }
+), tr = (({ hasOwnProperty: e }) => (t, r) => e.call(t, r))(Object.prototype), wn = ie("RegExp"), jr = (e, t) => {
+  const r = Object.getOwnPropertyDescriptors(e), o = {};
+  ze(r, (a, n) => {
+    let l;
+    (l = t(a, n, e)) !== !1 && (o[n] = l || a);
+  }), Object.defineProperties(e, o);
+}, En = (e) => {
+  jr(e, (t, r) => {
+    if (te(e) && ["arguments", "caller", "callee"].indexOf(r) !== -1)
+      return !1;
+    const o = e[r];
+    if (te(o)) {
+      if (t.enumerable = !1, "writable" in t) {
+        t.writable = !1;
+        return;
+      }
+      t.set || (t.set = () => {
+        throw Error("Can not rewrite read-only method '" + r + "'");
+      });
+    }
+  });
+}, Ln = (e, t) => {
+  const r = {}, o = (a) => {
+    a.forEach((n) => {
+      r[n] = !0;
+    });
+  };
+  return Pe(e) ? o(e) : o(String(e).split(t)), r;
+}, On = () => {
+}, _n = (e, t) => (e = +e, Number.isFinite(e) ? e : t), nt = "abcdefghijklmnopqrstuvwxyz", rr = "0123456789", Kr = {
+  DIGIT: rr,
+  ALPHA: nt,
+  ALPHA_DIGIT: nt + nt.toUpperCase() + rr
+}, zn = (e = 16, t = Kr.ALPHA_DIGIT) => {
+  let r = "";
+  const { length: o } = t;
+  for (; e--; )
+    r += t[Math.random() * o | 0];
+  return r;
+};
+function In(e) {
+  return !!(e && te(e.append) && e[Symbol.toStringTag] === "FormData" && e[Symbol.iterator]);
+}
+const Rn = (e) => {
+  const t = new Array(10), r = (o, a) => {
+    if (Qe(o)) {
+      if (t.indexOf(o) >= 0)
+        return;
+      if (!("toJSON" in o)) {
+        t[a] = o;
+        const n = Pe(o) ? [] : {};
+        return ze(o, (l, m) => {
+          const p = r(l, a + 1);
+          !Oe(p) && (n[m] = p);
+        }), t[a] = void 0, n;
+      }
+    }
+    return o;
+  };
+  return r(e, 0);
+}, Bn = ie("AsyncFunction"), Un = (e) => e && (Qe(e) || te(e)) && te(e.then) && te(e.catch), b = {
+  isArray: Pe,
+  isArrayBuffer: Rr,
+  isBuffer: cn,
+  isFormData: gn,
+  isArrayBufferView: un,
+  isString: dn,
+  isNumber: Br,
+  isBoolean: hn,
+  isObject: Qe,
+  isPlainObject: He,
+  isUndefined: Oe,
+  isDate: mn,
+  isFile: fn,
+  isBlob: Sn,
+  isRegExp: wn,
+  isFunction: te,
+  isStream: pn,
+  isURLSearchParams: yn,
+  isTypedArray: Fn,
+  isFileList: Nn,
+  forEach: ze,
+  merge: mt,
+  extend: Tn,
+  trim: Cn,
+  stripBOM: vn,
+  inherits: bn,
+  toFlatObject: Mn,
+  kindOf: We,
+  kindOfTest: ie,
+  endsWith: Gn,
+  toArray: Vn,
+  forEachEntry: An,
+  matchAll: Pn,
+  isHTMLForm: kn,
+  hasOwnProperty: tr,
+  hasOwnProp: tr,
+  // an alias to avoid ESLint no-prototype-builtins detection
+  reduceDescriptors: jr,
+  freezeMethods: En,
+  toObjectSet: Ln,
+  toCamelCase: xn,
+  noop: On,
+  toFiniteNumber: _n,
+  findKey: Ur,
+  global: Dr,
+  isContextDefined: Hr,
+  ALPHABET: Kr,
+  generateString: zn,
+  isSpecCompliantForm: In,
+  toJSONObject: Rn,
+  isAsyncFn: Bn,
+  isThenable: Un
+};
+function D(e, t, r, o, a) {
+  Error.call(this), Error.captureStackTrace ? Error.captureStackTrace(this, this.constructor) : this.stack = new Error().stack, this.message = e, this.name = "AxiosError", t && (this.code = t), r && (this.config = r), o && (this.request = o), a && (this.response = a);
+}
+b.inherits(D, Error, {
+  toJSON: function() {
+    return {
+      // Standard
+      message: this.message,
+      name: this.name,
+      // Microsoft
+      description: this.description,
+      number: this.number,
+      // Mozilla
+      fileName: this.fileName,
+      lineNumber: this.lineNumber,
+      columnNumber: this.columnNumber,
+      stack: this.stack,
+      // Axios
+      config: b.toJSONObject(this.config),
+      code: this.code,
+      status: this.response && this.response.status ? this.response.status : null
+    };
+  }
+});
+const Yr = D.prototype, Jr = {};
+[
+  "ERR_BAD_OPTION_VALUE",
+  "ERR_BAD_OPTION",
+  "ECONNABORTED",
+  "ETIMEDOUT",
+  "ERR_NETWORK",
+  "ERR_FR_TOO_MANY_REDIRECTS",
+  "ERR_DEPRECATED",
+  "ERR_BAD_RESPONSE",
+  "ERR_BAD_REQUEST",
+  "ERR_CANCELED",
+  "ERR_NOT_SUPPORT",
+  "ERR_INVALID_URL"
+  // eslint-disable-next-line func-names
+].forEach((e) => {
+  Jr[e] = { value: e };
+});
+Object.defineProperties(D, Jr);
+Object.defineProperty(Yr, "isAxiosError", { value: !0 });
+D.from = (e, t, r, o, a, n) => {
+  const l = Object.create(Yr);
+  return b.toFlatObject(e, l, function(p) {
+    return p !== Error.prototype;
+  }, (m) => m !== "isAxiosError"), D.call(l, e.message, t, r, o, a), l.cause = e, l.name = e.name, n && Object.assign(l, n), l;
+};
+const Dn = null;
+function ft(e) {
+  return b.isPlainObject(e) || b.isArray(e);
+}
+function $r(e) {
+  return b.endsWith(e, "[]") ? e.slice(0, -2) : e;
+}
+function or(e, t, r) {
+  return e ? e.concat(t).map(function(a, n) {
+    return a = $r(a), !r && n ? "[" + a + "]" : a;
+  }).join(r ? "." : "") : t;
+}
+function Hn(e) {
+  return b.isArray(e) && !e.some(ft);
+}
+const jn = b.toFlatObject(b, {}, null, function(t) {
+  return /^is[A-Z]/.test(t);
+});
+function et(e, t, r) {
+  if (!b.isObject(e))
+    throw new TypeError("target must be an object");
+  t = t || new FormData(), r = b.toFlatObject(r, {
+    metaTokens: !0,
+    dots: !1,
+    indexes: !1
+  }, !1, function(v, N) {
+    return !b.isUndefined(N[v]);
+  });
+  const o = r.metaTokens, a = r.visitor || M, n = r.dots, l = r.indexes, p = (r.Blob || typeof Blob < "u" && Blob) && b.isSpecCompliantForm(t);
+  if (!b.isFunction(a))
+    throw new TypeError("visitor must be a function");
+  function G(g) {
+    if (g === null)
+      return "";
+    if (b.isDate(g))
+      return g.toISOString();
+    if (!p && b.isBlob(g))
+      throw new D("Blob is not supported. Use a Buffer instead.");
+    return b.isArrayBuffer(g) || b.isTypedArray(g) ? p && typeof Blob == "function" ? new Blob([g]) : Buffer.from(g) : g;
+  }
+  function M(g, v, N) {
+    let F = g;
+    if (g && !N && typeof g == "object") {
+      if (b.endsWith(v, "{}"))
+        v = o ? v : v.slice(0, -2), g = JSON.stringify(g);
+      else if (b.isArray(g) && Hn(g) || (b.isFileList(g) || b.endsWith(v, "[]")) && (F = b.toArray(g)))
+        return v = $r(v), F.forEach(function(A, V) {
+          !(b.isUndefined(A) || A === null) && t.append(
+            // eslint-disable-next-line no-nested-ternary
+            l === !0 ? or([v], V, n) : l === null ? v : v + "[]",
+            G(A)
+          );
+        }), !1;
+    }
+    return ft(g) ? !0 : (t.append(or(N, v, n), G(g)), !1);
+  }
+  const y = [], O = Object.assign(jn, {
+    defaultVisitor: M,
+    convertValue: G,
+    isVisitable: ft
+  });
+  function z(g, v) {
+    if (!b.isUndefined(g)) {
+      if (y.indexOf(g) !== -1)
+        throw Error("Circular reference detected in " + v.join("."));
+      y.push(g), b.forEach(g, function(F, x) {
+        (!(b.isUndefined(F) || F === null) && a.call(
+          t,
+          F,
+          b.isString(x) ? x.trim() : x,
+          v,
+          O
+        )) === !0 && z(F, v ? v.concat(x) : [x]);
+      }), y.pop();
+    }
+  }
+  if (!b.isObject(e))
+    throw new TypeError("data must be an object");
+  return z(e), t;
+}
+function ar(e) {
+  const t = {
+    "!": "%21",
+    "'": "%27",
+    "(": "%28",
+    ")": "%29",
+    "~": "%7E",
+    "%20": "+",
+    "%00": "\0"
+  };
+  return encodeURIComponent(e).replace(/[!'()~]|%20|%00/g, function(o) {
+    return t[o];
+  });
+}
+function At(e, t) {
+  this._pairs = [], e && et(e, this, t);
+}
+const Zr = At.prototype;
+Zr.append = function(t, r) {
+  this._pairs.push([t, r]);
+};
+Zr.toString = function(t) {
+  const r = t ? function(o) {
+    return t.call(this, o, ar);
+  } : ar;
+  return this._pairs.map(function(a) {
+    return r(a[0]) + "=" + r(a[1]);
+  }, "").join("&");
+};
+function Kn(e) {
+  return encodeURIComponent(e).replace(/%3A/gi, ":").replace(/%24/g, "$").replace(/%2C/gi, ",").replace(/%20/g, "+").replace(/%5B/gi, "[").replace(/%5D/gi, "]");
+}
+function qr(e, t, r) {
+  if (!t)
+    return e;
+  const o = r && r.encode || Kn, a = r && r.serialize;
+  let n;
+  if (a ? n = a(t, r) : n = b.isURLSearchParams(t) ? t.toString() : new At(t, r).toString(o), n) {
+    const l = e.indexOf("#");
+    l !== -1 && (e = e.slice(0, l)), e += (e.indexOf("?") === -1 ? "?" : "&") + n;
+  }
+  return e;
+}
+class ir {
+  constructor() {
+    this.handlers = [];
+  }
+  /**
+   * Add a new interceptor to the stack
+   *
+   * @param {Function} fulfilled The function to handle `then` for a `Promise`
+   * @param {Function} rejected The function to handle `reject` for a `Promise`
+   *
+   * @return {Number} An ID used to remove interceptor later
+   */
+  use(t, r, o) {
+    return this.handlers.push({
+      fulfilled: t,
+      rejected: r,
+      synchronous: o ? o.synchronous : !1,
+      runWhen: o ? o.runWhen : null
+    }), this.handlers.length - 1;
+  }
+  /**
+   * Remove an interceptor from the stack
+   *
+   * @param {Number} id The ID that was returned by `use`
+   *
+   * @returns {Boolean} `true` if the interceptor was removed, `false` otherwise
+   */
+  eject(t) {
+    this.handlers[t] && (this.handlers[t] = null);
+  }
+  /**
+   * Clear all interceptors from the stack
+   *
+   * @returns {void}
+   */
+  clear() {
+    this.handlers && (this.handlers = []);
+  }
+  /**
+   * Iterate over all the registered interceptors
+   *
+   * This method is particularly useful for skipping over any
+   * interceptors that may have become `null` calling `eject`.
+   *
+   * @param {Function} fn The function to call for each interceptor
+   *
+   * @returns {void}
+   */
+  forEach(t) {
+    b.forEach(this.handlers, function(o) {
+      o !== null && t(o);
+    });
+  }
+}
+const Wr = {
+  silentJSONParsing: !0,
+  forcedJSONParsing: !0,
+  clarifyTimeoutError: !1
+}, Yn = typeof URLSearchParams < "u" ? URLSearchParams : At, Jn = typeof FormData < "u" ? FormData : null, $n = typeof Blob < "u" ? Blob : null, Zn = {
+  isBrowser: !0,
+  classes: {
+    URLSearchParams: Yn,
+    FormData: Jn,
+    Blob: $n
+  },
+  protocols: ["http", "https", "file", "blob", "url", "data"]
+}, Xr = typeof window < "u" && typeof document < "u", qn = ((e) => Xr && ["ReactNative", "NativeScript", "NS"].indexOf(e) < 0)(typeof navigator < "u" && navigator.product), Wn = typeof WorkerGlobalScope < "u" && // eslint-disable-next-line no-undef
+self instanceof WorkerGlobalScope && typeof self.importScripts == "function", Xn = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  hasBrowserEnv: Xr,
+  hasStandardBrowserEnv: qn,
+  hasStandardBrowserWebWorkerEnv: Wn
+}, Symbol.toStringTag, { value: "Module" })), ae = {
+  ...Xn,
+  ...Zn
+};
+function Qn(e, t) {
+  return et(e, new ae.classes.URLSearchParams(), Object.assign({
+    visitor: function(r, o, a, n) {
+      return ae.isNode && b.isBuffer(r) ? (this.append(o, r.toString("base64")), !1) : n.defaultVisitor.apply(this, arguments);
+    }
+  }, t));
+}
+function es(e) {
+  return b.matchAll(/\w+|\[(\w*)]/g, e).map((t) => t[0] === "[]" ? "" : t[1] || t[0]);
+}
+function ts(e) {
+  const t = {}, r = Object.keys(e);
+  let o;
+  const a = r.length;
+  let n;
+  for (o = 0; o < a; o++)
+    n = r[o], t[n] = e[n];
+  return t;
+}
+function Qr(e) {
+  function t(r, o, a, n) {
+    let l = r[n++];
+    if (l === "__proto__")
+      return !0;
+    const m = Number.isFinite(+l), p = n >= r.length;
+    return l = !l && b.isArray(a) ? a.length : l, p ? (b.hasOwnProp(a, l) ? a[l] = [a[l], o] : a[l] = o, !m) : ((!a[l] || !b.isObject(a[l])) && (a[l] = []), t(r, o, a[l], n) && b.isArray(a[l]) && (a[l] = ts(a[l])), !m);
+  }
+  if (b.isFormData(e) && b.isFunction(e.entries)) {
+    const r = {};
+    return b.forEachEntry(e, (o, a) => {
+      t(es(o), a, r, 0);
+    }), r;
+  }
+  return null;
+}
+function rs(e, t, r) {
+  if (b.isString(e))
+    try {
+      return (t || JSON.parse)(e), b.trim(e);
+    } catch (o) {
+      if (o.name !== "SyntaxError")
+        throw o;
+    }
+  return (r || JSON.stringify)(e);
+}
+const Pt = {
+  transitional: Wr,
+  adapter: ["xhr", "http"],
+  transformRequest: [function(t, r) {
+    const o = r.getContentType() || "", a = o.indexOf("application/json") > -1, n = b.isObject(t);
+    if (n && b.isHTMLForm(t) && (t = new FormData(t)), b.isFormData(t))
+      return a && a ? JSON.stringify(Qr(t)) : t;
+    if (b.isArrayBuffer(t) || b.isBuffer(t) || b.isStream(t) || b.isFile(t) || b.isBlob(t))
+      return t;
+    if (b.isArrayBufferView(t))
+      return t.buffer;
+    if (b.isURLSearchParams(t))
+      return r.setContentType("application/x-www-form-urlencoded;charset=utf-8", !1), t.toString();
+    let m;
+    if (n) {
+      if (o.indexOf("application/x-www-form-urlencoded") > -1)
+        return Qn(t, this.formSerializer).toString();
+      if ((m = b.isFileList(t)) || o.indexOf("multipart/form-data") > -1) {
+        const p = this.env && this.env.FormData;
+        return et(
+          m ? { "files[]": t } : t,
+          p && new p(),
+          this.formSerializer
+        );
+      }
+    }
+    return n || a ? (r.setContentType("application/json", !1), rs(t)) : t;
+  }],
+  transformResponse: [function(t) {
+    const r = this.transitional || Pt.transitional, o = r && r.forcedJSONParsing, a = this.responseType === "json";
+    if (t && b.isString(t) && (o && !this.responseType || a)) {
+      const l = !(r && r.silentJSONParsing) && a;
+      try {
+        return JSON.parse(t);
+      } catch (m) {
+        if (l)
+          throw m.name === "SyntaxError" ? D.from(m, D.ERR_BAD_RESPONSE, this, null, this.response) : m;
+      }
+    }
+    return t;
+  }],
+  /**
+   * A timeout in milliseconds to abort a request. If set to 0 (default) a
+   * timeout is not created.
+   */
+  timeout: 0,
+  xsrfCookieName: "XSRF-TOKEN",
+  xsrfHeaderName: "X-XSRF-TOKEN",
+  maxContentLength: -1,
+  maxBodyLength: -1,
+  env: {
+    FormData: ae.classes.FormData,
+    Blob: ae.classes.Blob
+  },
+  validateStatus: function(t) {
+    return t >= 200 && t < 300;
+  },
+  headers: {
+    common: {
+      Accept: "application/json, text/plain, */*",
+      "Content-Type": void 0
+    }
+  }
+};
+b.forEach(["delete", "get", "head", "post", "put", "patch"], (e) => {
+  Pt.headers[e] = {};
+});
+const kt = Pt, os = b.toObjectSet([
+  "age",
+  "authorization",
+  "content-length",
+  "content-type",
+  "etag",
+  "expires",
+  "from",
+  "host",
+  "if-modified-since",
+  "if-unmodified-since",
+  "last-modified",
+  "location",
+  "max-forwards",
+  "proxy-authorization",
+  "referer",
+  "retry-after",
+  "user-agent"
+]), as = (e) => {
+  const t = {};
+  let r, o, a;
+  return e && e.split(`
+`).forEach(function(l) {
+    a = l.indexOf(":"), r = l.substring(0, a).trim().toLowerCase(), o = l.substring(a + 1).trim(), !(!r || t[r] && os[r]) && (r === "set-cookie" ? t[r] ? t[r].push(o) : t[r] = [o] : t[r] = t[r] ? t[r] + ", " + o : o);
+  }), t;
+}, nr = Symbol("internals");
+function xe(e) {
+  return e && String(e).trim().toLowerCase();
+}
+function je(e) {
+  return e === !1 || e == null ? e : b.isArray(e) ? e.map(je) : String(e);
+}
+function is(e) {
+  const t = /* @__PURE__ */ Object.create(null), r = /([^\s,;=]+)\s*(?:=\s*([^,;]+))?/g;
+  let o;
+  for (; o = r.exec(e); )
+    t[o[1]] = o[2];
+  return t;
+}
+const ns = (e) => /^[-_a-zA-Z0-9^`|~,!#$%&'*+.]+$/.test(e.trim());
+function st(e, t, r, o, a) {
+  if (b.isFunction(o))
+    return o.call(this, t, r);
+  if (a && (t = r), !!b.isString(t)) {
+    if (b.isString(o))
+      return t.indexOf(o) !== -1;
+    if (b.isRegExp(o))
+      return o.test(t);
+  }
+}
+function ss(e) {
+  return e.trim().toLowerCase().replace(/([a-z\d])(\w*)/g, (t, r, o) => r.toUpperCase() + o);
+}
+function ls(e, t) {
+  const r = b.toCamelCase(" " + t);
+  ["get", "set", "has"].forEach((o) => {
+    Object.defineProperty(e, o + r, {
+      value: function(a, n, l) {
+        return this[o].call(this, t, a, n, l);
+      },
+      configurable: !0
+    });
+  });
+}
+class tt {
+  constructor(t) {
+    t && this.set(t);
+  }
+  set(t, r, o) {
+    const a = this;
+    function n(m, p, G) {
+      const M = xe(p);
+      if (!M)
+        throw new Error("header name must be a non-empty string");
+      const y = b.findKey(a, M);
+      (!y || a[y] === void 0 || G === !0 || G === void 0 && a[y] !== !1) && (a[y || p] = je(m));
+    }
+    const l = (m, p) => b.forEach(m, (G, M) => n(G, M, p));
+    return b.isPlainObject(t) || t instanceof this.constructor ? l(t, r) : b.isString(t) && (t = t.trim()) && !ns(t) ? l(as(t), r) : t != null && n(r, t, o), this;
+  }
+  get(t, r) {
+    if (t = xe(t), t) {
+      const o = b.findKey(this, t);
+      if (o) {
+        const a = this[o];
+        if (!r)
+          return a;
+        if (r === !0)
+          return is(a);
+        if (b.isFunction(r))
+          return r.call(this, a, o);
+        if (b.isRegExp(r))
+          return r.exec(a);
+        throw new TypeError("parser must be boolean|regexp|function");
+      }
+    }
+  }
+  has(t, r) {
+    if (t = xe(t), t) {
+      const o = b.findKey(this, t);
+      return !!(o && this[o] !== void 0 && (!r || st(this, this[o], o, r)));
+    }
+    return !1;
+  }
+  delete(t, r) {
+    const o = this;
+    let a = !1;
+    function n(l) {
+      if (l = xe(l), l) {
+        const m = b.findKey(o, l);
+        m && (!r || st(o, o[m], m, r)) && (delete o[m], a = !0);
+      }
+    }
+    return b.isArray(t) ? t.forEach(n) : n(t), a;
+  }
+  clear(t) {
+    const r = Object.keys(this);
+    let o = r.length, a = !1;
+    for (; o--; ) {
+      const n = r[o];
+      (!t || st(this, this[n], n, t, !0)) && (delete this[n], a = !0);
+    }
+    return a;
+  }
+  normalize(t) {
+    const r = this, o = {};
+    return b.forEach(this, (a, n) => {
+      const l = b.findKey(o, n);
+      if (l) {
+        r[l] = je(a), delete r[n];
+        return;
+      }
+      const m = t ? ss(n) : String(n).trim();
+      m !== n && delete r[n], r[m] = je(a), o[m] = !0;
+    }), this;
+  }
+  concat(...t) {
+    return this.constructor.concat(this, ...t);
+  }
+  toJSON(t) {
+    const r = /* @__PURE__ */ Object.create(null);
+    return b.forEach(this, (o, a) => {
+      o != null && o !== !1 && (r[a] = t && b.isArray(o) ? o.join(", ") : o);
+    }), r;
+  }
+  [Symbol.iterator]() {
+    return Object.entries(this.toJSON())[Symbol.iterator]();
+  }
+  toString() {
+    return Object.entries(this.toJSON()).map(([t, r]) => t + ": " + r).join(`
+`);
+  }
+  get [Symbol.toStringTag]() {
+    return "AxiosHeaders";
+  }
+  static from(t) {
+    return t instanceof this ? t : new this(t);
+  }
+  static concat(t, ...r) {
+    const o = new this(t);
+    return r.forEach((a) => o.set(a)), o;
+  }
+  static accessor(t) {
+    const o = (this[nr] = this[nr] = {
+      accessors: {}
+    }).accessors, a = this.prototype;
+    function n(l) {
+      const m = xe(l);
+      o[m] || (ls(a, l), o[m] = !0);
+    }
+    return b.isArray(t) ? t.forEach(n) : n(t), this;
+  }
+}
+tt.accessor(["Content-Type", "Content-Length", "Accept", "Accept-Encoding", "User-Agent", "Authorization"]);
+b.reduceDescriptors(tt.prototype, ({ value: e }, t) => {
+  let r = t[0].toUpperCase() + t.slice(1);
+  return {
+    get: () => e,
+    set(o) {
+      this[r] = o;
+    }
+  };
+});
+b.freezeMethods(tt);
+const ue = tt;
+function lt(e, t) {
+  const r = this || kt, o = t || r, a = ue.from(o.headers);
+  let n = o.data;
+  return b.forEach(e, function(m) {
+    n = m.call(r, n, a.normalize(), t ? t.status : void 0);
+  }), a.normalize(), n;
+}
+function eo(e) {
+  return !!(e && e.__CANCEL__);
+}
+function Ie(e, t, r) {
+  D.call(this, e ?? "canceled", D.ERR_CANCELED, t, r), this.name = "CanceledError";
+}
+b.inherits(Ie, D, {
+  __CANCEL__: !0
+});
+function cs(e, t, r) {
+  const o = r.config.validateStatus;
+  !r.status || !o || o(r.status) ? e(r) : t(new D(
+    "Request failed with status code " + r.status,
+    [D.ERR_BAD_REQUEST, D.ERR_BAD_RESPONSE][Math.floor(r.status / 100) - 4],
+    r.config,
+    r.request,
+    r
+  ));
+}
+const us = ae.hasStandardBrowserEnv ? (
+  // Standard browser envs support document.cookie
+  {
+    write(e, t, r, o, a, n) {
+      const l = [e + "=" + encodeURIComponent(t)];
+      b.isNumber(r) && l.push("expires=" + new Date(r).toGMTString()), b.isString(o) && l.push("path=" + o), b.isString(a) && l.push("domain=" + a), n === !0 && l.push("secure"), document.cookie = l.join("; ");
+    },
+    read(e) {
+      const t = document.cookie.match(new RegExp("(^|;\\s*)(" + e + ")=([^;]*)"));
+      return t ? decodeURIComponent(t[3]) : null;
+    },
+    remove(e) {
+      this.write(e, "", Date.now() - 864e5);
+    }
+  }
+) : (
+  // Non-standard browser env (web workers, react-native) lack needed support.
+  {
+    write() {
+    },
+    read() {
+      return null;
+    },
+    remove() {
+    }
+  }
+);
+function ds(e) {
+  return /^([a-z][a-z\d+\-.]*:)?\/\//i.test(e);
+}
+function hs(e, t) {
+  return t ? e.replace(/\/?\/$/, "") + "/" + t.replace(/^\/+/, "") : e;
+}
+function to(e, t) {
+  return e && !ds(t) ? hs(e, t) : t;
+}
+const ms = ae.hasStandardBrowserEnv ? (
+  // Standard browser envs have full support of the APIs needed to test
+  // whether the request URL is of the same origin as current location.
+  function() {
+    const t = /(msie|trident)/i.test(navigator.userAgent), r = document.createElement("a");
+    let o;
+    function a(n) {
+      let l = n;
+      return t && (r.setAttribute("href", l), l = r.href), r.setAttribute("href", l), {
+        href: r.href,
+        protocol: r.protocol ? r.protocol.replace(/:$/, "") : "",
+        host: r.host,
+        search: r.search ? r.search.replace(/^\?/, "") : "",
+        hash: r.hash ? r.hash.replace(/^#/, "") : "",
+        hostname: r.hostname,
+        port: r.port,
+        pathname: r.pathname.charAt(0) === "/" ? r.pathname : "/" + r.pathname
+      };
+    }
+    return o = a(window.location.href), function(l) {
+      const m = b.isString(l) ? a(l) : l;
+      return m.protocol === o.protocol && m.host === o.host;
+    };
+  }()
+) : (
+  // Non standard browser envs (web workers, react-native) lack needed support.
+  /* @__PURE__ */ function() {
+    return function() {
+      return !0;
+    };
+  }()
+);
+function fs(e) {
+  const t = /^([-+\w]{1,25})(:?\/\/|:)/.exec(e);
+  return t && t[1] || "";
+}
+function Ss(e, t) {
+  e = e || 10;
+  const r = new Array(e), o = new Array(e);
+  let a = 0, n = 0, l;
+  return t = t !== void 0 ? t : 1e3, function(p) {
+    const G = Date.now(), M = o[n];
+    l || (l = G), r[a] = p, o[a] = G;
+    let y = n, O = 0;
+    for (; y !== a; )
+      O += r[y++], y = y % e;
+    if (a = (a + 1) % e, a === n && (n = (n + 1) % e), G - l < t)
+      return;
+    const z = M && G - M;
+    return z ? Math.round(O * 1e3 / z) : void 0;
+  };
+}
+function sr(e, t) {
+  let r = 0;
+  const o = Ss(50, 250);
+  return (a) => {
+    const n = a.loaded, l = a.lengthComputable ? a.total : void 0, m = n - r, p = o(m), G = n <= l;
+    r = n;
+    const M = {
+      loaded: n,
+      total: l,
+      progress: l ? n / l : void 0,
+      bytes: m,
+      rate: p || void 0,
+      estimated: p && l && G ? (l - n) / p : void 0,
+      event: a
+    };
+    M[t ? "download" : "upload"] = !0, e(M);
+  };
+}
+const Ns = typeof XMLHttpRequest < "u", ps = Ns && function(e) {
+  return new Promise(function(r, o) {
+    let a = e.data;
+    const n = ue.from(e.headers).normalize();
+    let { responseType: l, withXSRFToken: m } = e, p;
+    function G() {
+      e.cancelToken && e.cancelToken.unsubscribe(p), e.signal && e.signal.removeEventListener("abort", p);
+    }
+    let M;
+    if (b.isFormData(a)) {
+      if (ae.hasStandardBrowserEnv || ae.hasStandardBrowserWebWorkerEnv)
+        n.setContentType(!1);
+      else if ((M = n.getContentType()) !== !1) {
+        const [v, ...N] = M ? M.split(";").map((F) => F.trim()).filter(Boolean) : [];
+        n.setContentType([v || "multipart/form-data", ...N].join("; "));
+      }
+    }
+    let y = new XMLHttpRequest();
+    if (e.auth) {
+      const v = e.auth.username || "", N = e.auth.password ? unescape(encodeURIComponent(e.auth.password)) : "";
+      n.set("Authorization", "Basic " + btoa(v + ":" + N));
+    }
+    const O = to(e.baseURL, e.url);
+    y.open(e.method.toUpperCase(), qr(O, e.params, e.paramsSerializer), !0), y.timeout = e.timeout;
+    function z() {
+      if (!y)
+        return;
+      const v = ue.from(
+        "getAllResponseHeaders" in y && y.getAllResponseHeaders()
+      ), F = {
+        data: !l || l === "text" || l === "json" ? y.responseText : y.response,
+        status: y.status,
+        statusText: y.statusText,
+        headers: v,
+        config: e,
+        request: y
+      };
+      cs(function(A) {
+        r(A), G();
+      }, function(A) {
+        o(A), G();
+      }, F), y = null;
+    }
+    if ("onloadend" in y ? y.onloadend = z : y.onreadystatechange = function() {
+      !y || y.readyState !== 4 || y.status === 0 && !(y.responseURL && y.responseURL.indexOf("file:") === 0) || setTimeout(z);
+    }, y.onabort = function() {
+      y && (o(new D("Request aborted", D.ECONNABORTED, e, y)), y = null);
+    }, y.onerror = function() {
+      o(new D("Network Error", D.ERR_NETWORK, e, y)), y = null;
+    }, y.ontimeout = function() {
+      let N = e.timeout ? "timeout of " + e.timeout + "ms exceeded" : "timeout exceeded";
+      const F = e.transitional || Wr;
+      e.timeoutErrorMessage && (N = e.timeoutErrorMessage), o(new D(
+        N,
+        F.clarifyTimeoutError ? D.ETIMEDOUT : D.ECONNABORTED,
+        e,
+        y
+      )), y = null;
+    }, ae.hasStandardBrowserEnv && (m && b.isFunction(m) && (m = m(e)), m || m !== !1 && ms(O))) {
+      const v = e.xsrfHeaderName && e.xsrfCookieName && us.read(e.xsrfCookieName);
+      v && n.set(e.xsrfHeaderName, v);
+    }
+    a === void 0 && n.setContentType(null), "setRequestHeader" in y && b.forEach(n.toJSON(), function(N, F) {
+      y.setRequestHeader(F, N);
+    }), b.isUndefined(e.withCredentials) || (y.withCredentials = !!e.withCredentials), l && l !== "json" && (y.responseType = e.responseType), typeof e.onDownloadProgress == "function" && y.addEventListener("progress", sr(e.onDownloadProgress, !0)), typeof e.onUploadProgress == "function" && y.upload && y.upload.addEventListener("progress", sr(e.onUploadProgress)), (e.cancelToken || e.signal) && (p = (v) => {
+      y && (o(!v || v.type ? new Ie(null, e, y) : v), y.abort(), y = null);
+    }, e.cancelToken && e.cancelToken.subscribe(p), e.signal && (e.signal.aborted ? p() : e.signal.addEventListener("abort", p)));
+    const g = fs(O);
+    if (g && ae.protocols.indexOf(g) === -1) {
+      o(new D("Unsupported protocol " + g + ":", D.ERR_BAD_REQUEST, e));
+      return;
+    }
+    y.send(a || null);
+  });
+}, St = {
+  http: Dn,
+  xhr: ps
+};
+b.forEach(St, (e, t) => {
+  if (e) {
+    try {
+      Object.defineProperty(e, "name", { value: t });
+    } catch {
+    }
+    Object.defineProperty(e, "adapterName", { value: t });
+  }
+});
+const lr = (e) => `- ${e}`, gs = (e) => b.isFunction(e) || e === null || e === !1, ro = {
+  getAdapter: (e) => {
+    e = b.isArray(e) ? e : [e];
+    const { length: t } = e;
+    let r, o;
+    const a = {};
+    for (let n = 0; n < t; n++) {
+      r = e[n];
+      let l;
+      if (o = r, !gs(r) && (o = St[(l = String(r)).toLowerCase()], o === void 0))
+        throw new D(`Unknown adapter '${l}'`);
+      if (o)
+        break;
+      a[l || "#" + n] = o;
+    }
+    if (!o) {
+      const n = Object.entries(a).map(
+        ([m, p]) => `adapter ${m} ` + (p === !1 ? "is not supported by the environment" : "is not available in the build")
+      );
+      let l = t ? n.length > 1 ? `since :
+` + n.map(lr).join(`
+`) : " " + lr(n[0]) : "as no adapter specified";
+      throw new D(
+        "There is no suitable adapter to dispatch the request " + l,
+        "ERR_NOT_SUPPORT"
+      );
+    }
+    return o;
+  },
+  adapters: St
+};
+function ct(e) {
+  if (e.cancelToken && e.cancelToken.throwIfRequested(), e.signal && e.signal.aborted)
+    throw new Ie(null, e);
+}
+function cr(e) {
+  return ct(e), e.headers = ue.from(e.headers), e.data = lt.call(
+    e,
+    e.transformRequest
+  ), ["post", "put", "patch"].indexOf(e.method) !== -1 && e.headers.setContentType("application/x-www-form-urlencoded", !1), ro.getAdapter(e.adapter || kt.adapter)(e).then(function(o) {
+    return ct(e), o.data = lt.call(
+      e,
+      e.transformResponse,
+      o
+    ), o.headers = ue.from(o.headers), o;
+  }, function(o) {
+    return eo(o) || (ct(e), o && o.response && (o.response.data = lt.call(
+      e,
+      e.transformResponse,
+      o.response
+    ), o.response.headers = ue.from(o.response.headers))), Promise.reject(o);
+  });
+}
+const ur = (e) => e instanceof ue ? e.toJSON() : e;
+function Ge(e, t) {
+  t = t || {};
+  const r = {};
+  function o(G, M, y) {
+    return b.isPlainObject(G) && b.isPlainObject(M) ? b.merge.call({ caseless: y }, G, M) : b.isPlainObject(M) ? b.merge({}, M) : b.isArray(M) ? M.slice() : M;
+  }
+  function a(G, M, y) {
+    if (b.isUndefined(M)) {
+      if (!b.isUndefined(G))
+        return o(void 0, G, y);
+    } else
+      return o(G, M, y);
+  }
+  function n(G, M) {
+    if (!b.isUndefined(M))
+      return o(void 0, M);
+  }
+  function l(G, M) {
+    if (b.isUndefined(M)) {
+      if (!b.isUndefined(G))
+        return o(void 0, G);
+    } else
+      return o(void 0, M);
+  }
+  function m(G, M, y) {
+    if (y in t)
+      return o(G, M);
+    if (y in e)
+      return o(void 0, G);
+  }
+  const p = {
+    url: n,
+    method: n,
+    data: n,
+    baseURL: l,
+    transformRequest: l,
+    transformResponse: l,
+    paramsSerializer: l,
+    timeout: l,
+    timeoutMessage: l,
+    withCredentials: l,
+    withXSRFToken: l,
+    adapter: l,
+    responseType: l,
+    xsrfCookieName: l,
+    xsrfHeaderName: l,
+    onUploadProgress: l,
+    onDownloadProgress: l,
+    decompress: l,
+    maxContentLength: l,
+    maxBodyLength: l,
+    beforeRedirect: l,
+    transport: l,
+    httpAgent: l,
+    httpsAgent: l,
+    cancelToken: l,
+    socketPath: l,
+    responseEncoding: l,
+    validateStatus: m,
+    headers: (G, M) => a(ur(G), ur(M), !0)
+  };
+  return b.forEach(Object.keys(Object.assign({}, e, t)), function(M) {
+    const y = p[M] || a, O = y(e[M], t[M], M);
+    b.isUndefined(O) && y !== m || (r[M] = O);
+  }), r;
+}
+const oo = "1.6.5", xt = {};
+["object", "boolean", "number", "function", "string", "symbol"].forEach((e, t) => {
+  xt[e] = function(o) {
+    return typeof o === e || "a" + (t < 1 ? "n " : " ") + e;
+  };
+});
+const dr = {};
+xt.transitional = function(t, r, o) {
+  function a(n, l) {
+    return "[Axios v" + oo + "] Transitional option '" + n + "'" + l + (o ? ". " + o : "");
+  }
+  return (n, l, m) => {
+    if (t === !1)
+      throw new D(
+        a(l, " has been removed" + (r ? " in " + r : "")),
+        D.ERR_DEPRECATED
+      );
+    return r && !dr[l] && (dr[l] = !0, console.warn(
+      a(
+        l,
+        " has been deprecated since v" + r + " and will be removed in the near future"
+      )
+    )), t ? t(n, l, m) : !0;
+  };
+};
+function ys(e, t, r) {
+  if (typeof e != "object")
+    throw new D("options must be an object", D.ERR_BAD_OPTION_VALUE);
+  const o = Object.keys(e);
+  let a = o.length;
+  for (; a-- > 0; ) {
+    const n = o[a], l = t[n];
+    if (l) {
+      const m = e[n], p = m === void 0 || l(m, n, e);
+      if (p !== !0)
+        throw new D("option " + n + " must be " + p, D.ERR_BAD_OPTION_VALUE);
+      continue;
+    }
+    if (r !== !0)
+      throw new D("Unknown option " + n, D.ERR_BAD_OPTION);
+  }
+}
+const Nt = {
+  assertOptions: ys,
+  validators: xt
+}, he = Nt.validators;
+class Je {
+  constructor(t) {
+    this.defaults = t, this.interceptors = {
+      request: new ir(),
+      response: new ir()
+    };
+  }
+  /**
+   * Dispatch a request
+   *
+   * @param {String|Object} configOrUrl The config specific for this request (merged with this.defaults)
+   * @param {?Object} config
+   *
+   * @returns {Promise} The Promise to be fulfilled
+   */
+  request(t, r) {
+    typeof t == "string" ? (r = r || {}, r.url = t) : r = t || {}, r = Ge(this.defaults, r);
+    const { transitional: o, paramsSerializer: a, headers: n } = r;
+    o !== void 0 && Nt.assertOptions(o, {
+      silentJSONParsing: he.transitional(he.boolean),
+      forcedJSONParsing: he.transitional(he.boolean),
+      clarifyTimeoutError: he.transitional(he.boolean)
+    }, !1), a != null && (b.isFunction(a) ? r.paramsSerializer = {
+      serialize: a
+    } : Nt.assertOptions(a, {
+      encode: he.function,
+      serialize: he.function
+    }, !0)), r.method = (r.method || this.defaults.method || "get").toLowerCase();
+    let l = n && b.merge(
+      n.common,
+      n[r.method]
+    );
+    n && b.forEach(
+      ["delete", "get", "head", "post", "put", "patch", "common"],
+      (g) => {
+        delete n[g];
+      }
+    ), r.headers = ue.concat(l, n);
+    const m = [];
+    let p = !0;
+    this.interceptors.request.forEach(function(v) {
+      typeof v.runWhen == "function" && v.runWhen(r) === !1 || (p = p && v.synchronous, m.unshift(v.fulfilled, v.rejected));
+    });
+    const G = [];
+    this.interceptors.response.forEach(function(v) {
+      G.push(v.fulfilled, v.rejected);
+    });
+    let M, y = 0, O;
+    if (!p) {
+      const g = [cr.bind(this), void 0];
+      for (g.unshift.apply(g, m), g.push.apply(g, G), O = g.length, M = Promise.resolve(r); y < O; )
+        M = M.then(g[y++], g[y++]);
+      return M;
+    }
+    O = m.length;
+    let z = r;
+    for (y = 0; y < O; ) {
+      const g = m[y++], v = m[y++];
+      try {
+        z = g(z);
+      } catch (N) {
+        v.call(this, N);
+        break;
+      }
+    }
+    try {
+      M = cr.call(this, z);
+    } catch (g) {
+      return Promise.reject(g);
+    }
+    for (y = 0, O = G.length; y < O; )
+      M = M.then(G[y++], G[y++]);
+    return M;
+  }
+  getUri(t) {
+    t = Ge(this.defaults, t);
+    const r = to(t.baseURL, t.url);
+    return qr(r, t.params, t.paramsSerializer);
+  }
+}
+b.forEach(["delete", "get", "head", "options"], function(t) {
+  Je.prototype[t] = function(r, o) {
+    return this.request(Ge(o || {}, {
+      method: t,
+      url: r,
+      data: (o || {}).data
+    }));
+  };
+});
+b.forEach(["post", "put", "patch"], function(t) {
+  function r(o) {
+    return function(n, l, m) {
+      return this.request(Ge(m || {}, {
+        method: t,
+        headers: o ? {
+          "Content-Type": "multipart/form-data"
+        } : {},
+        url: n,
+        data: l
+      }));
+    };
+  }
+  Je.prototype[t] = r(), Je.prototype[t + "Form"] = r(!0);
+});
+const Ke = Je;
+class wt {
+  constructor(t) {
+    if (typeof t != "function")
+      throw new TypeError("executor must be a function.");
+    let r;
+    this.promise = new Promise(function(n) {
+      r = n;
+    });
+    const o = this;
+    this.promise.then((a) => {
+      if (!o._listeners)
+        return;
+      let n = o._listeners.length;
+      for (; n-- > 0; )
+        o._listeners[n](a);
+      o._listeners = null;
+    }), this.promise.then = (a) => {
+      let n;
+      const l = new Promise((m) => {
+        o.subscribe(m), n = m;
+      }).then(a);
+      return l.cancel = function() {
+        o.unsubscribe(n);
+      }, l;
+    }, t(function(n, l, m) {
+      o.reason || (o.reason = new Ie(n, l, m), r(o.reason));
+    });
+  }
+  /**
+   * Throws a `CanceledError` if cancellation has been requested.
+   */
+  throwIfRequested() {
+    if (this.reason)
+      throw this.reason;
+  }
+  /**
+   * Subscribe to the cancel signal
+   */
+  subscribe(t) {
+    if (this.reason) {
+      t(this.reason);
+      return;
+    }
+    this._listeners ? this._listeners.push(t) : this._listeners = [t];
+  }
+  /**
+   * Unsubscribe from the cancel signal
+   */
+  unsubscribe(t) {
+    if (!this._listeners)
+      return;
+    const r = this._listeners.indexOf(t);
+    r !== -1 && this._listeners.splice(r, 1);
+  }
+  /**
+   * Returns an object that contains a new `CancelToken` and a function that, when called,
+   * cancels the `CancelToken`.
+   */
+  static source() {
+    let t;
+    return {
+      token: new wt(function(a) {
+        t = a;
+      }),
+      cancel: t
+    };
+  }
+}
+const Cs = wt;
+function Ts(e) {
+  return function(r) {
+    return e.apply(null, r);
+  };
+}
+function vs(e) {
+  return b.isObject(e) && e.isAxiosError === !0;
+}
+const pt = {
+  Continue: 100,
+  SwitchingProtocols: 101,
+  Processing: 102,
+  EarlyHints: 103,
+  Ok: 200,
+  Created: 201,
+  Accepted: 202,
+  NonAuthoritativeInformation: 203,
+  NoContent: 204,
+  ResetContent: 205,
+  PartialContent: 206,
+  MultiStatus: 207,
+  AlreadyReported: 208,
+  ImUsed: 226,
+  MultipleChoices: 300,
+  MovedPermanently: 301,
+  Found: 302,
+  SeeOther: 303,
+  NotModified: 304,
+  UseProxy: 305,
+  Unused: 306,
+  TemporaryRedirect: 307,
+  PermanentRedirect: 308,
+  BadRequest: 400,
+  Unauthorized: 401,
+  PaymentRequired: 402,
+  Forbidden: 403,
+  NotFound: 404,
+  MethodNotAllowed: 405,
+  NotAcceptable: 406,
+  ProxyAuthenticationRequired: 407,
+  RequestTimeout: 408,
+  Conflict: 409,
+  Gone: 410,
+  LengthRequired: 411,
+  PreconditionFailed: 412,
+  PayloadTooLarge: 413,
+  UriTooLong: 414,
+  UnsupportedMediaType: 415,
+  RangeNotSatisfiable: 416,
+  ExpectationFailed: 417,
+  ImATeapot: 418,
+  MisdirectedRequest: 421,
+  UnprocessableEntity: 422,
+  Locked: 423,
+  FailedDependency: 424,
+  TooEarly: 425,
+  UpgradeRequired: 426,
+  PreconditionRequired: 428,
+  TooManyRequests: 429,
+  RequestHeaderFieldsTooLarge: 431,
+  UnavailableForLegalReasons: 451,
+  InternalServerError: 500,
+  NotImplemented: 501,
+  BadGateway: 502,
+  ServiceUnavailable: 503,
+  GatewayTimeout: 504,
+  HttpVersionNotSupported: 505,
+  VariantAlsoNegotiates: 506,
+  InsufficientStorage: 507,
+  LoopDetected: 508,
+  NotExtended: 510,
+  NetworkAuthenticationRequired: 511
+};
+Object.entries(pt).forEach(([e, t]) => {
+  pt[t] = e;
+});
+const bs = pt;
+function ao(e) {
+  const t = new Ke(e), r = Ir(Ke.prototype.request, t);
+  return b.extend(r, Ke.prototype, t, { allOwnKeys: !0 }), b.extend(r, t, null, { allOwnKeys: !0 }), r.create = function(a) {
+    return ao(Ge(e, a));
+  }, r;
+}
+const Z = ao(kt);
+Z.Axios = Ke;
+Z.CanceledError = Ie;
+Z.CancelToken = Cs;
+Z.isCancel = eo;
+Z.VERSION = oo;
+Z.toFormData = et;
+Z.AxiosError = D;
+Z.Cancel = Z.CanceledError;
+Z.all = function(t) {
+  return Promise.all(t);
+};
+Z.spread = Ts;
+Z.isAxiosError = vs;
+Z.mergeConfig = Ge;
+Z.AxiosHeaders = ue;
+Z.formToJSON = (e) => Qr(b.isHTMLForm(e) ? new FormData(e) : e);
+Z.getAdapter = ro.getAdapter;
+Z.HttpStatusCode = bs;
+Z.default = Z;
+function Ms(e) {
+  return e && e.__esModule && Object.prototype.hasOwnProperty.call(e, "default") ? e.default : e;
+}
+const Gs = /* @__PURE__ */ new Set([
+  "ENOTFOUND",
+  "ENETUNREACH",
+  // SSL errors from https://github.com/nodejs/node/blob/fc8e3e2cdc521978351de257030db0076d79e0ab/src/crypto/crypto_common.cc#L301-L328
+  "UNABLE_TO_GET_ISSUER_CERT",
+  "UNABLE_TO_GET_CRL",
+  "UNABLE_TO_DECRYPT_CERT_SIGNATURE",
+  "UNABLE_TO_DECRYPT_CRL_SIGNATURE",
+  "UNABLE_TO_DECODE_ISSUER_PUBLIC_KEY",
+  "CERT_SIGNATURE_FAILURE",
+  "CRL_SIGNATURE_FAILURE",
+  "CERT_NOT_YET_VALID",
+  "CERT_HAS_EXPIRED",
+  "CRL_NOT_YET_VALID",
+  "CRL_HAS_EXPIRED",
+  "ERROR_IN_CERT_NOT_BEFORE_FIELD",
+  "ERROR_IN_CERT_NOT_AFTER_FIELD",
+  "ERROR_IN_CRL_LAST_UPDATE_FIELD",
+  "ERROR_IN_CRL_NEXT_UPDATE_FIELD",
+  "OUT_OF_MEM",
+  "DEPTH_ZERO_SELF_SIGNED_CERT",
+  "SELF_SIGNED_CERT_IN_CHAIN",
+  "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+  "UNABLE_TO_VERIFY_LEAF_SIGNATURE",
+  "CERT_CHAIN_TOO_LONG",
+  "CERT_REVOKED",
+  "INVALID_CA",
+  "PATH_LENGTH_EXCEEDED",
+  "INVALID_PURPOSE",
+  "CERT_UNTRUSTED",
+  "CERT_REJECTED",
+  "HOSTNAME_MISMATCH"
+]);
+var Vs = (e) => !Gs.has(e && e.code);
+const Fs = /* @__PURE__ */ Ms(Vs), io = "axios-retry";
+function no(e) {
+  const t = ["ERR_CANCELED", "ECONNABORTED"];
+  return e.response || !e.code || t.includes(e.code) ? !1 : Fs(e);
+}
+const so = ["get", "head", "options"], As = so.concat(["put", "delete"]);
+function Et(e) {
+  return e.code !== "ECONNABORTED" && (!e.response || e.response.status >= 500 && e.response.status <= 599);
+}
+function Ps(e) {
+  var t;
+  return (t = e.config) != null && t.method ? Et(e) && so.indexOf(e.config.method) !== -1 : !1;
+}
+function lo(e) {
+  var t;
+  return (t = e.config) != null && t.method ? Et(e) && As.indexOf(e.config.method) !== -1 : !1;
+}
+function co(e) {
+  return no(e) || lo(e);
+}
+function ks() {
+  return 0;
+}
+function xs(e = 0, t = void 0, r = 100) {
+  const o = 2 ** e * r, a = o * 0.2 * Math.random();
+  return o + a;
+}
+const ws = {
+  retries: 3,
+  retryCondition: co,
+  retryDelay: ks,
+  shouldResetTimeout: !1,
+  onRetry: () => {
+  }
+};
+function Es(e, t) {
+  return { ...ws, ...t, ...e[io] };
+}
+function hr(e, t) {
+  const r = Es(e, t || {});
+  return r.retryCount = r.retryCount || 0, r.lastRequestTime = r.lastRequestTime || Date.now(), e[io] = r, r;
+}
+function Ls(e, t) {
+  e.defaults.agent === t.agent && delete t.agent, e.defaults.httpAgent === t.httpAgent && delete t.httpAgent, e.defaults.httpsAgent === t.httpsAgent && delete t.httpsAgent;
+}
+async function Os(e, t) {
+  const { retries: r, retryCondition: o } = e, a = (e.retryCount || 0) < r && o(t);
+  if (typeof a == "object")
+    try {
+      return await a !== !1;
+    } catch {
+      return !1;
+    }
+  return a;
+}
+const Ne = (e, t) => {
+  const r = e.interceptors.request.use((a) => (hr(a, t), a)), o = e.interceptors.response.use(null, async (a) => {
+    const { config: n } = a;
+    if (!n)
+      return Promise.reject(a);
+    const l = hr(n, t);
+    if (await Os(l, a)) {
+      l.retryCount += 1;
+      const { retryDelay: m, shouldResetTimeout: p, onRetry: G } = l, M = m(l.retryCount, a);
+      if (Ls(e, n), !p && n.timeout && l.lastRequestTime) {
+        const y = Date.now() - l.lastRequestTime, O = n.timeout - y - M;
+        if (O <= 0)
+          return Promise.reject(a);
+        n.timeout = O;
+      }
+      return n.transformRequest = [(y) => y], await G(l.retryCount, a, n), new Promise((y) => {
+        setTimeout(() => y(e(n)), M);
+      });
+    }
+    return Promise.reject(a);
+  });
+  return { requestInterceptorId: r, responseInterceptorId: o };
+};
+Ne.isNetworkError = no;
+Ne.isSafeRequestError = Ps;
+Ne.isIdempotentRequestError = lo;
+Ne.isNetworkOrIdempotentRequestError = co;
+Ne.exponentialDelay = xs;
+Ne.isRetryableError = Et;
+const Lt = Z.create({
+  timeout: 1e3 * 300
+});
+Ne(Lt, { retries: 3 });
+Lt.interceptors.response.use(
+  function(e) {
+    return e.data.status && e.data.status === 200 ? e.data.data : e.data;
+  },
+  function(e) {
+    return Promise.reject(e);
+  }
+);
+async function _s(e, t = {}) {
+  return Lt({ url: e, method: "get", ...t });
+}
+function Be(e) {
+  throw new Error('Could not dynamically require "' + e + '". Please configure the dynamicRequireTargets or/and ignoreDynamicRequires option of @rollup/plugin-commonjs appropriately for this require call to work.');
+}
+var zs = { exports: {} };
+(function(e, t) {
+  (function(r) {
+    e.exports = r();
+  })(function() {
+    return function r(o, a, n) {
+      function l(G, M) {
+        if (!a[G]) {
+          if (!o[G]) {
+            var y = typeof Be == "function" && Be;
+            if (!M && y)
+              return y(G, !0);
+            if (m)
+              return m(G, !0);
+            throw new Error("Cannot find module '" + G + "'");
+          }
+          M = a[G] = { exports: {} }, o[G][0].call(M.exports, function(O) {
+            var z = o[G][1][O];
+            return l(z || O);
+          }, M, M.exports, r, o, a, n);
+        }
+        return a[G].exports;
+      }
+      for (var m = typeof Be == "function" && Be, p = 0; p < n.length; p++)
+        l(n[p]);
+      return l;
+    }({ 1: [function(r, o, a) {
+      (function(n, l, m, p, G, M, y, O, z) {
+        var g = r("crypto");
+        function v(f, C) {
+          C = x(f, C);
+          var c;
+          return (c = C.algorithm !== "passthrough" ? g.createHash(C.algorithm) : new L()).write === void 0 && (c.write = c.update, c.end = c.update), V(C, c).dispatch(f), c.update || c.end(""), c.digest ? c.digest(C.encoding === "buffer" ? void 0 : C.encoding) : (f = c.read(), C.encoding !== "buffer" ? f.toString(C.encoding) : f);
+        }
+        (a = o.exports = v).sha1 = function(f) {
+          return v(f);
+        }, a.keys = function(f) {
+          return v(f, { excludeValues: !0, algorithm: "sha1", encoding: "hex" });
+        }, a.MD5 = function(f) {
+          return v(f, { algorithm: "md5", encoding: "hex" });
+        }, a.keysMD5 = function(f) {
+          return v(f, { algorithm: "md5", encoding: "hex", excludeValues: !0 });
+        };
+        var N = g.getHashes ? g.getHashes().slice() : ["sha1", "md5"], F = (N.push("passthrough"), ["buffer", "hex", "binary", "base64"]);
+        function x(f, C) {
+          var c = {};
+          if (c.algorithm = (C = C || {}).algorithm || "sha1", c.encoding = C.encoding || "hex", c.excludeValues = !!C.excludeValues, c.algorithm = c.algorithm.toLowerCase(), c.encoding = c.encoding.toLowerCase(), c.ignoreUnknown = C.ignoreUnknown === !0, c.respectType = C.respectType !== !1, c.respectFunctionNames = C.respectFunctionNames !== !1, c.respectFunctionProperties = C.respectFunctionProperties !== !1, c.unorderedArrays = C.unorderedArrays === !0, c.unorderedSets = C.unorderedSets !== !1, c.unorderedObjects = C.unorderedObjects !== !1, c.replacer = C.replacer || void 0, c.excludeKeys = C.excludeKeys || void 0, f === void 0)
+            throw new Error("Object argument required.");
+          for (var d = 0; d < N.length; ++d)
+            N[d].toLowerCase() === c.algorithm.toLowerCase() && (c.algorithm = N[d]);
+          if (N.indexOf(c.algorithm) === -1)
+            throw new Error('Algorithm "' + c.algorithm + '"  not supported. supported values: ' + N.join(", "));
+          if (F.indexOf(c.encoding) === -1 && c.algorithm !== "passthrough")
+            throw new Error('Encoding "' + c.encoding + '"  not supported. supported values: ' + F.join(", "));
+          return c;
+        }
+        function A(f) {
+          if (typeof f == "function")
+            return /^function\s+\w*\s*\(\s*\)\s*{\s+\[native code\]\s+}$/i.exec(Function.prototype.toString.call(f)) != null;
+        }
+        function V(f, C, c) {
+          c = c || [];
+          function d(s) {
+            return C.update ? C.update(s, "utf8") : C.write(s, "utf8");
+          }
+          return { dispatch: function(s) {
+            return this["_" + ((s = f.replacer ? f.replacer(s) : s) === null ? "null" : typeof s)](s);
+          }, _object: function(s) {
+            var S, T = Object.prototype.toString.call(s), R = /\[object (.*)\]/i.exec(T);
+            if (R = (R = R ? R[1] : "unknown:[" + T + "]").toLowerCase(), 0 <= (T = c.indexOf(s)))
+              return this.dispatch("[CIRCULAR:" + T + "]");
+            if (c.push(s), m !== void 0 && m.isBuffer && m.isBuffer(s))
+              return d("buffer:"), d(s);
+            if (R === "object" || R === "function" || R === "asyncfunction")
+              return T = Object.keys(s), f.unorderedObjects && (T = T.sort()), f.respectType === !1 || A(s) || T.splice(0, 0, "prototype", "__proto__", "constructor"), f.excludeKeys && (T = T.filter(function(I) {
+                return !f.excludeKeys(I);
+              })), d("object:" + T.length + ":"), S = this, T.forEach(function(I) {
+                S.dispatch(I), d(":"), f.excludeValues || S.dispatch(s[I]), d(",");
+              });
+            if (!this["_" + R]) {
+              if (f.ignoreUnknown)
+                return d("[" + R + "]");
+              throw new Error('Unknown object type "' + R + '"');
+            }
+            this["_" + R](s);
+          }, _array: function(s, I) {
+            I = I !== void 0 ? I : f.unorderedArrays !== !1;
+            var T = this;
+            if (d("array:" + s.length + ":"), !I || s.length <= 1)
+              return s.forEach(function(B) {
+                return T.dispatch(B);
+              });
+            var R = [], I = s.map(function(B) {
+              var _ = new L(), K = c.slice();
+              return V(f, _, K).dispatch(B), R = R.concat(K.slice(c.length)), _.read().toString();
+            });
+            return c = c.concat(R), I.sort(), this._array(I, !1);
+          }, _date: function(s) {
+            return d("date:" + s.toJSON());
+          }, _symbol: function(s) {
+            return d("symbol:" + s.toString());
+          }, _error: function(s) {
+            return d("error:" + s.toString());
+          }, _boolean: function(s) {
+            return d("bool:" + s.toString());
+          }, _string: function(s) {
+            d("string:" + s.length + ":"), d(s.toString());
+          }, _function: function(s) {
+            d("fn:"), A(s) ? this.dispatch("[native]") : this.dispatch(s.toString()), f.respectFunctionNames !== !1 && this.dispatch("function-name:" + String(s.name)), f.respectFunctionProperties && this._object(s);
+          }, _number: function(s) {
+            return d("number:" + s.toString());
+          }, _xml: function(s) {
+            return d("xml:" + s.toString());
+          }, _null: function() {
+            return d("Null");
+          }, _undefined: function() {
+            return d("Undefined");
+          }, _regexp: function(s) {
+            return d("regex:" + s.toString());
+          }, _uint8array: function(s) {
+            return d("uint8array:"), this.dispatch(Array.prototype.slice.call(s));
+          }, _uint8clampedarray: function(s) {
+            return d("uint8clampedarray:"), this.dispatch(Array.prototype.slice.call(s));
+          }, _int8array: function(s) {
+            return d("int8array:"), this.dispatch(Array.prototype.slice.call(s));
+          }, _uint16array: function(s) {
+            return d("uint16array:"), this.dispatch(Array.prototype.slice.call(s));
+          }, _int16array: function(s) {
+            return d("int16array:"), this.dispatch(Array.prototype.slice.call(s));
+          }, _uint32array: function(s) {
+            return d("uint32array:"), this.dispatch(Array.prototype.slice.call(s));
+          }, _int32array: function(s) {
+            return d("int32array:"), this.dispatch(Array.prototype.slice.call(s));
+          }, _float32array: function(s) {
+            return d("float32array:"), this.dispatch(Array.prototype.slice.call(s));
+          }, _float64array: function(s) {
+            return d("float64array:"), this.dispatch(Array.prototype.slice.call(s));
+          }, _arraybuffer: function(s) {
+            return d("arraybuffer:"), this.dispatch(new Uint8Array(s));
+          }, _url: function(s) {
+            return d("url:" + s.toString());
+          }, _map: function(s) {
+            return d("map:"), s = Array.from(s), this._array(s, f.unorderedSets !== !1);
+          }, _set: function(s) {
+            return d("set:"), s = Array.from(s), this._array(s, f.unorderedSets !== !1);
+          }, _file: function(s) {
+            return d("file:"), this.dispatch([s.name, s.size, s.type, s.lastModfied]);
+          }, _blob: function() {
+            if (f.ignoreUnknown)
+              return d("[blob]");
+            throw Error(`Hashing Blob objects is currently not supported
 (see https://github.com/puleos/object-hash/issues/26)
 Use "options.replacer" or "options.ignoreUnknown"
-`)},_domwindow:function(){return d("domwindow")},_bigint:function(s){return d("bigint:"+s.toString())},_process:function(){return d("process")},_timer:function(){return d("timer")},_pipe:function(){return d("pipe")},_tcp:function(){return d("tcp")},_udp:function(){return d("udp")},_tty:function(){return d("tty")},_statwatcher:function(){return d("statwatcher")},_securecontext:function(){return d("securecontext")},_connection:function(){return d("connection")},_zlib:function(){return d("zlib")},_context:function(){return d("context")},_nodescript:function(){return d("nodescript")},_httpparser:function(){return d("httpparser")},_dataview:function(){return d("dataview")},_signal:function(){return d("signal")},_fsevent:function(){return d("fsevent")},_tlswrap:function(){return d("tlswrap")}}}function L(){return{buf:"",write:function(f){this.buf+=f},end:function(f){this.buf+=f},read:function(){return this.buf}}}a.writeToStream=function(f,C,c){return c===void 0&&(c=C,C={}),V(C=x(f,C),c).dispatch(f)}}).call(this,r("lYpoI2"),typeof self<"u"?self:typeof window<"u"?window:{},r("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_9a5aa49d.js","/")},{buffer:3,crypto:5,lYpoI2:11}],2:[function(r,o,a){(function(n,l,m,p,G,M,y,O,z){(function(g){var v=typeof Uint8Array<"u"?Uint8Array:Array,N=43,F=47,x=48,A=97,V=65,L=45,f=95;function C(c){return c=c.charCodeAt(0),c===N||c===L?62:c===F||c===f?63:c<x?-1:c<x+10?c-x+26+26:c<V+26?c-V:c<A+26?c-A+26:void 0}g.toByteArray=function(c){var d,s;if(0<c.length%4)throw new Error("Invalid string. Length must be a multiple of 4");var S=c.length,S=c.charAt(S-2)==="="?2:c.charAt(S-1)==="="?1:0,T=new v(3*c.length/4-S),R=0<S?c.length-4:c.length,I=0;function B(_){T[I++]=_}for(d=0;d<R;d+=4,0)B((16711680&(s=C(c.charAt(d))<<18|C(c.charAt(d+1))<<12|C(c.charAt(d+2))<<6|C(c.charAt(d+3))))>>16),B((65280&s)>>8),B(255&s);return S==2?B(255&(s=C(c.charAt(d))<<2|C(c.charAt(d+1))>>4)):S==1&&(B((s=C(c.charAt(d))<<10|C(c.charAt(d+1))<<4|C(c.charAt(d+2))>>2)>>8&255),B(255&s)),T},g.fromByteArray=function(c){var d,s,S,T,R=c.length%3,I="";function B(_){return"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/".charAt(_)}for(d=0,S=c.length-R;d<S;d+=3)s=(c[d]<<16)+(c[d+1]<<8)+c[d+2],I+=B((T=s)>>18&63)+B(T>>12&63)+B(T>>6&63)+B(63&T);switch(R){case 1:I=(I+=B((s=c[c.length-1])>>2))+B(s<<4&63)+"==";break;case 2:I=(I=(I+=B((s=(c[c.length-2]<<8)+c[c.length-1])>>10))+B(s>>4&63))+B(s<<2&63)+"="}return I}})(a===void 0?this.base64js={}:a)}).call(this,r("lYpoI2"),typeof self<"u"?self:typeof window<"u"?window:{},r("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/node_modules/gulp-browserify/node_modules/base64-js/lib/b64.js","/node_modules/gulp-browserify/node_modules/base64-js/lib")},{buffer:3,lYpoI2:11}],3:[function(r,o,a){(function(n,l,N,p,G,M,y,O,z){var g=r("base64-js"),v=r("ieee754");function N(i,u,h){if(!(this instanceof N))return new N(i,u,h);var k,P,E,U,J=typeof i;if(u==="base64"&&J=="string")for(i=(U=i).trim?U.trim():U.replace(/^\s+|\s+$/g,"");i.length%4!=0;)i+="=";if(J=="number")k=X(i);else if(J=="string")k=N.byteLength(i,u);else{if(J!="object")throw new Error("First argument needs to be a number, array or string.");k=X(i.length)}if(N._useTypedArrays?P=N._augment(new Uint8Array(k)):((P=this).length=k,P._isBuffer=!0),N._useTypedArrays&&typeof i.byteLength=="number")P._set(i);else if(Y(U=i)||N.isBuffer(U)||U&&typeof U=="object"&&typeof U.length=="number")for(E=0;E<k;E++)N.isBuffer(i)?P[E]=i.readUInt8(E):P[E]=i[E];else if(J=="string")P.write(i,0,u);else if(J=="number"&&!N._useTypedArrays&&!h)for(E=0;E<k;E++)P[E]=0;return P}function F(i,u,h,k){return N._charsWritten=Re(function(P){for(var E=[],U=0;U<P.length;U++)E.push(255&P.charCodeAt(U));return E}(u),i,h,k)}function x(i,u,h,k){return N._charsWritten=Re(function(P){for(var E,U,J=[],q=0;q<P.length;q++)U=P.charCodeAt(q),E=U>>8,U=U%256,J.push(U),J.push(E);return J}(u),i,h,k)}function A(i,u,h){var k="";h=Math.min(i.length,h);for(var P=u;P<h;P++)k+=String.fromCharCode(i[P]);return k}function V(i,u,h,E){E||(w(typeof h=="boolean","missing or invalid endian"),w(u!=null,"missing offset"),w(u+1<i.length,"Trying to read beyond buffer length"));var P,E=i.length;if(!(E<=u))return h?(P=i[u],u+1<E&&(P|=i[u+1]<<8)):(P=i[u]<<8,u+1<E&&(P|=i[u+1])),P}function L(i,u,h,E){E||(w(typeof h=="boolean","missing or invalid endian"),w(u!=null,"missing offset"),w(u+3<i.length,"Trying to read beyond buffer length"));var P,E=i.length;if(!(E<=u))return h?(u+2<E&&(P=i[u+2]<<16),u+1<E&&(P|=i[u+1]<<8),P|=i[u],u+3<E&&(P+=i[u+3]<<24>>>0)):(u+1<E&&(P=i[u+1]<<16),u+2<E&&(P|=i[u+2]<<8),u+3<E&&(P|=i[u+3]),P+=i[u]<<24>>>0),P}function f(i,u,h,k){if(k||(w(typeof h=="boolean","missing or invalid endian"),w(u!=null,"missing offset"),w(u+1<i.length,"Trying to read beyond buffer length")),!(i.length<=u))return k=V(i,u,h,!0),32768&k?-1*(65535-k+1):k}function C(i,u,h,k){if(k||(w(typeof h=="boolean","missing or invalid endian"),w(u!=null,"missing offset"),w(u+3<i.length,"Trying to read beyond buffer length")),!(i.length<=u))return k=L(i,u,h,!0),2147483648&k?-1*(4294967295-k+1):k}function c(i,u,h,k){return k||(w(typeof h=="boolean","missing or invalid endian"),w(u+3<i.length,"Trying to read beyond buffer length")),v.read(i,u,h,23,4)}function d(i,u,h,k){return k||(w(typeof h=="boolean","missing or invalid endian"),w(u+7<i.length,"Trying to read beyond buffer length")),v.read(i,u,h,52,8)}function s(i,u,h,k,P){if(P||(w(u!=null,"missing value"),w(typeof k=="boolean","missing or invalid endian"),w(h!=null,"missing offset"),w(h+1<i.length,"trying to write beyond buffer length"),rt(u,65535)),P=i.length,!(P<=h))for(var E=0,U=Math.min(P-h,2);E<U;E++)i[h+E]=(u&255<<8*(k?E:1-E))>>>8*(k?E:1-E)}function S(i,u,h,k,P){if(P||(w(u!=null,"missing value"),w(typeof k=="boolean","missing or invalid endian"),w(h!=null,"missing offset"),w(h+3<i.length,"trying to write beyond buffer length"),rt(u,4294967295)),P=i.length,!(P<=h))for(var E=0,U=Math.min(P-h,4);E<U;E++)i[h+E]=u>>>8*(k?E:3-E)&255}function T(i,u,h,k,P){P||(w(u!=null,"missing value"),w(typeof k=="boolean","missing or invalid endian"),w(h!=null,"missing offset"),w(h+1<i.length,"Trying to write beyond buffer length"),ot(u,32767,-32768)),i.length<=h||s(i,0<=u?u:65535+u+1,h,k,P)}function R(i,u,h,k,P){P||(w(u!=null,"missing value"),w(typeof k=="boolean","missing or invalid endian"),w(h!=null,"missing offset"),w(h+3<i.length,"Trying to write beyond buffer length"),ot(u,2147483647,-2147483648)),i.length<=h||S(i,0<=u?u:4294967295+u+1,h,k,P)}function I(i,u,h,k,P){P||(w(u!=null,"missing value"),w(typeof k=="boolean","missing or invalid endian"),w(h!=null,"missing offset"),w(h+3<i.length,"Trying to write beyond buffer length"),zt(u,34028234663852886e22,-34028234663852886e22)),i.length<=h||v.write(i,u,h,k,23,4)}function B(i,u,h,k,P){P||(w(u!=null,"missing value"),w(typeof k=="boolean","missing or invalid endian"),w(h!=null,"missing offset"),w(h+7<i.length,"Trying to write beyond buffer length"),zt(u,17976931348623157e292,-17976931348623157e292)),i.length<=h||v.write(i,u,h,k,52,8)}a.Buffer=N,a.SlowBuffer=N,a.INSPECT_MAX_BYTES=50,N.poolSize=8192,N._useTypedArrays=function(){try{var i=new ArrayBuffer(0),u=new Uint8Array(i);return u.foo=function(){return 42},u.foo()===42&&typeof u.subarray=="function"}catch{return!1}}(),N.isEncoding=function(i){switch(String(i).toLowerCase()){case"hex":case"utf8":case"utf-8":case"ascii":case"binary":case"base64":case"raw":case"ucs2":case"ucs-2":case"utf16le":case"utf-16le":return!0;default:return!1}},N.isBuffer=function(i){return!(i==null||!i._isBuffer)},N.byteLength=function(i,u){var h;switch(i+="",u||"utf8"){case"hex":h=i.length/2;break;case"utf8":case"utf-8":h=ne(i).length;break;case"ascii":case"binary":case"raw":h=i.length;break;case"base64":h=Ot(i).length;break;case"ucs2":case"ucs-2":case"utf16le":case"utf-16le":h=2*i.length;break;default:throw new Error("Unknown encoding")}return h},N.concat=function(i,u){if(w(Y(i),`Usage: Buffer.concat(list, [totalLength])
-list should be an Array.`),i.length===0)return new N(0);if(i.length===1)return i[0];if(typeof u!="number")for(P=u=0;P<i.length;P++)u+=i[P].length;for(var h=new N(u),k=0,P=0;P<i.length;P++){var E=i[P];E.copy(h,k),k+=E.length}return h},N.prototype.write=function(i,u,h,k){isFinite(u)?isFinite(h)||(k=h,h=void 0):(q=k,k=u,u=h,h=q),u=Number(u)||0;var P,E,U,J,q=this.length-u;switch((!h||q<(h=Number(h)))&&(h=q),k=String(k||"utf8").toLowerCase()){case"hex":P=function(re,Q,ee,W){ee=Number(ee)||0;var $=re.length-ee;(!W||$<(W=Number(W)))&&(W=$),w(($=Q.length)%2==0,"Invalid hex string"),$/2<W&&(W=$/2);for(var pe=0;pe<W;pe++){var It=parseInt(Q.substr(2*pe,2),16);w(!isNaN(It),"Invalid hex string"),re[ee+pe]=It}return N._charsWritten=2*pe,pe}(this,i,u,h);break;case"utf8":case"utf-8":E=this,U=u,J=h,P=N._charsWritten=Re(ne(i),E,U,J);break;case"ascii":case"binary":P=F(this,i,u,h);break;case"base64":E=this,U=u,J=h,P=N._charsWritten=Re(Ot(i),E,U,J);break;case"ucs2":case"ucs-2":case"utf16le":case"utf-16le":P=x(this,i,u,h);break;default:throw new Error("Unknown encoding")}return P},N.prototype.toString=function(i,u,h){var k,P,E,U,J=this;if(i=String(i||"utf8").toLowerCase(),u=Number(u)||0,(h=h!==void 0?Number(h):J.length)===u)return"";switch(i){case"hex":k=function(q,re,Q){var ee=q.length;(!re||re<0)&&(re=0),(!Q||Q<0||ee<Q)&&(Q=ee);for(var W="",$=re;$<Q;$++)W+=H(q[$]);return W}(J,u,h);break;case"utf8":case"utf-8":k=function(q,re,Q){var ee="",W="";Q=Math.min(q.length,Q);for(var $=re;$<Q;$++)q[$]<=127?(ee+=_t(W)+String.fromCharCode(q[$]),W=""):W+="%"+q[$].toString(16);return ee+_t(W)}(J,u,h);break;case"ascii":case"binary":k=A(J,u,h);break;case"base64":P=J,U=h,k=(E=u)===0&&U===P.length?g.fromByteArray(P):g.fromByteArray(P.slice(E,U));break;case"ucs2":case"ucs-2":case"utf16le":case"utf-16le":k=function(q,re,Q){for(var ee=q.slice(re,Q),W="",$=0;$<ee.length;$+=2)W+=String.fromCharCode(ee[$]+256*ee[$+1]);return W}(J,u,h);break;default:throw new Error("Unknown encoding")}return k},N.prototype.toJSON=function(){return{type:"Buffer",data:Array.prototype.slice.call(this._arr||this,0)}},N.prototype.copy=function(i,u,h,k){if(u=u||0,(k=k||k===0?k:this.length)!==(h=h||0)&&i.length!==0&&this.length!==0){w(h<=k,"sourceEnd < sourceStart"),w(0<=u&&u<i.length,"targetStart out of bounds"),w(0<=h&&h<this.length,"sourceStart out of bounds"),w(0<=k&&k<=this.length,"sourceEnd out of bounds"),k>this.length&&(k=this.length);var P=(k=i.length-u<k-h?i.length-u+h:k)-h;if(P<100||!N._useTypedArrays)for(var E=0;E<P;E++)i[E+u]=this[E+h];else i._set(this.subarray(h,h+P),u)}},N.prototype.slice=function(i,u){var h=this.length;if(i=K(i,h,0),u=K(u,h,h),N._useTypedArrays)return N._augment(this.subarray(i,u));for(var k=u-i,P=new N(k,void 0,!0),E=0;E<k;E++)P[E]=this[E+i];return P},N.prototype.get=function(i){return console.log(".get() is deprecated. Access using array indexes instead."),this.readUInt8(i)},N.prototype.set=function(i,u){return console.log(".set() is deprecated. Access using array indexes instead."),this.writeUInt8(i,u)},N.prototype.readUInt8=function(i,u){if(u||(w(i!=null,"missing offset"),w(i<this.length,"Trying to read beyond buffer length")),!(i>=this.length))return this[i]},N.prototype.readUInt16LE=function(i,u){return V(this,i,!0,u)},N.prototype.readUInt16BE=function(i,u){return V(this,i,!1,u)},N.prototype.readUInt32LE=function(i,u){return L(this,i,!0,u)},N.prototype.readUInt32BE=function(i,u){return L(this,i,!1,u)},N.prototype.readInt8=function(i,u){if(u||(w(i!=null,"missing offset"),w(i<this.length,"Trying to read beyond buffer length")),!(i>=this.length))return 128&this[i]?-1*(255-this[i]+1):this[i]},N.prototype.readInt16LE=function(i,u){return f(this,i,!0,u)},N.prototype.readInt16BE=function(i,u){return f(this,i,!1,u)},N.prototype.readInt32LE=function(i,u){return C(this,i,!0,u)},N.prototype.readInt32BE=function(i,u){return C(this,i,!1,u)},N.prototype.readFloatLE=function(i,u){return c(this,i,!0,u)},N.prototype.readFloatBE=function(i,u){return c(this,i,!1,u)},N.prototype.readDoubleLE=function(i,u){return d(this,i,!0,u)},N.prototype.readDoubleBE=function(i,u){return d(this,i,!1,u)},N.prototype.writeUInt8=function(i,u,h){h||(w(i!=null,"missing value"),w(u!=null,"missing offset"),w(u<this.length,"trying to write beyond buffer length"),rt(i,255)),u>=this.length||(this[u]=i)},N.prototype.writeUInt16LE=function(i,u,h){s(this,i,u,!0,h)},N.prototype.writeUInt16BE=function(i,u,h){s(this,i,u,!1,h)},N.prototype.writeUInt32LE=function(i,u,h){S(this,i,u,!0,h)},N.prototype.writeUInt32BE=function(i,u,h){S(this,i,u,!1,h)},N.prototype.writeInt8=function(i,u,h){h||(w(i!=null,"missing value"),w(u!=null,"missing offset"),w(u<this.length,"Trying to write beyond buffer length"),ot(i,127,-128)),u>=this.length||(0<=i?this.writeUInt8(i,u,h):this.writeUInt8(255+i+1,u,h))},N.prototype.writeInt16LE=function(i,u,h){T(this,i,u,!0,h)},N.prototype.writeInt16BE=function(i,u,h){T(this,i,u,!1,h)},N.prototype.writeInt32LE=function(i,u,h){R(this,i,u,!0,h)},N.prototype.writeInt32BE=function(i,u,h){R(this,i,u,!1,h)},N.prototype.writeFloatLE=function(i,u,h){I(this,i,u,!0,h)},N.prototype.writeFloatBE=function(i,u,h){I(this,i,u,!1,h)},N.prototype.writeDoubleLE=function(i,u,h){B(this,i,u,!0,h)},N.prototype.writeDoubleBE=function(i,u,h){B(this,i,u,!1,h)},N.prototype.fill=function(i,u,h){if(u=u||0,h=h||this.length,w(typeof(i=typeof(i=i||0)=="string"?i.charCodeAt(0):i)=="number"&&!isNaN(i),"value is not a number"),w(u<=h,"end < start"),h!==u&&this.length!==0){w(0<=u&&u<this.length,"start out of bounds"),w(0<=h&&h<=this.length,"end out of bounds");for(var k=u;k<h;k++)this[k]=i}},N.prototype.inspect=function(){for(var i=[],u=this.length,h=0;h<u;h++)if(i[h]=H(this[h]),h===a.INSPECT_MAX_BYTES){i[h+1]="...";break}return"<Buffer "+i.join(" ")+">"},N.prototype.toArrayBuffer=function(){if(typeof Uint8Array>"u")throw new Error("Buffer.toArrayBuffer not supported in this browser");if(N._useTypedArrays)return new N(this).buffer;for(var i=new Uint8Array(this.length),u=0,h=i.length;u<h;u+=1)i[u]=this[u];return i.buffer};var _=N.prototype;function K(i,u,h){return typeof i!="number"?h:u<=(i=~~i)?u:0<=i||0<=(i+=u)?i:0}function X(i){return(i=~~Math.ceil(+i))<0?0:i}function Y(i){return(Array.isArray||function(u){return Object.prototype.toString.call(u)==="[object Array]"})(i)}function H(i){return i<16?"0"+i.toString(16):i.toString(16)}function ne(i){for(var u=[],h=0;h<i.length;h++){var k=i.charCodeAt(h);if(k<=127)u.push(i.charCodeAt(h));else for(var P=h,E=(55296<=k&&k<=57343&&h++,encodeURIComponent(i.slice(P,h+1)).substr(1).split("%")),U=0;U<E.length;U++)u.push(parseInt(E[U],16))}return u}function Ot(i){return g.toByteArray(i)}function Re(i,u,h,k){for(var P=0;P<k&&!(P+h>=u.length||P>=i.length);P++)u[P+h]=i[P];return P}function _t(i){try{return decodeURIComponent(i)}catch{return"�"}}function rt(i,u){w(typeof i=="number","cannot write a non-number as a number"),w(0<=i,"specified a negative value for writing an unsigned value"),w(i<=u,"value is larger than maximum value for type"),w(Math.floor(i)===i,"value has a fractional component")}function ot(i,u,h){w(typeof i=="number","cannot write a non-number as a number"),w(i<=u,"value larger than maximum allowed value"),w(h<=i,"value smaller than minimum allowed value"),w(Math.floor(i)===i,"value has a fractional component")}function zt(i,u,h){w(typeof i=="number","cannot write a non-number as a number"),w(i<=u,"value larger than maximum allowed value"),w(h<=i,"value smaller than minimum allowed value")}function w(i,u){if(!i)throw new Error(u||"Failed assertion")}N._augment=function(i){return i._isBuffer=!0,i._get=i.get,i._set=i.set,i.get=_.get,i.set=_.set,i.write=_.write,i.toString=_.toString,i.toLocaleString=_.toString,i.toJSON=_.toJSON,i.copy=_.copy,i.slice=_.slice,i.readUInt8=_.readUInt8,i.readUInt16LE=_.readUInt16LE,i.readUInt16BE=_.readUInt16BE,i.readUInt32LE=_.readUInt32LE,i.readUInt32BE=_.readUInt32BE,i.readInt8=_.readInt8,i.readInt16LE=_.readInt16LE,i.readInt16BE=_.readInt16BE,i.readInt32LE=_.readInt32LE,i.readInt32BE=_.readInt32BE,i.readFloatLE=_.readFloatLE,i.readFloatBE=_.readFloatBE,i.readDoubleLE=_.readDoubleLE,i.readDoubleBE=_.readDoubleBE,i.writeUInt8=_.writeUInt8,i.writeUInt16LE=_.writeUInt16LE,i.writeUInt16BE=_.writeUInt16BE,i.writeUInt32LE=_.writeUInt32LE,i.writeUInt32BE=_.writeUInt32BE,i.writeInt8=_.writeInt8,i.writeInt16LE=_.writeInt16LE,i.writeInt16BE=_.writeInt16BE,i.writeInt32LE=_.writeInt32LE,i.writeInt32BE=_.writeInt32BE,i.writeFloatLE=_.writeFloatLE,i.writeFloatBE=_.writeFloatBE,i.writeDoubleLE=_.writeDoubleLE,i.writeDoubleBE=_.writeDoubleBE,i.fill=_.fill,i.inspect=_.inspect,i.toArrayBuffer=_.toArrayBuffer,i}}).call(this,r("lYpoI2"),typeof self<"u"?self:typeof window<"u"?window:{},r("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/node_modules/gulp-browserify/node_modules/buffer/index.js","/node_modules/gulp-browserify/node_modules/buffer")},{"base64-js":2,buffer:3,ieee754:10,lYpoI2:11}],4:[function(r,o,a){(function(n,l,g,p,G,M,y,O,z){var g=r("buffer").Buffer,v=4,N=new g(v);N.fill(0),o.exports={hash:function(F,x,A,V){for(var L=x(function(s,S){s.length%v!=0&&(T=s.length+(v-s.length%v),s=g.concat([s,N],T));for(var T,R=[],I=S?s.readInt32BE:s.readInt32LE,B=0;B<s.length;B+=v)R.push(I.call(s,B));return R}(F=g.isBuffer(F)?F:new g(F),V),8*F.length),x=V,f=new g(A),C=x?f.writeInt32BE:f.writeInt32LE,c=0;c<L.length;c++)C.call(f,L[c],4*c,!0);return f}}}).call(this,r("lYpoI2"),typeof self<"u"?self:typeof window<"u"?window:{},r("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/node_modules/gulp-browserify/node_modules/crypto-browserify/helpers.js","/node_modules/gulp-browserify/node_modules/crypto-browserify")},{buffer:3,lYpoI2:11}],5:[function(r,o,a){(function(n,l,g,p,G,M,y,O,z){var g=r("buffer").Buffer,v=r("./sha"),N=r("./sha256"),F=r("./rng"),x={sha1:v,sha256:N,md5:r("./md5")},A=64,V=new g(A);function L(s,S){var T=x[s=s||"sha1"],R=[];return T||f("algorithm:",s,"is not yet supported"),{update:function(I){return g.isBuffer(I)||(I=new g(I)),R.push(I),I.length,this},digest:function(I){var B=g.concat(R),B=S?function(_,K,X){g.isBuffer(K)||(K=new g(K)),g.isBuffer(X)||(X=new g(X)),K.length>A?K=_(K):K.length<A&&(K=g.concat([K,V],A));for(var Y=new g(A),H=new g(A),ne=0;ne<A;ne++)Y[ne]=54^K[ne],H[ne]=92^K[ne];return X=_(g.concat([Y,X])),_(g.concat([H,X]))}(T,S,B):T(B);return R=null,I?B.toString(I):B}}}function f(){var s=[].slice.call(arguments).join(" ");throw new Error([s,"we accept pull requests","http://github.com/dominictarr/crypto-browserify"].join(`
-`))}V.fill(0),a.createHash=function(s){return L(s)},a.createHmac=L,a.randomBytes=function(s,S){if(!S||!S.call)return new g(F(s));try{S.call(this,void 0,new g(F(s)))}catch(T){S(T)}};var C,c=["createCredentials","createCipher","createCipheriv","createDecipher","createDecipheriv","createSign","createVerify","createDiffieHellman","pbkdf2"],d=function(s){a[s]=function(){f("sorry,",s,"is not implemented yet")}};for(C in c)d(c[C])}).call(this,r("lYpoI2"),typeof self<"u"?self:typeof window<"u"?window:{},r("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/node_modules/gulp-browserify/node_modules/crypto-browserify/index.js","/node_modules/gulp-browserify/node_modules/crypto-browserify")},{"./md5":6,"./rng":7,"./sha":8,"./sha256":9,buffer:3,lYpoI2:11}],6:[function(r,o,a){(function(n,l,m,p,G,M,y,O,z){var g=r("./helpers");function v(f,C){f[C>>5]|=128<<C%32,f[14+(C+64>>>9<<4)]=C;for(var c=1732584193,d=-271733879,s=-1732584194,S=271733878,T=0;T<f.length;T+=16){var R=c,I=d,B=s,_=S,c=F(c,d,s,S,f[T+0],7,-680876936),S=F(S,c,d,s,f[T+1],12,-389564586),s=F(s,S,c,d,f[T+2],17,606105819),d=F(d,s,S,c,f[T+3],22,-1044525330);c=F(c,d,s,S,f[T+4],7,-176418897),S=F(S,c,d,s,f[T+5],12,1200080426),s=F(s,S,c,d,f[T+6],17,-1473231341),d=F(d,s,S,c,f[T+7],22,-45705983),c=F(c,d,s,S,f[T+8],7,1770035416),S=F(S,c,d,s,f[T+9],12,-1958414417),s=F(s,S,c,d,f[T+10],17,-42063),d=F(d,s,S,c,f[T+11],22,-1990404162),c=F(c,d,s,S,f[T+12],7,1804603682),S=F(S,c,d,s,f[T+13],12,-40341101),s=F(s,S,c,d,f[T+14],17,-1502002290),c=x(c,d=F(d,s,S,c,f[T+15],22,1236535329),s,S,f[T+1],5,-165796510),S=x(S,c,d,s,f[T+6],9,-1069501632),s=x(s,S,c,d,f[T+11],14,643717713),d=x(d,s,S,c,f[T+0],20,-373897302),c=x(c,d,s,S,f[T+5],5,-701558691),S=x(S,c,d,s,f[T+10],9,38016083),s=x(s,S,c,d,f[T+15],14,-660478335),d=x(d,s,S,c,f[T+4],20,-405537848),c=x(c,d,s,S,f[T+9],5,568446438),S=x(S,c,d,s,f[T+14],9,-1019803690),s=x(s,S,c,d,f[T+3],14,-187363961),d=x(d,s,S,c,f[T+8],20,1163531501),c=x(c,d,s,S,f[T+13],5,-1444681467),S=x(S,c,d,s,f[T+2],9,-51403784),s=x(s,S,c,d,f[T+7],14,1735328473),c=A(c,d=x(d,s,S,c,f[T+12],20,-1926607734),s,S,f[T+5],4,-378558),S=A(S,c,d,s,f[T+8],11,-2022574463),s=A(s,S,c,d,f[T+11],16,1839030562),d=A(d,s,S,c,f[T+14],23,-35309556),c=A(c,d,s,S,f[T+1],4,-1530992060),S=A(S,c,d,s,f[T+4],11,1272893353),s=A(s,S,c,d,f[T+7],16,-155497632),d=A(d,s,S,c,f[T+10],23,-1094730640),c=A(c,d,s,S,f[T+13],4,681279174),S=A(S,c,d,s,f[T+0],11,-358537222),s=A(s,S,c,d,f[T+3],16,-722521979),d=A(d,s,S,c,f[T+6],23,76029189),c=A(c,d,s,S,f[T+9],4,-640364487),S=A(S,c,d,s,f[T+12],11,-421815835),s=A(s,S,c,d,f[T+15],16,530742520),c=V(c,d=A(d,s,S,c,f[T+2],23,-995338651),s,S,f[T+0],6,-198630844),S=V(S,c,d,s,f[T+7],10,1126891415),s=V(s,S,c,d,f[T+14],15,-1416354905),d=V(d,s,S,c,f[T+5],21,-57434055),c=V(c,d,s,S,f[T+12],6,1700485571),S=V(S,c,d,s,f[T+3],10,-1894986606),s=V(s,S,c,d,f[T+10],15,-1051523),d=V(d,s,S,c,f[T+1],21,-2054922799),c=V(c,d,s,S,f[T+8],6,1873313359),S=V(S,c,d,s,f[T+15],10,-30611744),s=V(s,S,c,d,f[T+6],15,-1560198380),d=V(d,s,S,c,f[T+13],21,1309151649),c=V(c,d,s,S,f[T+4],6,-145523070),S=V(S,c,d,s,f[T+11],10,-1120210379),s=V(s,S,c,d,f[T+2],15,718787259),d=V(d,s,S,c,f[T+9],21,-343485551),c=L(c,R),d=L(d,I),s=L(s,B),S=L(S,_)}return Array(c,d,s,S)}function N(f,C,c,d,s,S){return L((C=L(L(C,f),L(d,S)))<<s|C>>>32-s,c)}function F(f,C,c,d,s,S,T){return N(C&c|~C&d,f,C,s,S,T)}function x(f,C,c,d,s,S,T){return N(C&d|c&~d,f,C,s,S,T)}function A(f,C,c,d,s,S,T){return N(C^c^d,f,C,s,S,T)}function V(f,C,c,d,s,S,T){return N(c^(C|~d),f,C,s,S,T)}function L(f,C){var c=(65535&f)+(65535&C);return(f>>16)+(C>>16)+(c>>16)<<16|65535&c}o.exports=function(f){return g.hash(f,v,16)}}).call(this,r("lYpoI2"),typeof self<"u"?self:typeof window<"u"?window:{},r("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/node_modules/gulp-browserify/node_modules/crypto-browserify/md5.js","/node_modules/gulp-browserify/node_modules/crypto-browserify")},{"./helpers":4,buffer:3,lYpoI2:11}],7:[function(r,o,a){(function(n,l,m,p,G,M,y,O,z){o.exports=function(g){for(var v,N=new Array(g),F=0;F<g;F++)!(3&F)&&(v=4294967296*Math.random()),N[F]=v>>>((3&F)<<3)&255;return N}}).call(this,r("lYpoI2"),typeof self<"u"?self:typeof window<"u"?window:{},r("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/node_modules/gulp-browserify/node_modules/crypto-browserify/rng.js","/node_modules/gulp-browserify/node_modules/crypto-browserify")},{buffer:3,lYpoI2:11}],8:[function(r,o,a){(function(n,l,m,p,G,M,y,O,z){var g=r("./helpers");function v(x,A){x[A>>5]|=128<<24-A%32,x[15+(A+64>>9<<4)]=A;for(var V,L,f,C=Array(80),c=1732584193,d=-271733879,s=-1732584194,S=271733878,T=-1009589776,R=0;R<x.length;R+=16){for(var I=c,B=d,_=s,K=S,X=T,Y=0;Y<80;Y++){C[Y]=Y<16?x[R+Y]:F(C[Y-3]^C[Y-8]^C[Y-14]^C[Y-16],1);var H=N(N(F(c,5),(H=d,L=s,f=S,(V=Y)<20?H&L|~H&f:!(V<40)&&V<60?H&L|H&f|L&f:H^L^f)),N(N(T,C[Y]),(V=Y)<20?1518500249:V<40?1859775393:V<60?-1894007588:-899497514)),T=S,S=s,s=F(d,30),d=c,c=H}c=N(c,I),d=N(d,B),s=N(s,_),S=N(S,K),T=N(T,X)}return Array(c,d,s,S,T)}function N(x,A){var V=(65535&x)+(65535&A);return(x>>16)+(A>>16)+(V>>16)<<16|65535&V}function F(x,A){return x<<A|x>>>32-A}o.exports=function(x){return g.hash(x,v,20,!0)}}).call(this,r("lYpoI2"),typeof self<"u"?self:typeof window<"u"?window:{},r("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/node_modules/gulp-browserify/node_modules/crypto-browserify/sha.js","/node_modules/gulp-browserify/node_modules/crypto-browserify")},{"./helpers":4,buffer:3,lYpoI2:11}],9:[function(r,o,a){(function(n,l,m,p,G,M,y,O,z){function g(A,V){var L=(65535&A)+(65535&V);return(A>>16)+(V>>16)+(L>>16)<<16|65535&L}function v(A,V){var L,f=new Array(1116352408,1899447441,3049323471,3921009573,961987163,1508970993,2453635748,2870763221,3624381080,310598401,607225278,1426881987,1925078388,2162078206,2614888103,3248222580,3835390401,4022224774,264347078,604807628,770255983,1249150122,1555081692,1996064986,2554220882,2821834349,2952996808,3210313671,3336571891,3584528711,113926993,338241895,666307205,773529912,1294757372,1396182291,1695183700,1986661051,2177026350,2456956037,2730485921,2820302411,3259730800,3345764771,3516065817,3600352804,4094571909,275423344,430227734,506948616,659060556,883997877,958139571,1322822218,1537002063,1747873779,1955562222,2024104815,2227730452,2361852424,2428436474,2756734187,3204031479,3329325298),C=new Array(1779033703,3144134277,1013904242,2773480762,1359893119,2600822924,528734635,1541459225),c=new Array(64);A[V>>5]|=128<<24-V%32,A[15+(V+64>>9<<4)]=V;for(var d,s,S=0;S<A.length;S+=16){for(var T=C[0],R=C[1],I=C[2],B=C[3],_=C[4],K=C[5],X=C[6],Y=C[7],H=0;H<64;H++)c[H]=H<16?A[H+S]:g(g(g((s=c[H-2],F(s,17)^F(s,19)^x(s,10)),c[H-7]),(s=c[H-15],F(s,7)^F(s,18)^x(s,3))),c[H-16]),L=g(g(g(g(Y,F(s=_,6)^F(s,11)^F(s,25)),_&K^~_&X),f[H]),c[H]),d=g(F(d=T,2)^F(d,13)^F(d,22),T&R^T&I^R&I),Y=X,X=K,K=_,_=g(B,L),B=I,I=R,R=T,T=g(L,d);C[0]=g(T,C[0]),C[1]=g(R,C[1]),C[2]=g(I,C[2]),C[3]=g(B,C[3]),C[4]=g(_,C[4]),C[5]=g(K,C[5]),C[6]=g(X,C[6]),C[7]=g(Y,C[7])}return C}var N=r("./helpers"),F=function(A,V){return A>>>V|A<<32-V},x=function(A,V){return A>>>V};o.exports=function(A){return N.hash(A,v,32,!0)}}).call(this,r("lYpoI2"),typeof self<"u"?self:typeof window<"u"?window:{},r("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/node_modules/gulp-browserify/node_modules/crypto-browserify/sha256.js","/node_modules/gulp-browserify/node_modules/crypto-browserify")},{"./helpers":4,buffer:3,lYpoI2:11}],10:[function(r,o,a){(function(n,l,m,p,G,M,y,O,z){a.read=function(g,v,N,F,S){var A,V,L=8*S-F-1,f=(1<<L)-1,C=f>>1,c=-7,d=N?S-1:0,s=N?-1:1,S=g[v+d];for(d+=s,A=S&(1<<-c)-1,S>>=-c,c+=L;0<c;A=256*A+g[v+d],d+=s,c-=8);for(V=A&(1<<-c)-1,A>>=-c,c+=F;0<c;V=256*V+g[v+d],d+=s,c-=8);if(A===0)A=1-C;else{if(A===f)return V?NaN:1/0*(S?-1:1);V+=Math.pow(2,F),A-=C}return(S?-1:1)*V*Math.pow(2,A-F)},a.write=function(g,v,N,F,x,T){var V,L,f=8*T-x-1,C=(1<<f)-1,c=C>>1,d=x===23?Math.pow(2,-24)-Math.pow(2,-77):0,s=F?0:T-1,S=F?1:-1,T=v<0||v===0&&1/v<0?1:0;for(v=Math.abs(v),isNaN(v)||v===1/0?(L=isNaN(v)?1:0,V=C):(V=Math.floor(Math.log(v)/Math.LN2),v*(F=Math.pow(2,-V))<1&&(V--,F*=2),2<=(v+=1<=V+c?d/F:d*Math.pow(2,1-c))*F&&(V++,F/=2),C<=V+c?(L=0,V=C):1<=V+c?(L=(v*F-1)*Math.pow(2,x),V+=c):(L=v*Math.pow(2,c-1)*Math.pow(2,x),V=0));8<=x;g[N+s]=255&L,s+=S,L/=256,x-=8);for(V=V<<x|L,f+=x;0<f;g[N+s]=255&V,s+=S,V/=256,f-=8);g[N+s-S]|=128*T}}).call(this,r("lYpoI2"),typeof self<"u"?self:typeof window<"u"?window:{},r("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/node_modules/gulp-browserify/node_modules/ieee754/index.js","/node_modules/gulp-browserify/node_modules/ieee754")},{buffer:3,lYpoI2:11}],11:[function(r,o,a){(function(n,l,m,p,G,M,y,O,z){var g,v,N;function F(){}(n=o.exports={}).nextTick=(v=typeof window<"u"&&window.setImmediate,N=typeof window<"u"&&window.postMessage&&window.addEventListener,v?function(x){return window.setImmediate(x)}:N?(g=[],window.addEventListener("message",function(x){var A=x.source;A!==window&&A!==null||x.data!=="process-tick"||(x.stopPropagation(),0<g.length&&g.shift()())},!0),function(x){g.push(x),window.postMessage("process-tick","*")}):function(x){setTimeout(x,0)}),n.title="browser",n.browser=!0,n.env={},n.argv=[],n.on=F,n.addListener=F,n.once=F,n.off=F,n.removeListener=F,n.removeAllListeners=F,n.emit=F,n.binding=function(x){throw new Error("process.binding is not supported")},n.cwd=function(){return"/"},n.chdir=function(x){throw new Error("process.chdir is not supported")}}).call(this,r("lYpoI2"),typeof self<"u"?self:typeof window<"u"?window:{},r("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/node_modules/gulp-browserify/node_modules/process/browser.js","/node_modules/gulp-browserify/node_modules/process")},{buffer:3,lYpoI2:11}]},{},[1])(1)})})(zs);function Is(e){let t=new Uint8Array(0);for(let r=0;r<e.length;r++){let o=new Uint8Array(e[r]),a=new Uint8Array(t.length+o.length);a.set(t,0),a.set(o,t.length),t=a}return t.buffer}function Rs(e){return new Promise(t=>{const r=new AudioContext,o=r.createBufferSource();r.decodeAudioData(e,a=>{o.buffer=a,o.connect(r.destination),t(Us(a))})})}function Bs(e,t={}){const r=t.outputRate||24e3,o=t.bitDepth||16,a=t.numChannels||e.numberOfChannels,n=e.sampleRate/r>>0,l=a===2?mr(n,e.getChannelData(0),e.getChannelData(1)):mr(n,e.getChannelData(0));return Ds(l,r,o,a)}function Us(e){const t=new AudioContext,r=e.length,o=e.getChannelData(0),a=.01;let n=0,l=r;for(let p=0;p<r;p++)if(Math.abs(o[p])>a){n=p;break}for(let p=r-1;p>=n;p--)if(Math.abs(o[p])>a){l=p;break}const m=t.createBuffer(e.numberOfChannels,l-n,e.sampleRate);for(let p=0;p<e.numberOfChannels;p++){const G=e.getChannelData(p),M=m.getChannelData(p);for(let y=n;y<l;y++)M[y-n]=G[y]}return m}function mr(e,t,r){const o=r?(t.length+r.length)/e>>0:t.length/e>>0,a=new Float32Array(o);let n=0,l=0;for(;n<o;)a[n++]=t[l],r&&(a[n++]=r[l]),l+=e;return a}function Ds(e,t,r,o){const a=r/8,n=o*a,l=e.length*a,m=new ArrayBuffer(44+l),p=new DataView(m);return Ue(p,0,"RIFF"),p.setUint32(4,36+l,!0),Ue(p,8,"WAVE"),Ue(p,12,"fmt "),p.setUint32(16,16,!0),p.setUint16(20,1,!0),p.setUint16(22,o,!0),p.setUint32(24,t,!0),p.setUint32(28,t*n,!0),p.setUint16(32,n,!0),p.setUint16(34,r,!0),Ue(p,36,"data"),p.setUint32(40,l,!0),r===8?Hs(p,44,e):r===16?js(p,44,e):Ks(p,44,e),m}function Ue(e,t,r){for(let o=0;o<r.length;o++)e.setUint8(t+o,r.charCodeAt(o))}function Hs(e,t,r){for(let o=0;o<r.length;o++,t++){let a=Math.max(-1,Math.min(1,r[o])),n=a<0?a*32768:a*32767;n=parseInt(""+255/(65535/(n+32768))),e.setInt8(t,n,!0)}}function js(e,t,r){for(let o=0;o<r.length;o++,t+=2){let a=Math.max(-1,Math.min(1,r[o]));e.setInt16(t,a<0?a*32768:a*32767,!0)}}function Ks(e,t,r){for(let o=0;o<r.length;o++,t+=4)e.setFloat32(t,r[o],!0)}var uo=(e=>(e["晓晓 - 新闻、小说"]="Microsoft Server Speech Text to Speech Voice (zh-CN, XiaoxiaoNeural)",e["晓伊 - 卡通、小说"]="Microsoft Server Speech Text to Speech Voice (zh-CN, XiaoyiNeural)",e["云健 - 运动、小说"]="Microsoft Server Speech Text to Speech Voice (zh-CN, YunjianNeural)",e["云希 - 小说"]="Microsoft Server Speech Text to Speech Voice (zh-CN, YunxiNeural)",e["云夏 - 卡通、小说"]="Microsoft Server Speech Text to Speech Voice (zh-CN, YunxiaNeural)",e["云扬 - 新闻"]="Microsoft Server Speech Text to Speech Voice (zh-CN, YunyangNeural)",e["辽林 - 方言小贝"]="Microsoft Server Speech Text to Speech Voice (zh-CN-liaoning, XiaobeiNeural)",e["陕西 - 方言小倪"]="Microsoft Server Speech Text to Speech Voice (zh-CN-shaanxi, XiaoniNeural)",e.晓晓="Microsoft Server Speech Text to Speech Voice (zh-CN, XiaoxiaoNeural)",e.晓伊="Microsoft Server Speech Text to Speech Voice (zh-CN, XiaoyiNeural)",e.云健="Microsoft Server Speech Text to Speech Voice (zh-CN, YunjianNeural)",e.云希="Microsoft Server Speech Text to Speech Voice (zh-CN, YunxiNeural)",e.云夏="Microsoft Server Speech Text to Speech Voice (zh-CN, YunxiaNeural)",e.云扬="Microsoft Server Speech Text to Speech Voice (zh-CN, YunyangNeural)",e.辽林="Microsoft Server Speech Text to Speech Voice (zh-CN-liaoning, XiaobeiNeural)",e.陕西="Microsoft Server Speech Text to Speech Voice (zh-CN-shaanxi, XiaoniNeural)",e))(uo||{});const Ys=[{Name:"Microsoft Server Speech Text to Speech Voice (af-ZA, AdriNeural)",ShortName:"af-ZA-AdriNeural",Gender:"Female",Locale:"af-ZA",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Adri Online (Natural) - Afrikaans (South Africa)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (af-ZA, WillemNeural)",ShortName:"af-ZA-WillemNeural",Gender:"Male",Locale:"af-ZA",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Willem Online (Natural) - Afrikaans (South Africa)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (sq-AL, AnilaNeural)",ShortName:"sq-AL-AnilaNeural",Gender:"Female",Locale:"sq-AL",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Anila Online (Natural) - Albanian (Albania)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (sq-AL, IlirNeural)",ShortName:"sq-AL-IlirNeural",Gender:"Male",Locale:"sq-AL",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Ilir Online (Natural) - Albanian (Albania)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (am-ET, AmehaNeural)",ShortName:"am-ET-AmehaNeural",Gender:"Male",Locale:"am-ET",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Ameha Online (Natural) - Amharic (Ethiopia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (am-ET, MekdesNeural)",ShortName:"am-ET-MekdesNeural",Gender:"Female",Locale:"am-ET",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Mekdes Online (Natural) - Amharic (Ethiopia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ar-DZ, AminaNeural)",ShortName:"ar-DZ-AminaNeural",Gender:"Female",Locale:"ar-DZ",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Amina Online (Natural) - Arabic (Algeria)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ar-DZ, IsmaelNeural)",ShortName:"ar-DZ-IsmaelNeural",Gender:"Male",Locale:"ar-DZ",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Ismael Online (Natural) - Arabic (Algeria)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ar-BH, AliNeural)",ShortName:"ar-BH-AliNeural",Gender:"Male",Locale:"ar-BH",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Ali Online (Natural) - Arabic (Bahrain)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ar-BH, LailaNeural)",ShortName:"ar-BH-LailaNeural",Gender:"Female",Locale:"ar-BH",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Laila Online (Natural) - Arabic (Bahrain)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ar-EG, SalmaNeural)",ShortName:"ar-EG-SalmaNeural",Gender:"Female",Locale:"ar-EG",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Salma Online (Natural) - Arabic (Egypt)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ar-EG, ShakirNeural)",ShortName:"ar-EG-ShakirNeural",Gender:"Male",Locale:"ar-EG",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Shakir Online (Natural) - Arabic (Egypt)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ar-IQ, BasselNeural)",ShortName:"ar-IQ-BasselNeural",Gender:"Male",Locale:"ar-IQ",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Bassel Online (Natural) - Arabic (Iraq)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ar-IQ, RanaNeural)",ShortName:"ar-IQ-RanaNeural",Gender:"Female",Locale:"ar-IQ",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Rana Online (Natural) - Arabic (Iraq)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ar-JO, SanaNeural)",ShortName:"ar-JO-SanaNeural",Gender:"Female",Locale:"ar-JO",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Sana Online (Natural) - Arabic (Jordan)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ar-JO, TaimNeural)",ShortName:"ar-JO-TaimNeural",Gender:"Male",Locale:"ar-JO",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Taim Online (Natural) - Arabic (Jordan)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ar-KW, FahedNeural)",ShortName:"ar-KW-FahedNeural",Gender:"Male",Locale:"ar-KW",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Fahed Online (Natural) - Arabic (Kuwait)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ar-KW, NouraNeural)",ShortName:"ar-KW-NouraNeural",Gender:"Female",Locale:"ar-KW",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Noura Online (Natural) - Arabic (Kuwait)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ar-LB, LaylaNeural)",ShortName:"ar-LB-LaylaNeural",Gender:"Female",Locale:"ar-LB",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Layla Online (Natural) - Arabic (Lebanon)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ar-LB, RamiNeural)",ShortName:"ar-LB-RamiNeural",Gender:"Male",Locale:"ar-LB",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Rami Online (Natural) - Arabic (Lebanon)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ar-LY, ImanNeural)",ShortName:"ar-LY-ImanNeural",Gender:"Female",Locale:"ar-LY",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Iman Online (Natural) - Arabic (Libya)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ar-LY, OmarNeural)",ShortName:"ar-LY-OmarNeural",Gender:"Male",Locale:"ar-LY",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Omar Online (Natural) - Arabic (Libya)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ar-MA, JamalNeural)",ShortName:"ar-MA-JamalNeural",Gender:"Male",Locale:"ar-MA",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Jamal Online (Natural) - Arabic (Morocco)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ar-MA, MounaNeural)",ShortName:"ar-MA-MounaNeural",Gender:"Female",Locale:"ar-MA",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Mouna Online (Natural) - Arabic (Morocco)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ar-OM, AbdullahNeural)",ShortName:"ar-OM-AbdullahNeural",Gender:"Male",Locale:"ar-OM",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Abdullah Online (Natural) - Arabic (Oman)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ar-OM, AyshaNeural)",ShortName:"ar-OM-AyshaNeural",Gender:"Female",Locale:"ar-OM",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Aysha Online (Natural) - Arabic (Oman)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ar-QA, AmalNeural)",ShortName:"ar-QA-AmalNeural",Gender:"Female",Locale:"ar-QA",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Amal Online (Natural) - Arabic (Qatar)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ar-QA, MoazNeural)",ShortName:"ar-QA-MoazNeural",Gender:"Male",Locale:"ar-QA",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Moaz Online (Natural) - Arabic (Qatar)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ar-SA, HamedNeural)",ShortName:"ar-SA-HamedNeural",Gender:"Male",Locale:"ar-SA",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Hamed Online (Natural) - Arabic (Saudi Arabia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ar-SA, ZariyahNeural)",ShortName:"ar-SA-ZariyahNeural",Gender:"Female",Locale:"ar-SA",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Zariyah Online (Natural) - Arabic (Saudi Arabia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ar-SY, AmanyNeural)",ShortName:"ar-SY-AmanyNeural",Gender:"Female",Locale:"ar-SY",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Amany Online (Natural) - Arabic (Syria)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ar-SY, LaithNeural)",ShortName:"ar-SY-LaithNeural",Gender:"Male",Locale:"ar-SY",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Laith Online (Natural) - Arabic (Syria)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ar-TN, HediNeural)",ShortName:"ar-TN-HediNeural",Gender:"Male",Locale:"ar-TN",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Hedi Online (Natural) - Arabic (Tunisia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ar-TN, ReemNeural)",ShortName:"ar-TN-ReemNeural",Gender:"Female",Locale:"ar-TN",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Reem Online (Natural) - Arabic (Tunisia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ar-AE, FatimaNeural)",ShortName:"ar-AE-FatimaNeural",Gender:"Female",Locale:"ar-AE",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Fatima Online (Natural) - Arabic (United Arab Emirates)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ar-AE, HamdanNeural)",ShortName:"ar-AE-HamdanNeural",Gender:"Male",Locale:"ar-AE",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Hamdan Online (Natural) - Arabic (United Arab Emirates)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ar-YE, MaryamNeural)",ShortName:"ar-YE-MaryamNeural",Gender:"Female",Locale:"ar-YE",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Maryam Online (Natural) - Arabic (Yemen)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ar-YE, SalehNeural)",ShortName:"ar-YE-SalehNeural",Gender:"Male",Locale:"ar-YE",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Saleh Online (Natural) - Arabic (Yemen)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (az-AZ, BabekNeural)",ShortName:"az-AZ-BabekNeural",Gender:"Male",Locale:"az-AZ",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Babek Online (Natural) - Azerbaijani (Azerbaijan)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (az-AZ, BanuNeural)",ShortName:"az-AZ-BanuNeural",Gender:"Female",Locale:"az-AZ",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Banu Online (Natural) - Azerbaijani (Azerbaijan)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (bn-BD, NabanitaNeural)",ShortName:"bn-BD-NabanitaNeural",Gender:"Female",Locale:"bn-BD",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Nabanita Online (Natural) - Bangla (Bangladesh)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (bn-BD, PradeepNeural)",ShortName:"bn-BD-PradeepNeural",Gender:"Male",Locale:"bn-BD",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Pradeep Online (Natural) - Bangla (Bangladesh)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (bn-IN, BashkarNeural)",ShortName:"bn-IN-BashkarNeural",Gender:"Male",Locale:"bn-IN",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Bashkar Online (Natural) - Bangla (India)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (bn-IN, TanishaaNeural)",ShortName:"bn-IN-TanishaaNeural",Gender:"Female",Locale:"bn-IN",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Tanishaa Online (Natural) - Bengali (India)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (bs-BA, GoranNeural)",ShortName:"bs-BA-GoranNeural",Gender:"Male",Locale:"bs-BA",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Goran Online (Natural) - Bosnian (Bosnia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (bs-BA, VesnaNeural)",ShortName:"bs-BA-VesnaNeural",Gender:"Female",Locale:"bs-BA",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Vesna Online (Natural) - Bosnian (Bosnia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (bg-BG, BorislavNeural)",ShortName:"bg-BG-BorislavNeural",Gender:"Male",Locale:"bg-BG",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Borislav Online (Natural) - Bulgarian (Bulgaria)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (bg-BG, KalinaNeural)",ShortName:"bg-BG-KalinaNeural",Gender:"Female",Locale:"bg-BG",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Kalina Online (Natural) - Bulgarian (Bulgaria)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (my-MM, NilarNeural)",ShortName:"my-MM-NilarNeural",Gender:"Female",Locale:"my-MM",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Nilar Online (Natural) - Burmese (Myanmar)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (my-MM, ThihaNeural)",ShortName:"my-MM-ThihaNeural",Gender:"Male",Locale:"my-MM",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Thiha Online (Natural) - Burmese (Myanmar)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ca-ES, EnricNeural)",ShortName:"ca-ES-EnricNeural",Gender:"Male",Locale:"ca-ES",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Enric Online (Natural) - Catalan (Spain)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ca-ES, JoanaNeural)",ShortName:"ca-ES-JoanaNeural",Gender:"Female",Locale:"ca-ES",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Joana Online (Natural) - Catalan (Spain)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (zh-HK, HiuGaaiNeural)",ShortName:"zh-HK-HiuGaaiNeural",Gender:"Female",Locale:"zh-HK",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft HiuGaai Online (Natural) - Chinese (Cantonese Traditional)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (zh-HK, HiuMaanNeural)",ShortName:"zh-HK-HiuMaanNeural",Gender:"Female",Locale:"zh-HK",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft HiuMaan Online (Natural) - Chinese (Hong Kong)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (zh-HK, WanLungNeural)",ShortName:"zh-HK-WanLungNeural",Gender:"Male",Locale:"zh-HK",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft WanLung Online (Natural) - Chinese (Hong Kong)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (zh-CN, XiaoxiaoNeural)",ShortName:"zh-CN-XiaoxiaoNeural",CN_Name:"晓晓 - 新闻、小说",Gender:"Female",Locale:"zh-CN",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Xiaoxiao Online (Natural) - Chinese (Mainland)",Status:"GA",VoiceTag:{ContentCategories:["News","Novel"],VoicePersonalities:["Warm"]}},{Name:"Microsoft Server Speech Text to Speech Voice (zh-CN, XiaoyiNeural)",ShortName:"zh-CN-XiaoyiNeural",CN_Name:"晓伊 - 卡通、小说",Gender:"Female",Locale:"zh-CN",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Xiaoyi Online (Natural) - Chinese (Mainland)",Status:"GA",VoiceTag:{ContentCategories:["Cartoon","Novel"],VoicePersonalities:["Lively"]}},{Name:"Microsoft Server Speech Text to Speech Voice (zh-CN, YunjianNeural)",ShortName:"zh-CN-YunjianNeural",CN_Name:"云健 - 运动、小说",Gender:"Male",Locale:"zh-CN",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Yunjian Online (Natural) - Chinese (Mainland)",Status:"GA",VoiceTag:{ContentCategories:["Sports"," Novel"],VoicePersonalities:["Passion"]}},{Name:"Microsoft Server Speech Text to Speech Voice (zh-CN, YunxiNeural)",ShortName:"zh-CN-YunxiNeural",CN_Name:"云希 - 小说",Gender:"Male",Locale:"zh-CN",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Yunxi Online (Natural) - Chinese (Mainland)",Status:"GA",VoiceTag:{ContentCategories:["Novel"],VoicePersonalities:["Lively","Sunshine"]}},{Name:"Microsoft Server Speech Text to Speech Voice (zh-CN, YunxiaNeural)",ShortName:"zh-CN-YunxiaNeural",CN_Name:"云夏 - 卡通、小说",Gender:"Male",Locale:"zh-CN",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Yunxia Online (Natural) - Chinese (Mainland)",Status:"GA",VoiceTag:{ContentCategories:["Cartoon","Novel"],VoicePersonalities:["Cute"]}},{Name:"Microsoft Server Speech Text to Speech Voice (zh-CN, YunyangNeural)",ShortName:"zh-CN-YunyangNeural",CN_Name:"云扬 - 新闻",Gender:"Male",Locale:"zh-CN",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Yunyang Online (Natural) - Chinese (Mainland)",Status:"GA",VoiceTag:{ContentCategories:["News"],VoicePersonalities:["Professional","Reliable"]}},{Name:"Microsoft Server Speech Text to Speech Voice (zh-CN-liaoning, XiaobeiNeural)",ShortName:"zh-CN-liaoning-XiaobeiNeural",CN_Name:"辽林 - 方言小贝",Gender:"Female",Locale:"zh-CN-liaoning",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Xiaobei Online (Natural) - Chinese (Northeastern Mandarin)",Status:"GA",VoiceTag:{ContentCategories:["Dialect"],VoicePersonalities:["Humorous"]}},{Name:"Microsoft Server Speech Text to Speech Voice (zh-TW, HsiaoChenNeural)",ShortName:"zh-TW-HsiaoChenNeural",Gender:"Female",Locale:"zh-TW",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft HsiaoChen Online (Natural) - Chinese (Taiwan)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (zh-TW, YunJheNeural)",ShortName:"zh-TW-YunJheNeural",Gender:"Male",Locale:"zh-TW",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft YunJhe Online (Natural) - Chinese (Taiwan)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (zh-TW, HsiaoYuNeural)",ShortName:"zh-TW-HsiaoYuNeural",Gender:"Female",Locale:"zh-TW",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft HsiaoYu Online (Natural) - Chinese (Taiwanese Mandarin)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (zh-CN-shaanxi, XiaoniNeural)",ShortName:"zh-CN-shaanxi-XiaoniNeural",CN_Name:"陕西 - 方言小倪",Gender:"Female",Locale:"zh-CN-shaanxi",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Xiaoni Online (Natural) - Chinese (Zhongyuan Mandarin Shaanxi)",Status:"GA",VoiceTag:{ContentCategories:["Dialect"],VoicePersonalities:["Bright"]}},{Name:"Microsoft Server Speech Text to Speech Voice (hr-HR, GabrijelaNeural)",ShortName:"hr-HR-GabrijelaNeural",Gender:"Female",Locale:"hr-HR",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Gabrijela Online (Natural) - Croatian (Croatia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (hr-HR, SreckoNeural)",ShortName:"hr-HR-SreckoNeural",Gender:"Male",Locale:"hr-HR",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Srecko Online (Natural) - Croatian (Croatia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (cs-CZ, AntoninNeural)",ShortName:"cs-CZ-AntoninNeural",Gender:"Male",Locale:"cs-CZ",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Antonin Online (Natural) - Czech (Czech)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (cs-CZ, VlastaNeural)",ShortName:"cs-CZ-VlastaNeural",Gender:"Female",Locale:"cs-CZ",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Vlasta Online (Natural) - Czech (Czech)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (da-DK, ChristelNeural)",ShortName:"da-DK-ChristelNeural",Gender:"Female",Locale:"da-DK",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Christel Online (Natural) - Danish (Denmark)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (da-DK, JeppeNeural)",ShortName:"da-DK-JeppeNeural",Gender:"Male",Locale:"da-DK",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Jeppe Online (Natural) - Danish (Denmark)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (nl-BE, ArnaudNeural)",ShortName:"nl-BE-ArnaudNeural",Gender:"Male",Locale:"nl-BE",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Arnaud Online (Natural) - Dutch (Belgium)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (nl-BE, DenaNeural)",ShortName:"nl-BE-DenaNeural",Gender:"Female",Locale:"nl-BE",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Dena Online (Natural) - Dutch (Belgium)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (nl-NL, ColetteNeural)",ShortName:"nl-NL-ColetteNeural",Gender:"Female",Locale:"nl-NL",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Colette Online (Natural) - Dutch (Netherlands)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (nl-NL, FennaNeural)",ShortName:"nl-NL-FennaNeural",Gender:"Female",Locale:"nl-NL",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Fenna Online (Natural) - Dutch (Netherlands)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (nl-NL, MaartenNeural)",ShortName:"nl-NL-MaartenNeural",Gender:"Male",Locale:"nl-NL",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Maarten Online (Natural) - Dutch (Netherlands)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-AU, NatashaNeural)",ShortName:"en-AU-NatashaNeural",Gender:"Female",Locale:"en-AU",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Natasha Online (Natural) - English (Australia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-AU, WilliamNeural)",ShortName:"en-AU-WilliamNeural",Gender:"Male",Locale:"en-AU",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft William Online (Natural) - English (Australia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-CA, ClaraNeural)",ShortName:"en-CA-ClaraNeural",Gender:"Female",Locale:"en-CA",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Clara Online (Natural) - English (Canada)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-CA, LiamNeural)",ShortName:"en-CA-LiamNeural",Gender:"Male",Locale:"en-CA",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Liam Online (Natural) - English (Canada)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-HK, SamNeural)",ShortName:"en-HK-SamNeural",Gender:"Male",Locale:"en-HK",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Sam Online (Natural) - English (Hongkong)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-HK, YanNeural)",ShortName:"en-HK-YanNeural",Gender:"Female",Locale:"en-HK",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Yan Online (Natural) - English (Hongkong)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-IN, NeerjaExpressiveNeural)",ShortName:"en-IN-NeerjaExpressiveNeural",Gender:"Female",Locale:"en-IN",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Neerja Online (Natural) - English (India) (Preview)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-IN, NeerjaNeural)",ShortName:"en-IN-NeerjaNeural",Gender:"Female",Locale:"en-IN",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Neerja Online (Natural) - English (India)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-IN, PrabhatNeural)",ShortName:"en-IN-PrabhatNeural",Gender:"Male",Locale:"en-IN",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Prabhat Online (Natural) - English (India)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-IE, ConnorNeural)",ShortName:"en-IE-ConnorNeural",Gender:"Male",Locale:"en-IE",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Connor Online (Natural) - English (Ireland)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-IE, EmilyNeural)",ShortName:"en-IE-EmilyNeural",Gender:"Female",Locale:"en-IE",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Emily Online (Natural) - English (Ireland)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-KE, AsiliaNeural)",ShortName:"en-KE-AsiliaNeural",Gender:"Female",Locale:"en-KE",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Asilia Online (Natural) - English (Kenya)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-KE, ChilembaNeural)",ShortName:"en-KE-ChilembaNeural",Gender:"Male",Locale:"en-KE",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Chilemba Online (Natural) - English (Kenya)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-NZ, MitchellNeural)",ShortName:"en-NZ-MitchellNeural",Gender:"Male",Locale:"en-NZ",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Mitchell Online (Natural) - English (New Zealand)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-NZ, MollyNeural)",ShortName:"en-NZ-MollyNeural",Gender:"Female",Locale:"en-NZ",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Molly Online (Natural) - English (New Zealand)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-NG, AbeoNeural)",ShortName:"en-NG-AbeoNeural",Gender:"Male",Locale:"en-NG",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Abeo Online (Natural) - English (Nigeria)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-NG, EzinneNeural)",ShortName:"en-NG-EzinneNeural",Gender:"Female",Locale:"en-NG",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Ezinne Online (Natural) - English (Nigeria)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-PH, JamesNeural)",ShortName:"en-PH-JamesNeural",Gender:"Male",Locale:"en-PH",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft James Online (Natural) - English (Philippines)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-PH, RosaNeural)",ShortName:"en-PH-RosaNeural",Gender:"Female",Locale:"en-PH",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Rosa Online (Natural) - English (Philippines)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-SG, LunaNeural)",ShortName:"en-SG-LunaNeural",Gender:"Female",Locale:"en-SG",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Luna Online (Natural) - English (Singapore)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-SG, WayneNeural)",ShortName:"en-SG-WayneNeural",Gender:"Male",Locale:"en-SG",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Wayne Online (Natural) - English (Singapore)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-ZA, LeahNeural)",ShortName:"en-ZA-LeahNeural",Gender:"Female",Locale:"en-ZA",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Leah Online (Natural) - English (South Africa)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-ZA, LukeNeural)",ShortName:"en-ZA-LukeNeural",Gender:"Male",Locale:"en-ZA",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Luke Online (Natural) - English (South Africa)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-TZ, ElimuNeural)",ShortName:"en-TZ-ElimuNeural",Gender:"Male",Locale:"en-TZ",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Elimu Online (Natural) - English (Tanzania)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-TZ, ImaniNeural)",ShortName:"en-TZ-ImaniNeural",Gender:"Female",Locale:"en-TZ",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Imani Online (Natural) - English (Tanzania)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-GB, LibbyNeural)",ShortName:"en-GB-LibbyNeural",Gender:"Female",Locale:"en-GB",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Libby Online (Natural) - English (United Kingdom)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-GB, MaisieNeural)",ShortName:"en-GB-MaisieNeural",Gender:"Female",Locale:"en-GB",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Maisie Online (Natural) - English (United Kingdom)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-GB, RyanNeural)",ShortName:"en-GB-RyanNeural",Gender:"Male",Locale:"en-GB",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Ryan Online (Natural) - English (United Kingdom)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-GB, SoniaNeural)",ShortName:"en-GB-SoniaNeural",Gender:"Female",Locale:"en-GB",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Sonia Online (Natural) - English (United Kingdom)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-GB, ThomasNeural)",ShortName:"en-GB-ThomasNeural",Gender:"Male",Locale:"en-GB",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Thomas Online (Natural) - English (United Kingdom)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-US, AriaNeural)",ShortName:"en-US-AriaNeural",Gender:"Female",Locale:"en-US",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Aria Online (Natural) - English (United States)",Status:"GA",VoiceTag:{ContentCategories:["News","Novel"],VoicePersonalities:["Positive","Confident"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-US, AnaNeural)",ShortName:"en-US-AnaNeural",Gender:"Female",Locale:"en-US",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Ana Online (Natural) - English (United States)",Status:"GA",VoiceTag:{ContentCategories:["Cartoon","Conversation"],VoicePersonalities:["Cute"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-US, ChristopherNeural)",ShortName:"en-US-ChristopherNeural",Gender:"Male",Locale:"en-US",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Christopher Online (Natural) - English (United States)",Status:"GA",VoiceTag:{ContentCategories:["News","Novel"],VoicePersonalities:["Reliable","Authority"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-US, EricNeural)",ShortName:"en-US-EricNeural",Gender:"Male",Locale:"en-US",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Eric Online (Natural) - English (United States)",Status:"GA",VoiceTag:{ContentCategories:["News","Novel"],VoicePersonalities:["Rational"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-US, GuyNeural)",ShortName:"en-US-GuyNeural",Gender:"Male",Locale:"en-US",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Guy Online (Natural) - English (United States)",Status:"GA",VoiceTag:{ContentCategories:["News","Novel"],VoicePersonalities:["Passion"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-US, JennyNeural)",ShortName:"en-US-JennyNeural",Gender:"Female",Locale:"en-US",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Jenny Online (Natural) - English (United States)",Status:"GA",VoiceTag:{ContentCategories:["Conversation","News"],VoicePersonalities:["Friendly","Considerate","Comfort"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-US, MichelleNeural)",ShortName:"en-US-MichelleNeural",Gender:"Female",Locale:"en-US",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Michelle Online (Natural) - English (United States)",Status:"GA",VoiceTag:{ContentCategories:["News","Novel"],VoicePersonalities:["Friendly","Pleasant"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-US, RogerNeural)",ShortName:"en-US-RogerNeural",Gender:"Male",Locale:"en-US",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Roger Online (Natural) - English (United States)",Status:"GA",VoiceTag:{ContentCategories:["News","Novel"],VoicePersonalities:["Lively"]}},{Name:"Microsoft Server Speech Text to Speech Voice (en-US, SteffanNeural)",ShortName:"en-US-SteffanNeural",Gender:"Male",Locale:"en-US",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Steffan Online (Natural) - English (United States)",Status:"GA",VoiceTag:{ContentCategories:["News","Novel"],VoicePersonalities:["Rational"]}},{Name:"Microsoft Server Speech Text to Speech Voice (et-EE, AnuNeural)",ShortName:"et-EE-AnuNeural",Gender:"Female",Locale:"et-EE",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Anu Online (Natural) - Estonian (Estonia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (et-EE, KertNeural)",ShortName:"et-EE-KertNeural",Gender:"Male",Locale:"et-EE",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Kert Online (Natural) - Estonian (Estonia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (fil-PH, AngeloNeural)",ShortName:"fil-PH-AngeloNeural",Gender:"Male",Locale:"fil-PH",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Angelo Online (Natural) - Filipino (Philippines)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (fil-PH, BlessicaNeural)",ShortName:"fil-PH-BlessicaNeural",Gender:"Female",Locale:"fil-PH",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Blessica Online (Natural) - Filipino (Philippines)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (fi-FI, HarriNeural)",ShortName:"fi-FI-HarriNeural",Gender:"Male",Locale:"fi-FI",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Harri Online (Natural) - Finnish (Finland)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (fi-FI, NooraNeural)",ShortName:"fi-FI-NooraNeural",Gender:"Female",Locale:"fi-FI",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Noora Online (Natural) - Finnish (Finland)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (fr-BE, CharlineNeural)",ShortName:"fr-BE-CharlineNeural",Gender:"Female",Locale:"fr-BE",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Charline Online (Natural) - French (Belgium)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (fr-BE, GerardNeural)",ShortName:"fr-BE-GerardNeural",Gender:"Male",Locale:"fr-BE",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Gerard Online (Natural) - French (Belgium)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (fr-CA, AntoineNeural)",ShortName:"fr-CA-AntoineNeural",Gender:"Male",Locale:"fr-CA",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Antoine Online (Natural) - French (Canada)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (fr-CA, JeanNeural)",ShortName:"fr-CA-JeanNeural",Gender:"Male",Locale:"fr-CA",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Jean Online (Natural) - French (Canada)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (fr-CA, SylvieNeural)",ShortName:"fr-CA-SylvieNeural",Gender:"Female",Locale:"fr-CA",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Sylvie Online (Natural) - French (Canada)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (fr-FR, DeniseNeural)",ShortName:"fr-FR-DeniseNeural",Gender:"Female",Locale:"fr-FR",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Denise Online (Natural) - French (France)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (fr-FR, EloiseNeural)",ShortName:"fr-FR-EloiseNeural",Gender:"Female",Locale:"fr-FR",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Eloise Online (Natural) - French (France)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (fr-FR, HenriNeural)",ShortName:"fr-FR-HenriNeural",Gender:"Male",Locale:"fr-FR",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Henri Online (Natural) - French (France)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (fr-CH, ArianeNeural)",ShortName:"fr-CH-ArianeNeural",Gender:"Female",Locale:"fr-CH",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Ariane Online (Natural) - French (Switzerland)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (fr-CH, FabriceNeural)",ShortName:"fr-CH-FabriceNeural",Gender:"Male",Locale:"fr-CH",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Fabrice Online (Natural) - French (Switzerland)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (gl-ES, RoiNeural)",ShortName:"gl-ES-RoiNeural",Gender:"Male",Locale:"gl-ES",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Roi Online (Natural) - Galician (Spain)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (gl-ES, SabelaNeural)",ShortName:"gl-ES-SabelaNeural",Gender:"Female",Locale:"gl-ES",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Sabela Online (Natural) - Galician (Spain)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ka-GE, EkaNeural)",ShortName:"ka-GE-EkaNeural",Gender:"Female",Locale:"ka-GE",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Eka Online (Natural) - Georgian (Georgia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ka-GE, GiorgiNeural)",ShortName:"ka-GE-GiorgiNeural",Gender:"Male",Locale:"ka-GE",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Giorgi Online (Natural) - Georgian (Georgia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (de-AT, IngridNeural)",ShortName:"de-AT-IngridNeural",Gender:"Female",Locale:"de-AT",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Ingrid Online (Natural) - German (Austria)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (de-AT, JonasNeural)",ShortName:"de-AT-JonasNeural",Gender:"Male",Locale:"de-AT",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Jonas Online (Natural) - German (Austria)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (de-DE, AmalaNeural)",ShortName:"de-DE-AmalaNeural",Gender:"Female",Locale:"de-DE",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Amala Online (Natural) - German (Germany)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (de-DE, ConradNeural)",ShortName:"de-DE-ConradNeural",Gender:"Male",Locale:"de-DE",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Conrad Online (Natural) - German (Germany)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (de-DE, KatjaNeural)",ShortName:"de-DE-KatjaNeural",Gender:"Female",Locale:"de-DE",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Katja Online (Natural) - German (Germany)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (de-DE, KillianNeural)",ShortName:"de-DE-KillianNeural",Gender:"Male",Locale:"de-DE",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Killian Online (Natural) - German (Germany)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (de-CH, JanNeural)",ShortName:"de-CH-JanNeural",Gender:"Male",Locale:"de-CH",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Jan Online (Natural) - German (Switzerland)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (de-CH, LeniNeural)",ShortName:"de-CH-LeniNeural",Gender:"Female",Locale:"de-CH",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Leni Online (Natural) - German (Switzerland)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (el-GR, AthinaNeural)",ShortName:"el-GR-AthinaNeural",Gender:"Female",Locale:"el-GR",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Athina Online (Natural) - Greek (Greece)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (el-GR, NestorasNeural)",ShortName:"el-GR-NestorasNeural",Gender:"Male",Locale:"el-GR",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Nestoras Online (Natural) - Greek (Greece)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (gu-IN, DhwaniNeural)",ShortName:"gu-IN-DhwaniNeural",Gender:"Female",Locale:"gu-IN",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Dhwani Online (Natural) - Gujarati (India)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (gu-IN, NiranjanNeural)",ShortName:"gu-IN-NiranjanNeural",Gender:"Male",Locale:"gu-IN",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Niranjan Online (Natural) - Gujarati (India)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (he-IL, AvriNeural)",ShortName:"he-IL-AvriNeural",Gender:"Male",Locale:"he-IL",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Avri Online (Natural) - Hebrew (Israel)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (he-IL, HilaNeural)",ShortName:"he-IL-HilaNeural",Gender:"Female",Locale:"he-IL",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Hila Online (Natural) - Hebrew (Israel)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (hi-IN, MadhurNeural)",ShortName:"hi-IN-MadhurNeural",Gender:"Male",Locale:"hi-IN",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Madhur Online (Natural) - Hindi (India)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (hi-IN, SwaraNeural)",ShortName:"hi-IN-SwaraNeural",Gender:"Female",Locale:"hi-IN",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Swara Online (Natural) - Hindi (India)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (hu-HU, NoemiNeural)",ShortName:"hu-HU-NoemiNeural",Gender:"Female",Locale:"hu-HU",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Noemi Online (Natural) - Hungarian (Hungary)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (hu-HU, TamasNeural)",ShortName:"hu-HU-TamasNeural",Gender:"Male",Locale:"hu-HU",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Tamas Online (Natural) - Hungarian (Hungary)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (is-IS, GudrunNeural)",ShortName:"is-IS-GudrunNeural",Gender:"Female",Locale:"is-IS",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Gudrun Online (Natural) - Icelandic (Iceland)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (is-IS, GunnarNeural)",ShortName:"is-IS-GunnarNeural",Gender:"Male",Locale:"is-IS",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Gunnar Online (Natural) - Icelandic (Iceland)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (id-ID, ArdiNeural)",ShortName:"id-ID-ArdiNeural",Gender:"Male",Locale:"id-ID",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Ardi Online (Natural) - Indonesian (Indonesia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (id-ID, GadisNeural)",ShortName:"id-ID-GadisNeural",Gender:"Female",Locale:"id-ID",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Gadis Online (Natural) - Indonesian (Indonesia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ga-IE, ColmNeural)",ShortName:"ga-IE-ColmNeural",Gender:"Male",Locale:"ga-IE",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Colm Online (Natural) - Irish (Ireland)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ga-IE, OrlaNeural)",ShortName:"ga-IE-OrlaNeural",Gender:"Female",Locale:"ga-IE",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Orla Online (Natural) - Irish (Ireland)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (it-IT, DiegoNeural)",ShortName:"it-IT-DiegoNeural",Gender:"Male",Locale:"it-IT",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Diego Online (Natural) - Italian (Italy)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (it-IT, ElsaNeural)",ShortName:"it-IT-ElsaNeural",Gender:"Female",Locale:"it-IT",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Elsa Online (Natural) - Italian (Italy)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (it-IT, IsabellaNeural)",ShortName:"it-IT-IsabellaNeural",Gender:"Female",Locale:"it-IT",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Isabella Online (Natural) - Italian (Italy)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ja-JP, KeitaNeural)",ShortName:"ja-JP-KeitaNeural",Gender:"Male",Locale:"ja-JP",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Keita Online (Natural) - Japanese (Japan)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ja-JP, NanamiNeural)",ShortName:"ja-JP-NanamiNeural",Gender:"Female",Locale:"ja-JP",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Nanami Online (Natural) - Japanese (Japan)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (jv-ID, DimasNeural)",ShortName:"jv-ID-DimasNeural",Gender:"Male",Locale:"jv-ID",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Dimas Online (Natural) - Javanese (Indonesia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (jv-ID, SitiNeural)",ShortName:"jv-ID-SitiNeural",Gender:"Female",Locale:"jv-ID",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Siti Online (Natural) - Javanese (Indonesia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (kn-IN, GaganNeural)",ShortName:"kn-IN-GaganNeural",Gender:"Male",Locale:"kn-IN",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Gagan Online (Natural) - Kannada (India)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (kn-IN, SapnaNeural)",ShortName:"kn-IN-SapnaNeural",Gender:"Female",Locale:"kn-IN",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Sapna Online (Natural) - Kannada (India)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (kk-KZ, AigulNeural)",ShortName:"kk-KZ-AigulNeural",Gender:"Female",Locale:"kk-KZ",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Aigul Online (Natural) - Kazakh (Kazakhstan)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (kk-KZ, DauletNeural)",ShortName:"kk-KZ-DauletNeural",Gender:"Male",Locale:"kk-KZ",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Daulet Online (Natural) - Kazakh (Kazakhstan)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (km-KH, PisethNeural)",ShortName:"km-KH-PisethNeural",Gender:"Male",Locale:"km-KH",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Piseth Online (Natural) - Khmer (Cambodia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (km-KH, SreymomNeural)",ShortName:"km-KH-SreymomNeural",Gender:"Female",Locale:"km-KH",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Sreymom Online (Natural) - Khmer (Cambodia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ko-KR, InJoonNeural)",ShortName:"ko-KR-InJoonNeural",Gender:"Male",Locale:"ko-KR",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft InJoon Online (Natural) - Korean (Korea)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ko-KR, SunHiNeural)",ShortName:"ko-KR-SunHiNeural",Gender:"Female",Locale:"ko-KR",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft SunHi Online (Natural) - Korean (Korea)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (lo-LA, ChanthavongNeural)",ShortName:"lo-LA-ChanthavongNeural",Gender:"Male",Locale:"lo-LA",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Chanthavong Online (Natural) - Lao (Laos)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (lo-LA, KeomanyNeural)",ShortName:"lo-LA-KeomanyNeural",Gender:"Female",Locale:"lo-LA",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Keomany Online (Natural) - Lao (Laos)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (lv-LV, EveritaNeural)",ShortName:"lv-LV-EveritaNeural",Gender:"Female",Locale:"lv-LV",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Everita Online (Natural) - Latvian (Latvia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (lv-LV, NilsNeural)",ShortName:"lv-LV-NilsNeural",Gender:"Male",Locale:"lv-LV",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Nils Online (Natural) - Latvian (Latvia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (lt-LT, LeonasNeural)",ShortName:"lt-LT-LeonasNeural",Gender:"Male",Locale:"lt-LT",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Leonas Online (Natural) - Lithuanian (Lithuania)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (lt-LT, OnaNeural)",ShortName:"lt-LT-OnaNeural",Gender:"Female",Locale:"lt-LT",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Ona Online (Natural) - Lithuanian (Lithuania)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (mk-MK, AleksandarNeural)",ShortName:"mk-MK-AleksandarNeural",Gender:"Male",Locale:"mk-MK",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Aleksandar Online (Natural) - Macedonian (Republic of North Macedonia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (mk-MK, MarijaNeural)",ShortName:"mk-MK-MarijaNeural",Gender:"Female",Locale:"mk-MK",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Marija Online (Natural) - Macedonian (Republic of North Macedonia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ms-MY, OsmanNeural)",ShortName:"ms-MY-OsmanNeural",Gender:"Male",Locale:"ms-MY",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Osman Online (Natural) - Malay (Malaysia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ms-MY, YasminNeural)",ShortName:"ms-MY-YasminNeural",Gender:"Female",Locale:"ms-MY",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Yasmin Online (Natural) - Malay (Malaysia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ml-IN, MidhunNeural)",ShortName:"ml-IN-MidhunNeural",Gender:"Male",Locale:"ml-IN",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Midhun Online (Natural) - Malayalam (India)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ml-IN, SobhanaNeural)",ShortName:"ml-IN-SobhanaNeural",Gender:"Female",Locale:"ml-IN",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Sobhana Online (Natural) - Malayalam (India)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (mt-MT, GraceNeural)",ShortName:"mt-MT-GraceNeural",Gender:"Female",Locale:"mt-MT",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Grace Online (Natural) - Maltese (Malta)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (mt-MT, JosephNeural)",ShortName:"mt-MT-JosephNeural",Gender:"Male",Locale:"mt-MT",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Joseph Online (Natural) - Maltese (Malta)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (mr-IN, AarohiNeural)",ShortName:"mr-IN-AarohiNeural",Gender:"Female",Locale:"mr-IN",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Aarohi Online (Natural) - Marathi (India)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (mr-IN, ManoharNeural)",ShortName:"mr-IN-ManoharNeural",Gender:"Male",Locale:"mr-IN",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Manohar Online (Natural) - Marathi (India)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (mn-MN, BataaNeural)",ShortName:"mn-MN-BataaNeural",Gender:"Male",Locale:"mn-MN",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Bataa Online (Natural) - Mongolian (Mongolia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (mn-MN, YesuiNeural)",ShortName:"mn-MN-YesuiNeural",Gender:"Female",Locale:"mn-MN",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Yesui Online (Natural) - Mongolian (Mongolia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ne-NP, HemkalaNeural)",ShortName:"ne-NP-HemkalaNeural",Gender:"Female",Locale:"ne-NP",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Hemkala Online (Natural) - Nepali (Nepal)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ne-NP, SagarNeural)",ShortName:"ne-NP-SagarNeural",Gender:"Male",Locale:"ne-NP",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Sagar Online (Natural) - Nepali (Nepal)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (nb-NO, FinnNeural)",ShortName:"nb-NO-FinnNeural",Gender:"Male",Locale:"nb-NO",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Finn Online (Natural) - Norwegian (Bokmål Norway)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (nb-NO, PernilleNeural)",ShortName:"nb-NO-PernilleNeural",Gender:"Female",Locale:"nb-NO",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Pernille Online (Natural) - Norwegian (Bokmål, Norway)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ps-AF, GulNawazNeural)",ShortName:"ps-AF-GulNawazNeural",Gender:"Male",Locale:"ps-AF",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft GulNawaz Online (Natural) - Pashto (Afghanistan)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ps-AF, LatifaNeural)",ShortName:"ps-AF-LatifaNeural",Gender:"Female",Locale:"ps-AF",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Latifa Online (Natural) - Pashto (Afghanistan)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (fa-IR, DilaraNeural)",ShortName:"fa-IR-DilaraNeural",Gender:"Female",Locale:"fa-IR",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Dilara Online (Natural) - Persian (Iran)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (fa-IR, FaridNeural)",ShortName:"fa-IR-FaridNeural",Gender:"Male",Locale:"fa-IR",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Farid Online (Natural) - Persian (Iran)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (pl-PL, MarekNeural)",ShortName:"pl-PL-MarekNeural",Gender:"Male",Locale:"pl-PL",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Marek Online (Natural) - Polish (Poland)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (pl-PL, ZofiaNeural)",ShortName:"pl-PL-ZofiaNeural",Gender:"Female",Locale:"pl-PL",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Zofia Online (Natural) - Polish (Poland)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (pt-BR, AntonioNeural)",ShortName:"pt-BR-AntonioNeural",Gender:"Male",Locale:"pt-BR",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Antonio Online (Natural) - Portuguese (Brazil)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (pt-BR, FranciscaNeural)",ShortName:"pt-BR-FranciscaNeural",Gender:"Female",Locale:"pt-BR",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Francisca Online (Natural) - Portuguese (Brazil)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (pt-PT, DuarteNeural)",ShortName:"pt-PT-DuarteNeural",Gender:"Male",Locale:"pt-PT",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Duarte Online (Natural) - Portuguese (Portugal)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (pt-PT, RaquelNeural)",ShortName:"pt-PT-RaquelNeural",Gender:"Female",Locale:"pt-PT",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Raquel Online (Natural) - Portuguese (Portugal)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ro-RO, AlinaNeural)",ShortName:"ro-RO-AlinaNeural",Gender:"Female",Locale:"ro-RO",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Alina Online (Natural) - Romanian (Romania)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ro-RO, EmilNeural)",ShortName:"ro-RO-EmilNeural",Gender:"Male",Locale:"ro-RO",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Emil Online (Natural) - Romanian (Romania)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ru-RU, DmitryNeural)",ShortName:"ru-RU-DmitryNeural",Gender:"Male",Locale:"ru-RU",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Dmitry Online (Natural) - Russian (Russia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ru-RU, SvetlanaNeural)",ShortName:"ru-RU-SvetlanaNeural",Gender:"Female",Locale:"ru-RU",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Svetlana Online (Natural) - Russian (Russia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (sr-RS, NicholasNeural)",ShortName:"sr-RS-NicholasNeural",Gender:"Male",Locale:"sr-RS",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Nicholas Online (Natural) - Serbian (Serbia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (sr-RS, SophieNeural)",ShortName:"sr-RS-SophieNeural",Gender:"Female",Locale:"sr-RS",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Sophie Online (Natural) - Serbian (Serbia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (si-LK, SameeraNeural)",ShortName:"si-LK-SameeraNeural",Gender:"Male",Locale:"si-LK",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Sameera Online (Natural) - Sinhala (Sri Lanka)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (si-LK, ThiliniNeural)",ShortName:"si-LK-ThiliniNeural",Gender:"Female",Locale:"si-LK",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Thilini Online (Natural) - Sinhala (Sri Lanka)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (sk-SK, LukasNeural)",ShortName:"sk-SK-LukasNeural",Gender:"Male",Locale:"sk-SK",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Lukas Online (Natural) - Slovak (Slovakia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (sk-SK, ViktoriaNeural)",ShortName:"sk-SK-ViktoriaNeural",Gender:"Female",Locale:"sk-SK",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Viktoria Online (Natural) - Slovak (Slovakia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (sl-SI, PetraNeural)",ShortName:"sl-SI-PetraNeural",Gender:"Female",Locale:"sl-SI",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Petra Online (Natural) - Slovenian (Slovenia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (sl-SI, RokNeural)",ShortName:"sl-SI-RokNeural",Gender:"Male",Locale:"sl-SI",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Rok Online (Natural) - Slovenian (Slovenia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (so-SO, MuuseNeural)",ShortName:"so-SO-MuuseNeural",Gender:"Male",Locale:"so-SO",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Muuse Online (Natural) - Somali (Somalia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (so-SO, UbaxNeural)",ShortName:"so-SO-UbaxNeural",Gender:"Female",Locale:"so-SO",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Ubax Online (Natural) - Somali (Somalia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-AR, ElenaNeural)",ShortName:"es-AR-ElenaNeural",Gender:"Female",Locale:"es-AR",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Elena Online (Natural) - Spanish (Argentina)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-AR, TomasNeural)",ShortName:"es-AR-TomasNeural",Gender:"Male",Locale:"es-AR",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Tomas Online (Natural) - Spanish (Argentina)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-BO, MarceloNeural)",ShortName:"es-BO-MarceloNeural",Gender:"Male",Locale:"es-BO",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Marcelo Online (Natural) - Spanish (Bolivia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-BO, SofiaNeural)",ShortName:"es-BO-SofiaNeural",Gender:"Female",Locale:"es-BO",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Sofia Online (Natural) - Spanish (Bolivia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-CL, CatalinaNeural)",ShortName:"es-CL-CatalinaNeural",Gender:"Female",Locale:"es-CL",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Catalina Online (Natural) - Spanish (Chile)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-CL, LorenzoNeural)",ShortName:"es-CL-LorenzoNeural",Gender:"Male",Locale:"es-CL",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Lorenzo Online (Natural) - Spanish (Chile)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-CO, GonzaloNeural)",ShortName:"es-CO-GonzaloNeural",Gender:"Male",Locale:"es-CO",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Gonzalo Online (Natural) - Spanish (Colombia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-CO, SalomeNeural)",ShortName:"es-CO-SalomeNeural",Gender:"Female",Locale:"es-CO",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Salome Online (Natural) - Spanish (Colombia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-CR, JuanNeural)",ShortName:"es-CR-JuanNeural",Gender:"Male",Locale:"es-CR",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Juan Online (Natural) - Spanish (Costa Rica)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-CR, MariaNeural)",ShortName:"es-CR-MariaNeural",Gender:"Female",Locale:"es-CR",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Maria Online (Natural) - Spanish (Costa Rica)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-CU, BelkysNeural)",ShortName:"es-CU-BelkysNeural",Gender:"Female",Locale:"es-CU",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Belkys Online (Natural) - Spanish (Cuba)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-CU, ManuelNeural)",ShortName:"es-CU-ManuelNeural",Gender:"Male",Locale:"es-CU",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Manuel Online (Natural) - Spanish (Cuba)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-DO, EmilioNeural)",ShortName:"es-DO-EmilioNeural",Gender:"Male",Locale:"es-DO",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Emilio Online (Natural) - Spanish (Dominican Republic)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-DO, RamonaNeural)",ShortName:"es-DO-RamonaNeural",Gender:"Female",Locale:"es-DO",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Ramona Online (Natural) - Spanish (Dominican Republic)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-EC, AndreaNeural)",ShortName:"es-EC-AndreaNeural",Gender:"Female",Locale:"es-EC",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Andrea Online (Natural) - Spanish (Ecuador)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-EC, LuisNeural)",ShortName:"es-EC-LuisNeural",Gender:"Male",Locale:"es-EC",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Luis Online (Natural) - Spanish (Ecuador)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-SV, LorenaNeural)",ShortName:"es-SV-LorenaNeural",Gender:"Female",Locale:"es-SV",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Lorena Online (Natural) - Spanish (El Salvador)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-SV, RodrigoNeural)",ShortName:"es-SV-RodrigoNeural",Gender:"Male",Locale:"es-SV",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Rodrigo Online (Natural) - Spanish (El Salvador)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-GQ, JavierNeural)",ShortName:"es-GQ-JavierNeural",Gender:"Male",Locale:"es-GQ",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Javier Online (Natural) - Spanish (Equatorial Guinea)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-GQ, TeresaNeural)",ShortName:"es-GQ-TeresaNeural",Gender:"Female",Locale:"es-GQ",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Teresa Online (Natural) - Spanish (Equatorial Guinea)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-GT, AndresNeural)",ShortName:"es-GT-AndresNeural",Gender:"Male",Locale:"es-GT",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Andres Online (Natural) - Spanish (Guatemala)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-GT, MartaNeural)",ShortName:"es-GT-MartaNeural",Gender:"Female",Locale:"es-GT",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Marta Online (Natural) - Spanish (Guatemala)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-HN, CarlosNeural)",ShortName:"es-HN-CarlosNeural",Gender:"Male",Locale:"es-HN",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Carlos Online (Natural) - Spanish (Honduras)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-HN, KarlaNeural)",ShortName:"es-HN-KarlaNeural",Gender:"Female",Locale:"es-HN",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Karla Online (Natural) - Spanish (Honduras)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-MX, DaliaNeural)",ShortName:"es-MX-DaliaNeural",Gender:"Female",Locale:"es-MX",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Dalia Online (Natural) - Spanish (Mexico)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-MX, JorgeNeural)",ShortName:"es-MX-JorgeNeural",Gender:"Male",Locale:"es-MX",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Jorge Online (Natural) - Spanish (Mexico)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-NI, FedericoNeural)",ShortName:"es-NI-FedericoNeural",Gender:"Male",Locale:"es-NI",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Federico Online (Natural) - Spanish (Nicaragua)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-NI, YolandaNeural)",ShortName:"es-NI-YolandaNeural",Gender:"Female",Locale:"es-NI",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Yolanda Online (Natural) - Spanish (Nicaragua)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-PA, MargaritaNeural)",ShortName:"es-PA-MargaritaNeural",Gender:"Female",Locale:"es-PA",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Margarita Online (Natural) - Spanish (Panama)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-PA, RobertoNeural)",ShortName:"es-PA-RobertoNeural",Gender:"Male",Locale:"es-PA",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Roberto Online (Natural) - Spanish (Panama)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-PY, MarioNeural)",ShortName:"es-PY-MarioNeural",Gender:"Male",Locale:"es-PY",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Mario Online (Natural) - Spanish (Paraguay)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-PY, TaniaNeural)",ShortName:"es-PY-TaniaNeural",Gender:"Female",Locale:"es-PY",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Tania Online (Natural) - Spanish (Paraguay)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-PE, AlexNeural)",ShortName:"es-PE-AlexNeural",Gender:"Male",Locale:"es-PE",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Alex Online (Natural) - Spanish (Peru)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-PE, CamilaNeural)",ShortName:"es-PE-CamilaNeural",Gender:"Female",Locale:"es-PE",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Camila Online (Natural) - Spanish (Peru)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-PR, KarinaNeural)",ShortName:"es-PR-KarinaNeural",Gender:"Female",Locale:"es-PR",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Karina Online (Natural) - Spanish (Puerto Rico)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-PR, VictorNeural)",ShortName:"es-PR-VictorNeural",Gender:"Male",Locale:"es-PR",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Victor Online (Natural) - Spanish (Puerto Rico)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-ES, AlvaroNeural)",ShortName:"es-ES-AlvaroNeural",Gender:"Male",Locale:"es-ES",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Alvaro Online (Natural) - Spanish (Spain)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-ES, ElviraNeural)",ShortName:"es-ES-ElviraNeural",Gender:"Female",Locale:"es-ES",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Elvira Online (Natural) - Spanish (Spain)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-US, AlonsoNeural)",ShortName:"es-US-AlonsoNeural",Gender:"Male",Locale:"es-US",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Alonso Online (Natural) - Spanish (United States)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-US, PalomaNeural)",ShortName:"es-US-PalomaNeural",Gender:"Female",Locale:"es-US",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Paloma Online (Natural) - Spanish (United States)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-UY, MateoNeural)",ShortName:"es-UY-MateoNeural",Gender:"Male",Locale:"es-UY",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Mateo Online (Natural) - Spanish (Uruguay)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-UY, ValentinaNeural)",ShortName:"es-UY-ValentinaNeural",Gender:"Female",Locale:"es-UY",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Valentina Online (Natural) - Spanish (Uruguay)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-VE, PaolaNeural)",ShortName:"es-VE-PaolaNeural",Gender:"Female",Locale:"es-VE",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Paola Online (Natural) - Spanish (Venezuela)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (es-VE, SebastianNeural)",ShortName:"es-VE-SebastianNeural",Gender:"Male",Locale:"es-VE",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Sebastian Online (Natural) - Spanish (Venezuela)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (su-ID, JajangNeural)",ShortName:"su-ID-JajangNeural",Gender:"Male",Locale:"su-ID",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Jajang Online (Natural) - Sundanese (Indonesia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (su-ID, TutiNeural)",ShortName:"su-ID-TutiNeural",Gender:"Female",Locale:"su-ID",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Tuti Online (Natural) - Sundanese (Indonesia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (sw-KE, RafikiNeural)",ShortName:"sw-KE-RafikiNeural",Gender:"Male",Locale:"sw-KE",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Rafiki Online (Natural) - Swahili (Kenya)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (sw-KE, ZuriNeural)",ShortName:"sw-KE-ZuriNeural",Gender:"Female",Locale:"sw-KE",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Zuri Online (Natural) - Swahili (Kenya)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (sw-TZ, DaudiNeural)",ShortName:"sw-TZ-DaudiNeural",Gender:"Male",Locale:"sw-TZ",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Daudi Online (Natural) - Swahili (Tanzania)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (sw-TZ, RehemaNeural)",ShortName:"sw-TZ-RehemaNeural",Gender:"Female",Locale:"sw-TZ",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Rehema Online (Natural) - Swahili (Tanzania)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (sv-SE, MattiasNeural)",ShortName:"sv-SE-MattiasNeural",Gender:"Male",Locale:"sv-SE",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Mattias Online (Natural) - Swedish (Sweden)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (sv-SE, SofieNeural)",ShortName:"sv-SE-SofieNeural",Gender:"Female",Locale:"sv-SE",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Sofie Online (Natural) - Swedish (Sweden)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ta-IN, PallaviNeural)",ShortName:"ta-IN-PallaviNeural",Gender:"Female",Locale:"ta-IN",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Pallavi Online (Natural) - Tamil (India)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ta-IN, ValluvarNeural)",ShortName:"ta-IN-ValluvarNeural",Gender:"Male",Locale:"ta-IN",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Valluvar Online (Natural) - Tamil (India)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ta-MY, KaniNeural)",ShortName:"ta-MY-KaniNeural",Gender:"Female",Locale:"ta-MY",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Kani Online (Natural) - Tamil (Malaysia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ta-MY, SuryaNeural)",ShortName:"ta-MY-SuryaNeural",Gender:"Male",Locale:"ta-MY",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Surya Online (Natural) - Tamil (Malaysia)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ta-SG, AnbuNeural)",ShortName:"ta-SG-AnbuNeural",Gender:"Male",Locale:"ta-SG",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Anbu Online (Natural) - Tamil (Singapore)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ta-SG, VenbaNeural)",ShortName:"ta-SG-VenbaNeural",Gender:"Female",Locale:"ta-SG",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Venba Online (Natural) - Tamil (Singapore)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ta-LK, KumarNeural)",ShortName:"ta-LK-KumarNeural",Gender:"Male",Locale:"ta-LK",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Kumar Online (Natural) - Tamil (Sri Lanka)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ta-LK, SaranyaNeural)",ShortName:"ta-LK-SaranyaNeural",Gender:"Female",Locale:"ta-LK",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Saranya Online (Natural) - Tamil (Sri Lanka)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (te-IN, MohanNeural)",ShortName:"te-IN-MohanNeural",Gender:"Male",Locale:"te-IN",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Mohan Online (Natural) - Telugu (India)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (te-IN, ShrutiNeural)",ShortName:"te-IN-ShrutiNeural",Gender:"Female",Locale:"te-IN",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Shruti Online (Natural) - Telugu (India)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (th-TH, NiwatNeural)",ShortName:"th-TH-NiwatNeural",Gender:"Male",Locale:"th-TH",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Niwat Online (Natural) - Thai (Thailand)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (th-TH, PremwadeeNeural)",ShortName:"th-TH-PremwadeeNeural",Gender:"Female",Locale:"th-TH",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Premwadee Online (Natural) - Thai (Thailand)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (tr-TR, AhmetNeural)",ShortName:"tr-TR-AhmetNeural",Gender:"Male",Locale:"tr-TR",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Ahmet Online (Natural) - Turkish (Turkey)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (tr-TR, EmelNeural)",ShortName:"tr-TR-EmelNeural",Gender:"Female",Locale:"tr-TR",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Emel Online (Natural) - Turkish (Turkey)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (uk-UA, OstapNeural)",ShortName:"uk-UA-OstapNeural",Gender:"Male",Locale:"uk-UA",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Ostap Online (Natural) - Ukrainian (Ukraine)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (uk-UA, PolinaNeural)",ShortName:"uk-UA-PolinaNeural",Gender:"Female",Locale:"uk-UA",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Polina Online (Natural) - Ukrainian (Ukraine)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ur-IN, GulNeural)",ShortName:"ur-IN-GulNeural",Gender:"Female",Locale:"ur-IN",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Gul Online (Natural) - Urdu (India)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ur-IN, SalmanNeural)",ShortName:"ur-IN-SalmanNeural",Gender:"Male",Locale:"ur-IN",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Salman Online (Natural) - Urdu (India)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ur-PK, AsadNeural)",ShortName:"ur-PK-AsadNeural",Gender:"Male",Locale:"ur-PK",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Asad Online (Natural) - Urdu (Pakistan)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (ur-PK, UzmaNeural)",ShortName:"ur-PK-UzmaNeural",Gender:"Female",Locale:"ur-PK",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Uzma Online (Natural) - Urdu (Pakistan)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (uz-UZ, MadinaNeural)",ShortName:"uz-UZ-MadinaNeural",Gender:"Female",Locale:"uz-UZ",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Madina Online (Natural) - Uzbek (Uzbekistan)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (uz-UZ, SardorNeural)",ShortName:"uz-UZ-SardorNeural",Gender:"Male",Locale:"uz-UZ",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Sardor Online (Natural) - Uzbek (Uzbekistan)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (vi-VN, HoaiMyNeural)",ShortName:"vi-VN-HoaiMyNeural",Gender:"Female",Locale:"vi-VN",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft HoaiMy Online (Natural) - Vietnamese (Vietnam)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (vi-VN, NamMinhNeural)",ShortName:"vi-VN-NamMinhNeural",Gender:"Male",Locale:"vi-VN",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft NamMinh Online (Natural) - Vietnamese (Vietnam)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (cy-GB, AledNeural)",ShortName:"cy-GB-AledNeural",Gender:"Male",Locale:"cy-GB",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Aled Online (Natural) - Welsh (United Kingdom)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (cy-GB, NiaNeural)",ShortName:"cy-GB-NiaNeural",Gender:"Female",Locale:"cy-GB",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Nia Online (Natural) - Welsh (United Kingdom)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (zu-ZA, ThandoNeural)",ShortName:"zu-ZA-ThandoNeural",Gender:"Female",Locale:"zu-ZA",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Thando Online (Natural) - Zulu (South Africa)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}},{Name:"Microsoft Server Speech Text to Speech Voice (zu-ZA, ThembaNeural)",ShortName:"zu-ZA-ThembaNeural",Gender:"Male",Locale:"zu-ZA",SuggestedCodec:"audio-24khz-48kbitrate-mono-mp3",FriendlyName:"Microsoft Themba Online (Natural) - Zulu (South Africa)",Status:"GA",VoiceTag:{ContentCategories:["General"],VoicePersonalities:["Friendly","Positive"]}}],ve={name:uo.云希,rate:1.3,volume:100},Js=[{label:"晓晓",value:"Microsoft Server Speech Text to Speech Voice (zh-CN, XiaoxiaoNeural)"},{label:"晓伊",value:"Microsoft Server Speech Text to Speech Voice (zh-CN, XiaoyiNeural)"},{label:"云健",value:"Microsoft Server Speech Text to Speech Voice (zh-CN, YunjianNeural)"},{label:"云希",value:"Microsoft Server Speech Text to Speech Voice (zh-CN, YunxiNeural)"},{label:"云夏",value:"Microsoft Server Speech Text to Speech Voice (zh-CN, YunxiaNeural)"},{label:"云扬",value:"Microsoft Server Speech Text to Speech Voice (zh-CN, YunyangNeural)"},{label:"辽林",value:"Microsoft Server Speech Text to Speech Voice (zh-CN-liaoning, XiaobeiNeural)"},{label:"陕西",value:"Microsoft Server Speech Text to Speech Voice (zh-CN-shaanxi, XiaoniNeural)"}],$s=Ys,Zs="<speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xmlns:mstts='https://www.w3.org/2001/mstts' xml:lang='en-US'>{voice}</speak>",qs="<voice name='{name}'><prosody pitch='+0Hz' rate='{rate}' volume='{volume}'>{text}</prosody></voice>";class Ws{getUuid(){return"ce85b028cbccebfc8a84d38dda106db7".replace(/[a-z0-9]/g,t=>{const r=Math.random()*16|0;return(t=="x"?r:r&3|8).toString(16)})}textVarReplace(t,r={},o=/\{([a-zA-Z0-9]+)\}/g){return t.replace(o,(a,n)=>Li(r,n,n))}mergeArrayBuffers(t){const r=t.reduce((l,m)=>l+m.byteLength,0),o=new ArrayBuffer(r),a=new Uint8Array(o);let n=0;return t.forEach(l=>{const m=new Uint8Array(l);a.set(m,n),n+=l.byteLength}),o}arrayBufferToBlob(t){return new Blob(t,{type:"application/octet-stream"})}blobToArrayBuffer(t){return new Promise(r=>{const o=new FileReader;o.readAsArrayBuffer(t),o.onloadend=function(){const a=o.result;r(a)}})}convertNumberToTime(t){const r=t/1e7,o=Math.floor(r/3600),a=Math.floor(r%3600/60),n=Math.floor(r%60),l=Math.floor((r-Math.floor(r))*1e3);return(o<10?"0"+o:o)+":"+(a<10?"0"+a:a)+":"+(n<10?"0"+n:n)+","+(l<10?"00"+l:l<100?"0"+l:l)}}class Xs{constructor(){se(this,"voiceMap");se(this,"utils",new Ws);this.voiceMap=this.voiceToMap($s)}voiceToMap(t){return t.reduce((r,o)=>(r.hasOwnProperty(o.Locale)?r[o.Locale].push(o):r[o.Locale]=[o],r),{})}textToSsml(t,r){let o=t.trim();if(!o.startsWith("<")){const a=this.utils.textVarReplace(qs,{...r,text:o});o=this.utils.textVarReplace(Zs,{voice:a})}return o}textSplit(t,r=1e3){const o=t.split(/\n|。|，|\?|\,|\.|\!|？|！/).filter(l=>l.trim()).map(l=>l.trim()+"，");let a="";return o.reduce((l,m)=>((a+m).length<r?a+=m:(l.push(a),a=m),m===o[o.length-1]&&l.push(a),l),[])}async getVoiceList(t=!0){return t?this.voiceMap:_s("https://speech.platform.bing.com/consumer/speech/synthesize/readaloud/voices/list?trustedclienttoken=6A5AA1D4EAFF4E9FB37E23D68491D6F4").then(r=>this.voiceToMap(r))}core(t,r={}){const o=ge(r,{timeout:3e4,roleVoice:ve,onMessage:()=>{}}),{timeout:a,roleVoice:n,onMessage:l}=o,m=this.textToSsml(t,n);return new Promise(p=>{let G;const M=[],y="6A5AA1D4EAFF4E9FB37E23D68491D6F4",O=this.utils.getUuid(),g=`wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?${new URLSearchParams({TrustedClientToken:y,ConnectionId:O}).toString()}`,v=new WebSocket(g);v.binaryType="arraybuffer";const F=JSON.stringify({context:{synthesis:{audio:{metadataoptions:{sentenceBoundaryEnabled:"false",wordBoundaryEnabled:"true"},outputFormat:"webm-24khz-16bit-mono-opus"}}}}),x=`X-Timestamp:${new Date}\r
+`);
+          }, _domwindow: function() {
+            return d("domwindow");
+          }, _bigint: function(s) {
+            return d("bigint:" + s.toString());
+          }, _process: function() {
+            return d("process");
+          }, _timer: function() {
+            return d("timer");
+          }, _pipe: function() {
+            return d("pipe");
+          }, _tcp: function() {
+            return d("tcp");
+          }, _udp: function() {
+            return d("udp");
+          }, _tty: function() {
+            return d("tty");
+          }, _statwatcher: function() {
+            return d("statwatcher");
+          }, _securecontext: function() {
+            return d("securecontext");
+          }, _connection: function() {
+            return d("connection");
+          }, _zlib: function() {
+            return d("zlib");
+          }, _context: function() {
+            return d("context");
+          }, _nodescript: function() {
+            return d("nodescript");
+          }, _httpparser: function() {
+            return d("httpparser");
+          }, _dataview: function() {
+            return d("dataview");
+          }, _signal: function() {
+            return d("signal");
+          }, _fsevent: function() {
+            return d("fsevent");
+          }, _tlswrap: function() {
+            return d("tlswrap");
+          } };
+        }
+        function L() {
+          return { buf: "", write: function(f) {
+            this.buf += f;
+          }, end: function(f) {
+            this.buf += f;
+          }, read: function() {
+            return this.buf;
+          } };
+        }
+        a.writeToStream = function(f, C, c) {
+          return c === void 0 && (c = C, C = {}), V(C = x(f, C), c).dispatch(f);
+        };
+      }).call(this, r("lYpoI2"), typeof self < "u" ? self : typeof window < "u" ? window : {}, r("buffer").Buffer, arguments[3], arguments[4], arguments[5], arguments[6], "/fake_9a5aa49d.js", "/");
+    }, { buffer: 3, crypto: 5, lYpoI2: 11 }], 2: [function(r, o, a) {
+      (function(n, l, m, p, G, M, y, O, z) {
+        (function(g) {
+          var v = typeof Uint8Array < "u" ? Uint8Array : Array, N = 43, F = 47, x = 48, A = 97, V = 65, L = 45, f = 95;
+          function C(c) {
+            return c = c.charCodeAt(0), c === N || c === L ? 62 : c === F || c === f ? 63 : c < x ? -1 : c < x + 10 ? c - x + 26 + 26 : c < V + 26 ? c - V : c < A + 26 ? c - A + 26 : void 0;
+          }
+          g.toByteArray = function(c) {
+            var d, s;
+            if (0 < c.length % 4)
+              throw new Error("Invalid string. Length must be a multiple of 4");
+            var S = c.length, S = c.charAt(S - 2) === "=" ? 2 : c.charAt(S - 1) === "=" ? 1 : 0, T = new v(3 * c.length / 4 - S), R = 0 < S ? c.length - 4 : c.length, I = 0;
+            function B(_) {
+              T[I++] = _;
+            }
+            for (d = 0; d < R; d += 4, 0)
+              B((16711680 & (s = C(c.charAt(d)) << 18 | C(c.charAt(d + 1)) << 12 | C(c.charAt(d + 2)) << 6 | C(c.charAt(d + 3)))) >> 16), B((65280 & s) >> 8), B(255 & s);
+            return S == 2 ? B(255 & (s = C(c.charAt(d)) << 2 | C(c.charAt(d + 1)) >> 4)) : S == 1 && (B((s = C(c.charAt(d)) << 10 | C(c.charAt(d + 1)) << 4 | C(c.charAt(d + 2)) >> 2) >> 8 & 255), B(255 & s)), T;
+          }, g.fromByteArray = function(c) {
+            var d, s, S, T, R = c.length % 3, I = "";
+            function B(_) {
+              return "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/".charAt(_);
+            }
+            for (d = 0, S = c.length - R; d < S; d += 3)
+              s = (c[d] << 16) + (c[d + 1] << 8) + c[d + 2], I += B((T = s) >> 18 & 63) + B(T >> 12 & 63) + B(T >> 6 & 63) + B(63 & T);
+            switch (R) {
+              case 1:
+                I = (I += B((s = c[c.length - 1]) >> 2)) + B(s << 4 & 63) + "==";
+                break;
+              case 2:
+                I = (I = (I += B((s = (c[c.length - 2] << 8) + c[c.length - 1]) >> 10)) + B(s >> 4 & 63)) + B(s << 2 & 63) + "=";
+            }
+            return I;
+          };
+        })(a === void 0 ? this.base64js = {} : a);
+      }).call(this, r("lYpoI2"), typeof self < "u" ? self : typeof window < "u" ? window : {}, r("buffer").Buffer, arguments[3], arguments[4], arguments[5], arguments[6], "/node_modules/gulp-browserify/node_modules/base64-js/lib/b64.js", "/node_modules/gulp-browserify/node_modules/base64-js/lib");
+    }, { buffer: 3, lYpoI2: 11 }], 3: [function(r, o, a) {
+      (function(n, l, N, p, G, M, y, O, z) {
+        var g = r("base64-js"), v = r("ieee754");
+        function N(i, u, h) {
+          if (!(this instanceof N))
+            return new N(i, u, h);
+          var k, P, E, U, J = typeof i;
+          if (u === "base64" && J == "string")
+            for (i = (U = i).trim ? U.trim() : U.replace(/^\s+|\s+$/g, ""); i.length % 4 != 0; )
+              i += "=";
+          if (J == "number")
+            k = X(i);
+          else if (J == "string")
+            k = N.byteLength(i, u);
+          else {
+            if (J != "object")
+              throw new Error("First argument needs to be a number, array or string.");
+            k = X(i.length);
+          }
+          if (N._useTypedArrays ? P = N._augment(new Uint8Array(k)) : ((P = this).length = k, P._isBuffer = !0), N._useTypedArrays && typeof i.byteLength == "number")
+            P._set(i);
+          else if (Y(U = i) || N.isBuffer(U) || U && typeof U == "object" && typeof U.length == "number")
+            for (E = 0; E < k; E++)
+              N.isBuffer(i) ? P[E] = i.readUInt8(E) : P[E] = i[E];
+          else if (J == "string")
+            P.write(i, 0, u);
+          else if (J == "number" && !N._useTypedArrays && !h)
+            for (E = 0; E < k; E++)
+              P[E] = 0;
+          return P;
+        }
+        function F(i, u, h, k) {
+          return N._charsWritten = Re(function(P) {
+            for (var E = [], U = 0; U < P.length; U++)
+              E.push(255 & P.charCodeAt(U));
+            return E;
+          }(u), i, h, k);
+        }
+        function x(i, u, h, k) {
+          return N._charsWritten = Re(function(P) {
+            for (var E, U, J = [], q = 0; q < P.length; q++)
+              U = P.charCodeAt(q), E = U >> 8, U = U % 256, J.push(U), J.push(E);
+            return J;
+          }(u), i, h, k);
+        }
+        function A(i, u, h) {
+          var k = "";
+          h = Math.min(i.length, h);
+          for (var P = u; P < h; P++)
+            k += String.fromCharCode(i[P]);
+          return k;
+        }
+        function V(i, u, h, E) {
+          E || (w(typeof h == "boolean", "missing or invalid endian"), w(u != null, "missing offset"), w(u + 1 < i.length, "Trying to read beyond buffer length"));
+          var P, E = i.length;
+          if (!(E <= u))
+            return h ? (P = i[u], u + 1 < E && (P |= i[u + 1] << 8)) : (P = i[u] << 8, u + 1 < E && (P |= i[u + 1])), P;
+        }
+        function L(i, u, h, E) {
+          E || (w(typeof h == "boolean", "missing or invalid endian"), w(u != null, "missing offset"), w(u + 3 < i.length, "Trying to read beyond buffer length"));
+          var P, E = i.length;
+          if (!(E <= u))
+            return h ? (u + 2 < E && (P = i[u + 2] << 16), u + 1 < E && (P |= i[u + 1] << 8), P |= i[u], u + 3 < E && (P += i[u + 3] << 24 >>> 0)) : (u + 1 < E && (P = i[u + 1] << 16), u + 2 < E && (P |= i[u + 2] << 8), u + 3 < E && (P |= i[u + 3]), P += i[u] << 24 >>> 0), P;
+        }
+        function f(i, u, h, k) {
+          if (k || (w(typeof h == "boolean", "missing or invalid endian"), w(u != null, "missing offset"), w(u + 1 < i.length, "Trying to read beyond buffer length")), !(i.length <= u))
+            return k = V(i, u, h, !0), 32768 & k ? -1 * (65535 - k + 1) : k;
+        }
+        function C(i, u, h, k) {
+          if (k || (w(typeof h == "boolean", "missing or invalid endian"), w(u != null, "missing offset"), w(u + 3 < i.length, "Trying to read beyond buffer length")), !(i.length <= u))
+            return k = L(i, u, h, !0), 2147483648 & k ? -1 * (4294967295 - k + 1) : k;
+        }
+        function c(i, u, h, k) {
+          return k || (w(typeof h == "boolean", "missing or invalid endian"), w(u + 3 < i.length, "Trying to read beyond buffer length")), v.read(i, u, h, 23, 4);
+        }
+        function d(i, u, h, k) {
+          return k || (w(typeof h == "boolean", "missing or invalid endian"), w(u + 7 < i.length, "Trying to read beyond buffer length")), v.read(i, u, h, 52, 8);
+        }
+        function s(i, u, h, k, P) {
+          if (P || (w(u != null, "missing value"), w(typeof k == "boolean", "missing or invalid endian"), w(h != null, "missing offset"), w(h + 1 < i.length, "trying to write beyond buffer length"), rt(u, 65535)), P = i.length, !(P <= h))
+            for (var E = 0, U = Math.min(P - h, 2); E < U; E++)
+              i[h + E] = (u & 255 << 8 * (k ? E : 1 - E)) >>> 8 * (k ? E : 1 - E);
+        }
+        function S(i, u, h, k, P) {
+          if (P || (w(u != null, "missing value"), w(typeof k == "boolean", "missing or invalid endian"), w(h != null, "missing offset"), w(h + 3 < i.length, "trying to write beyond buffer length"), rt(u, 4294967295)), P = i.length, !(P <= h))
+            for (var E = 0, U = Math.min(P - h, 4); E < U; E++)
+              i[h + E] = u >>> 8 * (k ? E : 3 - E) & 255;
+        }
+        function T(i, u, h, k, P) {
+          P || (w(u != null, "missing value"), w(typeof k == "boolean", "missing or invalid endian"), w(h != null, "missing offset"), w(h + 1 < i.length, "Trying to write beyond buffer length"), ot(u, 32767, -32768)), i.length <= h || s(i, 0 <= u ? u : 65535 + u + 1, h, k, P);
+        }
+        function R(i, u, h, k, P) {
+          P || (w(u != null, "missing value"), w(typeof k == "boolean", "missing or invalid endian"), w(h != null, "missing offset"), w(h + 3 < i.length, "Trying to write beyond buffer length"), ot(u, 2147483647, -2147483648)), i.length <= h || S(i, 0 <= u ? u : 4294967295 + u + 1, h, k, P);
+        }
+        function I(i, u, h, k, P) {
+          P || (w(u != null, "missing value"), w(typeof k == "boolean", "missing or invalid endian"), w(h != null, "missing offset"), w(h + 3 < i.length, "Trying to write beyond buffer length"), zt(u, 34028234663852886e22, -34028234663852886e22)), i.length <= h || v.write(i, u, h, k, 23, 4);
+        }
+        function B(i, u, h, k, P) {
+          P || (w(u != null, "missing value"), w(typeof k == "boolean", "missing or invalid endian"), w(h != null, "missing offset"), w(h + 7 < i.length, "Trying to write beyond buffer length"), zt(u, 17976931348623157e292, -17976931348623157e292)), i.length <= h || v.write(i, u, h, k, 52, 8);
+        }
+        a.Buffer = N, a.SlowBuffer = N, a.INSPECT_MAX_BYTES = 50, N.poolSize = 8192, N._useTypedArrays = function() {
+          try {
+            var i = new ArrayBuffer(0), u = new Uint8Array(i);
+            return u.foo = function() {
+              return 42;
+            }, u.foo() === 42 && typeof u.subarray == "function";
+          } catch {
+            return !1;
+          }
+        }(), N.isEncoding = function(i) {
+          switch (String(i).toLowerCase()) {
+            case "hex":
+            case "utf8":
+            case "utf-8":
+            case "ascii":
+            case "binary":
+            case "base64":
+            case "raw":
+            case "ucs2":
+            case "ucs-2":
+            case "utf16le":
+            case "utf-16le":
+              return !0;
+            default:
+              return !1;
+          }
+        }, N.isBuffer = function(i) {
+          return !(i == null || !i._isBuffer);
+        }, N.byteLength = function(i, u) {
+          var h;
+          switch (i += "", u || "utf8") {
+            case "hex":
+              h = i.length / 2;
+              break;
+            case "utf8":
+            case "utf-8":
+              h = ne(i).length;
+              break;
+            case "ascii":
+            case "binary":
+            case "raw":
+              h = i.length;
+              break;
+            case "base64":
+              h = Ot(i).length;
+              break;
+            case "ucs2":
+            case "ucs-2":
+            case "utf16le":
+            case "utf-16le":
+              h = 2 * i.length;
+              break;
+            default:
+              throw new Error("Unknown encoding");
+          }
+          return h;
+        }, N.concat = function(i, u) {
+          if (w(Y(i), `Usage: Buffer.concat(list, [totalLength])
+list should be an Array.`), i.length === 0)
+            return new N(0);
+          if (i.length === 1)
+            return i[0];
+          if (typeof u != "number")
+            for (P = u = 0; P < i.length; P++)
+              u += i[P].length;
+          for (var h = new N(u), k = 0, P = 0; P < i.length; P++) {
+            var E = i[P];
+            E.copy(h, k), k += E.length;
+          }
+          return h;
+        }, N.prototype.write = function(i, u, h, k) {
+          isFinite(u) ? isFinite(h) || (k = h, h = void 0) : (q = k, k = u, u = h, h = q), u = Number(u) || 0;
+          var P, E, U, J, q = this.length - u;
+          switch ((!h || q < (h = Number(h))) && (h = q), k = String(k || "utf8").toLowerCase()) {
+            case "hex":
+              P = function(re, Q, ee, W) {
+                ee = Number(ee) || 0;
+                var $ = re.length - ee;
+                (!W || $ < (W = Number(W))) && (W = $), w(($ = Q.length) % 2 == 0, "Invalid hex string"), $ / 2 < W && (W = $ / 2);
+                for (var pe = 0; pe < W; pe++) {
+                  var It = parseInt(Q.substr(2 * pe, 2), 16);
+                  w(!isNaN(It), "Invalid hex string"), re[ee + pe] = It;
+                }
+                return N._charsWritten = 2 * pe, pe;
+              }(this, i, u, h);
+              break;
+            case "utf8":
+            case "utf-8":
+              E = this, U = u, J = h, P = N._charsWritten = Re(ne(i), E, U, J);
+              break;
+            case "ascii":
+            case "binary":
+              P = F(this, i, u, h);
+              break;
+            case "base64":
+              E = this, U = u, J = h, P = N._charsWritten = Re(Ot(i), E, U, J);
+              break;
+            case "ucs2":
+            case "ucs-2":
+            case "utf16le":
+            case "utf-16le":
+              P = x(this, i, u, h);
+              break;
+            default:
+              throw new Error("Unknown encoding");
+          }
+          return P;
+        }, N.prototype.toString = function(i, u, h) {
+          var k, P, E, U, J = this;
+          if (i = String(i || "utf8").toLowerCase(), u = Number(u) || 0, (h = h !== void 0 ? Number(h) : J.length) === u)
+            return "";
+          switch (i) {
+            case "hex":
+              k = function(q, re, Q) {
+                var ee = q.length;
+                (!re || re < 0) && (re = 0), (!Q || Q < 0 || ee < Q) && (Q = ee);
+                for (var W = "", $ = re; $ < Q; $++)
+                  W += H(q[$]);
+                return W;
+              }(J, u, h);
+              break;
+            case "utf8":
+            case "utf-8":
+              k = function(q, re, Q) {
+                var ee = "", W = "";
+                Q = Math.min(q.length, Q);
+                for (var $ = re; $ < Q; $++)
+                  q[$] <= 127 ? (ee += _t(W) + String.fromCharCode(q[$]), W = "") : W += "%" + q[$].toString(16);
+                return ee + _t(W);
+              }(J, u, h);
+              break;
+            case "ascii":
+            case "binary":
+              k = A(J, u, h);
+              break;
+            case "base64":
+              P = J, U = h, k = (E = u) === 0 && U === P.length ? g.fromByteArray(P) : g.fromByteArray(P.slice(E, U));
+              break;
+            case "ucs2":
+            case "ucs-2":
+            case "utf16le":
+            case "utf-16le":
+              k = function(q, re, Q) {
+                for (var ee = q.slice(re, Q), W = "", $ = 0; $ < ee.length; $ += 2)
+                  W += String.fromCharCode(ee[$] + 256 * ee[$ + 1]);
+                return W;
+              }(J, u, h);
+              break;
+            default:
+              throw new Error("Unknown encoding");
+          }
+          return k;
+        }, N.prototype.toJSON = function() {
+          return { type: "Buffer", data: Array.prototype.slice.call(this._arr || this, 0) };
+        }, N.prototype.copy = function(i, u, h, k) {
+          if (u = u || 0, (k = k || k === 0 ? k : this.length) !== (h = h || 0) && i.length !== 0 && this.length !== 0) {
+            w(h <= k, "sourceEnd < sourceStart"), w(0 <= u && u < i.length, "targetStart out of bounds"), w(0 <= h && h < this.length, "sourceStart out of bounds"), w(0 <= k && k <= this.length, "sourceEnd out of bounds"), k > this.length && (k = this.length);
+            var P = (k = i.length - u < k - h ? i.length - u + h : k) - h;
+            if (P < 100 || !N._useTypedArrays)
+              for (var E = 0; E < P; E++)
+                i[E + u] = this[E + h];
+            else
+              i._set(this.subarray(h, h + P), u);
+          }
+        }, N.prototype.slice = function(i, u) {
+          var h = this.length;
+          if (i = K(i, h, 0), u = K(u, h, h), N._useTypedArrays)
+            return N._augment(this.subarray(i, u));
+          for (var k = u - i, P = new N(k, void 0, !0), E = 0; E < k; E++)
+            P[E] = this[E + i];
+          return P;
+        }, N.prototype.get = function(i) {
+          return console.log(".get() is deprecated. Access using array indexes instead."), this.readUInt8(i);
+        }, N.prototype.set = function(i, u) {
+          return console.log(".set() is deprecated. Access using array indexes instead."), this.writeUInt8(i, u);
+        }, N.prototype.readUInt8 = function(i, u) {
+          if (u || (w(i != null, "missing offset"), w(i < this.length, "Trying to read beyond buffer length")), !(i >= this.length))
+            return this[i];
+        }, N.prototype.readUInt16LE = function(i, u) {
+          return V(this, i, !0, u);
+        }, N.prototype.readUInt16BE = function(i, u) {
+          return V(this, i, !1, u);
+        }, N.prototype.readUInt32LE = function(i, u) {
+          return L(this, i, !0, u);
+        }, N.prototype.readUInt32BE = function(i, u) {
+          return L(this, i, !1, u);
+        }, N.prototype.readInt8 = function(i, u) {
+          if (u || (w(i != null, "missing offset"), w(i < this.length, "Trying to read beyond buffer length")), !(i >= this.length))
+            return 128 & this[i] ? -1 * (255 - this[i] + 1) : this[i];
+        }, N.prototype.readInt16LE = function(i, u) {
+          return f(this, i, !0, u);
+        }, N.prototype.readInt16BE = function(i, u) {
+          return f(this, i, !1, u);
+        }, N.prototype.readInt32LE = function(i, u) {
+          return C(this, i, !0, u);
+        }, N.prototype.readInt32BE = function(i, u) {
+          return C(this, i, !1, u);
+        }, N.prototype.readFloatLE = function(i, u) {
+          return c(this, i, !0, u);
+        }, N.prototype.readFloatBE = function(i, u) {
+          return c(this, i, !1, u);
+        }, N.prototype.readDoubleLE = function(i, u) {
+          return d(this, i, !0, u);
+        }, N.prototype.readDoubleBE = function(i, u) {
+          return d(this, i, !1, u);
+        }, N.prototype.writeUInt8 = function(i, u, h) {
+          h || (w(i != null, "missing value"), w(u != null, "missing offset"), w(u < this.length, "trying to write beyond buffer length"), rt(i, 255)), u >= this.length || (this[u] = i);
+        }, N.prototype.writeUInt16LE = function(i, u, h) {
+          s(this, i, u, !0, h);
+        }, N.prototype.writeUInt16BE = function(i, u, h) {
+          s(this, i, u, !1, h);
+        }, N.prototype.writeUInt32LE = function(i, u, h) {
+          S(this, i, u, !0, h);
+        }, N.prototype.writeUInt32BE = function(i, u, h) {
+          S(this, i, u, !1, h);
+        }, N.prototype.writeInt8 = function(i, u, h) {
+          h || (w(i != null, "missing value"), w(u != null, "missing offset"), w(u < this.length, "Trying to write beyond buffer length"), ot(i, 127, -128)), u >= this.length || (0 <= i ? this.writeUInt8(i, u, h) : this.writeUInt8(255 + i + 1, u, h));
+        }, N.prototype.writeInt16LE = function(i, u, h) {
+          T(this, i, u, !0, h);
+        }, N.prototype.writeInt16BE = function(i, u, h) {
+          T(this, i, u, !1, h);
+        }, N.prototype.writeInt32LE = function(i, u, h) {
+          R(this, i, u, !0, h);
+        }, N.prototype.writeInt32BE = function(i, u, h) {
+          R(this, i, u, !1, h);
+        }, N.prototype.writeFloatLE = function(i, u, h) {
+          I(this, i, u, !0, h);
+        }, N.prototype.writeFloatBE = function(i, u, h) {
+          I(this, i, u, !1, h);
+        }, N.prototype.writeDoubleLE = function(i, u, h) {
+          B(this, i, u, !0, h);
+        }, N.prototype.writeDoubleBE = function(i, u, h) {
+          B(this, i, u, !1, h);
+        }, N.prototype.fill = function(i, u, h) {
+          if (u = u || 0, h = h || this.length, w(typeof (i = typeof (i = i || 0) == "string" ? i.charCodeAt(0) : i) == "number" && !isNaN(i), "value is not a number"), w(u <= h, "end < start"), h !== u && this.length !== 0) {
+            w(0 <= u && u < this.length, "start out of bounds"), w(0 <= h && h <= this.length, "end out of bounds");
+            for (var k = u; k < h; k++)
+              this[k] = i;
+          }
+        }, N.prototype.inspect = function() {
+          for (var i = [], u = this.length, h = 0; h < u; h++)
+            if (i[h] = H(this[h]), h === a.INSPECT_MAX_BYTES) {
+              i[h + 1] = "...";
+              break;
+            }
+          return "<Buffer " + i.join(" ") + ">";
+        }, N.prototype.toArrayBuffer = function() {
+          if (typeof Uint8Array > "u")
+            throw new Error("Buffer.toArrayBuffer not supported in this browser");
+          if (N._useTypedArrays)
+            return new N(this).buffer;
+          for (var i = new Uint8Array(this.length), u = 0, h = i.length; u < h; u += 1)
+            i[u] = this[u];
+          return i.buffer;
+        };
+        var _ = N.prototype;
+        function K(i, u, h) {
+          return typeof i != "number" ? h : u <= (i = ~~i) ? u : 0 <= i || 0 <= (i += u) ? i : 0;
+        }
+        function X(i) {
+          return (i = ~~Math.ceil(+i)) < 0 ? 0 : i;
+        }
+        function Y(i) {
+          return (Array.isArray || function(u) {
+            return Object.prototype.toString.call(u) === "[object Array]";
+          })(i);
+        }
+        function H(i) {
+          return i < 16 ? "0" + i.toString(16) : i.toString(16);
+        }
+        function ne(i) {
+          for (var u = [], h = 0; h < i.length; h++) {
+            var k = i.charCodeAt(h);
+            if (k <= 127)
+              u.push(i.charCodeAt(h));
+            else
+              for (var P = h, E = (55296 <= k && k <= 57343 && h++, encodeURIComponent(i.slice(P, h + 1)).substr(1).split("%")), U = 0; U < E.length; U++)
+                u.push(parseInt(E[U], 16));
+          }
+          return u;
+        }
+        function Ot(i) {
+          return g.toByteArray(i);
+        }
+        function Re(i, u, h, k) {
+          for (var P = 0; P < k && !(P + h >= u.length || P >= i.length); P++)
+            u[P + h] = i[P];
+          return P;
+        }
+        function _t(i) {
+          try {
+            return decodeURIComponent(i);
+          } catch {
+            return "�";
+          }
+        }
+        function rt(i, u) {
+          w(typeof i == "number", "cannot write a non-number as a number"), w(0 <= i, "specified a negative value for writing an unsigned value"), w(i <= u, "value is larger than maximum value for type"), w(Math.floor(i) === i, "value has a fractional component");
+        }
+        function ot(i, u, h) {
+          w(typeof i == "number", "cannot write a non-number as a number"), w(i <= u, "value larger than maximum allowed value"), w(h <= i, "value smaller than minimum allowed value"), w(Math.floor(i) === i, "value has a fractional component");
+        }
+        function zt(i, u, h) {
+          w(typeof i == "number", "cannot write a non-number as a number"), w(i <= u, "value larger than maximum allowed value"), w(h <= i, "value smaller than minimum allowed value");
+        }
+        function w(i, u) {
+          if (!i)
+            throw new Error(u || "Failed assertion");
+        }
+        N._augment = function(i) {
+          return i._isBuffer = !0, i._get = i.get, i._set = i.set, i.get = _.get, i.set = _.set, i.write = _.write, i.toString = _.toString, i.toLocaleString = _.toString, i.toJSON = _.toJSON, i.copy = _.copy, i.slice = _.slice, i.readUInt8 = _.readUInt8, i.readUInt16LE = _.readUInt16LE, i.readUInt16BE = _.readUInt16BE, i.readUInt32LE = _.readUInt32LE, i.readUInt32BE = _.readUInt32BE, i.readInt8 = _.readInt8, i.readInt16LE = _.readInt16LE, i.readInt16BE = _.readInt16BE, i.readInt32LE = _.readInt32LE, i.readInt32BE = _.readInt32BE, i.readFloatLE = _.readFloatLE, i.readFloatBE = _.readFloatBE, i.readDoubleLE = _.readDoubleLE, i.readDoubleBE = _.readDoubleBE, i.writeUInt8 = _.writeUInt8, i.writeUInt16LE = _.writeUInt16LE, i.writeUInt16BE = _.writeUInt16BE, i.writeUInt32LE = _.writeUInt32LE, i.writeUInt32BE = _.writeUInt32BE, i.writeInt8 = _.writeInt8, i.writeInt16LE = _.writeInt16LE, i.writeInt16BE = _.writeInt16BE, i.writeInt32LE = _.writeInt32LE, i.writeInt32BE = _.writeInt32BE, i.writeFloatLE = _.writeFloatLE, i.writeFloatBE = _.writeFloatBE, i.writeDoubleLE = _.writeDoubleLE, i.writeDoubleBE = _.writeDoubleBE, i.fill = _.fill, i.inspect = _.inspect, i.toArrayBuffer = _.toArrayBuffer, i;
+        };
+      }).call(this, r("lYpoI2"), typeof self < "u" ? self : typeof window < "u" ? window : {}, r("buffer").Buffer, arguments[3], arguments[4], arguments[5], arguments[6], "/node_modules/gulp-browserify/node_modules/buffer/index.js", "/node_modules/gulp-browserify/node_modules/buffer");
+    }, { "base64-js": 2, buffer: 3, ieee754: 10, lYpoI2: 11 }], 4: [function(r, o, a) {
+      (function(n, l, g, p, G, M, y, O, z) {
+        var g = r("buffer").Buffer, v = 4, N = new g(v);
+        N.fill(0), o.exports = { hash: function(F, x, A, V) {
+          for (var L = x(function(s, S) {
+            s.length % v != 0 && (T = s.length + (v - s.length % v), s = g.concat([s, N], T));
+            for (var T, R = [], I = S ? s.readInt32BE : s.readInt32LE, B = 0; B < s.length; B += v)
+              R.push(I.call(s, B));
+            return R;
+          }(F = g.isBuffer(F) ? F : new g(F), V), 8 * F.length), x = V, f = new g(A), C = x ? f.writeInt32BE : f.writeInt32LE, c = 0; c < L.length; c++)
+            C.call(f, L[c], 4 * c, !0);
+          return f;
+        } };
+      }).call(this, r("lYpoI2"), typeof self < "u" ? self : typeof window < "u" ? window : {}, r("buffer").Buffer, arguments[3], arguments[4], arguments[5], arguments[6], "/node_modules/gulp-browserify/node_modules/crypto-browserify/helpers.js", "/node_modules/gulp-browserify/node_modules/crypto-browserify");
+    }, { buffer: 3, lYpoI2: 11 }], 5: [function(r, o, a) {
+      (function(n, l, g, p, G, M, y, O, z) {
+        var g = r("buffer").Buffer, v = r("./sha"), N = r("./sha256"), F = r("./rng"), x = { sha1: v, sha256: N, md5: r("./md5") }, A = 64, V = new g(A);
+        function L(s, S) {
+          var T = x[s = s || "sha1"], R = [];
+          return T || f("algorithm:", s, "is not yet supported"), { update: function(I) {
+            return g.isBuffer(I) || (I = new g(I)), R.push(I), I.length, this;
+          }, digest: function(I) {
+            var B = g.concat(R), B = S ? function(_, K, X) {
+              g.isBuffer(K) || (K = new g(K)), g.isBuffer(X) || (X = new g(X)), K.length > A ? K = _(K) : K.length < A && (K = g.concat([K, V], A));
+              for (var Y = new g(A), H = new g(A), ne = 0; ne < A; ne++)
+                Y[ne] = 54 ^ K[ne], H[ne] = 92 ^ K[ne];
+              return X = _(g.concat([Y, X])), _(g.concat([H, X]));
+            }(T, S, B) : T(B);
+            return R = null, I ? B.toString(I) : B;
+          } };
+        }
+        function f() {
+          var s = [].slice.call(arguments).join(" ");
+          throw new Error([s, "we accept pull requests", "http://github.com/dominictarr/crypto-browserify"].join(`
+`));
+        }
+        V.fill(0), a.createHash = function(s) {
+          return L(s);
+        }, a.createHmac = L, a.randomBytes = function(s, S) {
+          if (!S || !S.call)
+            return new g(F(s));
+          try {
+            S.call(this, void 0, new g(F(s)));
+          } catch (T) {
+            S(T);
+          }
+        };
+        var C, c = ["createCredentials", "createCipher", "createCipheriv", "createDecipher", "createDecipheriv", "createSign", "createVerify", "createDiffieHellman", "pbkdf2"], d = function(s) {
+          a[s] = function() {
+            f("sorry,", s, "is not implemented yet");
+          };
+        };
+        for (C in c)
+          d(c[C]);
+      }).call(this, r("lYpoI2"), typeof self < "u" ? self : typeof window < "u" ? window : {}, r("buffer").Buffer, arguments[3], arguments[4], arguments[5], arguments[6], "/node_modules/gulp-browserify/node_modules/crypto-browserify/index.js", "/node_modules/gulp-browserify/node_modules/crypto-browserify");
+    }, { "./md5": 6, "./rng": 7, "./sha": 8, "./sha256": 9, buffer: 3, lYpoI2: 11 }], 6: [function(r, o, a) {
+      (function(n, l, m, p, G, M, y, O, z) {
+        var g = r("./helpers");
+        function v(f, C) {
+          f[C >> 5] |= 128 << C % 32, f[14 + (C + 64 >>> 9 << 4)] = C;
+          for (var c = 1732584193, d = -271733879, s = -1732584194, S = 271733878, T = 0; T < f.length; T += 16) {
+            var R = c, I = d, B = s, _ = S, c = F(c, d, s, S, f[T + 0], 7, -680876936), S = F(S, c, d, s, f[T + 1], 12, -389564586), s = F(s, S, c, d, f[T + 2], 17, 606105819), d = F(d, s, S, c, f[T + 3], 22, -1044525330);
+            c = F(c, d, s, S, f[T + 4], 7, -176418897), S = F(S, c, d, s, f[T + 5], 12, 1200080426), s = F(s, S, c, d, f[T + 6], 17, -1473231341), d = F(d, s, S, c, f[T + 7], 22, -45705983), c = F(c, d, s, S, f[T + 8], 7, 1770035416), S = F(S, c, d, s, f[T + 9], 12, -1958414417), s = F(s, S, c, d, f[T + 10], 17, -42063), d = F(d, s, S, c, f[T + 11], 22, -1990404162), c = F(c, d, s, S, f[T + 12], 7, 1804603682), S = F(S, c, d, s, f[T + 13], 12, -40341101), s = F(s, S, c, d, f[T + 14], 17, -1502002290), c = x(c, d = F(d, s, S, c, f[T + 15], 22, 1236535329), s, S, f[T + 1], 5, -165796510), S = x(S, c, d, s, f[T + 6], 9, -1069501632), s = x(s, S, c, d, f[T + 11], 14, 643717713), d = x(d, s, S, c, f[T + 0], 20, -373897302), c = x(c, d, s, S, f[T + 5], 5, -701558691), S = x(S, c, d, s, f[T + 10], 9, 38016083), s = x(s, S, c, d, f[T + 15], 14, -660478335), d = x(d, s, S, c, f[T + 4], 20, -405537848), c = x(c, d, s, S, f[T + 9], 5, 568446438), S = x(S, c, d, s, f[T + 14], 9, -1019803690), s = x(s, S, c, d, f[T + 3], 14, -187363961), d = x(d, s, S, c, f[T + 8], 20, 1163531501), c = x(c, d, s, S, f[T + 13], 5, -1444681467), S = x(S, c, d, s, f[T + 2], 9, -51403784), s = x(s, S, c, d, f[T + 7], 14, 1735328473), c = A(c, d = x(d, s, S, c, f[T + 12], 20, -1926607734), s, S, f[T + 5], 4, -378558), S = A(S, c, d, s, f[T + 8], 11, -2022574463), s = A(s, S, c, d, f[T + 11], 16, 1839030562), d = A(d, s, S, c, f[T + 14], 23, -35309556), c = A(c, d, s, S, f[T + 1], 4, -1530992060), S = A(S, c, d, s, f[T + 4], 11, 1272893353), s = A(s, S, c, d, f[T + 7], 16, -155497632), d = A(d, s, S, c, f[T + 10], 23, -1094730640), c = A(c, d, s, S, f[T + 13], 4, 681279174), S = A(S, c, d, s, f[T + 0], 11, -358537222), s = A(s, S, c, d, f[T + 3], 16, -722521979), d = A(d, s, S, c, f[T + 6], 23, 76029189), c = A(c, d, s, S, f[T + 9], 4, -640364487), S = A(S, c, d, s, f[T + 12], 11, -421815835), s = A(s, S, c, d, f[T + 15], 16, 530742520), c = V(c, d = A(d, s, S, c, f[T + 2], 23, -995338651), s, S, f[T + 0], 6, -198630844), S = V(S, c, d, s, f[T + 7], 10, 1126891415), s = V(s, S, c, d, f[T + 14], 15, -1416354905), d = V(d, s, S, c, f[T + 5], 21, -57434055), c = V(c, d, s, S, f[T + 12], 6, 1700485571), S = V(S, c, d, s, f[T + 3], 10, -1894986606), s = V(s, S, c, d, f[T + 10], 15, -1051523), d = V(d, s, S, c, f[T + 1], 21, -2054922799), c = V(c, d, s, S, f[T + 8], 6, 1873313359), S = V(S, c, d, s, f[T + 15], 10, -30611744), s = V(s, S, c, d, f[T + 6], 15, -1560198380), d = V(d, s, S, c, f[T + 13], 21, 1309151649), c = V(c, d, s, S, f[T + 4], 6, -145523070), S = V(S, c, d, s, f[T + 11], 10, -1120210379), s = V(s, S, c, d, f[T + 2], 15, 718787259), d = V(d, s, S, c, f[T + 9], 21, -343485551), c = L(c, R), d = L(d, I), s = L(s, B), S = L(S, _);
+          }
+          return Array(c, d, s, S);
+        }
+        function N(f, C, c, d, s, S) {
+          return L((C = L(L(C, f), L(d, S))) << s | C >>> 32 - s, c);
+        }
+        function F(f, C, c, d, s, S, T) {
+          return N(C & c | ~C & d, f, C, s, S, T);
+        }
+        function x(f, C, c, d, s, S, T) {
+          return N(C & d | c & ~d, f, C, s, S, T);
+        }
+        function A(f, C, c, d, s, S, T) {
+          return N(C ^ c ^ d, f, C, s, S, T);
+        }
+        function V(f, C, c, d, s, S, T) {
+          return N(c ^ (C | ~d), f, C, s, S, T);
+        }
+        function L(f, C) {
+          var c = (65535 & f) + (65535 & C);
+          return (f >> 16) + (C >> 16) + (c >> 16) << 16 | 65535 & c;
+        }
+        o.exports = function(f) {
+          return g.hash(f, v, 16);
+        };
+      }).call(this, r("lYpoI2"), typeof self < "u" ? self : typeof window < "u" ? window : {}, r("buffer").Buffer, arguments[3], arguments[4], arguments[5], arguments[6], "/node_modules/gulp-browserify/node_modules/crypto-browserify/md5.js", "/node_modules/gulp-browserify/node_modules/crypto-browserify");
+    }, { "./helpers": 4, buffer: 3, lYpoI2: 11 }], 7: [function(r, o, a) {
+      (function(n, l, m, p, G, M, y, O, z) {
+        o.exports = function(g) {
+          for (var v, N = new Array(g), F = 0; F < g; F++)
+            !(3 & F) && (v = 4294967296 * Math.random()), N[F] = v >>> ((3 & F) << 3) & 255;
+          return N;
+        };
+      }).call(this, r("lYpoI2"), typeof self < "u" ? self : typeof window < "u" ? window : {}, r("buffer").Buffer, arguments[3], arguments[4], arguments[5], arguments[6], "/node_modules/gulp-browserify/node_modules/crypto-browserify/rng.js", "/node_modules/gulp-browserify/node_modules/crypto-browserify");
+    }, { buffer: 3, lYpoI2: 11 }], 8: [function(r, o, a) {
+      (function(n, l, m, p, G, M, y, O, z) {
+        var g = r("./helpers");
+        function v(x, A) {
+          x[A >> 5] |= 128 << 24 - A % 32, x[15 + (A + 64 >> 9 << 4)] = A;
+          for (var V, L, f, C = Array(80), c = 1732584193, d = -271733879, s = -1732584194, S = 271733878, T = -1009589776, R = 0; R < x.length; R += 16) {
+            for (var I = c, B = d, _ = s, K = S, X = T, Y = 0; Y < 80; Y++) {
+              C[Y] = Y < 16 ? x[R + Y] : F(C[Y - 3] ^ C[Y - 8] ^ C[Y - 14] ^ C[Y - 16], 1);
+              var H = N(N(F(c, 5), (H = d, L = s, f = S, (V = Y) < 20 ? H & L | ~H & f : !(V < 40) && V < 60 ? H & L | H & f | L & f : H ^ L ^ f)), N(N(T, C[Y]), (V = Y) < 20 ? 1518500249 : V < 40 ? 1859775393 : V < 60 ? -1894007588 : -899497514)), T = S, S = s, s = F(d, 30), d = c, c = H;
+            }
+            c = N(c, I), d = N(d, B), s = N(s, _), S = N(S, K), T = N(T, X);
+          }
+          return Array(c, d, s, S, T);
+        }
+        function N(x, A) {
+          var V = (65535 & x) + (65535 & A);
+          return (x >> 16) + (A >> 16) + (V >> 16) << 16 | 65535 & V;
+        }
+        function F(x, A) {
+          return x << A | x >>> 32 - A;
+        }
+        o.exports = function(x) {
+          return g.hash(x, v, 20, !0);
+        };
+      }).call(this, r("lYpoI2"), typeof self < "u" ? self : typeof window < "u" ? window : {}, r("buffer").Buffer, arguments[3], arguments[4], arguments[5], arguments[6], "/node_modules/gulp-browserify/node_modules/crypto-browserify/sha.js", "/node_modules/gulp-browserify/node_modules/crypto-browserify");
+    }, { "./helpers": 4, buffer: 3, lYpoI2: 11 }], 9: [function(r, o, a) {
+      (function(n, l, m, p, G, M, y, O, z) {
+        function g(A, V) {
+          var L = (65535 & A) + (65535 & V);
+          return (A >> 16) + (V >> 16) + (L >> 16) << 16 | 65535 & L;
+        }
+        function v(A, V) {
+          var L, f = new Array(1116352408, 1899447441, 3049323471, 3921009573, 961987163, 1508970993, 2453635748, 2870763221, 3624381080, 310598401, 607225278, 1426881987, 1925078388, 2162078206, 2614888103, 3248222580, 3835390401, 4022224774, 264347078, 604807628, 770255983, 1249150122, 1555081692, 1996064986, 2554220882, 2821834349, 2952996808, 3210313671, 3336571891, 3584528711, 113926993, 338241895, 666307205, 773529912, 1294757372, 1396182291, 1695183700, 1986661051, 2177026350, 2456956037, 2730485921, 2820302411, 3259730800, 3345764771, 3516065817, 3600352804, 4094571909, 275423344, 430227734, 506948616, 659060556, 883997877, 958139571, 1322822218, 1537002063, 1747873779, 1955562222, 2024104815, 2227730452, 2361852424, 2428436474, 2756734187, 3204031479, 3329325298), C = new Array(1779033703, 3144134277, 1013904242, 2773480762, 1359893119, 2600822924, 528734635, 1541459225), c = new Array(64);
+          A[V >> 5] |= 128 << 24 - V % 32, A[15 + (V + 64 >> 9 << 4)] = V;
+          for (var d, s, S = 0; S < A.length; S += 16) {
+            for (var T = C[0], R = C[1], I = C[2], B = C[3], _ = C[4], K = C[5], X = C[6], Y = C[7], H = 0; H < 64; H++)
+              c[H] = H < 16 ? A[H + S] : g(g(g((s = c[H - 2], F(s, 17) ^ F(s, 19) ^ x(s, 10)), c[H - 7]), (s = c[H - 15], F(s, 7) ^ F(s, 18) ^ x(s, 3))), c[H - 16]), L = g(g(g(g(Y, F(s = _, 6) ^ F(s, 11) ^ F(s, 25)), _ & K ^ ~_ & X), f[H]), c[H]), d = g(F(d = T, 2) ^ F(d, 13) ^ F(d, 22), T & R ^ T & I ^ R & I), Y = X, X = K, K = _, _ = g(B, L), B = I, I = R, R = T, T = g(L, d);
+            C[0] = g(T, C[0]), C[1] = g(R, C[1]), C[2] = g(I, C[2]), C[3] = g(B, C[3]), C[4] = g(_, C[4]), C[5] = g(K, C[5]), C[6] = g(X, C[6]), C[7] = g(Y, C[7]);
+          }
+          return C;
+        }
+        var N = r("./helpers"), F = function(A, V) {
+          return A >>> V | A << 32 - V;
+        }, x = function(A, V) {
+          return A >>> V;
+        };
+        o.exports = function(A) {
+          return N.hash(A, v, 32, !0);
+        };
+      }).call(this, r("lYpoI2"), typeof self < "u" ? self : typeof window < "u" ? window : {}, r("buffer").Buffer, arguments[3], arguments[4], arguments[5], arguments[6], "/node_modules/gulp-browserify/node_modules/crypto-browserify/sha256.js", "/node_modules/gulp-browserify/node_modules/crypto-browserify");
+    }, { "./helpers": 4, buffer: 3, lYpoI2: 11 }], 10: [function(r, o, a) {
+      (function(n, l, m, p, G, M, y, O, z) {
+        a.read = function(g, v, N, F, S) {
+          var A, V, L = 8 * S - F - 1, f = (1 << L) - 1, C = f >> 1, c = -7, d = N ? S - 1 : 0, s = N ? -1 : 1, S = g[v + d];
+          for (d += s, A = S & (1 << -c) - 1, S >>= -c, c += L; 0 < c; A = 256 * A + g[v + d], d += s, c -= 8)
+            ;
+          for (V = A & (1 << -c) - 1, A >>= -c, c += F; 0 < c; V = 256 * V + g[v + d], d += s, c -= 8)
+            ;
+          if (A === 0)
+            A = 1 - C;
+          else {
+            if (A === f)
+              return V ? NaN : 1 / 0 * (S ? -1 : 1);
+            V += Math.pow(2, F), A -= C;
+          }
+          return (S ? -1 : 1) * V * Math.pow(2, A - F);
+        }, a.write = function(g, v, N, F, x, T) {
+          var V, L, f = 8 * T - x - 1, C = (1 << f) - 1, c = C >> 1, d = x === 23 ? Math.pow(2, -24) - Math.pow(2, -77) : 0, s = F ? 0 : T - 1, S = F ? 1 : -1, T = v < 0 || v === 0 && 1 / v < 0 ? 1 : 0;
+          for (v = Math.abs(v), isNaN(v) || v === 1 / 0 ? (L = isNaN(v) ? 1 : 0, V = C) : (V = Math.floor(Math.log(v) / Math.LN2), v * (F = Math.pow(2, -V)) < 1 && (V--, F *= 2), 2 <= (v += 1 <= V + c ? d / F : d * Math.pow(2, 1 - c)) * F && (V++, F /= 2), C <= V + c ? (L = 0, V = C) : 1 <= V + c ? (L = (v * F - 1) * Math.pow(2, x), V += c) : (L = v * Math.pow(2, c - 1) * Math.pow(2, x), V = 0)); 8 <= x; g[N + s] = 255 & L, s += S, L /= 256, x -= 8)
+            ;
+          for (V = V << x | L, f += x; 0 < f; g[N + s] = 255 & V, s += S, V /= 256, f -= 8)
+            ;
+          g[N + s - S] |= 128 * T;
+        };
+      }).call(this, r("lYpoI2"), typeof self < "u" ? self : typeof window < "u" ? window : {}, r("buffer").Buffer, arguments[3], arguments[4], arguments[5], arguments[6], "/node_modules/gulp-browserify/node_modules/ieee754/index.js", "/node_modules/gulp-browserify/node_modules/ieee754");
+    }, { buffer: 3, lYpoI2: 11 }], 11: [function(r, o, a) {
+      (function(n, l, m, p, G, M, y, O, z) {
+        var g, v, N;
+        function F() {
+        }
+        (n = o.exports = {}).nextTick = (v = typeof window < "u" && window.setImmediate, N = typeof window < "u" && window.postMessage && window.addEventListener, v ? function(x) {
+          return window.setImmediate(x);
+        } : N ? (g = [], window.addEventListener("message", function(x) {
+          var A = x.source;
+          A !== window && A !== null || x.data !== "process-tick" || (x.stopPropagation(), 0 < g.length && g.shift()());
+        }, !0), function(x) {
+          g.push(x), window.postMessage("process-tick", "*");
+        }) : function(x) {
+          setTimeout(x, 0);
+        }), n.title = "browser", n.browser = !0, n.env = {}, n.argv = [], n.on = F, n.addListener = F, n.once = F, n.off = F, n.removeListener = F, n.removeAllListeners = F, n.emit = F, n.binding = function(x) {
+          throw new Error("process.binding is not supported");
+        }, n.cwd = function() {
+          return "/";
+        }, n.chdir = function(x) {
+          throw new Error("process.chdir is not supported");
+        };
+      }).call(this, r("lYpoI2"), typeof self < "u" ? self : typeof window < "u" ? window : {}, r("buffer").Buffer, arguments[3], arguments[4], arguments[5], arguments[6], "/node_modules/gulp-browserify/node_modules/process/browser.js", "/node_modules/gulp-browserify/node_modules/process");
+    }, { buffer: 3, lYpoI2: 11 }] }, {}, [1])(1);
+  });
+})(zs);
+function Is(e) {
+  let t = new Uint8Array(0);
+  for (let r = 0; r < e.length; r++) {
+    let o = new Uint8Array(e[r]), a = new Uint8Array(t.length + o.length);
+    a.set(t, 0), a.set(o, t.length), t = a;
+  }
+  return t.buffer;
+}
+function Rs(e) {
+  return new Promise((t) => {
+    const r = new AudioContext(), o = r.createBufferSource();
+    r.decodeAudioData(e, (a) => {
+      o.buffer = a, o.connect(r.destination), t(Us(a));
+    });
+  });
+}
+function Bs(e, t = {}) {
+  const r = t.outputRate || 24e3, o = t.bitDepth || 16, a = t.numChannels || e.numberOfChannels, n = e.sampleRate / r >> 0, l = a === 2 ? mr(n, e.getChannelData(0), e.getChannelData(1)) : mr(n, e.getChannelData(0));
+  return Ds(l, r, o, a);
+}
+function Us(e) {
+  const t = new AudioContext(), r = e.length, o = e.getChannelData(0), a = 0.01;
+  let n = 0, l = r;
+  for (let p = 0; p < r; p++)
+    if (Math.abs(o[p]) > a) {
+      n = p;
+      break;
+    }
+  for (let p = r - 1; p >= n; p--)
+    if (Math.abs(o[p]) > a) {
+      l = p;
+      break;
+    }
+  const m = t.createBuffer(e.numberOfChannels, l - n, e.sampleRate);
+  for (let p = 0; p < e.numberOfChannels; p++) {
+    const G = e.getChannelData(p), M = m.getChannelData(p);
+    for (let y = n; y < l; y++)
+      M[y - n] = G[y];
+  }
+  return m;
+}
+function mr(e, t, r) {
+  const o = r ? (t.length + r.length) / e >> 0 : t.length / e >> 0, a = new Float32Array(o);
+  let n = 0, l = 0;
+  for (; n < o; )
+    a[n++] = t[l], r && (a[n++] = r[l]), l += e;
+  return a;
+}
+function Ds(e, t, r, o) {
+  const a = r / 8, n = o * a, l = e.length * a, m = new ArrayBuffer(44 + l), p = new DataView(m);
+  return Ue(p, 0, "RIFF"), p.setUint32(
+    4,
+    /*32*/
+    36 + l,
+    !0
+  ), Ue(p, 8, "WAVE"), Ue(p, 12, "fmt "), p.setUint32(16, 16, !0), p.setUint16(20, 1, !0), p.setUint16(22, o, !0), p.setUint32(24, t, !0), p.setUint32(28, t * n, !0), p.setUint16(32, n, !0), p.setUint16(34, r, !0), Ue(p, 36, "data"), p.setUint32(40, l, !0), r === 8 ? Hs(p, 44, e) : r === 16 ? js(p, 44, e) : Ks(p, 44, e), m;
+}
+function Ue(e, t, r) {
+  for (let o = 0; o < r.length; o++)
+    e.setUint8(t + o, r.charCodeAt(o));
+}
+function Hs(e, t, r) {
+  for (let o = 0; o < r.length; o++, t++) {
+    let a = Math.max(-1, Math.min(1, r[o])), n = a < 0 ? a * 32768 : a * 32767;
+    n = parseInt("" + 255 / (65535 / (n + 32768))), e.setInt8(t, n, !0);
+  }
+}
+function js(e, t, r) {
+  for (let o = 0; o < r.length; o++, t += 2) {
+    let a = Math.max(-1, Math.min(1, r[o]));
+    e.setInt16(t, a < 0 ? a * 32768 : a * 32767, !0);
+  }
+}
+function Ks(e, t, r) {
+  for (let o = 0; o < r.length; o++, t += 4)
+    e.setFloat32(t, r[o], !0);
+}
+var uo = /* @__PURE__ */ ((e) => (e["晓晓 - 新闻、小说"] = "Microsoft Server Speech Text to Speech Voice (zh-CN, XiaoxiaoNeural)", e["晓伊 - 卡通、小说"] = "Microsoft Server Speech Text to Speech Voice (zh-CN, XiaoyiNeural)", e["云健 - 运动、小说"] = "Microsoft Server Speech Text to Speech Voice (zh-CN, YunjianNeural)", e["云希 - 小说"] = "Microsoft Server Speech Text to Speech Voice (zh-CN, YunxiNeural)", e["云夏 - 卡通、小说"] = "Microsoft Server Speech Text to Speech Voice (zh-CN, YunxiaNeural)", e["云扬 - 新闻"] = "Microsoft Server Speech Text to Speech Voice (zh-CN, YunyangNeural)", e["辽林 - 方言小贝"] = "Microsoft Server Speech Text to Speech Voice (zh-CN-liaoning, XiaobeiNeural)", e["陕西 - 方言小倪"] = "Microsoft Server Speech Text to Speech Voice (zh-CN-shaanxi, XiaoniNeural)", e.晓晓 = "Microsoft Server Speech Text to Speech Voice (zh-CN, XiaoxiaoNeural)", e.晓伊 = "Microsoft Server Speech Text to Speech Voice (zh-CN, XiaoyiNeural)", e.云健 = "Microsoft Server Speech Text to Speech Voice (zh-CN, YunjianNeural)", e.云希 = "Microsoft Server Speech Text to Speech Voice (zh-CN, YunxiNeural)", e.云夏 = "Microsoft Server Speech Text to Speech Voice (zh-CN, YunxiaNeural)", e.云扬 = "Microsoft Server Speech Text to Speech Voice (zh-CN, YunyangNeural)", e.辽林 = "Microsoft Server Speech Text to Speech Voice (zh-CN-liaoning, XiaobeiNeural)", e.陕西 = "Microsoft Server Speech Text to Speech Voice (zh-CN-shaanxi, XiaoniNeural)", e))(uo || {});
+const Ys = [
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (af-ZA, AdriNeural)",
+    ShortName: "af-ZA-AdriNeural",
+    Gender: "Female",
+    Locale: "af-ZA",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Adri Online (Natural) - Afrikaans (South Africa)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (af-ZA, WillemNeural)",
+    ShortName: "af-ZA-WillemNeural",
+    Gender: "Male",
+    Locale: "af-ZA",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Willem Online (Natural) - Afrikaans (South Africa)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (sq-AL, AnilaNeural)",
+    ShortName: "sq-AL-AnilaNeural",
+    Gender: "Female",
+    Locale: "sq-AL",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Anila Online (Natural) - Albanian (Albania)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (sq-AL, IlirNeural)",
+    ShortName: "sq-AL-IlirNeural",
+    Gender: "Male",
+    Locale: "sq-AL",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Ilir Online (Natural) - Albanian (Albania)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (am-ET, AmehaNeural)",
+    ShortName: "am-ET-AmehaNeural",
+    Gender: "Male",
+    Locale: "am-ET",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Ameha Online (Natural) - Amharic (Ethiopia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (am-ET, MekdesNeural)",
+    ShortName: "am-ET-MekdesNeural",
+    Gender: "Female",
+    Locale: "am-ET",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Mekdes Online (Natural) - Amharic (Ethiopia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ar-DZ, AminaNeural)",
+    ShortName: "ar-DZ-AminaNeural",
+    Gender: "Female",
+    Locale: "ar-DZ",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Amina Online (Natural) - Arabic (Algeria)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ar-DZ, IsmaelNeural)",
+    ShortName: "ar-DZ-IsmaelNeural",
+    Gender: "Male",
+    Locale: "ar-DZ",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Ismael Online (Natural) - Arabic (Algeria)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ar-BH, AliNeural)",
+    ShortName: "ar-BH-AliNeural",
+    Gender: "Male",
+    Locale: "ar-BH",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Ali Online (Natural) - Arabic (Bahrain)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ar-BH, LailaNeural)",
+    ShortName: "ar-BH-LailaNeural",
+    Gender: "Female",
+    Locale: "ar-BH",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Laila Online (Natural) - Arabic (Bahrain)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ar-EG, SalmaNeural)",
+    ShortName: "ar-EG-SalmaNeural",
+    Gender: "Female",
+    Locale: "ar-EG",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Salma Online (Natural) - Arabic (Egypt)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ar-EG, ShakirNeural)",
+    ShortName: "ar-EG-ShakirNeural",
+    Gender: "Male",
+    Locale: "ar-EG",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Shakir Online (Natural) - Arabic (Egypt)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ar-IQ, BasselNeural)",
+    ShortName: "ar-IQ-BasselNeural",
+    Gender: "Male",
+    Locale: "ar-IQ",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Bassel Online (Natural) - Arabic (Iraq)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ar-IQ, RanaNeural)",
+    ShortName: "ar-IQ-RanaNeural",
+    Gender: "Female",
+    Locale: "ar-IQ",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Rana Online (Natural) - Arabic (Iraq)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ar-JO, SanaNeural)",
+    ShortName: "ar-JO-SanaNeural",
+    Gender: "Female",
+    Locale: "ar-JO",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Sana Online (Natural) - Arabic (Jordan)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ar-JO, TaimNeural)",
+    ShortName: "ar-JO-TaimNeural",
+    Gender: "Male",
+    Locale: "ar-JO",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Taim Online (Natural) - Arabic (Jordan)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ar-KW, FahedNeural)",
+    ShortName: "ar-KW-FahedNeural",
+    Gender: "Male",
+    Locale: "ar-KW",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Fahed Online (Natural) - Arabic (Kuwait)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ar-KW, NouraNeural)",
+    ShortName: "ar-KW-NouraNeural",
+    Gender: "Female",
+    Locale: "ar-KW",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Noura Online (Natural) - Arabic (Kuwait)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ar-LB, LaylaNeural)",
+    ShortName: "ar-LB-LaylaNeural",
+    Gender: "Female",
+    Locale: "ar-LB",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Layla Online (Natural) - Arabic (Lebanon)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ar-LB, RamiNeural)",
+    ShortName: "ar-LB-RamiNeural",
+    Gender: "Male",
+    Locale: "ar-LB",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Rami Online (Natural) - Arabic (Lebanon)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ar-LY, ImanNeural)",
+    ShortName: "ar-LY-ImanNeural",
+    Gender: "Female",
+    Locale: "ar-LY",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Iman Online (Natural) - Arabic (Libya)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ar-LY, OmarNeural)",
+    ShortName: "ar-LY-OmarNeural",
+    Gender: "Male",
+    Locale: "ar-LY",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Omar Online (Natural) - Arabic (Libya)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ar-MA, JamalNeural)",
+    ShortName: "ar-MA-JamalNeural",
+    Gender: "Male",
+    Locale: "ar-MA",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Jamal Online (Natural) - Arabic (Morocco)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ar-MA, MounaNeural)",
+    ShortName: "ar-MA-MounaNeural",
+    Gender: "Female",
+    Locale: "ar-MA",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Mouna Online (Natural) - Arabic (Morocco)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ar-OM, AbdullahNeural)",
+    ShortName: "ar-OM-AbdullahNeural",
+    Gender: "Male",
+    Locale: "ar-OM",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Abdullah Online (Natural) - Arabic (Oman)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ar-OM, AyshaNeural)",
+    ShortName: "ar-OM-AyshaNeural",
+    Gender: "Female",
+    Locale: "ar-OM",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Aysha Online (Natural) - Arabic (Oman)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ar-QA, AmalNeural)",
+    ShortName: "ar-QA-AmalNeural",
+    Gender: "Female",
+    Locale: "ar-QA",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Amal Online (Natural) - Arabic (Qatar)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ar-QA, MoazNeural)",
+    ShortName: "ar-QA-MoazNeural",
+    Gender: "Male",
+    Locale: "ar-QA",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Moaz Online (Natural) - Arabic (Qatar)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ar-SA, HamedNeural)",
+    ShortName: "ar-SA-HamedNeural",
+    Gender: "Male",
+    Locale: "ar-SA",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Hamed Online (Natural) - Arabic (Saudi Arabia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ar-SA, ZariyahNeural)",
+    ShortName: "ar-SA-ZariyahNeural",
+    Gender: "Female",
+    Locale: "ar-SA",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Zariyah Online (Natural) - Arabic (Saudi Arabia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ar-SY, AmanyNeural)",
+    ShortName: "ar-SY-AmanyNeural",
+    Gender: "Female",
+    Locale: "ar-SY",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Amany Online (Natural) - Arabic (Syria)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ar-SY, LaithNeural)",
+    ShortName: "ar-SY-LaithNeural",
+    Gender: "Male",
+    Locale: "ar-SY",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Laith Online (Natural) - Arabic (Syria)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ar-TN, HediNeural)",
+    ShortName: "ar-TN-HediNeural",
+    Gender: "Male",
+    Locale: "ar-TN",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Hedi Online (Natural) - Arabic (Tunisia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ar-TN, ReemNeural)",
+    ShortName: "ar-TN-ReemNeural",
+    Gender: "Female",
+    Locale: "ar-TN",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Reem Online (Natural) - Arabic (Tunisia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ar-AE, FatimaNeural)",
+    ShortName: "ar-AE-FatimaNeural",
+    Gender: "Female",
+    Locale: "ar-AE",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Fatima Online (Natural) - Arabic (United Arab Emirates)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ar-AE, HamdanNeural)",
+    ShortName: "ar-AE-HamdanNeural",
+    Gender: "Male",
+    Locale: "ar-AE",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Hamdan Online (Natural) - Arabic (United Arab Emirates)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ar-YE, MaryamNeural)",
+    ShortName: "ar-YE-MaryamNeural",
+    Gender: "Female",
+    Locale: "ar-YE",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Maryam Online (Natural) - Arabic (Yemen)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ar-YE, SalehNeural)",
+    ShortName: "ar-YE-SalehNeural",
+    Gender: "Male",
+    Locale: "ar-YE",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Saleh Online (Natural) - Arabic (Yemen)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (az-AZ, BabekNeural)",
+    ShortName: "az-AZ-BabekNeural",
+    Gender: "Male",
+    Locale: "az-AZ",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Babek Online (Natural) - Azerbaijani (Azerbaijan)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (az-AZ, BanuNeural)",
+    ShortName: "az-AZ-BanuNeural",
+    Gender: "Female",
+    Locale: "az-AZ",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Banu Online (Natural) - Azerbaijani (Azerbaijan)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (bn-BD, NabanitaNeural)",
+    ShortName: "bn-BD-NabanitaNeural",
+    Gender: "Female",
+    Locale: "bn-BD",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Nabanita Online (Natural) - Bangla (Bangladesh)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (bn-BD, PradeepNeural)",
+    ShortName: "bn-BD-PradeepNeural",
+    Gender: "Male",
+    Locale: "bn-BD",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Pradeep Online (Natural) - Bangla (Bangladesh)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (bn-IN, BashkarNeural)",
+    ShortName: "bn-IN-BashkarNeural",
+    Gender: "Male",
+    Locale: "bn-IN",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Bashkar Online (Natural) - Bangla (India)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (bn-IN, TanishaaNeural)",
+    ShortName: "bn-IN-TanishaaNeural",
+    Gender: "Female",
+    Locale: "bn-IN",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Tanishaa Online (Natural) - Bengali (India)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (bs-BA, GoranNeural)",
+    ShortName: "bs-BA-GoranNeural",
+    Gender: "Male",
+    Locale: "bs-BA",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Goran Online (Natural) - Bosnian (Bosnia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (bs-BA, VesnaNeural)",
+    ShortName: "bs-BA-VesnaNeural",
+    Gender: "Female",
+    Locale: "bs-BA",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Vesna Online (Natural) - Bosnian (Bosnia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (bg-BG, BorislavNeural)",
+    ShortName: "bg-BG-BorislavNeural",
+    Gender: "Male",
+    Locale: "bg-BG",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Borislav Online (Natural) - Bulgarian (Bulgaria)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (bg-BG, KalinaNeural)",
+    ShortName: "bg-BG-KalinaNeural",
+    Gender: "Female",
+    Locale: "bg-BG",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Kalina Online (Natural) - Bulgarian (Bulgaria)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (my-MM, NilarNeural)",
+    ShortName: "my-MM-NilarNeural",
+    Gender: "Female",
+    Locale: "my-MM",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Nilar Online (Natural) - Burmese (Myanmar)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (my-MM, ThihaNeural)",
+    ShortName: "my-MM-ThihaNeural",
+    Gender: "Male",
+    Locale: "my-MM",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Thiha Online (Natural) - Burmese (Myanmar)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ca-ES, EnricNeural)",
+    ShortName: "ca-ES-EnricNeural",
+    Gender: "Male",
+    Locale: "ca-ES",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Enric Online (Natural) - Catalan (Spain)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ca-ES, JoanaNeural)",
+    ShortName: "ca-ES-JoanaNeural",
+    Gender: "Female",
+    Locale: "ca-ES",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Joana Online (Natural) - Catalan (Spain)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (zh-HK, HiuGaaiNeural)",
+    ShortName: "zh-HK-HiuGaaiNeural",
+    Gender: "Female",
+    Locale: "zh-HK",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft HiuGaai Online (Natural) - Chinese (Cantonese Traditional)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (zh-HK, HiuMaanNeural)",
+    ShortName: "zh-HK-HiuMaanNeural",
+    Gender: "Female",
+    Locale: "zh-HK",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft HiuMaan Online (Natural) - Chinese (Hong Kong)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (zh-HK, WanLungNeural)",
+    ShortName: "zh-HK-WanLungNeural",
+    Gender: "Male",
+    Locale: "zh-HK",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft WanLung Online (Natural) - Chinese (Hong Kong)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (zh-CN, XiaoxiaoNeural)",
+    ShortName: "zh-CN-XiaoxiaoNeural",
+    CN_Name: "晓晓 - 新闻、小说",
+    Gender: "Female",
+    Locale: "zh-CN",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Xiaoxiao Online (Natural) - Chinese (Mainland)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "News",
+        "Novel"
+      ],
+      VoicePersonalities: [
+        "Warm"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (zh-CN, XiaoyiNeural)",
+    ShortName: "zh-CN-XiaoyiNeural",
+    CN_Name: "晓伊 - 卡通、小说",
+    Gender: "Female",
+    Locale: "zh-CN",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Xiaoyi Online (Natural) - Chinese (Mainland)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "Cartoon",
+        "Novel"
+      ],
+      VoicePersonalities: [
+        "Lively"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (zh-CN, YunjianNeural)",
+    ShortName: "zh-CN-YunjianNeural",
+    CN_Name: "云健 - 运动、小说",
+    Gender: "Male",
+    Locale: "zh-CN",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Yunjian Online (Natural) - Chinese (Mainland)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "Sports",
+        " Novel"
+      ],
+      VoicePersonalities: [
+        "Passion"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (zh-CN, YunxiNeural)",
+    ShortName: "zh-CN-YunxiNeural",
+    CN_Name: "云希 - 小说",
+    Gender: "Male",
+    Locale: "zh-CN",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Yunxi Online (Natural) - Chinese (Mainland)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "Novel"
+      ],
+      VoicePersonalities: [
+        "Lively",
+        "Sunshine"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (zh-CN, YunxiaNeural)",
+    ShortName: "zh-CN-YunxiaNeural",
+    CN_Name: "云夏 - 卡通、小说",
+    Gender: "Male",
+    Locale: "zh-CN",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Yunxia Online (Natural) - Chinese (Mainland)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "Cartoon",
+        "Novel"
+      ],
+      VoicePersonalities: [
+        "Cute"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (zh-CN, YunyangNeural)",
+    ShortName: "zh-CN-YunyangNeural",
+    CN_Name: "云扬 - 新闻",
+    Gender: "Male",
+    Locale: "zh-CN",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Yunyang Online (Natural) - Chinese (Mainland)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "News"
+      ],
+      VoicePersonalities: [
+        "Professional",
+        "Reliable"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (zh-CN-liaoning, XiaobeiNeural)",
+    ShortName: "zh-CN-liaoning-XiaobeiNeural",
+    CN_Name: "辽林 - 方言小贝",
+    Gender: "Female",
+    Locale: "zh-CN-liaoning",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Xiaobei Online (Natural) - Chinese (Northeastern Mandarin)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "Dialect"
+      ],
+      VoicePersonalities: [
+        "Humorous"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (zh-TW, HsiaoChenNeural)",
+    ShortName: "zh-TW-HsiaoChenNeural",
+    Gender: "Female",
+    Locale: "zh-TW",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft HsiaoChen Online (Natural) - Chinese (Taiwan)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (zh-TW, YunJheNeural)",
+    ShortName: "zh-TW-YunJheNeural",
+    Gender: "Male",
+    Locale: "zh-TW",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft YunJhe Online (Natural) - Chinese (Taiwan)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (zh-TW, HsiaoYuNeural)",
+    ShortName: "zh-TW-HsiaoYuNeural",
+    Gender: "Female",
+    Locale: "zh-TW",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft HsiaoYu Online (Natural) - Chinese (Taiwanese Mandarin)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (zh-CN-shaanxi, XiaoniNeural)",
+    ShortName: "zh-CN-shaanxi-XiaoniNeural",
+    CN_Name: "陕西 - 方言小倪",
+    Gender: "Female",
+    Locale: "zh-CN-shaanxi",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Xiaoni Online (Natural) - Chinese (Zhongyuan Mandarin Shaanxi)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "Dialect"
+      ],
+      VoicePersonalities: [
+        "Bright"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (hr-HR, GabrijelaNeural)",
+    ShortName: "hr-HR-GabrijelaNeural",
+    Gender: "Female",
+    Locale: "hr-HR",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Gabrijela Online (Natural) - Croatian (Croatia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (hr-HR, SreckoNeural)",
+    ShortName: "hr-HR-SreckoNeural",
+    Gender: "Male",
+    Locale: "hr-HR",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Srecko Online (Natural) - Croatian (Croatia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (cs-CZ, AntoninNeural)",
+    ShortName: "cs-CZ-AntoninNeural",
+    Gender: "Male",
+    Locale: "cs-CZ",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Antonin Online (Natural) - Czech (Czech)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (cs-CZ, VlastaNeural)",
+    ShortName: "cs-CZ-VlastaNeural",
+    Gender: "Female",
+    Locale: "cs-CZ",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Vlasta Online (Natural) - Czech (Czech)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (da-DK, ChristelNeural)",
+    ShortName: "da-DK-ChristelNeural",
+    Gender: "Female",
+    Locale: "da-DK",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Christel Online (Natural) - Danish (Denmark)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (da-DK, JeppeNeural)",
+    ShortName: "da-DK-JeppeNeural",
+    Gender: "Male",
+    Locale: "da-DK",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Jeppe Online (Natural) - Danish (Denmark)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (nl-BE, ArnaudNeural)",
+    ShortName: "nl-BE-ArnaudNeural",
+    Gender: "Male",
+    Locale: "nl-BE",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Arnaud Online (Natural) - Dutch (Belgium)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (nl-BE, DenaNeural)",
+    ShortName: "nl-BE-DenaNeural",
+    Gender: "Female",
+    Locale: "nl-BE",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Dena Online (Natural) - Dutch (Belgium)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (nl-NL, ColetteNeural)",
+    ShortName: "nl-NL-ColetteNeural",
+    Gender: "Female",
+    Locale: "nl-NL",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Colette Online (Natural) - Dutch (Netherlands)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (nl-NL, FennaNeural)",
+    ShortName: "nl-NL-FennaNeural",
+    Gender: "Female",
+    Locale: "nl-NL",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Fenna Online (Natural) - Dutch (Netherlands)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (nl-NL, MaartenNeural)",
+    ShortName: "nl-NL-MaartenNeural",
+    Gender: "Male",
+    Locale: "nl-NL",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Maarten Online (Natural) - Dutch (Netherlands)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-AU, NatashaNeural)",
+    ShortName: "en-AU-NatashaNeural",
+    Gender: "Female",
+    Locale: "en-AU",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Natasha Online (Natural) - English (Australia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-AU, WilliamNeural)",
+    ShortName: "en-AU-WilliamNeural",
+    Gender: "Male",
+    Locale: "en-AU",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft William Online (Natural) - English (Australia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-CA, ClaraNeural)",
+    ShortName: "en-CA-ClaraNeural",
+    Gender: "Female",
+    Locale: "en-CA",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Clara Online (Natural) - English (Canada)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-CA, LiamNeural)",
+    ShortName: "en-CA-LiamNeural",
+    Gender: "Male",
+    Locale: "en-CA",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Liam Online (Natural) - English (Canada)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-HK, SamNeural)",
+    ShortName: "en-HK-SamNeural",
+    Gender: "Male",
+    Locale: "en-HK",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Sam Online (Natural) - English (Hongkong)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-HK, YanNeural)",
+    ShortName: "en-HK-YanNeural",
+    Gender: "Female",
+    Locale: "en-HK",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Yan Online (Natural) - English (Hongkong)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-IN, NeerjaExpressiveNeural)",
+    ShortName: "en-IN-NeerjaExpressiveNeural",
+    Gender: "Female",
+    Locale: "en-IN",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Neerja Online (Natural) - English (India) (Preview)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-IN, NeerjaNeural)",
+    ShortName: "en-IN-NeerjaNeural",
+    Gender: "Female",
+    Locale: "en-IN",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Neerja Online (Natural) - English (India)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-IN, PrabhatNeural)",
+    ShortName: "en-IN-PrabhatNeural",
+    Gender: "Male",
+    Locale: "en-IN",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Prabhat Online (Natural) - English (India)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-IE, ConnorNeural)",
+    ShortName: "en-IE-ConnorNeural",
+    Gender: "Male",
+    Locale: "en-IE",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Connor Online (Natural) - English (Ireland)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-IE, EmilyNeural)",
+    ShortName: "en-IE-EmilyNeural",
+    Gender: "Female",
+    Locale: "en-IE",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Emily Online (Natural) - English (Ireland)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-KE, AsiliaNeural)",
+    ShortName: "en-KE-AsiliaNeural",
+    Gender: "Female",
+    Locale: "en-KE",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Asilia Online (Natural) - English (Kenya)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-KE, ChilembaNeural)",
+    ShortName: "en-KE-ChilembaNeural",
+    Gender: "Male",
+    Locale: "en-KE",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Chilemba Online (Natural) - English (Kenya)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-NZ, MitchellNeural)",
+    ShortName: "en-NZ-MitchellNeural",
+    Gender: "Male",
+    Locale: "en-NZ",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Mitchell Online (Natural) - English (New Zealand)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-NZ, MollyNeural)",
+    ShortName: "en-NZ-MollyNeural",
+    Gender: "Female",
+    Locale: "en-NZ",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Molly Online (Natural) - English (New Zealand)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-NG, AbeoNeural)",
+    ShortName: "en-NG-AbeoNeural",
+    Gender: "Male",
+    Locale: "en-NG",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Abeo Online (Natural) - English (Nigeria)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-NG, EzinneNeural)",
+    ShortName: "en-NG-EzinneNeural",
+    Gender: "Female",
+    Locale: "en-NG",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Ezinne Online (Natural) - English (Nigeria)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-PH, JamesNeural)",
+    ShortName: "en-PH-JamesNeural",
+    Gender: "Male",
+    Locale: "en-PH",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft James Online (Natural) - English (Philippines)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-PH, RosaNeural)",
+    ShortName: "en-PH-RosaNeural",
+    Gender: "Female",
+    Locale: "en-PH",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Rosa Online (Natural) - English (Philippines)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-SG, LunaNeural)",
+    ShortName: "en-SG-LunaNeural",
+    Gender: "Female",
+    Locale: "en-SG",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Luna Online (Natural) - English (Singapore)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-SG, WayneNeural)",
+    ShortName: "en-SG-WayneNeural",
+    Gender: "Male",
+    Locale: "en-SG",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Wayne Online (Natural) - English (Singapore)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-ZA, LeahNeural)",
+    ShortName: "en-ZA-LeahNeural",
+    Gender: "Female",
+    Locale: "en-ZA",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Leah Online (Natural) - English (South Africa)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-ZA, LukeNeural)",
+    ShortName: "en-ZA-LukeNeural",
+    Gender: "Male",
+    Locale: "en-ZA",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Luke Online (Natural) - English (South Africa)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-TZ, ElimuNeural)",
+    ShortName: "en-TZ-ElimuNeural",
+    Gender: "Male",
+    Locale: "en-TZ",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Elimu Online (Natural) - English (Tanzania)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-TZ, ImaniNeural)",
+    ShortName: "en-TZ-ImaniNeural",
+    Gender: "Female",
+    Locale: "en-TZ",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Imani Online (Natural) - English (Tanzania)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-GB, LibbyNeural)",
+    ShortName: "en-GB-LibbyNeural",
+    Gender: "Female",
+    Locale: "en-GB",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Libby Online (Natural) - English (United Kingdom)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-GB, MaisieNeural)",
+    ShortName: "en-GB-MaisieNeural",
+    Gender: "Female",
+    Locale: "en-GB",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Maisie Online (Natural) - English (United Kingdom)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-GB, RyanNeural)",
+    ShortName: "en-GB-RyanNeural",
+    Gender: "Male",
+    Locale: "en-GB",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Ryan Online (Natural) - English (United Kingdom)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-GB, SoniaNeural)",
+    ShortName: "en-GB-SoniaNeural",
+    Gender: "Female",
+    Locale: "en-GB",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Sonia Online (Natural) - English (United Kingdom)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-GB, ThomasNeural)",
+    ShortName: "en-GB-ThomasNeural",
+    Gender: "Male",
+    Locale: "en-GB",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Thomas Online (Natural) - English (United Kingdom)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-US, AriaNeural)",
+    ShortName: "en-US-AriaNeural",
+    Gender: "Female",
+    Locale: "en-US",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Aria Online (Natural) - English (United States)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "News",
+        "Novel"
+      ],
+      VoicePersonalities: [
+        "Positive",
+        "Confident"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-US, AnaNeural)",
+    ShortName: "en-US-AnaNeural",
+    Gender: "Female",
+    Locale: "en-US",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Ana Online (Natural) - English (United States)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "Cartoon",
+        "Conversation"
+      ],
+      VoicePersonalities: [
+        "Cute"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-US, ChristopherNeural)",
+    ShortName: "en-US-ChristopherNeural",
+    Gender: "Male",
+    Locale: "en-US",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Christopher Online (Natural) - English (United States)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "News",
+        "Novel"
+      ],
+      VoicePersonalities: [
+        "Reliable",
+        "Authority"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-US, EricNeural)",
+    ShortName: "en-US-EricNeural",
+    Gender: "Male",
+    Locale: "en-US",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Eric Online (Natural) - English (United States)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "News",
+        "Novel"
+      ],
+      VoicePersonalities: [
+        "Rational"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-US, GuyNeural)",
+    ShortName: "en-US-GuyNeural",
+    Gender: "Male",
+    Locale: "en-US",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Guy Online (Natural) - English (United States)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "News",
+        "Novel"
+      ],
+      VoicePersonalities: [
+        "Passion"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-US, JennyNeural)",
+    ShortName: "en-US-JennyNeural",
+    Gender: "Female",
+    Locale: "en-US",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Jenny Online (Natural) - English (United States)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "Conversation",
+        "News"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Considerate",
+        "Comfort"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-US, MichelleNeural)",
+    ShortName: "en-US-MichelleNeural",
+    Gender: "Female",
+    Locale: "en-US",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Michelle Online (Natural) - English (United States)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "News",
+        "Novel"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Pleasant"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-US, RogerNeural)",
+    ShortName: "en-US-RogerNeural",
+    Gender: "Male",
+    Locale: "en-US",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Roger Online (Natural) - English (United States)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "News",
+        "Novel"
+      ],
+      VoicePersonalities: [
+        "Lively"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (en-US, SteffanNeural)",
+    ShortName: "en-US-SteffanNeural",
+    Gender: "Male",
+    Locale: "en-US",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Steffan Online (Natural) - English (United States)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "News",
+        "Novel"
+      ],
+      VoicePersonalities: [
+        "Rational"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (et-EE, AnuNeural)",
+    ShortName: "et-EE-AnuNeural",
+    Gender: "Female",
+    Locale: "et-EE",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Anu Online (Natural) - Estonian (Estonia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (et-EE, KertNeural)",
+    ShortName: "et-EE-KertNeural",
+    Gender: "Male",
+    Locale: "et-EE",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Kert Online (Natural) - Estonian (Estonia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (fil-PH, AngeloNeural)",
+    ShortName: "fil-PH-AngeloNeural",
+    Gender: "Male",
+    Locale: "fil-PH",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Angelo Online (Natural) - Filipino (Philippines)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (fil-PH, BlessicaNeural)",
+    ShortName: "fil-PH-BlessicaNeural",
+    Gender: "Female",
+    Locale: "fil-PH",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Blessica Online (Natural) - Filipino (Philippines)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (fi-FI, HarriNeural)",
+    ShortName: "fi-FI-HarriNeural",
+    Gender: "Male",
+    Locale: "fi-FI",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Harri Online (Natural) - Finnish (Finland)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (fi-FI, NooraNeural)",
+    ShortName: "fi-FI-NooraNeural",
+    Gender: "Female",
+    Locale: "fi-FI",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Noora Online (Natural) - Finnish (Finland)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (fr-BE, CharlineNeural)",
+    ShortName: "fr-BE-CharlineNeural",
+    Gender: "Female",
+    Locale: "fr-BE",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Charline Online (Natural) - French (Belgium)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (fr-BE, GerardNeural)",
+    ShortName: "fr-BE-GerardNeural",
+    Gender: "Male",
+    Locale: "fr-BE",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Gerard Online (Natural) - French (Belgium)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (fr-CA, AntoineNeural)",
+    ShortName: "fr-CA-AntoineNeural",
+    Gender: "Male",
+    Locale: "fr-CA",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Antoine Online (Natural) - French (Canada)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (fr-CA, JeanNeural)",
+    ShortName: "fr-CA-JeanNeural",
+    Gender: "Male",
+    Locale: "fr-CA",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Jean Online (Natural) - French (Canada)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (fr-CA, SylvieNeural)",
+    ShortName: "fr-CA-SylvieNeural",
+    Gender: "Female",
+    Locale: "fr-CA",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Sylvie Online (Natural) - French (Canada)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (fr-FR, DeniseNeural)",
+    ShortName: "fr-FR-DeniseNeural",
+    Gender: "Female",
+    Locale: "fr-FR",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Denise Online (Natural) - French (France)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (fr-FR, EloiseNeural)",
+    ShortName: "fr-FR-EloiseNeural",
+    Gender: "Female",
+    Locale: "fr-FR",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Eloise Online (Natural) - French (France)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (fr-FR, HenriNeural)",
+    ShortName: "fr-FR-HenriNeural",
+    Gender: "Male",
+    Locale: "fr-FR",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Henri Online (Natural) - French (France)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (fr-CH, ArianeNeural)",
+    ShortName: "fr-CH-ArianeNeural",
+    Gender: "Female",
+    Locale: "fr-CH",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Ariane Online (Natural) - French (Switzerland)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (fr-CH, FabriceNeural)",
+    ShortName: "fr-CH-FabriceNeural",
+    Gender: "Male",
+    Locale: "fr-CH",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Fabrice Online (Natural) - French (Switzerland)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (gl-ES, RoiNeural)",
+    ShortName: "gl-ES-RoiNeural",
+    Gender: "Male",
+    Locale: "gl-ES",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Roi Online (Natural) - Galician (Spain)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (gl-ES, SabelaNeural)",
+    ShortName: "gl-ES-SabelaNeural",
+    Gender: "Female",
+    Locale: "gl-ES",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Sabela Online (Natural) - Galician (Spain)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ka-GE, EkaNeural)",
+    ShortName: "ka-GE-EkaNeural",
+    Gender: "Female",
+    Locale: "ka-GE",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Eka Online (Natural) - Georgian (Georgia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ka-GE, GiorgiNeural)",
+    ShortName: "ka-GE-GiorgiNeural",
+    Gender: "Male",
+    Locale: "ka-GE",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Giorgi Online (Natural) - Georgian (Georgia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (de-AT, IngridNeural)",
+    ShortName: "de-AT-IngridNeural",
+    Gender: "Female",
+    Locale: "de-AT",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Ingrid Online (Natural) - German (Austria)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (de-AT, JonasNeural)",
+    ShortName: "de-AT-JonasNeural",
+    Gender: "Male",
+    Locale: "de-AT",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Jonas Online (Natural) - German (Austria)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (de-DE, AmalaNeural)",
+    ShortName: "de-DE-AmalaNeural",
+    Gender: "Female",
+    Locale: "de-DE",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Amala Online (Natural) - German (Germany)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (de-DE, ConradNeural)",
+    ShortName: "de-DE-ConradNeural",
+    Gender: "Male",
+    Locale: "de-DE",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Conrad Online (Natural) - German (Germany)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (de-DE, KatjaNeural)",
+    ShortName: "de-DE-KatjaNeural",
+    Gender: "Female",
+    Locale: "de-DE",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Katja Online (Natural) - German (Germany)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (de-DE, KillianNeural)",
+    ShortName: "de-DE-KillianNeural",
+    Gender: "Male",
+    Locale: "de-DE",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Killian Online (Natural) - German (Germany)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (de-CH, JanNeural)",
+    ShortName: "de-CH-JanNeural",
+    Gender: "Male",
+    Locale: "de-CH",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Jan Online (Natural) - German (Switzerland)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (de-CH, LeniNeural)",
+    ShortName: "de-CH-LeniNeural",
+    Gender: "Female",
+    Locale: "de-CH",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Leni Online (Natural) - German (Switzerland)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (el-GR, AthinaNeural)",
+    ShortName: "el-GR-AthinaNeural",
+    Gender: "Female",
+    Locale: "el-GR",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Athina Online (Natural) - Greek (Greece)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (el-GR, NestorasNeural)",
+    ShortName: "el-GR-NestorasNeural",
+    Gender: "Male",
+    Locale: "el-GR",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Nestoras Online (Natural) - Greek (Greece)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (gu-IN, DhwaniNeural)",
+    ShortName: "gu-IN-DhwaniNeural",
+    Gender: "Female",
+    Locale: "gu-IN",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Dhwani Online (Natural) - Gujarati (India)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (gu-IN, NiranjanNeural)",
+    ShortName: "gu-IN-NiranjanNeural",
+    Gender: "Male",
+    Locale: "gu-IN",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Niranjan Online (Natural) - Gujarati (India)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (he-IL, AvriNeural)",
+    ShortName: "he-IL-AvriNeural",
+    Gender: "Male",
+    Locale: "he-IL",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Avri Online (Natural) - Hebrew (Israel)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (he-IL, HilaNeural)",
+    ShortName: "he-IL-HilaNeural",
+    Gender: "Female",
+    Locale: "he-IL",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Hila Online (Natural) - Hebrew (Israel)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (hi-IN, MadhurNeural)",
+    ShortName: "hi-IN-MadhurNeural",
+    Gender: "Male",
+    Locale: "hi-IN",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Madhur Online (Natural) - Hindi (India)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (hi-IN, SwaraNeural)",
+    ShortName: "hi-IN-SwaraNeural",
+    Gender: "Female",
+    Locale: "hi-IN",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Swara Online (Natural) - Hindi (India)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (hu-HU, NoemiNeural)",
+    ShortName: "hu-HU-NoemiNeural",
+    Gender: "Female",
+    Locale: "hu-HU",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Noemi Online (Natural) - Hungarian (Hungary)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (hu-HU, TamasNeural)",
+    ShortName: "hu-HU-TamasNeural",
+    Gender: "Male",
+    Locale: "hu-HU",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Tamas Online (Natural) - Hungarian (Hungary)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (is-IS, GudrunNeural)",
+    ShortName: "is-IS-GudrunNeural",
+    Gender: "Female",
+    Locale: "is-IS",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Gudrun Online (Natural) - Icelandic (Iceland)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (is-IS, GunnarNeural)",
+    ShortName: "is-IS-GunnarNeural",
+    Gender: "Male",
+    Locale: "is-IS",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Gunnar Online (Natural) - Icelandic (Iceland)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (id-ID, ArdiNeural)",
+    ShortName: "id-ID-ArdiNeural",
+    Gender: "Male",
+    Locale: "id-ID",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Ardi Online (Natural) - Indonesian (Indonesia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (id-ID, GadisNeural)",
+    ShortName: "id-ID-GadisNeural",
+    Gender: "Female",
+    Locale: "id-ID",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Gadis Online (Natural) - Indonesian (Indonesia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ga-IE, ColmNeural)",
+    ShortName: "ga-IE-ColmNeural",
+    Gender: "Male",
+    Locale: "ga-IE",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Colm Online (Natural) - Irish (Ireland)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ga-IE, OrlaNeural)",
+    ShortName: "ga-IE-OrlaNeural",
+    Gender: "Female",
+    Locale: "ga-IE",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Orla Online (Natural) - Irish (Ireland)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (it-IT, DiegoNeural)",
+    ShortName: "it-IT-DiegoNeural",
+    Gender: "Male",
+    Locale: "it-IT",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Diego Online (Natural) - Italian (Italy)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (it-IT, ElsaNeural)",
+    ShortName: "it-IT-ElsaNeural",
+    Gender: "Female",
+    Locale: "it-IT",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Elsa Online (Natural) - Italian (Italy)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (it-IT, IsabellaNeural)",
+    ShortName: "it-IT-IsabellaNeural",
+    Gender: "Female",
+    Locale: "it-IT",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Isabella Online (Natural) - Italian (Italy)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ja-JP, KeitaNeural)",
+    ShortName: "ja-JP-KeitaNeural",
+    Gender: "Male",
+    Locale: "ja-JP",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Keita Online (Natural) - Japanese (Japan)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ja-JP, NanamiNeural)",
+    ShortName: "ja-JP-NanamiNeural",
+    Gender: "Female",
+    Locale: "ja-JP",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Nanami Online (Natural) - Japanese (Japan)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (jv-ID, DimasNeural)",
+    ShortName: "jv-ID-DimasNeural",
+    Gender: "Male",
+    Locale: "jv-ID",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Dimas Online (Natural) - Javanese (Indonesia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (jv-ID, SitiNeural)",
+    ShortName: "jv-ID-SitiNeural",
+    Gender: "Female",
+    Locale: "jv-ID",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Siti Online (Natural) - Javanese (Indonesia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (kn-IN, GaganNeural)",
+    ShortName: "kn-IN-GaganNeural",
+    Gender: "Male",
+    Locale: "kn-IN",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Gagan Online (Natural) - Kannada (India)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (kn-IN, SapnaNeural)",
+    ShortName: "kn-IN-SapnaNeural",
+    Gender: "Female",
+    Locale: "kn-IN",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Sapna Online (Natural) - Kannada (India)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (kk-KZ, AigulNeural)",
+    ShortName: "kk-KZ-AigulNeural",
+    Gender: "Female",
+    Locale: "kk-KZ",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Aigul Online (Natural) - Kazakh (Kazakhstan)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (kk-KZ, DauletNeural)",
+    ShortName: "kk-KZ-DauletNeural",
+    Gender: "Male",
+    Locale: "kk-KZ",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Daulet Online (Natural) - Kazakh (Kazakhstan)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (km-KH, PisethNeural)",
+    ShortName: "km-KH-PisethNeural",
+    Gender: "Male",
+    Locale: "km-KH",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Piseth Online (Natural) - Khmer (Cambodia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (km-KH, SreymomNeural)",
+    ShortName: "km-KH-SreymomNeural",
+    Gender: "Female",
+    Locale: "km-KH",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Sreymom Online (Natural) - Khmer (Cambodia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ko-KR, InJoonNeural)",
+    ShortName: "ko-KR-InJoonNeural",
+    Gender: "Male",
+    Locale: "ko-KR",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft InJoon Online (Natural) - Korean (Korea)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ko-KR, SunHiNeural)",
+    ShortName: "ko-KR-SunHiNeural",
+    Gender: "Female",
+    Locale: "ko-KR",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft SunHi Online (Natural) - Korean (Korea)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (lo-LA, ChanthavongNeural)",
+    ShortName: "lo-LA-ChanthavongNeural",
+    Gender: "Male",
+    Locale: "lo-LA",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Chanthavong Online (Natural) - Lao (Laos)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (lo-LA, KeomanyNeural)",
+    ShortName: "lo-LA-KeomanyNeural",
+    Gender: "Female",
+    Locale: "lo-LA",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Keomany Online (Natural) - Lao (Laos)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (lv-LV, EveritaNeural)",
+    ShortName: "lv-LV-EveritaNeural",
+    Gender: "Female",
+    Locale: "lv-LV",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Everita Online (Natural) - Latvian (Latvia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (lv-LV, NilsNeural)",
+    ShortName: "lv-LV-NilsNeural",
+    Gender: "Male",
+    Locale: "lv-LV",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Nils Online (Natural) - Latvian (Latvia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (lt-LT, LeonasNeural)",
+    ShortName: "lt-LT-LeonasNeural",
+    Gender: "Male",
+    Locale: "lt-LT",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Leonas Online (Natural) - Lithuanian (Lithuania)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (lt-LT, OnaNeural)",
+    ShortName: "lt-LT-OnaNeural",
+    Gender: "Female",
+    Locale: "lt-LT",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Ona Online (Natural) - Lithuanian (Lithuania)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (mk-MK, AleksandarNeural)",
+    ShortName: "mk-MK-AleksandarNeural",
+    Gender: "Male",
+    Locale: "mk-MK",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Aleksandar Online (Natural) - Macedonian (Republic of North Macedonia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (mk-MK, MarijaNeural)",
+    ShortName: "mk-MK-MarijaNeural",
+    Gender: "Female",
+    Locale: "mk-MK",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Marija Online (Natural) - Macedonian (Republic of North Macedonia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ms-MY, OsmanNeural)",
+    ShortName: "ms-MY-OsmanNeural",
+    Gender: "Male",
+    Locale: "ms-MY",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Osman Online (Natural) - Malay (Malaysia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ms-MY, YasminNeural)",
+    ShortName: "ms-MY-YasminNeural",
+    Gender: "Female",
+    Locale: "ms-MY",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Yasmin Online (Natural) - Malay (Malaysia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ml-IN, MidhunNeural)",
+    ShortName: "ml-IN-MidhunNeural",
+    Gender: "Male",
+    Locale: "ml-IN",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Midhun Online (Natural) - Malayalam (India)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ml-IN, SobhanaNeural)",
+    ShortName: "ml-IN-SobhanaNeural",
+    Gender: "Female",
+    Locale: "ml-IN",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Sobhana Online (Natural) - Malayalam (India)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (mt-MT, GraceNeural)",
+    ShortName: "mt-MT-GraceNeural",
+    Gender: "Female",
+    Locale: "mt-MT",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Grace Online (Natural) - Maltese (Malta)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (mt-MT, JosephNeural)",
+    ShortName: "mt-MT-JosephNeural",
+    Gender: "Male",
+    Locale: "mt-MT",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Joseph Online (Natural) - Maltese (Malta)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (mr-IN, AarohiNeural)",
+    ShortName: "mr-IN-AarohiNeural",
+    Gender: "Female",
+    Locale: "mr-IN",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Aarohi Online (Natural) - Marathi (India)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (mr-IN, ManoharNeural)",
+    ShortName: "mr-IN-ManoharNeural",
+    Gender: "Male",
+    Locale: "mr-IN",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Manohar Online (Natural) - Marathi (India)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (mn-MN, BataaNeural)",
+    ShortName: "mn-MN-BataaNeural",
+    Gender: "Male",
+    Locale: "mn-MN",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Bataa Online (Natural) - Mongolian (Mongolia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (mn-MN, YesuiNeural)",
+    ShortName: "mn-MN-YesuiNeural",
+    Gender: "Female",
+    Locale: "mn-MN",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Yesui Online (Natural) - Mongolian (Mongolia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ne-NP, HemkalaNeural)",
+    ShortName: "ne-NP-HemkalaNeural",
+    Gender: "Female",
+    Locale: "ne-NP",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Hemkala Online (Natural) - Nepali (Nepal)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ne-NP, SagarNeural)",
+    ShortName: "ne-NP-SagarNeural",
+    Gender: "Male",
+    Locale: "ne-NP",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Sagar Online (Natural) - Nepali (Nepal)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (nb-NO, FinnNeural)",
+    ShortName: "nb-NO-FinnNeural",
+    Gender: "Male",
+    Locale: "nb-NO",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Finn Online (Natural) - Norwegian (Bokmål Norway)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (nb-NO, PernilleNeural)",
+    ShortName: "nb-NO-PernilleNeural",
+    Gender: "Female",
+    Locale: "nb-NO",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Pernille Online (Natural) - Norwegian (Bokmål, Norway)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ps-AF, GulNawazNeural)",
+    ShortName: "ps-AF-GulNawazNeural",
+    Gender: "Male",
+    Locale: "ps-AF",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft GulNawaz Online (Natural) - Pashto (Afghanistan)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ps-AF, LatifaNeural)",
+    ShortName: "ps-AF-LatifaNeural",
+    Gender: "Female",
+    Locale: "ps-AF",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Latifa Online (Natural) - Pashto (Afghanistan)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (fa-IR, DilaraNeural)",
+    ShortName: "fa-IR-DilaraNeural",
+    Gender: "Female",
+    Locale: "fa-IR",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Dilara Online (Natural) - Persian (Iran)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (fa-IR, FaridNeural)",
+    ShortName: "fa-IR-FaridNeural",
+    Gender: "Male",
+    Locale: "fa-IR",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Farid Online (Natural) - Persian (Iran)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (pl-PL, MarekNeural)",
+    ShortName: "pl-PL-MarekNeural",
+    Gender: "Male",
+    Locale: "pl-PL",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Marek Online (Natural) - Polish (Poland)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (pl-PL, ZofiaNeural)",
+    ShortName: "pl-PL-ZofiaNeural",
+    Gender: "Female",
+    Locale: "pl-PL",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Zofia Online (Natural) - Polish (Poland)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (pt-BR, AntonioNeural)",
+    ShortName: "pt-BR-AntonioNeural",
+    Gender: "Male",
+    Locale: "pt-BR",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Antonio Online (Natural) - Portuguese (Brazil)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (pt-BR, FranciscaNeural)",
+    ShortName: "pt-BR-FranciscaNeural",
+    Gender: "Female",
+    Locale: "pt-BR",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Francisca Online (Natural) - Portuguese (Brazil)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (pt-PT, DuarteNeural)",
+    ShortName: "pt-PT-DuarteNeural",
+    Gender: "Male",
+    Locale: "pt-PT",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Duarte Online (Natural) - Portuguese (Portugal)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (pt-PT, RaquelNeural)",
+    ShortName: "pt-PT-RaquelNeural",
+    Gender: "Female",
+    Locale: "pt-PT",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Raquel Online (Natural) - Portuguese (Portugal)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ro-RO, AlinaNeural)",
+    ShortName: "ro-RO-AlinaNeural",
+    Gender: "Female",
+    Locale: "ro-RO",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Alina Online (Natural) - Romanian (Romania)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ro-RO, EmilNeural)",
+    ShortName: "ro-RO-EmilNeural",
+    Gender: "Male",
+    Locale: "ro-RO",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Emil Online (Natural) - Romanian (Romania)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ru-RU, DmitryNeural)",
+    ShortName: "ru-RU-DmitryNeural",
+    Gender: "Male",
+    Locale: "ru-RU",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Dmitry Online (Natural) - Russian (Russia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ru-RU, SvetlanaNeural)",
+    ShortName: "ru-RU-SvetlanaNeural",
+    Gender: "Female",
+    Locale: "ru-RU",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Svetlana Online (Natural) - Russian (Russia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (sr-RS, NicholasNeural)",
+    ShortName: "sr-RS-NicholasNeural",
+    Gender: "Male",
+    Locale: "sr-RS",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Nicholas Online (Natural) - Serbian (Serbia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (sr-RS, SophieNeural)",
+    ShortName: "sr-RS-SophieNeural",
+    Gender: "Female",
+    Locale: "sr-RS",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Sophie Online (Natural) - Serbian (Serbia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (si-LK, SameeraNeural)",
+    ShortName: "si-LK-SameeraNeural",
+    Gender: "Male",
+    Locale: "si-LK",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Sameera Online (Natural) - Sinhala (Sri Lanka)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (si-LK, ThiliniNeural)",
+    ShortName: "si-LK-ThiliniNeural",
+    Gender: "Female",
+    Locale: "si-LK",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Thilini Online (Natural) - Sinhala (Sri Lanka)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (sk-SK, LukasNeural)",
+    ShortName: "sk-SK-LukasNeural",
+    Gender: "Male",
+    Locale: "sk-SK",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Lukas Online (Natural) - Slovak (Slovakia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (sk-SK, ViktoriaNeural)",
+    ShortName: "sk-SK-ViktoriaNeural",
+    Gender: "Female",
+    Locale: "sk-SK",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Viktoria Online (Natural) - Slovak (Slovakia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (sl-SI, PetraNeural)",
+    ShortName: "sl-SI-PetraNeural",
+    Gender: "Female",
+    Locale: "sl-SI",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Petra Online (Natural) - Slovenian (Slovenia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (sl-SI, RokNeural)",
+    ShortName: "sl-SI-RokNeural",
+    Gender: "Male",
+    Locale: "sl-SI",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Rok Online (Natural) - Slovenian (Slovenia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (so-SO, MuuseNeural)",
+    ShortName: "so-SO-MuuseNeural",
+    Gender: "Male",
+    Locale: "so-SO",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Muuse Online (Natural) - Somali (Somalia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (so-SO, UbaxNeural)",
+    ShortName: "so-SO-UbaxNeural",
+    Gender: "Female",
+    Locale: "so-SO",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Ubax Online (Natural) - Somali (Somalia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-AR, ElenaNeural)",
+    ShortName: "es-AR-ElenaNeural",
+    Gender: "Female",
+    Locale: "es-AR",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Elena Online (Natural) - Spanish (Argentina)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-AR, TomasNeural)",
+    ShortName: "es-AR-TomasNeural",
+    Gender: "Male",
+    Locale: "es-AR",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Tomas Online (Natural) - Spanish (Argentina)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-BO, MarceloNeural)",
+    ShortName: "es-BO-MarceloNeural",
+    Gender: "Male",
+    Locale: "es-BO",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Marcelo Online (Natural) - Spanish (Bolivia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-BO, SofiaNeural)",
+    ShortName: "es-BO-SofiaNeural",
+    Gender: "Female",
+    Locale: "es-BO",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Sofia Online (Natural) - Spanish (Bolivia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-CL, CatalinaNeural)",
+    ShortName: "es-CL-CatalinaNeural",
+    Gender: "Female",
+    Locale: "es-CL",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Catalina Online (Natural) - Spanish (Chile)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-CL, LorenzoNeural)",
+    ShortName: "es-CL-LorenzoNeural",
+    Gender: "Male",
+    Locale: "es-CL",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Lorenzo Online (Natural) - Spanish (Chile)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-CO, GonzaloNeural)",
+    ShortName: "es-CO-GonzaloNeural",
+    Gender: "Male",
+    Locale: "es-CO",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Gonzalo Online (Natural) - Spanish (Colombia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-CO, SalomeNeural)",
+    ShortName: "es-CO-SalomeNeural",
+    Gender: "Female",
+    Locale: "es-CO",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Salome Online (Natural) - Spanish (Colombia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-CR, JuanNeural)",
+    ShortName: "es-CR-JuanNeural",
+    Gender: "Male",
+    Locale: "es-CR",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Juan Online (Natural) - Spanish (Costa Rica)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-CR, MariaNeural)",
+    ShortName: "es-CR-MariaNeural",
+    Gender: "Female",
+    Locale: "es-CR",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Maria Online (Natural) - Spanish (Costa Rica)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-CU, BelkysNeural)",
+    ShortName: "es-CU-BelkysNeural",
+    Gender: "Female",
+    Locale: "es-CU",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Belkys Online (Natural) - Spanish (Cuba)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-CU, ManuelNeural)",
+    ShortName: "es-CU-ManuelNeural",
+    Gender: "Male",
+    Locale: "es-CU",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Manuel Online (Natural) - Spanish (Cuba)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-DO, EmilioNeural)",
+    ShortName: "es-DO-EmilioNeural",
+    Gender: "Male",
+    Locale: "es-DO",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Emilio Online (Natural) - Spanish (Dominican Republic)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-DO, RamonaNeural)",
+    ShortName: "es-DO-RamonaNeural",
+    Gender: "Female",
+    Locale: "es-DO",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Ramona Online (Natural) - Spanish (Dominican Republic)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-EC, AndreaNeural)",
+    ShortName: "es-EC-AndreaNeural",
+    Gender: "Female",
+    Locale: "es-EC",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Andrea Online (Natural) - Spanish (Ecuador)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-EC, LuisNeural)",
+    ShortName: "es-EC-LuisNeural",
+    Gender: "Male",
+    Locale: "es-EC",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Luis Online (Natural) - Spanish (Ecuador)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-SV, LorenaNeural)",
+    ShortName: "es-SV-LorenaNeural",
+    Gender: "Female",
+    Locale: "es-SV",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Lorena Online (Natural) - Spanish (El Salvador)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-SV, RodrigoNeural)",
+    ShortName: "es-SV-RodrigoNeural",
+    Gender: "Male",
+    Locale: "es-SV",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Rodrigo Online (Natural) - Spanish (El Salvador)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-GQ, JavierNeural)",
+    ShortName: "es-GQ-JavierNeural",
+    Gender: "Male",
+    Locale: "es-GQ",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Javier Online (Natural) - Spanish (Equatorial Guinea)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-GQ, TeresaNeural)",
+    ShortName: "es-GQ-TeresaNeural",
+    Gender: "Female",
+    Locale: "es-GQ",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Teresa Online (Natural) - Spanish (Equatorial Guinea)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-GT, AndresNeural)",
+    ShortName: "es-GT-AndresNeural",
+    Gender: "Male",
+    Locale: "es-GT",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Andres Online (Natural) - Spanish (Guatemala)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-GT, MartaNeural)",
+    ShortName: "es-GT-MartaNeural",
+    Gender: "Female",
+    Locale: "es-GT",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Marta Online (Natural) - Spanish (Guatemala)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-HN, CarlosNeural)",
+    ShortName: "es-HN-CarlosNeural",
+    Gender: "Male",
+    Locale: "es-HN",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Carlos Online (Natural) - Spanish (Honduras)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-HN, KarlaNeural)",
+    ShortName: "es-HN-KarlaNeural",
+    Gender: "Female",
+    Locale: "es-HN",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Karla Online (Natural) - Spanish (Honduras)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-MX, DaliaNeural)",
+    ShortName: "es-MX-DaliaNeural",
+    Gender: "Female",
+    Locale: "es-MX",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Dalia Online (Natural) - Spanish (Mexico)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-MX, JorgeNeural)",
+    ShortName: "es-MX-JorgeNeural",
+    Gender: "Male",
+    Locale: "es-MX",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Jorge Online (Natural) - Spanish (Mexico)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-NI, FedericoNeural)",
+    ShortName: "es-NI-FedericoNeural",
+    Gender: "Male",
+    Locale: "es-NI",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Federico Online (Natural) - Spanish (Nicaragua)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-NI, YolandaNeural)",
+    ShortName: "es-NI-YolandaNeural",
+    Gender: "Female",
+    Locale: "es-NI",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Yolanda Online (Natural) - Spanish (Nicaragua)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-PA, MargaritaNeural)",
+    ShortName: "es-PA-MargaritaNeural",
+    Gender: "Female",
+    Locale: "es-PA",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Margarita Online (Natural) - Spanish (Panama)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-PA, RobertoNeural)",
+    ShortName: "es-PA-RobertoNeural",
+    Gender: "Male",
+    Locale: "es-PA",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Roberto Online (Natural) - Spanish (Panama)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-PY, MarioNeural)",
+    ShortName: "es-PY-MarioNeural",
+    Gender: "Male",
+    Locale: "es-PY",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Mario Online (Natural) - Spanish (Paraguay)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-PY, TaniaNeural)",
+    ShortName: "es-PY-TaniaNeural",
+    Gender: "Female",
+    Locale: "es-PY",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Tania Online (Natural) - Spanish (Paraguay)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-PE, AlexNeural)",
+    ShortName: "es-PE-AlexNeural",
+    Gender: "Male",
+    Locale: "es-PE",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Alex Online (Natural) - Spanish (Peru)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-PE, CamilaNeural)",
+    ShortName: "es-PE-CamilaNeural",
+    Gender: "Female",
+    Locale: "es-PE",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Camila Online (Natural) - Spanish (Peru)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-PR, KarinaNeural)",
+    ShortName: "es-PR-KarinaNeural",
+    Gender: "Female",
+    Locale: "es-PR",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Karina Online (Natural) - Spanish (Puerto Rico)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-PR, VictorNeural)",
+    ShortName: "es-PR-VictorNeural",
+    Gender: "Male",
+    Locale: "es-PR",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Victor Online (Natural) - Spanish (Puerto Rico)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-ES, AlvaroNeural)",
+    ShortName: "es-ES-AlvaroNeural",
+    Gender: "Male",
+    Locale: "es-ES",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Alvaro Online (Natural) - Spanish (Spain)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-ES, ElviraNeural)",
+    ShortName: "es-ES-ElviraNeural",
+    Gender: "Female",
+    Locale: "es-ES",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Elvira Online (Natural) - Spanish (Spain)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-US, AlonsoNeural)",
+    ShortName: "es-US-AlonsoNeural",
+    Gender: "Male",
+    Locale: "es-US",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Alonso Online (Natural) - Spanish (United States)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-US, PalomaNeural)",
+    ShortName: "es-US-PalomaNeural",
+    Gender: "Female",
+    Locale: "es-US",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Paloma Online (Natural) - Spanish (United States)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-UY, MateoNeural)",
+    ShortName: "es-UY-MateoNeural",
+    Gender: "Male",
+    Locale: "es-UY",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Mateo Online (Natural) - Spanish (Uruguay)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-UY, ValentinaNeural)",
+    ShortName: "es-UY-ValentinaNeural",
+    Gender: "Female",
+    Locale: "es-UY",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Valentina Online (Natural) - Spanish (Uruguay)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-VE, PaolaNeural)",
+    ShortName: "es-VE-PaolaNeural",
+    Gender: "Female",
+    Locale: "es-VE",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Paola Online (Natural) - Spanish (Venezuela)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (es-VE, SebastianNeural)",
+    ShortName: "es-VE-SebastianNeural",
+    Gender: "Male",
+    Locale: "es-VE",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Sebastian Online (Natural) - Spanish (Venezuela)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (su-ID, JajangNeural)",
+    ShortName: "su-ID-JajangNeural",
+    Gender: "Male",
+    Locale: "su-ID",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Jajang Online (Natural) - Sundanese (Indonesia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (su-ID, TutiNeural)",
+    ShortName: "su-ID-TutiNeural",
+    Gender: "Female",
+    Locale: "su-ID",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Tuti Online (Natural) - Sundanese (Indonesia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (sw-KE, RafikiNeural)",
+    ShortName: "sw-KE-RafikiNeural",
+    Gender: "Male",
+    Locale: "sw-KE",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Rafiki Online (Natural) - Swahili (Kenya)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (sw-KE, ZuriNeural)",
+    ShortName: "sw-KE-ZuriNeural",
+    Gender: "Female",
+    Locale: "sw-KE",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Zuri Online (Natural) - Swahili (Kenya)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (sw-TZ, DaudiNeural)",
+    ShortName: "sw-TZ-DaudiNeural",
+    Gender: "Male",
+    Locale: "sw-TZ",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Daudi Online (Natural) - Swahili (Tanzania)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (sw-TZ, RehemaNeural)",
+    ShortName: "sw-TZ-RehemaNeural",
+    Gender: "Female",
+    Locale: "sw-TZ",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Rehema Online (Natural) - Swahili (Tanzania)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (sv-SE, MattiasNeural)",
+    ShortName: "sv-SE-MattiasNeural",
+    Gender: "Male",
+    Locale: "sv-SE",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Mattias Online (Natural) - Swedish (Sweden)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (sv-SE, SofieNeural)",
+    ShortName: "sv-SE-SofieNeural",
+    Gender: "Female",
+    Locale: "sv-SE",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Sofie Online (Natural) - Swedish (Sweden)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ta-IN, PallaviNeural)",
+    ShortName: "ta-IN-PallaviNeural",
+    Gender: "Female",
+    Locale: "ta-IN",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Pallavi Online (Natural) - Tamil (India)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ta-IN, ValluvarNeural)",
+    ShortName: "ta-IN-ValluvarNeural",
+    Gender: "Male",
+    Locale: "ta-IN",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Valluvar Online (Natural) - Tamil (India)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ta-MY, KaniNeural)",
+    ShortName: "ta-MY-KaniNeural",
+    Gender: "Female",
+    Locale: "ta-MY",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Kani Online (Natural) - Tamil (Malaysia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ta-MY, SuryaNeural)",
+    ShortName: "ta-MY-SuryaNeural",
+    Gender: "Male",
+    Locale: "ta-MY",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Surya Online (Natural) - Tamil (Malaysia)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ta-SG, AnbuNeural)",
+    ShortName: "ta-SG-AnbuNeural",
+    Gender: "Male",
+    Locale: "ta-SG",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Anbu Online (Natural) - Tamil (Singapore)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ta-SG, VenbaNeural)",
+    ShortName: "ta-SG-VenbaNeural",
+    Gender: "Female",
+    Locale: "ta-SG",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Venba Online (Natural) - Tamil (Singapore)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ta-LK, KumarNeural)",
+    ShortName: "ta-LK-KumarNeural",
+    Gender: "Male",
+    Locale: "ta-LK",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Kumar Online (Natural) - Tamil (Sri Lanka)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ta-LK, SaranyaNeural)",
+    ShortName: "ta-LK-SaranyaNeural",
+    Gender: "Female",
+    Locale: "ta-LK",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Saranya Online (Natural) - Tamil (Sri Lanka)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (te-IN, MohanNeural)",
+    ShortName: "te-IN-MohanNeural",
+    Gender: "Male",
+    Locale: "te-IN",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Mohan Online (Natural) - Telugu (India)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (te-IN, ShrutiNeural)",
+    ShortName: "te-IN-ShrutiNeural",
+    Gender: "Female",
+    Locale: "te-IN",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Shruti Online (Natural) - Telugu (India)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (th-TH, NiwatNeural)",
+    ShortName: "th-TH-NiwatNeural",
+    Gender: "Male",
+    Locale: "th-TH",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Niwat Online (Natural) - Thai (Thailand)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (th-TH, PremwadeeNeural)",
+    ShortName: "th-TH-PremwadeeNeural",
+    Gender: "Female",
+    Locale: "th-TH",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Premwadee Online (Natural) - Thai (Thailand)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (tr-TR, AhmetNeural)",
+    ShortName: "tr-TR-AhmetNeural",
+    Gender: "Male",
+    Locale: "tr-TR",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Ahmet Online (Natural) - Turkish (Turkey)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (tr-TR, EmelNeural)",
+    ShortName: "tr-TR-EmelNeural",
+    Gender: "Female",
+    Locale: "tr-TR",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Emel Online (Natural) - Turkish (Turkey)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (uk-UA, OstapNeural)",
+    ShortName: "uk-UA-OstapNeural",
+    Gender: "Male",
+    Locale: "uk-UA",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Ostap Online (Natural) - Ukrainian (Ukraine)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (uk-UA, PolinaNeural)",
+    ShortName: "uk-UA-PolinaNeural",
+    Gender: "Female",
+    Locale: "uk-UA",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Polina Online (Natural) - Ukrainian (Ukraine)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ur-IN, GulNeural)",
+    ShortName: "ur-IN-GulNeural",
+    Gender: "Female",
+    Locale: "ur-IN",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Gul Online (Natural) - Urdu (India)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ur-IN, SalmanNeural)",
+    ShortName: "ur-IN-SalmanNeural",
+    Gender: "Male",
+    Locale: "ur-IN",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Salman Online (Natural) - Urdu (India)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ur-PK, AsadNeural)",
+    ShortName: "ur-PK-AsadNeural",
+    Gender: "Male",
+    Locale: "ur-PK",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Asad Online (Natural) - Urdu (Pakistan)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (ur-PK, UzmaNeural)",
+    ShortName: "ur-PK-UzmaNeural",
+    Gender: "Female",
+    Locale: "ur-PK",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Uzma Online (Natural) - Urdu (Pakistan)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (uz-UZ, MadinaNeural)",
+    ShortName: "uz-UZ-MadinaNeural",
+    Gender: "Female",
+    Locale: "uz-UZ",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Madina Online (Natural) - Uzbek (Uzbekistan)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (uz-UZ, SardorNeural)",
+    ShortName: "uz-UZ-SardorNeural",
+    Gender: "Male",
+    Locale: "uz-UZ",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Sardor Online (Natural) - Uzbek (Uzbekistan)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (vi-VN, HoaiMyNeural)",
+    ShortName: "vi-VN-HoaiMyNeural",
+    Gender: "Female",
+    Locale: "vi-VN",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft HoaiMy Online (Natural) - Vietnamese (Vietnam)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (vi-VN, NamMinhNeural)",
+    ShortName: "vi-VN-NamMinhNeural",
+    Gender: "Male",
+    Locale: "vi-VN",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft NamMinh Online (Natural) - Vietnamese (Vietnam)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (cy-GB, AledNeural)",
+    ShortName: "cy-GB-AledNeural",
+    Gender: "Male",
+    Locale: "cy-GB",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Aled Online (Natural) - Welsh (United Kingdom)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (cy-GB, NiaNeural)",
+    ShortName: "cy-GB-NiaNeural",
+    Gender: "Female",
+    Locale: "cy-GB",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Nia Online (Natural) - Welsh (United Kingdom)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (zu-ZA, ThandoNeural)",
+    ShortName: "zu-ZA-ThandoNeural",
+    Gender: "Female",
+    Locale: "zu-ZA",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Thando Online (Natural) - Zulu (South Africa)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  },
+  {
+    Name: "Microsoft Server Speech Text to Speech Voice (zu-ZA, ThembaNeural)",
+    ShortName: "zu-ZA-ThembaNeural",
+    Gender: "Male",
+    Locale: "zu-ZA",
+    SuggestedCodec: "audio-24khz-48kbitrate-mono-mp3",
+    FriendlyName: "Microsoft Themba Online (Natural) - Zulu (South Africa)",
+    Status: "GA",
+    VoiceTag: {
+      ContentCategories: [
+        "General"
+      ],
+      VoicePersonalities: [
+        "Friendly",
+        "Positive"
+      ]
+    }
+  }
+], ve = {
+  name: uo.云希,
+  rate: 1.3,
+  volume: 100
+}, Js = [
+  { label: "晓晓", value: "Microsoft Server Speech Text to Speech Voice (zh-CN, XiaoxiaoNeural)" },
+  { label: "晓伊", value: "Microsoft Server Speech Text to Speech Voice (zh-CN, XiaoyiNeural)" },
+  { label: "云健", value: "Microsoft Server Speech Text to Speech Voice (zh-CN, YunjianNeural)" },
+  { label: "云希", value: "Microsoft Server Speech Text to Speech Voice (zh-CN, YunxiNeural)" },
+  { label: "云夏", value: "Microsoft Server Speech Text to Speech Voice (zh-CN, YunxiaNeural)" },
+  { label: "云扬", value: "Microsoft Server Speech Text to Speech Voice (zh-CN, YunyangNeural)" },
+  { label: "辽林", value: "Microsoft Server Speech Text to Speech Voice (zh-CN-liaoning, XiaobeiNeural)" },
+  { label: "陕西", value: "Microsoft Server Speech Text to Speech Voice (zh-CN-shaanxi, XiaoniNeural)" }
+], $s = Ys, Zs = "<speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xmlns:mstts='https://www.w3.org/2001/mstts' xml:lang='en-US'>{voice}</speak>", qs = "<voice name='{name}'><prosody pitch='+0Hz' rate='{rate}' volume='{volume}'>{text}</prosody></voice>";
+class Ws {
+  /** 获取 UUID */
+  getUuid() {
+    return "ce85b028cbccebfc8a84d38dda106db7".replace(/[a-z0-9]/g, (t) => {
+      const r = Math.random() * 16 | 0;
+      return (t == "x" ? r : r & 3 | 8).toString(16);
+    });
+  }
+  /**
+   * 替换字符串中的变量 {var}
+   * @param text 字符串
+   * @param data 替换变量的对象
+   * @param regexp 自定义正则匹配变量 默认 `/\{([a-zA-Z0-9]+)\}/g => {var}`
+   */
+  textVarReplace(t, r = {}, o = /\{([a-zA-Z0-9]+)\}/g) {
+    return t.replace(o, (a, n) => Li(r, n, n));
+  }
+  /**
+   * 合并多个 arrayBuffers 对象
+   * @param arrayBuffers
+   * @returns 合并后的单独arrayBuffers对象
+   */
+  mergeArrayBuffers(t) {
+    const r = t.reduce((l, m) => l + m.byteLength, 0), o = new ArrayBuffer(r), a = new Uint8Array(o);
+    let n = 0;
+    return t.forEach((l) => {
+      const m = new Uint8Array(l);
+      a.set(m, n), n += l.byteLength;
+    }), o;
+  }
+  /**
+   * 将 arrayBuffers 转换为 Blob 对象
+   * @param arrayBuffers
+   * @returns Blob对象
+   */
+  arrayBufferToBlob(t) {
+    return new Blob(t, { type: "application/octet-stream" });
+  }
+  /**
+   * 将 blob 转换为 arrayBuffers 对象
+   * @param blob
+   * @returns arrayBuffers 对象
+   */
+  blobToArrayBuffer(t) {
+    return new Promise((r) => {
+      const o = new FileReader();
+      o.readAsArrayBuffer(t), o.onloadend = function() {
+        const a = o.result;
+        r(a);
+      };
+    });
+  }
+  /** 将Edge输出的时间转为 hh:mm:ss,ssss */
+  convertNumberToTime(t) {
+    const r = t / 1e7, o = Math.floor(r / 3600), a = Math.floor(r % 3600 / 60), n = Math.floor(r % 60), l = Math.floor((r - Math.floor(r)) * 1e3);
+    return (o < 10 ? "0" + o : o) + ":" + (a < 10 ? "0" + a : a) + ":" + (n < 10 ? "0" + n : n) + "," + (l < 10 ? "00" + l : l < 100 ? "0" + l : l);
+  }
+}
+class Xs {
+  constructor() {
+    se(this, "voiceMap");
+    se(this, "utils", new Ws());
+    this.voiceMap = this.voiceToMap($s);
+  }
+  /** Voice list 转换为 { [Local]: Voice } */
+  voiceToMap(t) {
+    return t.reduce((r, o) => (r.hasOwnProperty(o.Locale) ? r[o.Locale].push(o) : r[o.Locale] = [o], r), {});
+  }
+  /** 将文本转为SSML，如果是SSML直接返回 */
+  textToSsml(t, r) {
+    let o = t.trim();
+    if (!o.startsWith("<")) {
+      const a = this.utils.textVarReplace(qs, { ...r, text: o });
+      o = this.utils.textVarReplace(Zs, { voice: a });
+    }
+    return o;
+  }
+  /**
+   * 分割文本，按照指定段落最大数量
+   * @param text 待分割文本
+   * @param max_length 最大文本内容
+   * @returns
+   */
+  textSplit(t, r = 1e3) {
+    const o = t.split(/\n|。|，|\?|\,|\.|\!|？|！/).filter((l) => l.trim()).map((l) => l.trim() + "，");
+    let a = "";
+    return o.reduce((l, m) => ((a + m).length < r ? a += m : (l.push(a), a = m), m === o[o.length - 1] && l.push(a), l), []);
+  }
+  /** 获取朗读角色详细列表 */
+  async getVoiceList(t = !0) {
+    return t ? this.voiceMap : _s(
+      "https://speech.platform.bing.com/consumer/speech/synthesize/readaloud/voices/list?trustedclienttoken=6A5AA1D4EAFF4E9FB37E23D68491D6F4"
+    ).then((r) => this.voiceToMap(r));
+  }
+  /** 将SSML转为音频（buffers, blob） */
+  core(t, r = {}) {
+    const o = ge(r, {
+      timeout: 3e4,
+      roleVoice: ve,
+      onMessage: () => {
+      }
+    }), { timeout: a, roleVoice: n, onMessage: l } = o, m = this.textToSsml(t, n);
+    return new Promise((p) => {
+      let G;
+      const M = [], y = "6A5AA1D4EAFF4E9FB37E23D68491D6F4", O = this.utils.getUuid(), g = `wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?${new URLSearchParams({ TrustedClientToken: y, ConnectionId: O }).toString()}`, v = new WebSocket(g);
+      v.binaryType = "arraybuffer";
+      const F = JSON.stringify({
+        context: {
+          synthesis: {
+            audio: {
+              metadataoptions: { sentenceBoundaryEnabled: "false", wordBoundaryEnabled: "true" },
+              outputFormat: "webm-24khz-16bit-mono-opus"
+            }
+          }
+        }
+      }), x = `X-Timestamp:${/* @__PURE__ */ new Date()}\r
 Content-Type:application/json; charset=utf-8\r
 Path:speech.config\r
 \r
-${F}`,A=`X-RequestId:${this.utils.getUuid()}\r
+${F}`, A = `X-RequestId:${this.utils.getUuid()}\r
 Content-Type:application/ssml+xml\r
-X-Timestamp:${new Date}\r
+X-Timestamp:${/* @__PURE__ */ new Date()}\r
 Path:ssml\r
 \r
-${m}`,V=()=>{v&&v.readyState==1&&(v.send(new ArrayBuffer(0)),v.close(),p({error:new Error("意外停止"),data:null}))},L=()=>{G&&clearTimeout(G),G=setTimeout(()=>V(),a)};v.onopen=()=>{v.send(x),v.send(A),L()},v.onerror=C=>p({error:C,data:null}),v.onclose=C=>p({error:C,data:null});let f=0;v.onmessage=C=>{if(L(),C.data instanceof ArrayBuffer){const s=new DataView(C.data),S=s.getInt16(0);if(C.data.byteLength<S+2)throw new Error("Invalid binary message format. Header content missing.");for(var c="",d=0;d<S;d++)c+=String.fromCharCode(s.getInt8(d+2));C.data.byteLength>S+2&&M.push(C.data.slice(2+S))}else if(C.data.indexOf("turn.end")!==-1)Rs(Is(M)).then(s=>{const S=Bs(s);p({error:!1,data:{buffers:S,audio:new gt(S)}})});else{const s=JSON.parse(C.data.split(`\r
+${m}`, V = () => {
+        v && v.readyState == 1 && (v.send(new ArrayBuffer(0)), v.close(), p({ error: new Error("意外停止"), data: null }));
+      }, L = () => {
+        G && clearTimeout(G), G = setTimeout(() => V(), a);
+      };
+      v.onopen = () => {
+        v.send(x), v.send(A), L();
+      }, v.onerror = (C) => p({ error: C, data: null }), v.onclose = (C) => p({ error: C, data: null });
+      let f = 0;
+      v.onmessage = (C) => {
+        if (L(), C.data instanceof ArrayBuffer) {
+          const s = new DataView(C.data), S = s.getInt16(0);
+          if (C.data.byteLength < S + 2)
+            throw new Error("Invalid binary message format. Header content missing.");
+          for (var c = "", d = 0; d < S; d++)
+            c += String.fromCharCode(s.getInt8(d + 2));
+          C.data.byteLength > S + 2 && M.push(C.data.slice(2 + S));
+        } else if (C.data.indexOf("turn.end") !== -1)
+          Rs(Is(M)).then((s) => {
+            const S = Bs(s);
+            p({ error: !1, data: { buffers: S, audio: new gt(S) } });
+          });
+        else {
+          const s = JSON.parse(C.data.split(`\r
 \r
-`)[1]);if(s!=null&&s.Metadata&&s.Metadata[0].Type==="WordBoundary"){const{Duration:S,Offset:T,text:{Text:R}}=s.Metadata[0].Data;f++,l({index:f,text:R,offset:T,duration:S,time:T+S,ssml:m})}}}})}async batchSsml(t){const r=[],o={text:"",start:"",end:"",index:0};let a=0,n={...o};const l=()=>{n.text.trim()&&r.push(n);const p=r.map(G=>`${G.index}
+`)[1]);
+          if (s != null && s.Metadata && s.Metadata[0].Type === "WordBoundary") {
+            const {
+              Duration: S,
+              Offset: T,
+              text: { Text: R }
+            } = s.Metadata[0].Data;
+            f++, l({ index: f, text: R, offset: T, duration: S, time: T + S, ssml: m });
+          }
+        }
+      };
+    });
+  }
+  /** 批量操作SSML */
+  async batchSsml(t) {
+    const r = [], o = { text: "", start: "", end: "", index: 0 };
+    let a = 0, n = { ...o };
+    const l = () => {
+      n.text.trim() && r.push(n);
+      const p = r.map((G) => `${G.index}
 ${G.start} --> ${G.end}
 ${G.text}`).join(`
 
-`);return{srt:r,srt_text:p}},m=p=>{const{text:G,offset:M,time:y,index:O,ssml:z}=p;n.start.trim()||(n.start=this.utils.convertNumberToTime(M)),n.end=this.utils.convertNumberToTime(a),a!==0&&M-a>1e6?(n.text.trim()||(n.text=G),r.push(n),n={...o,text:G,start:this.utils.convertNumberToTime(M),index:n.index+1}):n.text=n.text+G,a=y};return Promise.all(t.map(p=>this.core(p,{onMessage:m}))).then(p=>{const{srt:G,srt_text:M}=l(),y=this.utils.mergeArrayBuffers(p.map(z=>{var g;return(g=z.data)==null?void 0:g.buffers}).filter(z=>z)),O=this.utils.arrayBufferToBlob([y]);return{buffers:y,blob:O,srt:G,srt_text:M,audio:new gt(y)}})}speak(t,r={}){var M;const o=ge(r,{roleVoice:ve}),{roleVoice:a}=o,n=this.textToSsml(t,a),m=(new DOMParser).parseFromString(n,"text/xml"),p=[];return Array.from(((M=m.querySelector("speak"))==null?void 0:M.childNodes)||[]).forEach(y=>{var v;const O=((v=y.textContent)==null?void 0:v.trim())||"";if(!O.trim())return;const z=y.querySelector("prosody"),g=ge({name:y.getAttribute("name"),rate:z==null?void 0:z.getAttribute("rate"),content:O},a);p.push(g)}),this.speakArray(p)}speakArray(t){const o=t.map(a=>a.content.length<=1e3?this.textToSsml(a.content,ge(a,ve)):this.textSplit(a.content,1e3).map(l=>this.textToSsml(l,ge(a,ve))));return this.batchSsml(o.flat())}async speakLongText(t,r={}){const o=ge(r,{roleVoice:ve,onPlay:()=>{}}),{roleVoice:a,onPlay:n}=o;let l=0,m=0,p=!1,G="",M,y,O,z;const g=this.textSplit(t,50),v=async()=>new Promise(A=>{let V;const L=()=>{V=setTimeout(()=>{p?L():(clearTimeout(V),A(!0))},100)};L()}),N=()=>{y.stop(),O&&clearTimeout(O),z&&clearTimeout(z)},F=async()=>{if(p&&await v(),M.byteLength===0)return;const A=new AudioContext,V=A.createGain(),L=A.createBufferSource();L.connect(V),V.gain.value=.5,V.connect(A.destination);const f=()=>a.rate<1?(1+a.rate)*.7:a.rate===1?.7:(a.rate-1)*.7;A.decodeAudioData(M,C=>{n({audioContext:A,audioSource:L,buffer:C,text:G,start_index:l,end_index:m,onStop:N}),l=m,y=L,L.buffer=C,L.start(),O=setTimeout(()=>x(),(C.duration-5)*1e3),z=setTimeout(()=>F(),(C.duration-f())*1e3)})},x=async(A=3)=>{if(g.length===0)return;p=!0,G=g.shift(),m+=G.length;const{error:V,data:L}=await this.core(G,{roleVoice:a});if(p=!1,V)return A>1?await x(A-1):void 0;M=L.buffers};return await x(),await F(),{onStop:N,text_list:g}}}class gt{constructor(t){se(this,"audioContext");se(this,"audioSource");this.buffers=t;const{audioContext:r,audioSource:o}=this.create();this.audioContext=r,this.audioSource=o}create(){const t=new AudioContext,r=t.createGain(),o=t.createBufferSource();return o.connect(r),r.gain.value=.5,r.connect(t.destination),t.decodeAudioData(this.buffers.slice(0),a=>{o.buffer=a}),{audioContext:t,audioSource:o}}play(){const t=this.audioContext.state;if(t==="suspended"&&this.audioContext.resume(),t==="running"&&this.audioSource.start(),t==="closed"){const{audioContext:r,audioSource:o}=this.create();this.audioContext=r,this.audioSource=o,this.audioSource.start()}}pause(){this.audioContext.state==="running"&&this.audioContext.suspend()}stop(){this.audioSource.stop(),this.audioContext.close()}getObjectURL(){const t=new Blob([this.buffers],{type:"audio/mpeg"});return URL.createObjectURL(t)}download(t="合成音频.mp3"){const r=this.getObjectURL(),o=document.createElement("a");o.setAttribute("href",r),o.setAttribute("download",t),o.style.display="none",document.body.appendChild(o),o.click(),document.body.removeChild(o),URL.revokeObjectURL(r)}addEventListener(t="ended",r){this.audioSource.addEventListener(t,r)}}const{defineComponent:Qs}=__Context.vue,{toDisplayString:ye,createElementVNode:me,resolveComponent:we,withCtx:le,createVNode:ce,createTextVNode:el,renderList:fr,Fragment:Sr,openBlock:Ce,createElementBlock:Te,vShow:tl,withDirectives:rl,createCommentVNode:ol,normalizeClass:al}=__Context.vue,il={class:"w-full m-auto h-full flex space-x-2 p2"},nl={class:"flex-1 wh-full rounded-md"},sl={class:"font-mono font-bold absolute bottom-0 right-5 text-gray-400 truncate"},ll={class:"w80 h-full overflow-hidden"},cl={class:"text-xs font-mono text-gray-500"},ul={class:"pb1 select-text"},dl={class:"w80 h-full"},hl={key:0},ml=me("div",{class:"text-gray-500"},"空",-1),fl=[ml],Sl=["onClick"],{ref:De,computed:Nl,shallowRef:pl,triggerRef:gl}=__Context.vue,yl=Qs({__name:"Page",setup(e){const t=new Xs,r=De(""),o=Nl(()=>{const y=r.value;return y.length>10?y.slice(0,10):y}),a=De(1e5),n=De(null),l=pl([]),m=De({show:!0,name:ve.name,volume:100,rate:1}),p=[{block:!0,label:"配音",name:"name",type:"select",typeConfig:{options:Js},value:1},{block:!0,label:"语速",name:"rate",type:"number",typeConfig:{min:1,max:2,step:.1},value:1},{block:!0,label:"音量",name:"volume",type:"number",typeConfig:{min:50,max:100,step:10},value:1},{block:!0,label:"字幕显示",name:"show",type:"switch",value:!0},{block:!1,label:"播放",name:"_btn1",type:"button",typeConfig:{__text:"播放",style:"min-width: 90px",type:"primary",onClick(y,O){O.customAttrs.value.loading=!0,r.value=r.value.trim();const z={...m.value,text:r.value,textName:o.value},g=JSON.stringify(z),v=l.value.findIndex(N=>N.key===g);if(v!==-1){n.value=l.value[v];const{buffers:N}=l.value[v].output,F=new gt(N);return F.play(),O.customAttrs.value.loading=!1,{buffers:N,audio:F}}t.speak(r.value||"你好，喜欢我的声音请选则我哦",{roleVoice:m.value}).then(N=>{N.audio.play(),l.value.push({key:g,output:N,input:z}),n.value=l.value[l.value.length-1],gl(l)}).catch(N=>{throw N}).finally(()=>{O.customAttrs.value.loading=!1})}},value:""},{block:!1,label:"音频下载",name:"_btn2",type:"button",typeConfig:{__text:"下载",style:"min-width: 90px",type:"primary",onClick(y,O){n.value&&er(n.value.output.blob,`${n.value.input.textName}.wav`)}},value:""}],G=()=>{n.value&&er(new Blob([n.value.output.srt_text],{type:"text/plain"}),`${n.value.input.textName}.srt`)},M=y=>{n.value=y,["name","volume","rate"].forEach(O=>sn(m.value,O,y.input[O])),r.value=y.input.text??""};return(y,O)=>{var x,A;const z=we("n-input"),g=we("n-button"),v=we("n-scrollbar"),N=we("n-card"),F=we("i-setting");return Ce(),Te("div",il,[me("div",nl,[ce(z,{round:"",class:"h-full resize-none","show-count":"",type:"textarea","default-value":"",value:r.value,"onUpdate:value":O[0]||(O[0]=V=>r.value=V),maxlength:a.value,placeholder:"请输入需要转语言的文本..."},{count:le(({value:V})=>[me("span",sl,ye(V.length)+" / "+ye(a.value),1)]),_:1},8,["value","maxlength"])]),rl(me("div",ll,[ce(N,{class:"flex flex-col flex-1 wh-full overflow-hidden",title:"字幕","content-class":"flex-1 h-full pb2 overflow-hidden"},{"header-extra":le(()=>[ce(g,{onClick:G},{default:le(()=>[el("下载字幕")]),_:1})]),default:le(()=>[ce(v,{class:"h-full"},{default:le(()=>{var V;return[(Ce(!0),Te(Sr,null,fr((V=n.value)==null?void 0:V.output.srt,L=>(Ce(),Te("div",{key:L.index},[me("div",cl,ye(L.start)+" -> "+ye(L.end),1),me("div",ul,ye(L.text),1)]))),128))]}),_:1})]),_:1})],512),[[tl,n.value&&((A=(x=n.value)==null?void 0:x.output)==null?void 0:A.srt.length)>0&&m.value.show]]),me("div",dl,[ce(v,{class:"h-full"},{default:le(()=>[ce(N,{class:"",title:"操作"},{default:le(()=>[ce(F,{settings:p,modelValue:m.value,"onUpdate:modelValue":O[1]||(O[1]=V=>m.value=V)},null,8,["modelValue"])]),_:1}),ce(N,{class:"flex flex-col mt-2 min-h10 overflow-hidden",title:"历史","content-class":"flex-1 h-full pb2 overflow-hidden"},{default:le(()=>[ce(v,{class:"h-full"},{default:le(()=>[l.value.length===0?(Ce(),Te("div",hl,fl)):ol("",!0),(Ce(!0),Te(Sr,null,fr(l.value,V=>{var L;return Ce(),Te("div",{key:V.input},[me("div",{class:al(["hover:underline",[((L=n.value)==null?void 0:L.key)===V.key?"text-blue-400 hover:text-blue-500":"text-gray-500 hover:text-gray-700"]]),onClick:f=>M(V)},ye(V.input.textName),11,Sl)])}),128))]),_:1})]),_:1})]),_:1})])])}}});class Cl{constructor(){se(this,"icon","");se(this,"name","test01");se(this,"description","测试01");se(this,"isUninstallReload",!1)}install(t){t.usePage({path:"/tts",name:"tts",meta:{title:"TTS",content:"文本转语音",icon:'<svg t="1705562973022" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4335" width="200" height="200"><path d="M801.792 1016.832h-283.648c-279.552 0-509.952-225.792-508.416-505.344 1.536-274.432 224.768-497.664 499.2-499.2 279.552-1.536 505.344 228.864 505.344 508.416v60.928c0 9.728-7.68 17.408-17.408 17.408s-17.408-7.68-17.408-17.408v-60.928c0-257.024-204.8-471.04-461.824-474.112C254.976 43.52 40.96 257.536 44.032 520.192c3.072 257.024 217.088 461.824 474.112 461.824h283.648c53.76 0 72.192-26.112 75.776-79.36v-135.168c0-9.728 7.68-17.408 17.408-17.408s17.408 7.68 17.408 17.408v139.776c-5.632 69.632-39.424 109.568-110.592 109.568z" p-id="4336"></path><path d="M512 799.232c-18.432 0-33.28-14.848-33.28-33.28V263.168c0-18.432 14.848-33.28 33.28-33.28s33.28 14.848 33.28 33.28v502.784c0 18.432-14.848 33.28-33.28 33.28z m-148.992-83.456c-18.432 0-33.28-14.848-33.28-33.28V346.624c0-18.432 14.848-33.28 33.28-33.28s33.28 14.848 33.28 33.28v335.872c0 18.432-14.848 33.28-33.28 33.28z m297.984 0c-18.432 0-33.28-14.848-33.28-33.28V346.624c0-18.432 14.848-33.28 33.28-33.28s33.28 14.848 33.28 33.28v335.872c0 18.432-14.848 33.28-33.28 33.28zM1006.592 771.072h-221.696c-9.216 0-16.896-7.68-16.896-16.896 0-9.216 7.68-16.896 16.896-16.896h221.696c9.216 0 16.896 7.68 16.896 16.896 0.512 9.216-7.168 16.896-16.896 16.896z" p-id="4337"></path></svg>',cache:!0},component:yl}),console.log("install")}uninstall(){console.log("uninstall")}}const vl=new Cl;export{vl as default};
+`);
+      return { srt: r, srt_text: p };
+    }, m = (p) => {
+      const { text: G, offset: M, time: y, index: O, ssml: z } = p;
+      n.start.trim() || (n.start = this.utils.convertNumberToTime(M)), n.end = this.utils.convertNumberToTime(a), a !== 0 && M - a > 1e6 ? (n.text.trim() || (n.text = G), r.push(n), n = {
+        ...o,
+        text: G,
+        start: this.utils.convertNumberToTime(M),
+        index: n.index + 1
+      }) : n.text = n.text + G, a = y;
+    };
+    return Promise.all(t.map((p) => this.core(p, { onMessage: m }))).then((p) => {
+      const { srt: G, srt_text: M } = l(), y = this.utils.mergeArrayBuffers(p.map((z) => {
+        var g;
+        return (g = z.data) == null ? void 0 : g.buffers;
+      }).filter((z) => z)), O = this.utils.arrayBufferToBlob([y]);
+      return { buffers: y, blob: O, srt: G, srt_text: M, audio: new gt(y) };
+    });
+  }
+  /**
+   * SSML进行多次配音，要求符合SSML规则 speak.voice[10].prosody.朗读内容， voice可为多个，每个voice中只能出现一个prosody，不允许出现其他的节点
+   * @param textOrSsml
+   * @param _option
+   */
+  speak(t, r = {}) {
+    var M;
+    const o = ge(r, {
+      roleVoice: ve
+    }), { roleVoice: a } = o, n = this.textToSsml(t, a), m = new DOMParser().parseFromString(n, "text/xml"), p = [];
+    return Array.from(((M = m.querySelector("speak")) == null ? void 0 : M.childNodes) || []).forEach((y) => {
+      var v;
+      const O = ((v = y.textContent) == null ? void 0 : v.trim()) || "";
+      if (!O.trim())
+        return;
+      const z = y.querySelector("prosody"), g = ge(
+        { name: y.getAttribute("name"), rate: z == null ? void 0 : z.getAttribute("rate"), content: O },
+        a
+      );
+      p.push(g);
+    }), this.speakArray(p);
+  }
+  speakArray(t) {
+    const o = t.map((a) => a.content.length <= 1e3 ? this.textToSsml(a.content, ge(a, ve)) : this.textSplit(a.content, 1e3).map((l) => this.textToSsml(l, ge(a, ve))));
+    return this.batchSsml(o.flat());
+  }
+  async speakLongText(t, r = {}) {
+    const o = ge(r, {
+      roleVoice: ve,
+      onPlay: () => {
+      }
+    }), { roleVoice: a, onPlay: n } = o;
+    let l = 0, m = 0, p = !1, G = "", M, y, O, z;
+    const g = this.textSplit(t, 50), v = async () => new Promise((A) => {
+      let V;
+      const L = () => {
+        V = setTimeout(() => {
+          p ? L() : (clearTimeout(V), A(!0));
+        }, 100);
+      };
+      L();
+    }), N = () => {
+      y.stop(), O && clearTimeout(O), z && clearTimeout(z);
+    }, F = async () => {
+      if (p && await v(), M.byteLength === 0)
+        return;
+      const A = new AudioContext(), V = A.createGain(), L = A.createBufferSource();
+      L.connect(V), V.gain.value = 0.5, V.connect(A.destination);
+      const f = () => a.rate < 1 ? (1 + a.rate) * 0.7 : a.rate === 1 ? 0.7 : (a.rate - 1) * 0.7;
+      A.decodeAudioData(M, (C) => {
+        n({ audioContext: A, audioSource: L, buffer: C, text: G, start_index: l, end_index: m, onStop: N }), l = m, y = L, L.buffer = C, L.start(), O = setTimeout(() => x(), (C.duration - 5) * 1e3), z = setTimeout(() => F(), (C.duration - f()) * 1e3);
+      });
+    }, x = async (A = 3) => {
+      if (g.length === 0)
+        return;
+      p = !0, G = g.shift(), m += G.length;
+      const { error: V, data: L } = await this.core(G, { roleVoice: a });
+      if (p = !1, V)
+        return A > 1 ? await x(A - 1) : void 0;
+      M = L.buffers;
+    };
+    return await x(), await F(), { onStop: N, text_list: g };
+  }
+}
+class gt {
+  constructor(t) {
+    se(this, "audioContext");
+    se(this, "audioSource");
+    this.buffers = t;
+    const { audioContext: r, audioSource: o } = this.create();
+    this.audioContext = r, this.audioSource = o;
+  }
+  create() {
+    const t = new AudioContext(), r = t.createGain(), o = t.createBufferSource();
+    return o.connect(r), r.gain.value = 0.5, r.connect(t.destination), t.decodeAudioData(this.buffers.slice(0), (a) => {
+      o.buffer = a;
+    }), { audioContext: t, audioSource: o };
+  }
+  play() {
+    const t = this.audioContext.state;
+    if (t === "suspended" && this.audioContext.resume(), t === "running" && this.audioSource.start(), t === "closed") {
+      const { audioContext: r, audioSource: o } = this.create();
+      this.audioContext = r, this.audioSource = o, this.audioSource.start();
+    }
+  }
+  pause() {
+    this.audioContext.state === "running" && this.audioContext.suspend();
+  }
+  stop() {
+    this.audioSource.stop(), this.audioContext.close();
+  }
+  getObjectURL() {
+    const t = new Blob([this.buffers], { type: "audio/mpeg" });
+    return URL.createObjectURL(t);
+  }
+  download(t = "合成音频.mp3") {
+    const r = this.getObjectURL(), o = document.createElement("a");
+    o.setAttribute("href", r), o.setAttribute("download", t), o.style.display = "none", document.body.appendChild(o), o.click(), document.body.removeChild(o), URL.revokeObjectURL(r);
+  }
+  addEventListener(t = "ended", r) {
+    this.audioSource.addEventListener(t, r);
+  }
+}
+const { defineComponent: Qs } = __Context.vue, { toDisplayString: ye, createElementVNode: me, resolveComponent: we, withCtx: le, createVNode: ce, createTextVNode: el, renderList: fr, Fragment: Sr, openBlock: Ce, createElementBlock: Te, vShow: tl, withDirectives: rl, createCommentVNode: ol, normalizeClass: al } = __Context.vue, il = { class: "w-full m-auto h-full flex space-x-2 p2" }, nl = { class: "flex-1 wh-full rounded-md" }, sl = { class: "font-mono font-bold absolute bottom-0 right-5 text-gray-400 truncate" }, ll = { class: "w80 h-full overflow-hidden" }, cl = { class: "text-xs font-mono text-gray-500" }, ul = { class: "pb1 select-text" }, dl = { class: "w80 h-full" }, hl = { key: 0 }, ml = /* @__PURE__ */ me("div", { class: "text-gray-500" }, "空", -1), fl = [
+  ml
+], Sl = ["onClick"], { ref: De, computed: Nl, shallowRef: pl, triggerRef: gl } = __Context.vue, yl = /* @__PURE__ */ Qs({
+  __name: "Page",
+  setup(e) {
+    const t = new Xs(), r = De(""), o = Nl(() => {
+      const y = r.value;
+      return y.length > 10 ? y.slice(0, 10) : y;
+    }), a = De(1e5), n = De(null), l = pl([]), m = De({ show: !0, name: ve.name, volume: 100, rate: 1 }), p = [
+      { block: !0, label: "配音", name: "name", type: "select", typeConfig: { options: Js }, value: 1 },
+      { block: !0, label: "语速", name: "rate", type: "number", typeConfig: { min: 1, max: 2, step: 0.1 }, value: 1 },
+      { block: !0, label: "音量", name: "volume", type: "number", typeConfig: { min: 50, max: 100, step: 10 }, value: 1 },
+      { block: !0, label: "字幕显示", name: "show", type: "switch", value: !0 },
+      {
+        block: !1,
+        label: "播放",
+        name: "_btn1",
+        type: "button",
+        typeConfig: {
+          __text: "播放",
+          style: "min-width: 90px",
+          type: "primary",
+          onClick(y, O) {
+            O.customAttrs.value.loading = !0, r.value = r.value.trim();
+            const z = { ...m.value, text: r.value, textName: o.value }, g = JSON.stringify(z), v = l.value.findIndex((N) => N.key === g);
+            if (v !== -1) {
+              n.value = l.value[v];
+              const { buffers: N } = l.value[v].output, F = new gt(N);
+              return F.play(), O.customAttrs.value.loading = !1, { buffers: N, audio: F };
+            }
+            t.speak(r.value || "你好，喜欢我的声音请选则我哦", { roleVoice: m.value }).then((N) => {
+              N.audio.play(), l.value.push({ key: g, output: N, input: z }), n.value = l.value[l.value.length - 1], gl(l);
+            }).catch((N) => {
+              throw N;
+            }).finally(() => {
+              O.customAttrs.value.loading = !1;
+            });
+          }
+        },
+        value: ""
+      },
+      {
+        block: !1,
+        label: "音频下载",
+        name: "_btn2",
+        type: "button",
+        typeConfig: {
+          __text: "下载",
+          style: "min-width: 90px",
+          type: "primary",
+          onClick(y, O) {
+            n.value && er(n.value.output.blob, `${n.value.input.textName}.wav`);
+          }
+        },
+        value: ""
+      }
+    ], G = () => {
+      n.value && er(new Blob([n.value.output.srt_text], { type: "text/plain" }), `${n.value.input.textName}.srt`);
+    }, M = (y) => {
+      n.value = y, ["name", "volume", "rate"].forEach((O) => sn(m.value, O, y.input[O])), r.value = y.input.text ?? "";
+    };
+    return (y, O) => {
+      var x, A;
+      const z = we("n-input"), g = we("n-button"), v = we("n-scrollbar"), N = we("n-card"), F = we("i-setting");
+      return Ce(), Te("div", il, [
+        me("div", nl, [
+          ce(z, {
+            round: "",
+            class: "h-full resize-none",
+            "show-count": "",
+            type: "textarea",
+            "default-value": "",
+            value: r.value,
+            "onUpdate:value": O[0] || (O[0] = (V) => r.value = V),
+            maxlength: a.value,
+            placeholder: "请输入需要转语言的文本..."
+          }, {
+            count: le(({ value: V }) => [
+              me("span", sl, ye(V.length) + " / " + ye(a.value), 1)
+            ]),
+            _: 1
+          }, 8, ["value", "maxlength"])
+        ]),
+        rl(me("div", ll, [
+          ce(N, {
+            class: "flex flex-col flex-1 wh-full overflow-hidden",
+            title: "字幕",
+            "content-class": "flex-1 h-full pb2 overflow-hidden"
+          }, {
+            "header-extra": le(() => [
+              ce(g, { onClick: G }, {
+                default: le(() => [
+                  el("下载字幕")
+                ]),
+                _: 1
+              })
+            ]),
+            default: le(() => [
+              ce(v, { class: "h-full" }, {
+                default: le(() => {
+                  var V;
+                  return [
+                    (Ce(!0), Te(Sr, null, fr((V = n.value) == null ? void 0 : V.output.srt, (L) => (Ce(), Te("div", {
+                      key: L.index
+                    }, [
+                      me("div", cl, ye(L.start) + " -> " + ye(L.end), 1),
+                      me("div", ul, ye(L.text), 1)
+                    ]))), 128))
+                  ];
+                }),
+                _: 1
+              })
+            ]),
+            _: 1
+          })
+        ], 512), [
+          [tl, n.value && ((A = (x = n.value) == null ? void 0 : x.output) == null ? void 0 : A.srt.length) > 0 && m.value.show]
+        ]),
+        me("div", dl, [
+          ce(v, { class: "h-full" }, {
+            default: le(() => [
+              ce(N, {
+                class: "",
+                title: "操作"
+              }, {
+                default: le(() => [
+                  ce(F, {
+                    settings: p,
+                    modelValue: m.value,
+                    "onUpdate:modelValue": O[1] || (O[1] = (V) => m.value = V)
+                  }, null, 8, ["modelValue"])
+                ]),
+                _: 1
+              }),
+              ce(N, {
+                class: "flex flex-col mt-2 min-h10 overflow-hidden",
+                title: "历史",
+                "content-class": "flex-1 h-full pb2 overflow-hidden"
+              }, {
+                default: le(() => [
+                  ce(v, { class: "h-full" }, {
+                    default: le(() => [
+                      l.value.length === 0 ? (Ce(), Te("div", hl, fl)) : ol("", !0),
+                      (Ce(!0), Te(Sr, null, fr(l.value, (V) => {
+                        var L;
+                        return Ce(), Te("div", {
+                          key: V.input
+                        }, [
+                          me("div", {
+                            class: al(["hover:underline", [((L = n.value) == null ? void 0 : L.key) === V.key ? "text-blue-400 hover:text-blue-500" : "text-gray-500 hover:text-gray-700"]]),
+                            onClick: (f) => M(V)
+                          }, ye(V.input.textName), 11, Sl)
+                        ]);
+                      }), 128))
+                    ]),
+                    _: 1
+                  })
+                ]),
+                _: 1
+              })
+            ]),
+            _: 1
+          })
+        ])
+      ]);
+    };
+  }
+});
+class Cl {
+  constructor() {
+    se(this, "icon", "");
+    se(this, "name", "tts");
+    se(this, "description", "文本转语音");
+    se(this, "isUninstallReload", !1);
+  }
+  install(t) {
+    const r = {
+      path: "/tts",
+      name: "tts",
+      meta: {
+        title: "TTS",
+        content: "文本转语音",
+        icon: '<svg t="1705562973022" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4335" width="200" height="200"><path d="M801.792 1016.832h-283.648c-279.552 0-509.952-225.792-508.416-505.344 1.536-274.432 224.768-497.664 499.2-499.2 279.552-1.536 505.344 228.864 505.344 508.416v60.928c0 9.728-7.68 17.408-17.408 17.408s-17.408-7.68-17.408-17.408v-60.928c0-257.024-204.8-471.04-461.824-474.112C254.976 43.52 40.96 257.536 44.032 520.192c3.072 257.024 217.088 461.824 474.112 461.824h283.648c53.76 0 72.192-26.112 75.776-79.36v-135.168c0-9.728 7.68-17.408 17.408-17.408s17.408 7.68 17.408 17.408v139.776c-5.632 69.632-39.424 109.568-110.592 109.568z" p-id="4336"></path><path d="M512 799.232c-18.432 0-33.28-14.848-33.28-33.28V263.168c0-18.432 14.848-33.28 33.28-33.28s33.28 14.848 33.28 33.28v502.784c0 18.432-14.848 33.28-33.28 33.28z m-148.992-83.456c-18.432 0-33.28-14.848-33.28-33.28V346.624c0-18.432 14.848-33.28 33.28-33.28s33.28 14.848 33.28 33.28v335.872c0 18.432-14.848 33.28-33.28 33.28z m297.984 0c-18.432 0-33.28-14.848-33.28-33.28V346.624c0-18.432 14.848-33.28 33.28-33.28s33.28 14.848 33.28 33.28v335.872c0 18.432-14.848 33.28-33.28 33.28zM1006.592 771.072h-221.696c-9.216 0-16.896-7.68-16.896-16.896 0-9.216 7.68-16.896 16.896-16.896h221.696c9.216 0 16.896 7.68 16.896 16.896 0.512 9.216-7.168 16.896-16.896 16.896z" p-id="4337"></path></svg>',
+        cache: !0
+      },
+      component: yl
+    };
+    t.usePage(r);
+  }
+  uninstall() {
+    console.log("uninstall");
+  }
+}
+const vl = new Cl();
+export {
+  vl as default
+};
