@@ -1,0 +1,7 @@
+[
+  {
+    "name": "test01",
+    "description": "文本转语音",
+    "script": "/plugins/tts.js"
+  }
+]
