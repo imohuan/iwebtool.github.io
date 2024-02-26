@@ -3,5 +3,15 @@
     "name": "tts",
     "description": "文本转语音",
     "script": "/plugins/tts.js"
+  },
+  {
+    "name": "py-tools",
+    "description": "Python 工具箱，图片放大，视频重绘",
+    "script": "/plugins/py-tools.js"
+  },
+  {
+    "name": "lama",
+    "description": "图片涂抹修复",
+    "script": "/plugins/lama.js"
   }
 ]
