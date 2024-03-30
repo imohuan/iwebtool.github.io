@@ -1,8 +1,8 @@
-export const css = "@charset \"UTF-8\";.twinkle[data-v-0b0d8462]{animation:twinkle-0b0d8462 .5s infinite alternate}@keyframes twinkle-0b0d8462{0%{opacity:.8}to{opacity:1}}.range[data-v-0b0d8462]{-webkit-appearance:none;width:100%;height:3px;background:#ddd;border-radius:5px;outline:none}.range[data-v-0b0d8462]::-webkit-slider-thumb{-webkit-appearance:none;-moz-appearance:none;appearance:none;width:15px;height:15px;background:var(--primary);cursor:pointer;border-radius:50%}.wh-full{width:100%;height:100%}.center{display:flex;align-items:center;justify-content:center}.w-50{width:50px}.bottom-5{bottom:5px}.left-0{left:0}.top-0{top:0}.overflow-hidden{overflow:hidden}.border-2{border-width:2px}.border-dashed{border-style:dashed}.bg-white{background-color:#fff}.opacity-50{opacity:.5}.pointer-events-none{pointer-events:none}.absolute{position:absolute}.fixed{position:fixed}.relative{position:relative}.inset-0{top:0;right:0;bottom:0;left:0}.left-1\\/2{left:50%}.top-1\\/2{top:50%}.-z-20{z-index:-20}.z-50{z-index:50}.hidden{display:none}.h-\\[150px\\]{height:150px}.h-full{height:100%}.min-w30{min-width:7.5rem}.w-4\\/5{width:80%}.w-auto{width:auto}.w2{width:.5rem}.flex{display:flex}.flex-1{flex:1 1 0%}.-translate-x-1\\/2{--un-translate-x:-50%;transform:translate(var(--un-translate-x)) translateY(var(--un-translate-y)) translateZ(var(--un-translate-z)) rotate(var(--un-rotate)) rotateX(var(--un-rotate-x)) rotateY(var(--un-rotate-y)) rotate(var(--un-rotate-z)) skew(var(--un-skew-x)) skewY(var(--un-skew-y)) scaleX(var(--un-scale-x)) scaleY(var(--un-scale-y)) scaleZ(var(--un-scale-z))}.-translate-y-1\\/2{--un-translate-y:-50%;transform:translate(var(--un-translate-x)) translateY(var(--un-translate-y)) translateZ(var(--un-translate-z)) rotate(var(--un-rotate)) rotateX(var(--un-rotate-x)) rotateY(var(--un-rotate-y)) rotate(var(--un-rotate-z)) skew(var(--un-skew-x)) skewY(var(--un-skew-y)) scaleX(var(--un-scale-x)) scaleY(var(--un-scale-y)) scaleZ(var(--un-scale-z))}.transform{transform:translate(var(--un-translate-x)) translateY(var(--un-translate-y)) translateZ(var(--un-translate-z)) rotate(var(--un-rotate)) rotateX(var(--un-rotate-x)) rotateY(var(--un-rotate-y)) rotate(var(--un-rotate-z)) skew(var(--un-skew-x)) skewY(var(--un-skew-y)) scaleX(var(--un-scale-x)) scaleY(var(--un-scale-y)) scaleZ(var(--un-scale-z))}.items-center{align-items:center}.space-x-2>:not([hidden])~:not([hidden]){--un-space-x-reverse:0;margin-left:calc(.5rem * calc(1 - var(--un-space-x-reverse)));margin-right:calc(.5rem * var(--un-space-x-reverse))}.border{border-width:1px}.rounded{border-radius:.25rem}.rounded-full{border-radius:9999px}.rounded-md{border-radius:.375rem}.bg-yellow-500{--un-bg-opacity:1;background-color:rgb(234 179 8 / var(--un-bg-opacity))}.hover\\:bg-gray-100:hover{--un-bg-opacity:1;background-color:rgb(243 244 246 / var(--un-bg-opacity))}.p1{padding:.25rem}.px,.px4{padding-left:1rem;padding-right:1rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.shadow{--un-shadow:var(--un-shadow-inset) 0 1px 3px 0 var(--un-shadow-color, rgb(0 0 0 / .1)),var(--un-shadow-inset) 0 1px 2px -1px var(--un-shadow-color, rgb(0 0 0 / .1));box-shadow:var(--un-ring-offset-shadow),var(--un-ring-shadow),var(--un-shadow)}.outline{outline-style:solid}.transition{transition-property:color,background-color,border-color,outline-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}@media (min-width: 768px){.md\\:w-\\[600px\\]{width:600px}}\n\n";
-var te = Object.defineProperty;
-var ne = (a, c, r) => c in a ? te(a, c, { enumerable: !0, configurable: !0, writable: !0, value: r }) : a[c] = r;
-var Z = (a, c, r) => (ne(a, typeof c != "symbol" ? c + "" : c, r), r);
-const { createElementVNode: P, openBlock: oe, createElementBlock: se } = __Context.vue, le = {
+export const css = "@charset \"UTF-8\";.twinkle[data-v-7c61980c]{animation:twinkle-7c61980c .5s infinite alternate}@keyframes twinkle-7c61980c{0%{opacity:.8}to{opacity:1}}.range[data-v-7c61980c]{-webkit-appearance:none;width:100%;height:3px;background:#ddd;border-radius:5px;outline:none}.range[data-v-7c61980c]::-webkit-slider-thumb{-webkit-appearance:none;-moz-appearance:none;appearance:none;width:15px;height:15px;background:var(--primary);cursor:pointer;border-radius:50%}.wh-full{width:100%;height:100%}.center{display:flex;align-items:center;justify-content:center}.w-50{width:50px}.bottom-5{bottom:5px}.left-0{left:0}.top-0{top:0}.overflow-hidden{overflow:hidden}.border-2{border-width:2px}.border-dashed{border-style:dashed}.bg-white{background-color:#fff}.opacity-50{opacity:.5}.pointer-events-none{pointer-events:none}.absolute{position:absolute}.relative{position:relative}.inset-0{top:0;right:0;bottom:0;left:0}.left-1\\/2{left:50%}.top-1\\/2{top:50%}.-z-20{z-index:-20}.z-50{z-index:50}.hidden{display:none}.h-\\[150px\\]{height:150px}.h-full{height:100%}.min-w30{min-width:7.5rem}.w-4\\/5{width:80%}.w-auto{width:auto}.w2{width:.5rem}.flex{display:flex}.flex-1{flex:1 1 0%}.-translate-x-1\\/2{--un-translate-x:-50%;transform:translate(var(--un-translate-x)) translateY(var(--un-translate-y)) translateZ(var(--un-translate-z)) rotate(var(--un-rotate)) rotateX(var(--un-rotate-x)) rotateY(var(--un-rotate-y)) rotate(var(--un-rotate-z)) skew(var(--un-skew-x)) skewY(var(--un-skew-y)) scaleX(var(--un-scale-x)) scaleY(var(--un-scale-y)) scaleZ(var(--un-scale-z))}.-translate-y-1\\/2{--un-translate-y:-50%;transform:translate(var(--un-translate-x)) translateY(var(--un-translate-y)) translateZ(var(--un-translate-z)) rotate(var(--un-rotate)) rotateX(var(--un-rotate-x)) rotateY(var(--un-rotate-y)) rotate(var(--un-rotate-z)) skew(var(--un-skew-x)) skewY(var(--un-skew-y)) scaleX(var(--un-scale-x)) scaleY(var(--un-scale-y)) scaleZ(var(--un-scale-z))}.transform{transform:translate(var(--un-translate-x)) translateY(var(--un-translate-y)) translateZ(var(--un-translate-z)) rotate(var(--un-rotate)) rotateX(var(--un-rotate-x)) rotateY(var(--un-rotate-y)) rotate(var(--un-rotate-z)) skew(var(--un-skew-x)) skewY(var(--un-skew-y)) scaleX(var(--un-scale-x)) scaleY(var(--un-scale-y)) scaleZ(var(--un-scale-z))}.items-center{align-items:center}.space-x-2>:not([hidden])~:not([hidden]){--un-space-x-reverse:0;margin-left:calc(.5rem * calc(1 - var(--un-space-x-reverse)));margin-right:calc(.5rem * var(--un-space-x-reverse))}.border{border-width:1px}.rounded{border-radius:.25rem}.rounded-full{border-radius:9999px}.rounded-md{border-radius:.375rem}.bg-yellow-500{--un-bg-opacity:1;background-color:rgb(234 179 8 / var(--un-bg-opacity))}.hover\\:bg-gray-100:hover{--un-bg-opacity:1;background-color:rgb(243 244 246 / var(--un-bg-opacity))}.p1{padding:.25rem}.px,.px4{padding-left:1rem;padding-right:1rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.shadow{--un-shadow:var(--un-shadow-inset) 0 1px 3px 0 var(--un-shadow-color, rgb(0 0 0 / .1)),var(--un-shadow-inset) 0 1px 2px -1px var(--un-shadow-color, rgb(0 0 0 / .1));box-shadow:var(--un-ring-offset-shadow),var(--un-ring-shadow),var(--un-shadow)}.outline{outline-style:solid}.transition{transition-property:color,background-color,border-color,outline-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}@media (min-width: 768px){.md\\:w-\\[600px\\]{width:600px}}\n\n";
+var oe = Object.defineProperty;
+var se = (a, c, r) => c in a ? oe(a, c, { enumerable: !0, configurable: !0, writable: !0, value: r }) : a[c] = r;
+var Z = (a, c, r) => (se(a, typeof c != "symbol" ? c + "" : c, r), r);
+const { createElementVNode: G, openBlock: le, createElementBlock: ae } = __Context.vue, ce = {
   fill: "currentColor",
   t: "1708825661609",
   class: "icon",
@@ -12,22 +12,22 @@ const { createElementVNode: P, openBlock: oe, createElementBlock: se } = __Conte
   "p-id": "6063",
   width: "200",
   height: "200"
-}, ae = /* @__PURE__ */ P("path", {
+}, re = /* @__PURE__ */ G("path", {
   d: "M896 672c-17.066667 0-32 14.933333-32 32v128c0 6.4-4.266667 10.666667-10.666667 10.666667H170.666667c-6.4 0-10.666667-4.266667-10.666667-10.666667v-128c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v128c0 40.533333 34.133333 74.666667 74.666667 74.666667h682.666666c40.533333 0 74.666667-34.133333 74.666667-74.666667v-128c0-17.066667-14.933333-32-32-32z",
   fill: "currentColor",
   "p-id": "6064"
-}, null, -1), ce = /* @__PURE__ */ P("path", {
+}, null, -1), ie = /* @__PURE__ */ G("path", {
   d: "M488.533333 727.466667c6.4 6.4 14.933333 8.533333 23.466667 8.533333s17.066667-2.133333 23.466667-8.533333l213.333333-213.333334c12.8-12.8 12.8-32 0-44.8-12.8-12.8-32-12.8-44.8 0l-157.866667 157.866667V170.666667c0-17.066667-14.933333-32-32-32s-34.133333 14.933333-34.133333 32v456.533333L322.133333 469.333333c-12.8-12.8-32-12.8-44.8 0-12.8 12.8-12.8 32 0 44.8l211.2 213.333334z",
   fill: "currentColor",
   "p-id": "6065"
-}, null, -1), re = [
-  ae,
-  ce
+}, null, -1), de = [
+  re,
+  ie
 ];
-function ie(a, c) {
-  return oe(), se("svg", le, [...re]);
+function pe(a, c) {
+  return le(), ae("svg", ce, [...de]);
 }
-const de = { name: "defaults-download", render: ie }, { createElementVNode: j, openBlock: pe, createElementBlock: ue } = __Context.vue, me = {
+const ue = { name: "defaults-download", render: pe }, { createElementVNode: O, openBlock: me, createElementBlock: _e } = __Context.vue, ve = {
   fill: "currentColor",
   t: "1708825630787",
   class: "icon",
@@ -37,53 +37,53 @@ const de = { name: "defaults-download", render: ie }, { createElementVNode: j, o
   "p-id": "5088",
   width: "200",
   height: "200"
-}, _e = /* @__PURE__ */ j("path", {
+}, he = /* @__PURE__ */ O("path", {
   d: "M512 170.666667C171.733333 170.666667 0 512 0 512s171.733333 341.333333 512 341.333333 512-341.333333 512-341.333333S853.333333 170.666667 512 170.666667z m0 597.333333C292.693333 768 151.893333 591.786667 99.413333 512 151.893333 432.213333 292.693333 256 512 256s360.106667 176.213333 412.586667 256C872.106667 591.786667 731.306667 768 512 768z",
   fill: "currentColor",
   "p-id": "5089"
-}, null, -1), ve = /* @__PURE__ */ j("path", {
+}, null, -1), fe = /* @__PURE__ */ O("path", {
   d: "M512 284.373333A227.626667 227.626667 0 1 0 739.626667 512 227.626667 227.626667 0 0 0 512 284.373333z m0 369.92A142.293333 142.293333 0 1 1 654.293333 512 142.293333 142.293333 0 0 1 512 654.293333z",
   fill: "currentColor",
   "p-id": "5090"
-}, null, -1), he = [
-  _e,
-  ve
+}, null, -1), ge = [
+  he,
+  fe
 ];
-function fe(a, c) {
-  return pe(), ue("svg", me, [...he]);
+function we(a, c) {
+  return me(), _e("svg", ve, [...ge]);
 }
-const ge = { name: "defaults-look", render: fe }, { createElementVNode: we, openBlock: Ce, createElementBlock: xe } = __Context.vue, ke = {
+const Ce = { name: "defaults-look", render: we }, { createElementVNode: xe, openBlock: ke, createElementBlock: $e } = __Context.vue, ye = {
   fill: "currentColor",
   width: "19",
   height: "9",
   viewBox: "0 0 19 9",
   xmlns: "http://www.w3.org/2000/svg",
   style: { transform: "scale(-1, 1)" }
-}, $e = /* @__PURE__ */ we("path", {
+}, Ee = /* @__PURE__ */ xe("path", {
   d: "M2 1C2 0.447715 1.55228 0 1 0C0.447715 0 0 0.447715 0 1H2ZM1 8H0V9H1V8ZM8 9C8.55228 9 9 8.55229 9 8C9 7.44771 8.55228 7 8 7V9ZM16.5963 7.42809C16.8327 7.92721 17.429 8.14016 17.9281 7.90374C18.4272 7.66731 18.6402 7.07103 18.4037 6.57191L16.5963 7.42809ZM16.9468 5.83205L17.8505 5.40396L16.9468 5.83205ZM0 1V8H2V1H0ZM1 9H8V7H1V9ZM1.66896 8.74329L6.66896 4.24329L5.33104 2.75671L0.331035 7.25671L1.66896 8.74329ZM16.043 6.26014L16.5963 7.42809L18.4037 6.57191L17.8505 5.40396L16.043 6.26014ZM6.65079 4.25926C9.67554 1.66661 14.3376 2.65979 16.043 6.26014L17.8505 5.40396C15.5805 0.61182 9.37523 -0.710131 5.34921 2.74074L6.65079 4.25926Z",
   fill: "currentColor"
-}, null, -1), ye = [
-  $e
+}, null, -1), Se = [
+  Ee
 ];
-function Ee(a, c) {
-  return Ce(), xe("svg", ke, [...ye]);
+function Le(a, c) {
+  return ke(), $e("svg", ye, [...Se]);
 }
-const Se = { name: "defaults-right", render: Ee }, { createElementVNode: Le, openBlock: be, createElementBlock: Be } = __Context.vue, Me = {
+const Be = { name: "defaults-right", render: Le }, { createElementVNode: be, openBlock: Me, createElementBlock: ze } = __Context.vue, Ve = {
   fill: "currentColor",
   width: "19",
   height: "9",
   viewBox: "0 0 19 9",
   xmlns: "http://www.w3.org/2000/svg"
-}, ze = /* @__PURE__ */ Le("path", {
+}, Re = /* @__PURE__ */ be("path", {
   d: "M2 1C2 0.447715 1.55228 0 1 0C0.447715 0 0 0.447715 0 1H2ZM1 8H0V9H1V8ZM8 9C8.55228 9 9 8.55229 9 8C9 7.44771 8.55228 7 8 7V9ZM16.5963 7.42809C16.8327 7.92721 17.429 8.14016 17.9281 7.90374C18.4272 7.66731 18.6402 7.07103 18.4037 6.57191L16.5963 7.42809ZM16.9468 5.83205L17.8505 5.40396L16.9468 5.83205ZM0 1V8H2V1H0ZM1 9H8V7H1V9ZM1.66896 8.74329L6.66896 4.24329L5.33104 2.75671L0.331035 7.25671L1.66896 8.74329ZM16.043 6.26014L16.5963 7.42809L18.4037 6.57191L17.8505 5.40396L16.043 6.26014ZM6.65079 4.25926C9.67554 1.66661 14.3376 2.65979 16.043 6.26014L17.8505 5.40396C15.5805 0.61182 9.37523 -0.710131 5.34921 2.74074L6.65079 4.25926Z",
   fill: "currentColor"
-}, null, -1), Ve = [
-  ze
+}, null, -1), Ne = [
+  Re
 ];
-function Re(a, c) {
-  return be(), Be("svg", Me, [...Ve]);
+function He(a, c) {
+  return Me(), ze("svg", Ve, [...Ne]);
 }
-const Ne = { name: "defaults-left", render: Re }, { createElementVNode: He, openBlock: Ze, createElementBlock: Fe } = __Context.vue, Te = {
+const Ze = { name: "defaults-left", render: He }, { createElementVNode: Fe, openBlock: Te, createElementBlock: qe } = __Context.vue, De = {
   width: "1.5rem",
   height: "1.5rem",
   fill: "currentColor",
@@ -92,17 +92,17 @@ const Ne = { name: "defaults-left", render: Re }, { createElementVNode: He, open
   "stroke-width": "1.5",
   stroke: "currentColor",
   "aria-hidden": "true"
-}, qe = /* @__PURE__ */ He("path", {
+}, Ue = /* @__PURE__ */ Fe("path", {
   "stroke-linecap": "round",
   "stroke-linejoin": "round",
   d: "M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15"
-}, null, -1), De = [
-  qe
+}, null, -1), We = [
+  Ue
 ];
-function Ue(a, c) {
-  return Ze(), Fe("svg", Te, [...De]);
+function Ie(a, c) {
+  return Te(), qe("svg", De, [...We]);
 }
-const We = { name: "defaults-full", render: Ue }, { createElementVNode: Ie, openBlock: Xe, createElementBlock: Ye } = __Context.vue, Ae = {
+const Xe = { name: "defaults-full", render: Ie }, { createElementVNode: Ye, openBlock: Ae, createElementBlock: Pe } = __Context.vue, je = {
   fill: "currentColor",
   t: "1708828335213",
   class: "icon",
@@ -112,66 +112,66 @@ const We = { name: "defaults-full", render: Ue }, { createElementVNode: Ie, open
   "p-id": "4230",
   width: "200",
   height: "200"
-}, Pe = /* @__PURE__ */ Ie("path", {
+}, Ge = /* @__PURE__ */ Ye("path", {
   d: "M365.717333 329.152q0 45.717333-32 77.717333t-77.717333 32-77.717333-32-32-77.717333 32-77.717333 77.717333-32 77.717333 32 32 77.717333zM950.848 548.565333l0 256-804.565333 0 0-109.717333 182.848-182.848 91.434667 91.434667 292.565333-292.565333zM1005.717333 146.282667l-914.282667 0q-7.424 0-12.864 5.418667t-5.418667 12.864l0 694.848q0 7.424 5.418667 12.864t12.864 5.418667l914.282667 0q7.424 0 12.864-5.418667t5.418667-12.864l0-694.848q0-7.424-5.418667-12.864t-12.864-5.418667zM1097.152 164.565333l0 694.848q0 37.717333-26.858667 64.576t-64.576 26.858667l-914.282667 0q-37.717333 0-64.576-26.858667t-26.858667-64.576l0-694.848q0-37.717333 26.858667-64.576t64.576-26.858667l914.282667 0q37.717333 0 64.576 26.858667t26.858667 64.576z",
   fill: "#222222",
   "p-id": "4231"
-}, null, -1), je = [
-  Pe
+}, null, -1), Oe = [
+  Ge
 ];
-function Ge(a, c) {
-  return Xe(), Ye("svg", Ae, [...je]);
+function Je(a, c) {
+  return Ae(), Pe("svg", je, [...Oe]);
 }
-const Oe = { name: "defaults-image", render: Ge }, { defineComponent: Je } = __Context.vue, { renderSlot: Ke, normalizeStyle: Qe, createElementVNode: et, openBlock: tt, createElementBlock: nt } = __Context.vue, { reactive: ot, computed: st, ref: X, onMounted: lt } = __Context.vue, at = /* @__PURE__ */ Je({
+const Ke = { name: "defaults-image", render: Je }, { defineComponent: Qe } = __Context.vue, { renderSlot: et, normalizeStyle: tt, createElementVNode: nt, openBlock: ot, createElementBlock: st } = __Context.vue, { reactive: lt, computed: at, ref: A, onMounted: ct } = __Context.vue, rt = /* @__PURE__ */ Qe({
   __name: "CanvasContainer",
   props: {
     imageSize: {}
   },
   setup(a, { expose: c }) {
-    const r = a, _ = X(), g = X(), s = ot({ x: 0, y: 0, scale: 1 }), S = st(() => `transform-origin: 0 0; transform: translate(${s.x}px, ${s.y}px) scale(${s.scale})`), y = (t) => {
-      t.preventDefault();
-      let n = t.deltaY < 0 ? 1.1 : 0.9;
-      const u = s.scale * n;
-      u < 0.5 ? n = 0.5 / s.scale : u > 3 && (n = 3 / s.scale), s.scale *= n;
-      const v = g.value.getBoundingClientRect(), h = t.clientX - v.left, L = t.clientY - v.top;
-      s.x -= h * (n - 1), s.y -= L * (n - 1);
+    const r = a, _ = A(), g = A(), s = lt({ x: 0, y: 0, scale: 1 }), S = at(() => `transform-origin: 0 0; transform: translate(${s.x}px, ${s.y}px) scale(${s.scale})`), y = (n) => {
+      n.preventDefault();
+      let t = n.deltaY < 0 ? 1.1 : 0.9;
+      const u = s.scale * t;
+      u < 0.5 ? t = 0.5 / s.scale : u > 3 && (t = 3 / s.scale), s.scale *= t;
+      const v = g.value.getBoundingClientRect(), h = n.clientX - v.left, L = n.clientY - v.top;
+      s.x -= h * (t - 1), s.y -= L * (t - 1);
     };
     let C = !1;
-    return lt(() => {
+    return ct(() => {
       if (!g.value)
         return;
       window.addEventListener("keydown", function(u) {
-        u.code === "Space" && !C && (C = !0, g.value.style.cursor = "grabbing", document.addEventListener("mousemove", t), document.addEventListener("mouseup", n), document.addEventListener("keyup", n));
+        u.code === "Space" && !C && (C = !0, g.value.style.cursor = "grabbing", document.addEventListener("mousemove", n), document.addEventListener("mouseup", t), document.addEventListener("keyup", t));
       });
-      function t(u) {
+      function n(u) {
         C && (s.x += u.movementX, s.y += u.movementY);
       }
-      function n() {
-        C && (C = !1, g.value.style.cursor = "grab", document.removeEventListener("mousemove", t), document.removeEventListener("mouseup", n), document.removeEventListener("keyup", n));
+      function t() {
+        C && (C = !1, g.value.style.cursor = "grab", document.removeEventListener("mousemove", n), document.removeEventListener("mouseup", t), document.removeEventListener("keyup", t));
       }
     }), c({ resetScale: () => {
       if (s.scale = 1, s.x = 0, s.y = 0, !g.value)
         return;
-      const [t, n] = r.imageSize, { width: u, height: v } = _.value.getBoundingClientRect(), h = u / t, L = v / n, b = Math.min(h, L) - 0.1;
-      s.scale = b;
-      const B = t * b, H = n * b;
-      s.x = (t - B) / 2, s.y = (n - H) / 2;
-    } }), (t, n) => (tt(), nt("div", {
+      const [n, t] = r.imageSize, { width: u, height: v } = _.value.getBoundingClientRect(), h = u / n, L = v / t, B = Math.min(h, L) - 0.1;
+      s.scale = B;
+      const b = n * B, H = t * B;
+      s.x = (n - b) / 2, s.y = (t - H) / 2;
+    }, position: s }), (n, t) => (ot(), st("div", {
       ref_key: "elRef",
       ref: _,
       class: "wh-full relative center",
       onWheel: y
     }, [
-      et("div", {
+      nt("div", {
         ref_key: "moveRef",
         ref: g,
-        style: Qe(S.value)
+        style: tt(S.value)
       }, [
-        Ke(t.$slots, "default")
+        et(n.$slots, "default")
       ], 4)
     ], 544));
   }
-}), { defineComponent: ct } = __Context.vue, { createElementVNode: Y, vShow: rt, normalizeStyle: it, withDirectives: dt, Fragment: pt, openBlock: ut, createElementBlock: mt } = __Context.vue, { ref: D, reactive: _t, computed: vt } = __Context.vue, ht = /* @__PURE__ */ ct({
+}), { defineComponent: it } = __Context.vue, { createElementVNode: P, vShow: dt, normalizeStyle: pt, withDirectives: ut, Fragment: mt, openBlock: _t, createElementBlock: vt } = __Context.vue, { ref: D, reactive: ht, computed: ft } = __Context.vue, gt = /* @__PURE__ */ it({
   __name: "CanvasLama",
   props: {
     src: {},
@@ -179,8 +179,8 @@ const Oe = { name: "defaults-image", render: Ge }, { defineComponent: Je } = __C
   },
   emits: ["recognize"],
   setup(a, { expose: c, emit: r }) {
-    const _ = a, g = r, s = D(), S = D(!1), y = D(!1), C = _t({ x: 0, y: 0 }), N = vt(() => `transform: translate(${C.x}px, ${C.y}px) `);
-    let t, n, u = null;
+    const _ = a, g = r, s = D(), S = D(!1), y = D(!1), C = ht({ x: 0, y: 0 }), N = ft(() => `transform: translate(${C.x}px, ${C.y}px) `);
+    let n, t, u = null;
     const v = document.createElement("canvas"), h = v.getContext("2d");
     v.style.display = "none", document.body.appendChild(v);
     const L = (l, d = "pic.jpg") => new Promise((x, k) => {
@@ -194,60 +194,60 @@ const Oe = { name: "defaults-image", render: Ge }, { defineComponent: Je } = __C
       }, m.onerror = function() {
         k(new Error("XHR request failed"));
       }, m.send();
-    }), b = (l) => {
+    }), B = (l) => {
       let d = l.split(","), x = d[0].match(/:(.*?);/)[1], k = atob(d[1]), m = k.length, p = new Uint8Array(m);
       for (; m--; )
         p[m] = k.charCodeAt(m);
       return { u8arr: p, mime: x };
-    }, B = (l) => {
+    }, b = (l) => {
       try {
-        n.lineWidth = l, h.lineWidth = l;
+        t.lineWidth = l, h.lineWidth = l;
       } catch {
       }
     }, H = () => {
       let l = !1, d = 0, x = 0;
-      t.addEventListener("mousedown", (p) => {
+      n.addEventListener("mousedown", (p) => {
         l = !0, [d, x] = [p.offsetX, p.offsetY];
       });
       const k = (p, i, o, e) => {
         p.globalCompositeOperation = S.value ? "destination-out" : "source-over", p.save(), p.beginPath(), p.moveTo(i, o), p.lineTo(e.offsetX, e.offsetY), p.stroke(), p.restore();
       };
-      t.addEventListener("mousemove", (p) => {
-        l && (k(n, d, x, p), k(h, d, x, p), [d, x] = [p.offsetX, p.offsetY]);
+      n.addEventListener("mousemove", (p) => {
+        l && (k(t, d, x, p), k(h, d, x, p), [d, x] = [p.offsetX, p.offsetY]);
       });
       const m = () => {
         l && (u && clearTimeout(u), u = setTimeout(() => g("recognize"), 1e3), l = !1);
       };
-      t.addEventListener("mouseup", m), t.addEventListener("mouseout", m);
+      n.addEventListener("mouseup", m), n.addEventListener("mouseout", m);
     }, q = () => {
-      t.addEventListener("mouseenter", () => y.value = !0), t.addEventListener("mouseleave", () => y.value = !1), t.addEventListener("mousedown", () => y.value = !1), t.addEventListener("mousemove", (l) => {
+      n.addEventListener("mouseenter", () => y.value = !0), n.addEventListener("mouseleave", () => y.value = !1), n.addEventListener("mousedown", () => y.value = !1), n.addEventListener("mousemove", (l) => {
         const d = _.size / 2;
         C.x = l.offsetX - d, C.y = l.offsetY - d;
       });
     };
     return c({ initCanvas: (l, d) => {
-      v.width = l, v.height = d, h.fillRect(0, 0, l, d), h.fillStyle = "#000000", h.lineCap = "round", h.lineJoin = "round", h.lineWidth = 20, h.fillStyle = "white", h.strokeStyle = "white", t = s.value, n = t.getContext("2d"), t.width = l, t.height = d, n.lineCap = "round", n.lineJoin = "round", n.lineWidth = 20, n.fillStyle = "rgba(64, 204, 51)", n.strokeStyle = "rgba(64, 204, 51)", H(), q();
-    }, setLineWidth: B, getFiles: async () => {
-      const l = await L(_.src), d = v.toDataURL("image/png"), x = b(d), k = new File([x.u8arr], "blob", { type: "image/png" });
+      v.width = l, v.height = d, h.fillRect(0, 0, l, d), h.fillStyle = "#000000", h.lineCap = "round", h.lineJoin = "round", h.lineWidth = 20, h.fillStyle = "white", h.strokeStyle = "white", n = s.value, t = n.getContext("2d"), n.width = l, n.height = d, t.lineCap = "round", t.lineJoin = "round", t.lineWidth = 20, t.fillStyle = "rgba(64, 204, 51)", t.strokeStyle = "rgba(64, 204, 51)", H(), q();
+    }, setLineWidth: b, getFiles: async () => {
+      const l = await L(_.src), d = v.toDataURL("image/png"), x = B(d), k = new File([x.u8arr], "blob", { type: "image/png" });
       return [l, k];
-    } }), (l, d) => (ut(), mt(pt, null, [
-      Y("canvas", {
+    } }), (l, d) => (_t(), vt(mt, null, [
+      P("canvas", {
         ref_key: "canvasRef",
         ref: s,
         class: "custom-cursor1 opacity-50"
       }, null, 512),
-      dt(Y("div", {
+      ut(P("div", {
         class: "absolute left-0 top-0 z-50 rounded-full pointer-events-none",
-        style: it(["background: rgba(64, 204, 51, 0.5)", `width: ${l.size}px; height: ${l.size}px`, N.value])
+        style: pt(["background: rgba(64, 204, 51, 0.5)", `width: ${l.size}px; height: ${l.size}px`, N.value])
       }, null, 4), [
-        [rt, y.value]
+        [dt, y.value]
       ])
     ], 64));
   }
-}), { defineComponent: ft } = __Context.vue, { normalizeStyle: F, createElementVNode: f, unref: V, vShow: U, withDirectives: T, createVNode: w, normalizeClass: R, withCtx: M, vModelText: gt, resolveComponent: wt, openBlock: A, createBlock: Ct, createCommentVNode: xt, createElementBlock: kt, pushScopeId: $t, popScopeId: yt } = __Context.vue, G = (a) => ($t("data-v-0b0d8462"), a = a(), yt(), a), Et = ["src"], St = ["src"], Lt = { class: "absolute inset-0 center" }, bt = ["for"], Bt = /* @__PURE__ */ G(() => /* @__PURE__ */ f("div", { class: "wh-full rounded center border-2 border-dashed hover:bg-gray-100" }, "点击这里或拖动图像文件", -1)), Mt = ["id"], zt = { class: "absolute left-1/2 -translate-x-1/2 bottom-5 rounded-md border p1 w-auto bg-white shadow" }, Vt = { class: "flex space-x-2 items-center px4" }, Rt = { class: "min-w30 h-full center" }, Nt = /* @__PURE__ */ G(() => /* @__PURE__ */ f("span", { class: "w-50" }, "笔刷", -1)), Ht = { class: "flex" }, { request: Zt } = __Context.utils, { ref: $, reactive: Ft, computed: Tt, nextTick: qt } = __Context.vue, { useRefHistory: Dt } = __Context.hooks, Ut = /* @__PURE__ */ ft({
+}), { defineComponent: wt } = __Context.vue, { vShow: U, normalizeStyle: F, createElementVNode: f, withDirectives: T, unref: V, createVNode: w, normalizeClass: R, withCtx: M, vModelText: Ct, resolveComponent: xt, openBlock: j, createBlock: kt, createCommentVNode: $t, createElementBlock: yt, pushScopeId: Et, popScopeId: St } = __Context.vue, J = (a) => (Et("data-v-7c61980c"), a = a(), St(), a), Lt = ["src"], Bt = ["src"], bt = { class: "absolute inset-0 center" }, Mt = ["for"], zt = /* @__PURE__ */ J(() => /* @__PURE__ */ f("div", { class: "wh-full rounded center border-2 border-dashed hover:bg-gray-100" }, "点击这里或拖动图像文件", -1)), Vt = ["id"], Rt = { class: "absolute left-1/2 -translate-x-1/2 bottom-5 rounded-md border p1 w-auto bg-white shadow" }, Nt = { class: "flex space-x-2 items-center px4" }, Ht = { class: "min-w30 h-full center" }, Zt = /* @__PURE__ */ J(() => /* @__PURE__ */ f("span", { class: "w-50" }, "笔刷", -1)), Ft = { class: "flex" }, { request: Tt } = __Context.utils, { ref: $, reactive: qt, computed: Dt, nextTick: Ut } = __Context.vue, { useRefHistory: Wt } = __Context.hooks, It = /* @__PURE__ */ wt({
   __name: "Main",
   setup(a) {
-    const c = $("image_file_" + Math.random().toString().slice(3)), r = $(), _ = $(40), g = $(!1), s = $(!1), S = $(!1), y = $(), C = $(), N = $([0, 0]), t = $(), n = $(), u = $(), v = Ft({ width: "0px", height: "0px" }), { undo: h, redo: L, clear: b, canUndo: B, canRedo: H, history: q } = Dt(r, {}), W = Tt(() => {
+    const c = $("image_file_" + Math.random().toString().slice(3)), r = $(), _ = $(40), g = $(!1), s = $(!1), S = $(!1), y = $(), C = $(), N = $([0, 0]), n = $(), t = $(), u = $(), v = qt({ width: "0px", height: "0px" }), { undo: h, redo: L, clear: B, canUndo: b, canRedo: H, history: q } = Wt(r, {}), W = Dt(() => {
       const i = q.value.map((o) => o.snapshot).filter((o) => o);
       return i[i.length - 1];
     }), I = (i) => new Promise((o) => {
@@ -257,19 +257,19 @@ const Oe = { name: "defaults-image", render: Ge }, { defineComponent: Je } = __C
       u.value.setLineWidth(_.value);
     }, d = () => {
       I(r.value).then(({ width: i, height: o }) => {
-        v.width = i + "px", v.height = o + "px", N.value = [i, o], u.value.initCanvas(i, o), u.value.setLineWidth(_.value), qt().then(() => n.value.resetScale());
+        v.width = i + "px", v.height = o + "px", N.value = [i, o], u.value.initCanvas(i, o), u.value.setLineWidth(_.value), Ut().then(() => t.value.resetScale());
       });
     }, x = (i) => {
       const o = Array.from(i.target.files);
       if (o.length === 0)
         return;
       const e = o[0];
-      r.value = URL.createObjectURL(e), b(), d();
+      r.value = URL.createObjectURL(e), B(), d();
     }, k = () => {
-      n.value.resetScale();
+      t.value.resetScale();
     }, m = async () => {
       const [i, o] = await u.value.getFiles(), e = new FormData();
-      e.append("image", i), e.append("mask", o), e.append("ldmSteps", "25"), e.append("ldmSampler", "plms"), e.append("zitsWireframe", "true"), e.append("hdStrategy", "Crop"), e.append("hdStrategyCropMargin", "196"), e.append("hdStrategyCropTrigerSize", "800"), e.append("hdStrategyResizeLimit", "2048"), e.append("prompt", ""), e.append("negativePrompt", "0"), e.append("croperX", "-52"), e.append("croperY", "-52"), e.append("croperWidth", "512"), e.append("croperHeight", "512"), e.append("useCroper", "false"), e.append("sdMaskBlur", "5"), e.append("sdStrength", "0.75"), e.append("sdSteps", "50"), e.append("sdGuidanceScale", "7.5"), e.append("sdSampler", "uni_pc"), e.append("sdSeed", "-1"), e.append("sdMatchHistograms", "false"), e.append("sdScale", "1"), e.append("cv2Radius", "5"), e.append("cv2Flag", "INPAINT_NS"), e.append("paintByExampleSteps", "50"), e.append("paintByExampleGuidanceScale", "7.5"), e.append("paintByExampleSeed", "-1"), e.append("paintByExampleMaskBlur", "5"), e.append("paintByExampleMatchHistograms", "false"), e.append("p2pSteps", "50"), e.append("p2pImageGuidanceScale", "1.5"), e.append("p2pGuidanceScale", "7.5"), e.append("controlnet_conditioning_scale", "0.4"), e.append("controlnet_method", "control_v11p_sd15_canny"), g.value = !0, Zt("http://lama.fyshark.com/inpaint", {
+      e.append("image", i), e.append("mask", o), e.append("ldmSteps", "25"), e.append("ldmSampler", "plms"), e.append("zitsWireframe", "true"), e.append("hdStrategy", "Crop"), e.append("hdStrategyCropMargin", "196"), e.append("hdStrategyCropTrigerSize", "800"), e.append("hdStrategyResizeLimit", "2048"), e.append("prompt", ""), e.append("negativePrompt", "0"), e.append("croperX", "-52"), e.append("croperY", "-52"), e.append("croperWidth", "512"), e.append("croperHeight", "512"), e.append("useCroper", "false"), e.append("sdMaskBlur", "5"), e.append("sdStrength", "0.75"), e.append("sdSteps", "50"), e.append("sdGuidanceScale", "7.5"), e.append("sdSampler", "uni_pc"), e.append("sdSeed", "-1"), e.append("sdMatchHistograms", "false"), e.append("sdScale", "1"), e.append("cv2Radius", "5"), e.append("cv2Flag", "INPAINT_NS"), e.append("paintByExampleSteps", "50"), e.append("paintByExampleGuidanceScale", "7.5"), e.append("paintByExampleSeed", "-1"), e.append("paintByExampleMaskBlur", "5"), e.append("paintByExampleMatchHistograms", "false"), e.append("p2pSteps", "50"), e.append("p2pImageGuidanceScale", "1.5"), e.append("p2pGuidanceScale", "7.5"), e.append("controlnet_conditioning_scale", "0.4"), e.append("controlnet_method", "control_v11p_sd15_canny"), g.value = !0, Tt("http://lama.fyshark.com/inpaint", {
         method: "post",
         headers: { pragma: "no-cache", "cache-control": "no-cache" },
         data: e,
@@ -282,16 +282,26 @@ const Oe = { name: "defaults-image", render: Ge }, { defineComponent: Je } = __C
       i.href = r.value, i.download = Math.random().toString().slice(3) + ".jpg", document.body.appendChild(i), i.click(), document.body.removeChild(i);
     };
     return (i, o) => {
-      const e = Oe, E = wt("i-icon-tip"), O = We, J = Ne, K = Se, Q = ge, ee = de;
-      return A(), kt("div", {
+      var X, Y;
+      const e = Ke, E = xt("i-icon-tip"), K = Xe, Q = Ze, ee = Be, te = Ce, ne = ue;
+      return j(), yt("div", {
         ref_key: "elRef",
         ref: y,
-        class: "wh-full overflow-hidden relative"
+        class: "relative wh-full overflow-hidden"
       }, [
-        w(at, {
+        T(f("div", {
+          class: "absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-50 rounded-full pointer-events-none",
+          style: F([
+            "background: rgba(64, 204, 51, 0.5)",
+            `width: ${_.value}px; height: ${_.value}px; transform: translate(-50%, -50%) scale(${((Y = (X = t.value) == null ? void 0 : X.position) == null ? void 0 : Y.scale) ?? 1})`
+          ])
+        }, null, 4), [
+          [U, S.value]
+        ]),
+        w(rt, {
           imageSize: N.value,
           ref_key: "containerRef",
-          ref: n
+          ref: t
         }, {
           default: M(() => [
             f("div", {
@@ -305,59 +315,53 @@ const Oe = { name: "defaults-image", render: Ge }, { defineComponent: Je } = __C
                 class: "absolute inset-0 -z-0",
                 style: F(`clip-path: inset(0px ${s.value ? 100 : 0}% 0px 0px); transition: clip-path 300ms cubic-bezier(0.4, 0, 0.2, 1) 0s`),
                 draggable: "false"
-              }, null, 12, Et),
+              }, null, 12, Lt),
               f("img", {
                 src: W.value,
                 class: "absolute inset-0 -z-20",
                 draggable: "false"
-              }, null, 8, St),
+              }, null, 8, Bt),
               T(f("div", {
                 class: "absolute top-0 w2 bg-yellow-500 h-full",
                 style: F(`left: ${s.value ? 0 : 102}%;transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1) 0s`)
               }, null, 4), [
-                [U, V(B)]
+                [U, V(b)]
               ]),
-              w(ht, {
+              w(gt, {
                 src: r.value,
                 size: _.value,
                 ref_key: "canvasLamaRef",
                 ref: u,
                 class: "wh-full",
                 onRecognize: m
-              }, null, 8, ["src", "size"]),
-              T(f("div", {
-                class: "fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-50 rounded-full pointer-events-none",
-                style: F(["background: rgba(64, 204, 51, 0.5)", `width: ${_.value}px; height: ${_.value}px`])
-              }, null, 4), [
-                [U, S.value]
-              ])
+              }, null, 8, ["src", "size"])
             ], 6)
           ]),
           _: 1
         }, 8, ["imageSize"]),
-        T(f("div", Lt, [
+        T(f("div", bt, [
           f("label", {
             for: c.value,
             class: "w-4/5 md:w-[600px] h-[150px]"
           }, [
-            Bt,
+            zt,
             f("input", {
               ref_key: "inputFileRef",
-              ref: t,
+              ref: n,
               class: "hidden",
               id: c.value,
               type: "file",
               accept: "image/png, image/jpeg",
               onChange: x
-            }, null, 40, Mt)
-          ], 8, bt)
+            }, null, 40, Vt)
+          ], 8, Mt)
         ], 512), [
           [U, !r.value]
         ]),
-        f("div", zt, [
-          f("div", Vt, [
-            f("div", Rt, [
-              Nt,
+        f("div", Rt, [
+          f("div", Nt, [
+            f("div", Ht, [
+              Zt,
               T(f("input", {
                 class: "range flex-1",
                 "onUpdate:modelValue": o[0] || (o[0] = (z) => _.value = z),
@@ -369,35 +373,35 @@ const Oe = { name: "defaults-image", render: Ge }, { defineComponent: Je } = __C
                 min: "10",
                 max: "200"
               }, null, 544), [
-                [gt, _.value]
+                [Ct, _.value]
               ])
             ]),
-            f("div", Ht, [
-              r.value ? (A(), Ct(E, {
+            f("div", Ft, [
+              r.value ? (j(), kt(E, {
                 key: 0,
                 class: "center",
-                onClick: o[3] || (o[3] = (z) => t.value.click())
+                onClick: o[3] || (o[3] = (z) => n.value.click())
               }, {
                 default: M(() => [
                   w(e)
                 ]),
                 _: 1
-              })) : xt("", !0),
+              })) : $t("", !0),
               w(E, {
                 class: R(["center", { "pointer-events-none": !r.value }]),
                 onClick: k
               }, {
                 default: M(() => [
-                  w(O)
+                  w(K)
                 ]),
                 _: 1
               }, 8, ["class"]),
               w(E, {
-                class: R(["center", { "pointer-events-none": !V(B) }]),
+                class: R(["center", { "pointer-events-none": !V(b) }]),
                 onClick: V(h)
               }, {
                 default: M(() => [
-                  w(J)
+                  w(Q)
                 ]),
                 _: 1
               }, 8, ["class", "onClick"]),
@@ -406,17 +410,17 @@ const Oe = { name: "defaults-image", render: Ge }, { defineComponent: Je } = __C
                 onClick: V(L)
               }, {
                 default: M(() => [
-                  w(K)
+                  w(ee)
                 ]),
                 _: 1
               }, 8, ["class", "onClick"]),
               w(E, {
-                class: R(["center", { "pointer-events-none": !V(B) }]),
+                class: R(["center", { "pointer-events-none": !V(b) }]),
                 onMousedown: o[4] || (o[4] = (z) => s.value = !0),
                 onMouseup: o[5] || (o[5] = (z) => s.value = !1)
               }, {
                 default: M(() => [
-                  w(Q)
+                  w(te)
                 ]),
                 _: 1
               }, 8, ["class"]),
@@ -425,7 +429,7 @@ const Oe = { name: "defaults-image", render: Ge }, { defineComponent: Je } = __C
                 onClick: p
               }, {
                 default: M(() => [
-                  w(ee)
+                  w(ne)
                 ]),
                 _: 1
               }, 8, ["class"])
@@ -435,13 +439,13 @@ const Oe = { name: "defaults-image", render: Ge }, { defineComponent: Je } = __C
       ], 512);
     };
   }
-}), Wt = (a, c) => {
+}), Xt = (a, c) => {
   const r = a.__vccOpts || a;
   for (const [_, g] of c)
     r[_] = g;
   return r;
-}, It = /* @__PURE__ */ Wt(Ut, [["__scopeId", "data-v-0b0d8462"]]);
-class Xt {
+}, Yt = /* @__PURE__ */ Xt(It, [["__scopeId", "data-v-7c61980c"]]);
+class At {
   constructor() {
     Z(this, "icon", "");
     Z(this, "name", "lama");
@@ -458,13 +462,13 @@ class Xt {
         icon: '<svg t="1708913507645" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5106" width="200" height="200"><path d="M819.2 128H204.8c-84.48 0-153.6 69.12-153.6 153.6v460.8c0 84.48 69.12 153.6 153.6 153.6h614.4c84.48 0 153.6-69.12 153.6-153.6V281.6c0-84.48-69.12-153.6-153.6-153.6z m-537.6 199.68c30.72 0 56.32 25.6 56.32 56.32 0 30.72-25.6 56.32-56.32 56.32-30.72 0-56.32-25.6-56.32-56.32 0-30.72 25.6-56.32 56.32-56.32z m496.64 71.68c-30.72 125.44-140.8 204.8-253.44 204.8-53.76 0-97.28 10.24-130.56 28.16-30.72 17.92-51.2 43.52-61.44 87.04-7.68 28.16-33.28 43.52-61.44 38.4-28.16-7.68-43.52-33.28-38.4-61.44 15.36-71.68 56.32-122.88 112.64-153.6 51.2-30.72 115.2-40.96 179.2-40.96 66.56 0 135.68-48.64 156.16-128 5.12-28.16 33.28-46.08 61.44-38.4 28.16 5.12 43.52 33.28 35.84 64z" fill="#000000" p-id="5107"></path></svg>',
         cache: !0
       },
-      component: It
+      component: Yt
     });
   }
   uninstall() {
   }
 }
-const At = new Xt();
+const jt = new At();
 export {
-  At as default
+  jt as default
 };
