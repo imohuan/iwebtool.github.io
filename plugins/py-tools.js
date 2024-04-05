@@ -420,18 +420,19 @@ const { defineStore: Fn } = __Context.pinia, { computed: xt, ref: wt, watch: It 
   });
 }, Wn = (i) => i.startsWith("http") ? new URL(i).host : i, jA = Fn("py-tools-comfyui", () => {
   const i = Un(), e = wt(!1), A = Be(), t = xt(() => {
-    var l;
-    return `ws://${((l = A.value) == null ? void 0 : l.url) ?? "127.0.0.1:8000"}/ws`;
+    var r;
+    return `ws://${((r = A.value) == null ? void 0 : r.url) ?? "127.0.0.1:8000"}/ws`;
   });
-  Lo(t, e, (l, r) => {
-    i.emit("message", { ev: l, data: r });
+  Lo(t, e, (r, c) => {
+    i.emit("message", { ev: r, data: c });
   });
   const o = wt(!1), n = Be("comfyui"), s = xt(() => {
-    var l;
-    return Wn(((l = n.value) == null ? void 0 : l.url) ?? "127.0.0.1:8188");
+    var r;
+    return Wn(((r = n.value) == null ? void 0 : r.url) ?? "127.0.0.1:8188");
   });
+  let l = !1;
   return It([e, s], () => {
-    e && ct(s, o);
+    e && !l && (l = !0, ct(s, o));
   }), It(o, () => {
     i.emit("comfy-connected");
   }), { emitter: i, pyStatus: e, comfyStatus: o, comfyConfig: n };
@@ -4699,7 +4700,7 @@ class Tp {
   constructor() {
     _e(this, "icon", "");
     _e(this, "name", "py-tools");
-    _e(this, "description", "Python 后台 工具箱");
+    _e(this, "description", "Python 后台 工具箱 1.0.0");
     _e(this, "isUninstallReload", !1);
   }
   async install(e) {
