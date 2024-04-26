@@ -2772,8 +2772,8 @@ const yt = { name: "defaults-close", render: ou }, { defineComponent: nu } = __C
     }, z = () => {
       if (h.value) {
         if (w.value) {
-          const { name: H, weight: x } = w.value, M = Math.min(A.loraMax, x + A.loraStep).toFixed(1);
-          t("update:prompt", `<lora:${H}:${M}>`);
+          const { name: H, weight: x } = w.value, J = Math.min(A.loraMax, x + A.loraStep).toFixed(1);
+          t("update:prompt", `<lora:${H}:${J}>`);
         }
         return;
       }
@@ -2782,8 +2782,8 @@ const yt = { name: "defaults-close", render: ou }, { defineComponent: nu } = __C
     }, O = () => {
       if (h.value) {
         if (w.value) {
-          const { name: H, weight: x } = w.value, M = Math.max(A.loraMin, x - A.loraStep).toFixed(1);
-          t("update:prompt", `<lora:${H}:${M}>`);
+          const { name: H, weight: x } = w.value, J = Math.max(A.loraMin, x - A.loraStep).toFixed(1);
+          t("update:prompt", `<lora:${H}:${J}>`);
         }
         return;
       }
@@ -2813,12 +2813,12 @@ const yt = { name: "defaults-close", render: ou }, { defineComponent: nu } = __C
         if (!k)
           return;
         const H = o.loraList.filter((x) => {
-          var M;
-          return x.name.endsWith(k) && ((M = x.preview) == null ? void 0 : M.length) > 0;
+          var J;
+          return x.name.endsWith(k) && ((J = x.preview) == null ? void 0 : J.length) > 0;
         });
         if (H.length > 0) {
-          const { name: x, preview: M } = H[0];
-          g.value.name = x, g.value.preview = M;
+          const { name: x, preview: J } = H[0];
+          g.value.name = x, g.value.preview = J;
         }
       } else if (Ts(B)) {
         let k = B;
@@ -2832,7 +2832,7 @@ const yt = { name: "defaults-close", render: ou }, { defineComponent: nu } = __C
     }), Iu("keydown", (B) => {
       B.key === "ArrowUp" && l.value && (z(), B.preventDefault()), B.key === "ArrowDown" && l.value && (O(), B.preventDefault());
     }), (B, E) => {
-      const k = Gt("n-image"), H = Gt("n-popover"), x = Gt("n-spin"), M = yt;
+      const k = Gt("n-image"), H = Gt("n-popover"), x = Gt("n-spin"), J = yt;
       return Je(), Ke("div", {
         ref_key: "el",
         ref: c,
@@ -2870,7 +2870,7 @@ const yt = { name: "defaults-close", render: ou }, { defineComponent: nu } = __C
                     return Je(), Ke("div", pu, [
                       ve("div", {
                         class: "flex items-center relative group-hover:shadow-lg",
-                        onClick: (Q) => Y(L)
+                        onClick: (M) => Y(L)
                       }, [
                         ve("div", {
                           class: _A(["english truncate", (T = L.split(":::")) != null && T[1] && ((F = L.split(":::")) == null ? void 0 : F[1]) !== "-1" ? "" : "rounded"])
@@ -2913,7 +2913,7 @@ const yt = { name: "defaults-close", render: ou }, { defineComponent: nu } = __C
               class: "close-icon scale-0 group-hover:scale-100 wh-14",
               onClick: D
             }, [
-              Rt(M, { class: "wh-10" })
+              Rt(J, { class: "wh-10" })
             ])
           ], 512), [
             [lu, !B.disabled]
@@ -2960,47 +2960,47 @@ const { defineComponent: Mu } = __Context.vue, { toDisplayString: Lt, createElem
         console.log("value", f), t("update:modelValue", f);
       }
     }), { history: c, undo: l, redo: d } = Pu(s), a = De(), { width: C } = Lu(a), p = De(), r = De(!1), m = Wt(() => {
-      var J;
-      const f = ((J = p.value) == null ? void 0 : J.offsetWidth) ?? 400;
+      var Q;
+      const f = ((Q = p.value) == null ? void 0 : Q.offsetWidth) ?? 400;
       return Math.min(Math.max(C.value + 10, 10), f);
     }), v = (f) => {
-      const J = f.replace(new RegExp(`^${dn}`), "");
+      const Q = f.replace(new RegExp(`^${dn}`), "");
       let u = /^\(([^:\)]+)(:([\d\.]+))?\)$/;
-      return u.test(J) || (u = /^<lora:([^:]+):(-?[\d\.]+)>$/, u.test(J)) ? J.match(u)[1] : J;
+      return u.test(Q) || (u = /^<lora:([^:]+):(-?[\d\.]+)>$/, u.test(Q)) ? Q.match(u)[1] : Q;
     }, h = "1234567890qwertyuiopasdfghjklzxcvbnm ".split(""), g = De(h), w = De([]), y = De(""), D = De(!1), Y = De(!1), z = De(""), O = De(), N = De(!1), R = () => {
       N.value = !0, setTimeout(() => N.value = !1, 500);
     }, B = (f) => {
-      let J = Pd, u = "width:14px; height: 14px; margin-right: 4px;";
-      return f.label === "推理" && (J = Vd, u += "color: var(--primary);"), f.label === "追加" && (J = Et), et("div", { class: "text-select-menu" }, [
-        et(J, { style: u }),
+      let Q = Pd, u = "width:14px; height: 14px; margin-right: 4px;";
+      return f.label === "推理" && (Q = Vd, u += "color: var(--primary);"), f.label === "追加" && (Q = Et), et("div", { class: "text-select-menu" }, [
+        et(Q, { style: u }),
         et("span", { class: "en" }, f.value === "#+" || f.value.startsWith("<lora:") ? "" : f.value),
         et("span", { class: "zh" }, (f == null ? void 0 : f.label) ?? f.zhValue)
       ]);
     }, E = (f) => {
       t("update:modelValue", f.join(","));
     }, k = (f) => {
-      var J, u;
-      (u = (J = O.value) == null ? void 0 : J.inputInstRef) == null || u.focus();
-    }, H = (f, J) => {
+      var Q, u;
+      (u = (Q = O.value) == null ? void 0 : Q.inputInstRef) == null || u.focus();
+    }, H = (f, Q) => {
       const u = Ut(o.value);
-      u.splice(J, 1, f), t("update:modelValue", u.join(","));
-    }, x = (f, J) => {
+      u.splice(Q, 1, f), t("update:modelValue", u.join(","));
+    }, x = (f, Q) => {
       const u = Ut(o.value);
-      u.splice(J, 1), t("update:modelValue", u.join(","));
-    }, M = (f) => {
-      const J = Ut(o.value);
-      J.push(f), t("update:modelValue", J.join(","));
+      u.splice(Q, 1), t("update:modelValue", u.join(","));
+    }, J = (f) => {
+      const Q = Ut(o.value);
+      Q.push(f), t("update:modelValue", Q.join(","));
     }, L = () => {
       const f = y.value.replace(/^\s+/, "");
       y.value = f, g.value = g.value.concat(f.split(""));
     }, T = (f) => {
       D.value = f;
     }, F = async (f) => {
-      var J;
-      f = (f == null ? void 0 : f.trim()) || "", f = f.replace(/\#\+$/, ""), f && (t("update:modelValue", o.value.concat([f]).join(",")), y.value = "", await mn(), (J = p.value) == null || J.scrollTo({ top: p.value.offsetHeight + p.value.scrollHeight }));
+      var Q;
+      f = (f == null ? void 0 : f.trim()) || "", f = f.replace(/\#\+$/, ""), f && (t("update:modelValue", o.value.concat([f]).join(",")), y.value = "", await mn(), (Q = p.value) == null || Q.scrollTo({ top: p.value.offsetHeight + p.value.scrollHeight }));
     }, ne = (f) => {
       f.key === "Backspace" && y.value.length === 0 && t("update:modelValue", o.value.slice(0, o.value.length - 1).join(",")), f.key === "Enter" && f.ctrlKey && t("ctrlEnter"), f.key === "Enter" && !D.value && !N.value && (f.preventDefault(), F(y.value)), f.ctrlKey && (f.key === "z" && (f.preventDefault(), l()), (f.key === "y" || f.key === "Z" && f.shiftKey) && (f.preventDefault(), d()));
-    }, se = zu(async (f, J) => {
+    }, se = zu(async (f, Q) => {
       if (y.value.trim().startsWith("lora:")) {
         const b = y.value.slice(5).toLocaleLowerCase(), j = n.loraList.filter((U) => U.name.toLocaleLowerCase().indexOf(b) !== -1).map((U) => ({ label: U.name.replace(".safetensors", ""), value: `<lora:${U.name}:1>`, zhValue: "" }));
         return w.value = j, j;
@@ -3016,20 +3016,20 @@ const { defineComponent: Mu } = __Context.vue, { toDisplayString: Lt, createElem
         { label: "推理", value: "", zhValue: "" }
       ];
     }, 33), ce = Ou("getContent", () => {
-    }), Q = rA(() => Z.feature.gpt.createMessage(Z.feature.gpt.getGptMessages(y.value, { content: ce() }).sentenceToPrompt)), K = async (f, J) => {
+    }), M = rA(() => Z.feature.gpt.createMessage(Z.feature.gpt.getGptMessages(y.value, { content: ce() }).sentenceToPrompt)), K = async (f, Q) => {
       R(), await mn();
       let u = f.value;
-      f.label === "推理" && (u = await Q.fun()), f.label === "追加" && (u = y.value.replace(/#\+\s*/, "")), F(u);
+      f.label === "推理" && (u = await M.fun()), f.label === "追加" && (u = y.value.replace(/#\+\s*/, "")), F(u);
     };
     return Nu(() => {
       var b;
-      const f = o.value.map((j) => ({ key: v(j), prompt: j })), J = /* @__PURE__ */ new Set(), u = [];
+      const f = o.value.map((j) => ({ key: v(j), prompt: j })), Q = /* @__PURE__ */ new Set(), u = [];
       f.forEach((j, U) => {
-        if (J.has(j.key)) {
+        if (Q.has(j.key)) {
           u.push(U);
           return;
         }
-        J.add(j.key);
+        Q.add(j.key);
       }), u.length > 0 && u.reverse().forEach((j) => {
         f.splice(j, 1);
       }), t("update:modelValue", f.map((j) => j.prompt).join(","));
@@ -3039,7 +3039,7 @@ const { defineComponent: Mu } = __Context.vue, { toDisplayString: Lt, createElem
       }), Ft(I, "compositionend", (j) => {
         z.value = "";
       }));
-    }), (f, J) => {
+    }), (f, Q) => {
       const u = rn("n-mention"), I = rn("VueDraggable");
       return Ot(), an("div", {
         ref_key: "scrollRef",
@@ -3057,10 +3057,10 @@ const { defineComponent: Mu } = __Context.vue, { toDisplayString: Lt, createElem
             handle: ".prompt-item",
             animation: "150",
             class: "scroll-box flex-1 pr3 wh-full scrollbar-xy",
-            onWheel: J[1] || (J[1] = Hu(() => {
+            onWheel: Q[1] || (Q[1] = Hu(() => {
             }, ["stop"])),
-            onStart: J[2] || (J[2] = (b) => r.value = !0),
-            onEnd: J[3] || (J[3] = (b) => r.value = !1),
+            onStart: Q[2] || (Q[2] = (b) => r.value = !0),
+            onEnd: Q[3] || (Q[3] = (b) => r.value = !1),
             onClick: k
           }, {
             default: bu(() => [
@@ -3071,7 +3071,7 @@ const { defineComponent: Mu } = __Context.vue, { toDisplayString: Lt, createElem
                 prompt: b,
                 "onUpdate:prompt": (U) => H(U, j),
                 onDelete: (U) => x(b, j),
-                onAdd: M
+                onAdd: J
               }, null, 8, ["disabled", "prompt", "onUpdate:prompt", "onDelete"]))), 128)),
               qt(nA("article", {
                 style: Yu(`width: ${r.value ? 0 : m.value}px`),
@@ -3088,14 +3088,14 @@ const { defineComponent: Mu } = __Context.vue, { toDisplayString: Lt, createElem
                   class: "normal-mention",
                   value: y.value,
                   "onUpdate:value": [
-                    J[0] || (J[0] = (b) => y.value = b),
+                    Q[0] || (Q[0] = (b) => y.value = b),
                     L
                   ],
                   size: "small",
                   options: w.value,
                   prefix: g.value,
                   bordered: !1,
-                  disabled: Nt(Q).loading,
+                  disabled: Nt(M).loading,
                   "render-label": B,
                   loading: Y.value,
                   onSearch: Nt(se),
@@ -3103,7 +3103,7 @@ const { defineComponent: Mu } = __Context.vue, { toDisplayString: Lt, createElem
                   "onUpdate:show": T
                 }, null, 8, ["value", "options", "prefix", "disabled", "loading", "onSearch"]),
                 qt(nA("div", Gu, null, 512), [
-                  [Tt, Nt(Q).loading]
+                  [Tt, Nt(M).loading]
                 ])
               ], 4), [
                 [Tt, !f.disabled]
@@ -3237,7 +3237,7 @@ const { defineComponent: Mu } = __Context.vue, { toDisplayString: Lt, createElem
         // 删除字符串中间的空格
       ).filter((I) => I).join(`
 `), a("new_text", u);
-    }), M = rA(async () => {
+    }), J = rA(async () => {
       if (!l.modelValue.new_text.trim()) {
         t.notify({ type: "warning", title: "内容为空", message: "请输入修改文案再次尝试", duration: 2e3 });
         return;
@@ -3281,7 +3281,7 @@ const { defineComponent: Mu } = __Context.vue, { toDisplayString: Lt, createElem
         name: "upscale",
         uid: l.project.id + ":" + l.modelValue.uid
       }).then((b) => y.value = b + ":::高清");
-    }, Q = () => {
+    }, M = () => {
       console.log("细节修复");
       const u = C.value;
       if (!u)
@@ -3309,7 +3309,7 @@ const { defineComponent: Mu } = __Context.vue, { toDisplayString: Lt, createElem
       }).then(async (U) => {
         a("voice", { ...l.modelValue.voice, url: U.name, srt_list: U.srt_list }), await Xt(), n.value.loadAudio();
       });
-    }), J = async (u) => {
+    }), Q = async (u) => {
       var me, Me, Ie;
       const I = u.data;
       let b = "";
@@ -3321,16 +3321,16 @@ const { defineComponent: Mu } = __Context.vue, { toDisplayString: Lt, createElem
       }
     };
     return Q1(() => {
-      c.emitter.on("message", J);
+      c.emitter.on("message", Q);
     }), M1(() => {
-      c.emitter.off("message", J);
+      c.emitter.off("message", Q);
     }), e({
       text: x.fun,
-      prompt: M.fun,
+      prompt: J.fun,
       audio: f.fun,
       draw: ne.fun,
       hirefix: ce,
-      repair: Q,
+      repair: M,
       forgery: se
     }), (u, I) => {
       const b = qe("n-image-group"), j = Rr, U = is, me = Mr, Me = wr, Ie = cs, he = It, je = yo, Se = Et, cA = ZA, ge = qe("n-icon"), P = qe("n-popconfirm"), Ce = qe("n-checkbox"), Ys = qe("n-image"), Hs = qe("n-popover"), bs = qe("n-space"), js = qe("n-checkbox-group");
@@ -3344,7 +3344,7 @@ const { defineComponent: Mu } = __Context.vue, { toDisplayString: Lt, createElem
             onUpload: k,
             onForgery: se,
             onHirefix: ce,
-            onRepair: Q,
+            onRepair: M,
             onDownload: K
           }, null, 8, ["src"])
         ]),
@@ -3496,8 +3496,8 @@ const { defineComponent: Mu } = __Context.vue, { toDisplayString: Lt, createElem
               ae("div", null, [
                 _(lA, {
                   label: "文案推理",
-                  loading: fe(M).loading,
-                  onClick: fe(M).fun
+                  loading: fe(J).loading,
+                  onClick: fe(J).fun
                 }, {
                   icon: te(() => [
                     _(me, {
@@ -3711,8 +3711,8 @@ const Zs = { name: "defaults-edit", render: P1 }, ys = "data:image/gif;base64,R0
       n();
     };
     return (g, w) => {
-      const y = yt, D = Ue("n-icon"), Y = Ue("n-button"), z = ZA, O = Ue("n-popconfirm"), N = Zs, R = Ue("n-space"), B = Ue("n-thing"), E = Ue("n-card"), k = Et, H = Ue("n-cascader"), x = It, M = Ue("n-modal");
-      return ot(), In(M, {
+      const y = yt, D = Ue("n-icon"), Y = Ue("n-button"), z = ZA, O = Ue("n-popconfirm"), N = Zs, R = Ue("n-space"), B = Ue("n-thing"), E = Ue("n-card"), k = Et, H = Ue("n-cascader"), x = It, J = Ue("n-modal");
+      return ot(), In(J, {
         show: g.show,
         "onUpdate:show": w[2] || (w[2] = (L) => t("update:show", L)),
         onAfterEnter: c
@@ -4029,8 +4029,8 @@ const Zs = { name: "defaults-edit", render: P1 }, ys = "data:image/gif;base64,R0
       const B = await Z.feature.jianying.getDraftSrt(R.name), E = /* @__PURE__ */ new Set();
       if (B.forEach((T) => E.add(T == null ? void 0 : T.path)), console.log("lists", B, E), E.size !== 1)
         return s.notify({ type: "error", title: "失败", message: "获取剪映草稿音频字幕失败，请使用一段完整的音频转文字的草稿重试" });
-      const { duration: k, path: H, speed: x } = B[0], M = B.map((T, F) => ({ index: F, start_time: T.time[0], end_time: T.time[1], text: T.text })), L = await Z.feature.tts.upload(H);
-      a.value = { name: L, srt: M };
+      const { duration: k, path: H, speed: x } = B[0], J = B.map((T, F) => ({ index: F, start_time: T.time[0], end_time: T.time[1], text: T.text })), L = await Z.feature.tts.upload(H);
+      a.value = { name: L, srt: J };
     }, O = () => {
       t("del");
     }, N = () => {
@@ -4038,8 +4038,8 @@ const Zs = { name: "defaults-edit", render: P1 }, ys = "data:image/gif;base64,R0
       R.trim() || s.notify({ type: "error", title: "添加失败", message: "请先创建音频文件" }), B.length === 0 && s.notify({ type: "error", title: "添加失败", message: "字幕不存在" }), t("ok", a.value);
     };
     return (R, B) => {
-      const E = yt, k = Le("n-icon"), H = Le("n-button"), x = fs, M = Le("n-tab-pane"), L = Le("n-list-item"), T = Le("n-list"), F = Le("n-spin"), ne = It, se = yo, ce = Le("n-scrollbar"), Q = ZA, K = Et, f = Le("n-card"), J = Le("n-modal");
-      return Fe(), DA(J, {
+      const E = yt, k = Le("n-icon"), H = Le("n-button"), x = fs, J = Le("n-tab-pane"), L = Le("n-list-item"), T = Le("n-list"), F = Le("n-spin"), ne = It, se = yo, ce = Le("n-scrollbar"), M = ZA, K = Et, f = Le("n-card"), Q = Le("n-modal");
+      return Fe(), DA(Q, {
         show: R.show,
         "onUpdate:show": B[3] || (B[3] = (u) => t("update:show", u)),
         "mask-closable": !1,
@@ -4095,7 +4095,7 @@ const Zs = { name: "defaults-edit", render: P1 }, ys = "data:image/gif;base64,R0
                     icon: V(() => [
                       $(k, null, {
                         default: V(() => [
-                          $(Q)
+                          $(M)
                         ]),
                         _: 1
                       })
@@ -4133,7 +4133,7 @@ const Zs = { name: "defaults-edit", render: P1 }, ys = "data:image/gif;base64,R0
                     animated: !1
                   }, {
                     default: V(() => [
-                      $(M, {
+                      $(J, {
                         name: "base",
                         tab: "整段配音",
                         class: "wh-full overflow-hidden"
@@ -4171,7 +4171,7 @@ const Zs = { name: "defaults-edit", render: P1 }, ys = "data:image/gif;base64,R0
                         ]),
                         _: 1
                       }),
-                      $(M, {
+                      $(J, {
                         name: "upload",
                         tab: "上传配音字幕",
                         class: "wh-full overflow-hidden"
@@ -4196,7 +4196,7 @@ const Zs = { name: "defaults-edit", render: P1 }, ys = "data:image/gif;base64,R0
                         ]),
                         _: 1
                       }),
-                      $(M, {
+                      $(J, {
                         name: "draft",
                         tab: "剪映草稿配音",
                         class: "wh-full overflow-hidden"
@@ -4269,7 +4269,7 @@ const Zs = { name: "defaults-edit", render: P1 }, ys = "data:image/gif;base64,R0
                         })
                       ]),
                       default: V(() => [
-                        $(M, {
+                        $(J, {
                           name: "base",
                           tab: "字幕显示",
                           class: "wh-full overflow-hidden"
@@ -4309,17 +4309,17 @@ const Zs = { name: "defaults-edit", render: P1 }, ys = "data:image/gif;base64,R0
     const e = rp(), A = cp(), t = IA(), o = We(!1), n = We(!1), s = We(!1), { addKbdEvent: c, removeKbdEvent: l } = mp(), d = Ne();
     Ao("config", d), Ao("imageBoxId", bn);
     const a = We(null), C = We([]), p = We([]), r = () => {
-      const Q = p.value.some((K) => K);
-      p.value = Array.from({ length: C.value.length }, () => !Q);
+      const M = p.value.some((K) => K);
+      p.value = Array.from({ length: C.value.length }, () => !M);
     }, m = () => {
-      p.value = Array.from({ length: C.value.length }, (Q, K) => {
+      p.value = Array.from({ length: C.value.length }, (M, K) => {
         var f;
         return !((f = p.value) != null && f[K]);
       });
-    }, v = (Q) => {
-      p.value = Array.from({ length: C.value.length }, (K, f) => Q >= f);
-    }, h = (Q) => {
-      p.value = Array.from({ length: C.value.length }, (K, f) => Q <= f);
+    }, v = (M) => {
+      p.value = Array.from({ length: C.value.length }, (K, f) => M >= f);
+    }, h = (M) => {
+      p.value = Array.from({ length: C.value.length }, (K, f) => M <= f);
     }, g = We(["text"]), w = [
       { label: "文案优化", value: "1.text" },
       { label: "音频", value: "2.audio" },
@@ -4332,95 +4332,96 @@ const Zs = { name: "defaults-edit", render: P1 }, ys = "data:image/gif;base64,R0
       new Audio(Z.base.getCompleteServerUrl("/static/success.mp3")).play();
     }, z = async () => {
       a.value = null;
-      const Q = A.params.id;
-      Q && (a.value = await Z.project.get(+Q), C.value = a.value.lists, C.value.length === 0 && D());
+      const M = A.params.id;
+      M && (a.value = await Z.project.get(+M), C.value = a.value.lists, C.value.length === 0 && D());
     }, O = async () => {
-      const Q = A.params.id;
-      Q && (a.value = await Z.project.get(+Q));
+      const M = A.params.id;
+      M && (a.value = await Z.project.get(+M));
     };
     Ao("update-project", O);
     const N = async () => {
       if (!(!A.params.id || !a.value || C.value.length === 0))
         return Z.project.update({ ...up(a.value, ["id", "name", "description"]), lists: C.value });
     }, R = dp(() => N(), 500), B = () => {
-      var Q;
-      (Q = A.params) != null && Q.id && Z.feature.jianying.createJy(+A.params.id).then(() => {
+      var M;
+      (M = A.params) != null && M.id && Z.feature.jianying.createJy(+A.params.id).then(() => {
         Y(), e.notify({ type: "success", title: "导出成功", message: "已导出剪映到本地项目中" });
       });
     }, E = async () => {
-      await Z.comfyui.stop(), C.value.forEach((Q) => {
-        Q.runningId = "";
+      await Z.comfyui.stop(), C.value.forEach((M) => {
+        M.runningId = "";
       }), await N();
     }, k = async () => {
       if (s.value)
         return;
       e.progress.start(), s.value = !0;
-      let Q = document.title;
-      const K = g.value.sort((f, J) => parseInt(f.split(".")[0]) - parseInt(J.split(".")[0])).map((f) => f.split(".")[1]);
+      let M = document.title;
+      const K = g.value.sort((f, Q) => parseInt(f.split(".")[0]) - parseInt(Q.split(".")[0])).map((f) => f.split(".")[1]);
       g.value = [];
       for (let f = 0; f < y.value.length; f++) {
-        const J = y.value[f];
+        const Q = y.value[f];
         if (p.value[f]) {
           for (let u = 0; u < K.length; u++) {
-            const I = K[u], b = K.length * y.value.length, j = pp(J, I, async () => {
+            const I = K[u], b = K.length * y.value.length, j = pp(Q, I, async () => {
             });
-            document.title = Q + ` ${(f + 1) * (u + 1)} / ${b}`, j && await j();
+            document.title = M + ` ${(f + 1) * (u + 1)} / ${b}`, j && await j();
           }
           p.value[f] = !1;
         }
       }
-      Y(), document.title = Q, e.progress.finish(), s.value = !1;
-    }, H = (Q) => {
-      C.value.splice(Q + 1, 0, zA()), N();
-    }, x = (Q) => {
-      C.value.splice(Q, 1), N();
-    }, M = () => {
-      C.value.forEach((Q) => {
+      Y(), document.title = M, e.progress.finish(), s.value = !1;
+    }, H = (M) => {
+      C.value.splice(M + 1, 0, zA()), N();
+    }, x = (M) => {
+      C.value.splice(M, 1), N();
+    }, J = () => {
+      C.value.forEach((M) => {
         var f;
-        Q.text, Q.role = [], (((f = a.value) == null ? void 0 : f.roles.map((J) => J.nickname)) ?? []).forEach((J) => {
-          Q.role.length > 0 || (["主角", "我"].includes(J) ? (Q.text.indexOf("我") !== -1 && Q.role.push(J), Q.text.indexOf("主角") !== -1 && Q.role.push(J)) : Q.text.indexOf(J) !== -1 && Q.role.push(J));
+        M.text, M.role = [], (((f = a.value) == null ? void 0 : f.roles.map((Q) => Q.nickname)) ?? []).forEach((Q) => {
+          M.role.length > 0 || (["主角", "我"].includes(Q) ? (M.text.indexOf("我") !== -1 && M.role.push(Q), M.text.indexOf("主角") !== -1 && M.role.push(Q)) : M.text.indexOf(Q) !== -1 && M.role.push(Q));
         });
       });
-    }, L = (Q) => {
-      const K = Q.applys.includes("all"), f = Q.applys.includes("role");
-      C.value.forEach((J, u) => {
-        K && (J.voice = { ...Q.voice, url: "" }), f && J.voice.name === Q.voice.name && (J.voice = { ...Q.voice, url: "" });
+    }, L = (M) => {
+      const K = M.applys.includes("all"), f = M.applys.includes("role");
+      C.value.forEach((Q, u) => {
+        K && (Q.voice = { ...M.voice, url: "" }), f && Q.voice.name === M.voice.name && (Q.voice = { ...M.voice, url: "" });
       }), N();
-    }, T = (Q) => {
-      const K = Q.applys.includes("all");
-      C.value.forEach((f, J) => {
-        K && (f.anime = Q.anime);
+    }, T = (M) => {
+      const K = M.applys.includes("all");
+      C.value.forEach((f, Q) => {
+        K && (f.anime = M.anime);
       }), N();
     }, F = async () => {
-      const Q = A.params.id;
-      console.log("删除音频 id", Q), !(!Q || !a.value) && (await Z.project.update({ id: +Q, audio: "" }), n.value = !1, O());
-    }, ne = async (Q) => {
+      const M = A.params.id;
+      console.log("删除音频 id", M), !(!M || !a.value) && (await Z.project.update({ id: +M, audio: "" }), n.value = !1, O());
+    }, ne = async (M) => {
       const K = A.params.id;
-      !K || !a.value || (await Z.project.update({ id: +K, audio: Q.name, srt: Q.srt }), n.value = !1, O());
+      !K || !a.value || (await Z.project.update({ id: +K, audio: M.name, srt: M.srt }), n.value = !1, O());
     };
     let se = null, ce;
     return lp(() => {
       se = ip(
         () => A.params.id,
-        (Q, K) => {
-          Q !== K && z();
+        (M, K) => {
+          M !== K && z();
         }
-      ), z(), c("作品/保存", "ctrl+s", "作品保存", (Q) => {
-        Q.preventDefault(), N().then((K) => {
+      ), z(), c("作品/保存", "ctrl+s", "作品保存", (M) => {
+        M.preventDefault(), N().then((K) => {
           K && e.notify({ type: "success", title: "成功", message: "作品保存成功" });
         });
       }), ce = setTimeout(() => {
         if (t.runningStatus) {
-          let Q = !1;
+          let M = !1;
           C.value.forEach((K) => {
-            !t.runningIds.includes(K.runningId.split(":::")[0]) && K.runningId.trim() && (K.runningId = "", Q = !0, console.log("清除当前任务", K), alert("清除当前任务"));
-          }), Q && N();
+            var f, Q;
+            !t.runningIds.includes((f = K.runningId) == null ? void 0 : f.split(":::")[0]) && ((Q = K.runningId) != null && Q.trim()) && (K.runningId = "", M = !0, console.log("清除当前任务", K), alert("清除当前任务"));
+          }), M && N();
         }
       }, 1e3);
     }), ap(() => {
       l("作品/保存"), se && se(), ce && clearTimeout(ce);
-    }), (Q, K) => {
-      const f = ka, J = kA("n-icon"), u = kA("n-button"), I = is, b = kA("n-tooltip"), j = ha, U = ns, me = kA("n-popselect"), Me = $l, Ie = Tl, he = Kl, je = Jl, Se = kA("n-checkbox"), cA = Bl;
+    }), (M, K) => {
+      const f = ka, Q = kA("n-icon"), u = kA("n-button"), I = is, b = kA("n-tooltip"), j = ha, U = ns, me = kA("n-popselect"), Me = $l, Ie = Tl, he = Kl, je = Jl, Se = kA("n-checkbox"), cA = Bl;
       return YA(), eo(Yn, null, [
         q(v3, {
           show: o.value,
@@ -4442,7 +4443,7 @@ const Zs = { name: "defaults-edit", render: P1 }, ys = "data:image/gif;base64,R0
           aA("div", ep, [
             q(u, { onClick: B }, {
               icon: X(() => [
-                q(J, null, {
+                q(Q, null, {
                   default: X(() => [
                     q(f)
                   ]),
@@ -4464,7 +4465,7 @@ const Zs = { name: "defaults-edit", render: P1 }, ys = "data:image/gif;base64,R0
                     onClick: K[2] || (K[2] = (Ce) => n.value = !0)
                   }, {
                     icon: X(() => [
-                      q(J, { size: 14 }, {
+                      q(Q, { size: 14 }, {
                         default: X(() => [
                           q(I)
                         ]),
@@ -4509,7 +4510,7 @@ const Zs = { name: "defaults-edit", render: P1 }, ys = "data:image/gif;base64,R0
                     class: "group"
                   }, {
                     icon: X(() => [
-                      q(J, null, {
+                      q(Q, null, {
                         default: X(() => [
                           q(j)
                         ]),
@@ -4519,7 +4520,7 @@ const Zs = { name: "defaults-edit", render: P1 }, ys = "data:image/gif;base64,R0
                     default: X(() => [
                       aA("div", tp, [
                         op,
-                        q(J, null, {
+                        q(Q, null, {
                           default: X(() => [
                             q(U, { class: "transition-transform duration-300 group-hover:-rotate-90" })
                           ]),
@@ -4534,7 +4535,7 @@ const Zs = { name: "defaults-edit", render: P1 }, ys = "data:image/gif;base64,R0
               }, 8, ["value", "render-label"]),
               q(u, { onClick: E }, {
                 icon: X(() => [
-                  q(J, { size: 12 }, {
+                  q(Q, { size: 12 }, {
                     default: X(() => [
                       q(Me)
                     ]),
@@ -4549,9 +4550,9 @@ const Zs = { name: "defaults-edit", render: P1 }, ys = "data:image/gif;base64,R0
             ]),
             q(b, { trigger: "hover" }, {
               trigger: X(() => [
-                q(u, { onClick: M }, {
+                q(u, { onClick: J }, {
                   icon: X(() => [
-                    q(J, { size: 24 }, {
+                    q(Q, { size: 24 }, {
                       default: X(() => [
                         q(Ie)
                       ]),
@@ -4573,7 +4574,7 @@ const Zs = { name: "defaults-edit", render: P1 }, ys = "data:image/gif;base64,R0
               onClick: K[4] || (K[4] = (ge) => o.value = !0)
             }, {
               icon: X(() => [
-                q(J, { size: 12 }, {
+                q(Q, { size: 12 }, {
                   default: X(() => [
                     q(he)
                   ]),
@@ -4621,7 +4622,7 @@ const Zs = { name: "defaults-edit", render: P1 }, ys = "data:image/gif;base64,R0
                     onClick: Hn((Ce) => v(P), ["stop"])
                   }, {
                     icon: X(() => [
-                      q(J, { size: 14 }, {
+                      q(Q, { size: 14 }, {
                         default: X(() => [
                           q(je)
                         ]),
@@ -4639,7 +4640,7 @@ const Zs = { name: "defaults-edit", render: P1 }, ys = "data:image/gif;base64,R0
                     onClick: Hn((Ce) => h(P), ["stop"])
                   }, {
                     icon: X(() => [
-                      q(J, { size: 14 }, {
+                      q(Q, { size: 14 }, {
                         default: X(() => [
                           q(cA)
                         ]),
@@ -4841,8 +4842,8 @@ const t0 = { name: "defaults-srt", render: A0 }, { defineComponent: o0 } = __Con
       d(), s.show = !0, C(), t.value = "text";
     }, r = () => {
       const { name: B, description: E, text: k, audio: H, srt: x } = s.data;
-      s.loading = !0, Z.project.add({ name: B, description: E, text: k, audio: H, srt: x }).then((M) => {
-        M.id && e.notify({ type: "success", title: "创建成功", message: "创建项目成功" });
+      s.loading = !0, Z.project.add({ name: B, description: E, text: k, audio: H, srt: x }).then((J) => {
+        J.id && e.notify({ type: "success", title: "创建成功", message: "创建项目成功" });
       }).finally(async () => {
         await a(), d(), s.loading = !1, s.show = !1;
       });
@@ -4869,8 +4870,8 @@ const t0 = { name: "defaults-srt", render: A0 }, { defineComponent: o0 } = __Con
     }, y = (B) => {
       s.draftLoading = !0, Z.feature.jianying.getDraftSrt(B.name).then((E) => {
         let k = [], H = "";
-        E.forEach((x, M) => {
-          k.push({ index: M, start_time: x.time[0], end_time: x.time[1], text: x.text }), H += `${x.text}
+        E.forEach((x, J) => {
+          k.push({ index: J, start_time: x.time[0], end_time: x.time[1], text: x.text }), H += `${x.text}
 `;
         }), s.data.text = H, s.data.srt = k, t.value = "text";
       }).finally(() => {
@@ -4887,7 +4888,7 @@ const t0 = { name: "defaults-srt", render: A0 }, { defineComponent: o0 } = __Con
     return P0(async () => {
       await a(), await C();
     }), (B, E) => {
-      const k = yt, H = de("n-icon"), x = Qs, M = de("n-tab-pane"), L = t0, T = de("n-text"), F = de("n-p"), ne = de("n-upload-dragger"), se = de("n-upload"), ce = de("n-list-item"), Q = de("n-list"), K = de("n-spin"), f = de("n-scrollbar"), J = de("n-tabs"), u = de("n-button"), I = de("n-card"), b = de("n-modal"), j = Up, U = Rp, me = de("n-popselect"), Me = kp, Ie = ZA, he = de("n-popconfirm"), je = Zs, Se = Ip, cA = de("n-space"), ge = de("n-thing");
+      const k = yt, H = de("n-icon"), x = Qs, J = de("n-tab-pane"), L = t0, T = de("n-text"), F = de("n-p"), ne = de("n-upload-dragger"), se = de("n-upload"), ce = de("n-list-item"), M = de("n-list"), K = de("n-spin"), f = de("n-scrollbar"), Q = de("n-tabs"), u = de("n-button"), I = de("n-card"), b = de("n-modal"), j = Up, U = Rp, me = de("n-popselect"), Me = kp, Ie = ZA, he = de("n-popconfirm"), je = Zs, Se = Ip, cA = de("n-space"), ge = de("n-thing");
       return Ve(), rt(to, null, [
         G(b, {
           show: s.show,
@@ -4962,18 +4963,18 @@ const t0 = { name: "defaults-srt", render: A0 }, { defineComponent: o0 } = __Con
                     "onUpdate:modelValue": E[2] || (E[2] = (P) => s.data.description = P),
                     type: "textarea"
                   }, null, 8, ["modelValue"]),
-                  G(J, {
+                  G(Q, {
                     type: "line",
                     value: t.value,
                     "onUpdate:value": E[4] || (E[4] = (P) => t.value = P),
                     animated: ""
                   }, {
                     default: S(() => [
-                      G(M, {
+                      G(J, {
                         name: "empty",
                         tab: "空"
                       }),
-                      G(M, {
+                      G(J, {
                         name: "text",
                         tab: "文案"
                       }, {
@@ -4988,7 +4989,7 @@ const t0 = { name: "defaults-srt", render: A0 }, { defineComponent: o0 } = __Con
                         ]),
                         _: 1
                       }),
-                      G(M, {
+                      G(J, {
                         name: "base",
                         tab: "字幕"
                       }, {
@@ -5040,7 +5041,7 @@ const t0 = { name: "defaults-srt", render: A0 }, { defineComponent: o0 } = __Con
                         ]),
                         _: 1
                       }),
-                      G(M, {
+                      G(J, {
                         name: "JianyingPro_Drafts",
                         tab: "剪映草稿"
                       }, {
@@ -5053,7 +5054,7 @@ const t0 = { name: "defaults-srt", render: A0 }, { defineComponent: o0 } = __Con
                                 description: "加载剪映草稿字幕中"
                               }, {
                                 default: S(() => [
-                                  G(Q, {
+                                  G(M, {
                                     hoverable: "",
                                     clickable: "",
                                     class: "mt2 space-y-1"
@@ -5928,23 +5929,23 @@ const s2 = { name: "defaults-transform", render: n2 }, { get: Js } = __Context.u
       // 角色预览
       options: { is_refer_image: !1, refer_image_name: "", base_prompt: "", preview_prompt: "", preview_images: [] }
     }), d = (x) => {
-      const M = [];
+      const J = [];
       return x.forEach((L) => {
         let T = [];
-        L === c.value ? T = Array.from(r.value) : T = Array.from(w.get(L)), T.forEach((F) => M.push(...h(F).map((ne) => ne.text)));
-      }), M;
+        L === c.value ? T = Array.from(r.value) : T = Array.from(w.get(L)), T.forEach((F) => J.push(...h(F).map((ne) => ne.text)));
+      }), J;
     }, a = () => BA(
       [o.value.positive, l.value.options.base_prompt, l.value.prompt, ...d(["base", "role"])].join(",")
     ).join(","), C = xh(() => {
-      const { name: x, nickname: M, prompt: L, preview: T } = l.value, F = d(["base", "role"]).join(",");
-      return !x.trim() || !M.trim() || !(L + F).trim() || !T.trim();
+      const { name: x, nickname: J, prompt: L, preview: T } = l.value, F = d(["base", "role"]).join(",");
+      return !x.trim() || !J.trim() || !(L + F).trim() || !T.trim();
     }), { prompts: p, selectDirs: r, selectPrompts: m, handleSelectPrompt: v, getSelectDirPrompt: h } = r2(), { workflowImageNames: g } = ih(e, l, p, r, s), w = /* @__PURE__ */ new Map();
     ["base", "role", "preview"].forEach((x) => w.set(x, /* @__PURE__ */ new Set()));
-    const y = (x, M) => (w.set(M, new Set(r.value)), r.value = w.get(x), !0), D = () => {
+    const y = (x, J) => (w.set(J, new Set(r.value)), r.value = w.get(x), !0), D = () => {
       $n(
         (x) => {
-          x[0] && Z.comfyui.referenceUpload(x[0]).then((M) => {
-            M.trim() && (l.value.preview = M);
+          x[0] && Z.comfyui.referenceUpload(x[0]).then((J) => {
+            J.trim() && (l.value.preview = J);
           });
         },
         "file",
@@ -6004,7 +6005,7 @@ const s2 = { name: "defaults-transform", render: n2 }, { get: Js } = __Context.u
       var T;
       const x = BA(
         [o.value.positive, l.value.prompt, l.value.options.preview_prompt, ...d(["base", "preview"])].join(",")
-      ).join(","), M = {
+      ).join(","), J = {
         name: "base",
         options: {
           ...o.value,
@@ -6015,29 +6016,29 @@ const s2 = { name: "defaults-transform", render: n2 }, { get: Js } = __Context.u
           // refer_images: { default: "" }
         }
       }, L = ((T = l.value.options) == null ? void 0 : T.refer_image_name) ?? "";
-      l.value.options.is_refer_image && L.trim() && l.value.preview.trim() && (M.options.refer_images = { [L]: Z.base.getCompleteServerUrl(l.value.preview) }), n.run(M).then((F) => {
+      l.value.options.is_refer_image && L.trim() && l.value.preview.trim() && (J.options.refer_images = { [L]: Z.base.getCompleteServerUrl(l.value.preview) }), n.run(J).then((F) => {
         l.value.options.preview_images = F;
       });
     }, B = () => {
       l.value.prompt = BA([...d(["role"]), l.value.prompt].join(",")).join(","), l.value.options.base_prompt = BA([...d(["base"]), l.value.options.base_prompt].join(",")).join(","), l.value.options.preview_prompt = BA([...d(["preview"]), l.value.options.preview_prompt].join(",")).join(",");
     }, E = () => {
       var x;
-      (x = A.params) != null && x.id && (B(), Z.role.add({ project_id: +A.params.id, ...l.value }).then((M) => {
-        M.id && (e.notify({ type: "success", title: "成功", message: "添加角色成功" }), t.deleteRoute(A.fullPath));
+      (x = A.params) != null && x.id && (B(), Z.role.add({ project_id: +A.params.id, ...l.value }).then((J) => {
+        J.id && (e.notify({ type: "success", title: "成功", message: "添加角色成功" }), t.deleteRoute(A.fullPath));
       }));
     }, k = () => {
       var x;
-      (x = A.params) != null && x.id && (B(), Z.role.update({ ...l.value }).then((M) => {
+      (x = A.params) != null && x.id && (B(), Z.role.update({ ...l.value }).then((J) => {
         e.notify({ type: "success", title: "成功", message: "更新角色成功" }), t.deleteRoute(A.fullPath);
       }));
     }, H = () => {
       var x;
-      !((x = A.params) != null && x.id) || l.value.id === -1 || Z.role.delete(l.value.id).then((M) => {
-        M ? (e.notify({ type: "success", title: "删除成功", message: "删除角色成功" }), t.deleteRoute(A.fullPath)) : e.notify({ type: "error", title: "删除失败", message: "删除角色成功" });
+      !((x = A.params) != null && x.id) || l.value.id === -1 || Z.role.delete(l.value.id).then((J) => {
+        J ? (e.notify({ type: "success", title: "删除成功", message: "删除角色成功" }), t.deleteRoute(A.fullPath)) : e.notify({ type: "error", title: "删除失败", message: "删除角色成功" });
       });
     };
-    return (x, M) => {
-      const L = ZA, T = RA("n-icon"), F = RA("n-button"), ne = RA("n-popconfirm"), se = RA("n-tab-pane"), ce = cs, Q = lA, K = RA("n-split");
+    return (x, J) => {
+      const L = ZA, T = RA("n-icon"), F = RA("n-button"), ne = RA("n-popconfirm"), se = RA("n-tab-pane"), ce = cs, M = lA, K = RA("n-split");
       return Ct(), hh("div", Ch, [
         ie(K, {
           direction: "horizontal",
@@ -6049,7 +6050,7 @@ const s2 = { name: "defaults-transform", render: n2 }, { get: Js } = __Context.u
             Oe("div", fh, [
               ie(sg, {
                 modelValue: l.value,
-                "onUpdate:modelValue": M[0] || (M[0] = (f) => l.value = f),
+                "onUpdate:modelValue": J[0] || (J[0] = (f) => l.value = f),
                 "workflow-image-names": ye(g)
               }, null, 8, ["modelValue", "workflow-image-names"]),
               ie(Xg, {
@@ -6057,7 +6058,7 @@ const s2 = { name: "defaults-transform", render: n2 }, { get: Js } = __Context.u
                 ref: s,
                 prompts: ye(p),
                 "select-dirs": ye(r),
-                "onUpdate:selectDirs": M[1] || (M[1] = (f) => ht(r) ? r.value = f : null),
+                "onUpdate:selectDirs": J[1] || (J[1] = (f) => ht(r) ? r.value = f : null),
                 onSelect: ye(v)
               }, null, 8, ["prompts", "select-dirs", "onSelect"])
             ])
@@ -6066,7 +6067,7 @@ const s2 = { name: "defaults-transform", render: n2 }, { get: Js } = __Context.u
             Oe("div", vh, [
               ie(Bo, {
                 modelValue: c.value,
-                "onUpdate:modelValue": M[8] || (M[8] = (f) => c.value = f),
+                "onUpdate:modelValue": J[8] || (J[8] = (f) => c.value = f),
                 type: "line",
                 class: "wh-full",
                 animated: !1,
@@ -6143,9 +6144,9 @@ const s2 = { name: "defaults-transform", render: n2 }, { get: Js } = __Context.u
                     default: le(() => [
                       ie(x2, {
                         modelValue: l.value.options.base_prompt,
-                        "onUpdate:modelValue": M[2] || (M[2] = (f) => l.value.options.base_prompt = f),
+                        "onUpdate:modelValue": J[2] || (J[2] = (f) => l.value.options.base_prompt = f),
                         "select-dirs": ye(r),
-                        "onUpdate:selectDirs": M[3] || (M[3] = (f) => ht(r) ? r.value = f : null),
+                        "onUpdate:selectDirs": J[3] || (J[3] = (f) => ht(r) ? r.value = f : null),
                         "select-prompts": ye(m)
                       }, null, 8, ["modelValue", "select-dirs", "select-prompts"])
                     ]),
@@ -6159,9 +6160,9 @@ const s2 = { name: "defaults-transform", render: n2 }, { get: Js } = __Context.u
                     default: le(() => [
                       ie(z2, {
                         modelValue: l.value.prompt,
-                        "onUpdate:modelValue": M[4] || (M[4] = (f) => l.value.prompt = f),
+                        "onUpdate:modelValue": J[4] || (J[4] = (f) => l.value.prompt = f),
                         "select-dirs": ye(r),
-                        "onUpdate:selectDirs": M[5] || (M[5] = (f) => ht(r) ? r.value = f : null),
+                        "onUpdate:selectDirs": J[5] || (J[5] = (f) => ht(r) ? r.value = f : null),
                         preview: l.value.preview,
                         "select-prompts": ye(m),
                         onDraw: O,
@@ -6174,7 +6175,7 @@ const s2 = { name: "defaults-transform", render: n2 }, { get: Js } = __Context.u
                           Oe("div", Bh, [
                             Eh,
                             Oe("div", Ih, [
-                              ie(Q, {
+                              ie(M, {
                                 label: "生成图片",
                                 loading: ye(n).loading.value,
                                 onClick: O
@@ -6200,9 +6201,9 @@ const s2 = { name: "defaults-transform", render: n2 }, { get: Js } = __Context.u
                     default: le(() => [
                       ie($2, {
                         modelValue: l.value.options.preview_prompt,
-                        "onUpdate:modelValue": M[6] || (M[6] = (f) => l.value.options.preview_prompt = f),
+                        "onUpdate:modelValue": J[6] || (J[6] = (f) => l.value.options.preview_prompt = f),
                         "select-dirs": ye(r),
-                        "onUpdate:selectDirs": M[7] || (M[7] = (f) => ht(r) ? r.value = f : null),
+                        "onUpdate:selectDirs": J[7] || (J[7] = (f) => ht(r) ? r.value = f : null),
                         "select-prompts": ye(m),
                         preview_images: l.value.options.preview_images,
                         onDraw: R
@@ -6211,7 +6212,7 @@ const s2 = { name: "defaults-transform", render: n2 }, { get: Js } = __Context.u
                           Oe("div", Zh, [
                             yh,
                             Oe("div", null, [
-                              ie(Q, {
+                              ie(M, {
                                 label: "生成效果图",
                                 loading: ye(n).loading.value,
                                 onClick: R
