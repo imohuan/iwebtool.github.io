@@ -8909,11 +8909,7 @@ const { defineComponent: Xs } = __Context.vue, { toDisplayString: ye, createElem
 ], fl = ["onClick"], { ref: De, computed: Sl, shallowRef: pl, triggerRef: Nl } = __Context.vue, gl = /* @__PURE__ */ Xs({
   __name: "Page",
   setup(e) {
-    const t = new Ws(), r = De(`“学姐......能帮我刷一下脸吗？”
-
-女生微微一愣，她正站在人脸识别门前。
-
-下一秒，电子门打开了。`), o = Sl(() => {
+    const t = new Ws(), r = De(""), o = Sl(() => {
       const C = r.value;
       return C.length > 10 ? C.slice(0, 10) : C;
     }), a = De(1e5), n = De(null), l = pl([]), h = [];
