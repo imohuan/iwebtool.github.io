@@ -962,14 +962,14 @@ function et(e, t, r) {
     if (!M.isUndefined(y)) {
       if (v.indexOf(y) !== -1)
         throw Error("Circular reference detected in " + C.join("."));
-      v.push(y), M.forEach(y, function(V, x) {
+      v.push(y), M.forEach(y, function(V, P) {
         (!(M.isUndefined(V) || V === null) && a.call(
           t,
           V,
-          M.isString(x) ? x.trim() : x,
+          M.isString(P) ? P.trim() : P,
           C,
           z
-        )) === !0 && O(V, C ? C.concat(x) : [x]);
+        )) === !0 && O(V, C ? C.concat(P) : [P]);
       }), v.pop();
     }
   }
@@ -2229,7 +2229,7 @@ var Bs = { exports: {} };
       (function(n, l, h, N, G, b, v, z, O) {
         var y = r("crypto");
         function C(f, g) {
-          g = x(f, g);
+          g = P(f, g);
           var c;
           return (c = g.algorithm !== "passthrough" ? y.createHash(g.algorithm) : new L()).write === void 0 && (c.write = c.update, c.end = c.update), A(g, c).dispatch(f), c.update || c.end(""), c.digest ? c.digest(g.encoding === "buffer" ? void 0 : g.encoding) : (f = c.read(), g.encoding !== "buffer" ? f.toString(g.encoding) : f);
         }
@@ -2243,7 +2243,7 @@ var Bs = { exports: {} };
           return C(f, { algorithm: "md5", encoding: "hex", excludeValues: !0 });
         };
         var S = y.getHashes ? y.getHashes().slice() : ["sha1", "md5"], V = (S.push("passthrough"), ["buffer", "hex", "binary", "base64"]);
-        function x(f, g) {
+        function P(f, g) {
           var c = {};
           if (c.algorithm = (g = g || {}).algorithm || "sha1", c.encoding = g.encoding || "hex", c.excludeValues = !!g.excludeValues, c.algorithm = c.algorithm.toLowerCase(), c.encoding = c.encoding.toLowerCase(), c.ignoreUnknown = g.ignoreUnknown === !0, c.respectType = g.respectType !== !1, c.respectFunctionNames = g.respectFunctionNames !== !1, c.respectFunctionProperties = g.respectFunctionProperties !== !1, c.unorderedArrays = g.unorderedArrays === !0, c.unorderedSets = g.unorderedSets !== !1, c.unorderedObjects = g.unorderedObjects !== !1, c.replacer = g.replacer || void 0, c.excludeKeys = g.excludeKeys || void 0, f === void 0)
             throw new Error("Object argument required.");
@@ -2403,15 +2403,15 @@ Use "options.replacer" or "options.ignoreUnknown"
           } };
         }
         a.writeToStream = function(f, g, c) {
-          return c === void 0 && (c = g, g = {}), A(g = x(f, g), c).dispatch(f);
+          return c === void 0 && (c = g, g = {}), A(g = P(f, g), c).dispatch(f);
         };
       }).call(this, r("lYpoI2"), typeof self < "u" ? self : typeof window < "u" ? window : {}, r("buffer").Buffer, arguments[3], arguments[4], arguments[5], arguments[6], "/fake_9a5aa49d.js", "/");
     }, { buffer: 3, crypto: 5, lYpoI2: 11 }], 2: [function(r, o, a) {
       (function(n, l, h, N, G, b, v, z, O) {
         (function(y) {
-          var C = typeof Uint8Array < "u" ? Uint8Array : Array, S = 43, V = 47, x = 48, F = 97, A = 65, L = 45, f = 95;
+          var C = typeof Uint8Array < "u" ? Uint8Array : Array, S = 43, V = 47, P = 48, F = 97, A = 65, L = 45, f = 95;
           function g(c) {
-            return c = c.charCodeAt(0), c === S || c === L ? 62 : c === V || c === f ? 63 : c < x ? -1 : c < x + 10 ? c - x + 26 + 26 : c < A + 26 ? c - A : c < F + 26 ? c - F + 26 : void 0;
+            return c = c.charCodeAt(0), c === S || c === L ? 62 : c === V || c === f ? 63 : c < P ? -1 : c < P + 10 ? c - P + 26 + 26 : c < A + 26 ? c - A : c < F + 26 ? c - F + 26 : void 0;
           }
           y.toByteArray = function(c) {
             var d, s;
@@ -2448,99 +2448,99 @@ Use "options.replacer" or "options.ignoreUnknown"
         function S(i, u, m) {
           if (!(this instanceof S))
             return new S(i, u, m);
-          var k, P, E, U, J = typeof i;
+          var x, k, E, U, J = typeof i;
           if (u === "base64" && J == "string")
             for (i = (U = i).trim ? U.trim() : U.replace(/^\s+|\s+$/g, ""); i.length % 4 != 0; )
               i += "=";
           if (J == "number")
-            k = X(i);
+            x = X(i);
           else if (J == "string")
-            k = S.byteLength(i, u);
+            x = S.byteLength(i, u);
           else {
             if (J != "object")
               throw new Error("First argument needs to be a number, array or string.");
-            k = X(i.length);
+            x = X(i.length);
           }
-          if (S._useTypedArrays ? P = S._augment(new Uint8Array(k)) : ((P = this).length = k, P._isBuffer = !0), S._useTypedArrays && typeof i.byteLength == "number")
-            P._set(i);
+          if (S._useTypedArrays ? k = S._augment(new Uint8Array(x)) : ((k = this).length = x, k._isBuffer = !0), S._useTypedArrays && typeof i.byteLength == "number")
+            k._set(i);
           else if (Y(U = i) || S.isBuffer(U) || U && typeof U == "object" && typeof U.length == "number")
-            for (E = 0; E < k; E++)
-              S.isBuffer(i) ? P[E] = i.readUInt8(E) : P[E] = i[E];
+            for (E = 0; E < x; E++)
+              S.isBuffer(i) ? k[E] = i.readUInt8(E) : k[E] = i[E];
           else if (J == "string")
-            P.write(i, 0, u);
+            k.write(i, 0, u);
           else if (J == "number" && !S._useTypedArrays && !m)
-            for (E = 0; E < k; E++)
-              P[E] = 0;
-          return P;
+            for (E = 0; E < x; E++)
+              k[E] = 0;
+          return k;
         }
-        function V(i, u, m, k) {
-          return S._charsWritten = Re(function(P) {
-            for (var E = [], U = 0; U < P.length; U++)
-              E.push(255 & P.charCodeAt(U));
+        function V(i, u, m, x) {
+          return S._charsWritten = Re(function(k) {
+            for (var E = [], U = 0; U < k.length; U++)
+              E.push(255 & k.charCodeAt(U));
             return E;
-          }(u), i, m, k);
+          }(u), i, m, x);
         }
-        function x(i, u, m, k) {
-          return S._charsWritten = Re(function(P) {
-            for (var E, U, J = [], q = 0; q < P.length; q++)
-              U = P.charCodeAt(q), E = U >> 8, U = U % 256, J.push(U), J.push(E);
+        function P(i, u, m, x) {
+          return S._charsWritten = Re(function(k) {
+            for (var E, U, J = [], q = 0; q < k.length; q++)
+              U = k.charCodeAt(q), E = U >> 8, U = U % 256, J.push(U), J.push(E);
             return J;
-          }(u), i, m, k);
+          }(u), i, m, x);
         }
         function F(i, u, m) {
-          var k = "";
+          var x = "";
           m = Math.min(i.length, m);
-          for (var P = u; P < m; P++)
-            k += String.fromCharCode(i[P]);
-          return k;
+          for (var k = u; k < m; k++)
+            x += String.fromCharCode(i[k]);
+          return x;
         }
         function A(i, u, m, E) {
           E || (w(typeof m == "boolean", "missing or invalid endian"), w(u != null, "missing offset"), w(u + 1 < i.length, "Trying to read beyond buffer length"));
-          var P, E = i.length;
+          var k, E = i.length;
           if (!(E <= u))
-            return m ? (P = i[u], u + 1 < E && (P |= i[u + 1] << 8)) : (P = i[u] << 8, u + 1 < E && (P |= i[u + 1])), P;
+            return m ? (k = i[u], u + 1 < E && (k |= i[u + 1] << 8)) : (k = i[u] << 8, u + 1 < E && (k |= i[u + 1])), k;
         }
         function L(i, u, m, E) {
           E || (w(typeof m == "boolean", "missing or invalid endian"), w(u != null, "missing offset"), w(u + 3 < i.length, "Trying to read beyond buffer length"));
-          var P, E = i.length;
+          var k, E = i.length;
           if (!(E <= u))
-            return m ? (u + 2 < E && (P = i[u + 2] << 16), u + 1 < E && (P |= i[u + 1] << 8), P |= i[u], u + 3 < E && (P += i[u + 3] << 24 >>> 0)) : (u + 1 < E && (P = i[u + 1] << 16), u + 2 < E && (P |= i[u + 2] << 8), u + 3 < E && (P |= i[u + 3]), P += i[u] << 24 >>> 0), P;
+            return m ? (u + 2 < E && (k = i[u + 2] << 16), u + 1 < E && (k |= i[u + 1] << 8), k |= i[u], u + 3 < E && (k += i[u + 3] << 24 >>> 0)) : (u + 1 < E && (k = i[u + 1] << 16), u + 2 < E && (k |= i[u + 2] << 8), u + 3 < E && (k |= i[u + 3]), k += i[u] << 24 >>> 0), k;
         }
-        function f(i, u, m, k) {
-          if (k || (w(typeof m == "boolean", "missing or invalid endian"), w(u != null, "missing offset"), w(u + 1 < i.length, "Trying to read beyond buffer length")), !(i.length <= u))
-            return k = A(i, u, m, !0), 32768 & k ? -1 * (65535 - k + 1) : k;
+        function f(i, u, m, x) {
+          if (x || (w(typeof m == "boolean", "missing or invalid endian"), w(u != null, "missing offset"), w(u + 1 < i.length, "Trying to read beyond buffer length")), !(i.length <= u))
+            return x = A(i, u, m, !0), 32768 & x ? -1 * (65535 - x + 1) : x;
         }
-        function g(i, u, m, k) {
-          if (k || (w(typeof m == "boolean", "missing or invalid endian"), w(u != null, "missing offset"), w(u + 3 < i.length, "Trying to read beyond buffer length")), !(i.length <= u))
-            return k = L(i, u, m, !0), 2147483648 & k ? -1 * (4294967295 - k + 1) : k;
+        function g(i, u, m, x) {
+          if (x || (w(typeof m == "boolean", "missing or invalid endian"), w(u != null, "missing offset"), w(u + 3 < i.length, "Trying to read beyond buffer length")), !(i.length <= u))
+            return x = L(i, u, m, !0), 2147483648 & x ? -1 * (4294967295 - x + 1) : x;
         }
-        function c(i, u, m, k) {
-          return k || (w(typeof m == "boolean", "missing or invalid endian"), w(u + 3 < i.length, "Trying to read beyond buffer length")), C.read(i, u, m, 23, 4);
+        function c(i, u, m, x) {
+          return x || (w(typeof m == "boolean", "missing or invalid endian"), w(u + 3 < i.length, "Trying to read beyond buffer length")), C.read(i, u, m, 23, 4);
         }
-        function d(i, u, m, k) {
-          return k || (w(typeof m == "boolean", "missing or invalid endian"), w(u + 7 < i.length, "Trying to read beyond buffer length")), C.read(i, u, m, 52, 8);
+        function d(i, u, m, x) {
+          return x || (w(typeof m == "boolean", "missing or invalid endian"), w(u + 7 < i.length, "Trying to read beyond buffer length")), C.read(i, u, m, 52, 8);
         }
-        function s(i, u, m, k, P) {
-          if (P || (w(u != null, "missing value"), w(typeof k == "boolean", "missing or invalid endian"), w(m != null, "missing offset"), w(m + 1 < i.length, "trying to write beyond buffer length"), rt(u, 65535)), P = i.length, !(P <= m))
-            for (var E = 0, U = Math.min(P - m, 2); E < U; E++)
-              i[m + E] = (u & 255 << 8 * (k ? E : 1 - E)) >>> 8 * (k ? E : 1 - E);
+        function s(i, u, m, x, k) {
+          if (k || (w(u != null, "missing value"), w(typeof x == "boolean", "missing or invalid endian"), w(m != null, "missing offset"), w(m + 1 < i.length, "trying to write beyond buffer length"), rt(u, 65535)), k = i.length, !(k <= m))
+            for (var E = 0, U = Math.min(k - m, 2); E < U; E++)
+              i[m + E] = (u & 255 << 8 * (x ? E : 1 - E)) >>> 8 * (x ? E : 1 - E);
         }
-        function p(i, u, m, k, P) {
-          if (P || (w(u != null, "missing value"), w(typeof k == "boolean", "missing or invalid endian"), w(m != null, "missing offset"), w(m + 3 < i.length, "trying to write beyond buffer length"), rt(u, 4294967295)), P = i.length, !(P <= m))
-            for (var E = 0, U = Math.min(P - m, 4); E < U; E++)
-              i[m + E] = u >>> 8 * (k ? E : 3 - E) & 255;
+        function p(i, u, m, x, k) {
+          if (k || (w(u != null, "missing value"), w(typeof x == "boolean", "missing or invalid endian"), w(m != null, "missing offset"), w(m + 3 < i.length, "trying to write beyond buffer length"), rt(u, 4294967295)), k = i.length, !(k <= m))
+            for (var E = 0, U = Math.min(k - m, 4); E < U; E++)
+              i[m + E] = u >>> 8 * (x ? E : 3 - E) & 255;
         }
-        function T(i, u, m, k, P) {
-          P || (w(u != null, "missing value"), w(typeof k == "boolean", "missing or invalid endian"), w(m != null, "missing offset"), w(m + 1 < i.length, "Trying to write beyond buffer length"), ot(u, 32767, -32768)), i.length <= m || s(i, 0 <= u ? u : 65535 + u + 1, m, k, P);
+        function T(i, u, m, x, k) {
+          k || (w(u != null, "missing value"), w(typeof x == "boolean", "missing or invalid endian"), w(m != null, "missing offset"), w(m + 1 < i.length, "Trying to write beyond buffer length"), ot(u, 32767, -32768)), i.length <= m || s(i, 0 <= u ? u : 65535 + u + 1, m, x, k);
         }
-        function R(i, u, m, k, P) {
-          P || (w(u != null, "missing value"), w(typeof k == "boolean", "missing or invalid endian"), w(m != null, "missing offset"), w(m + 3 < i.length, "Trying to write beyond buffer length"), ot(u, 2147483647, -2147483648)), i.length <= m || p(i, 0 <= u ? u : 4294967295 + u + 1, m, k, P);
+        function R(i, u, m, x, k) {
+          k || (w(u != null, "missing value"), w(typeof x == "boolean", "missing or invalid endian"), w(m != null, "missing offset"), w(m + 3 < i.length, "Trying to write beyond buffer length"), ot(u, 2147483647, -2147483648)), i.length <= m || p(i, 0 <= u ? u : 4294967295 + u + 1, m, x, k);
         }
-        function I(i, u, m, k, P) {
-          P || (w(u != null, "missing value"), w(typeof k == "boolean", "missing or invalid endian"), w(m != null, "missing offset"), w(m + 3 < i.length, "Trying to write beyond buffer length"), Rt(u, 34028234663852886e22, -34028234663852886e22)), i.length <= m || C.write(i, u, m, k, 23, 4);
+        function I(i, u, m, x, k) {
+          k || (w(u != null, "missing value"), w(typeof x == "boolean", "missing or invalid endian"), w(m != null, "missing offset"), w(m + 3 < i.length, "Trying to write beyond buffer length"), Rt(u, 34028234663852886e22, -34028234663852886e22)), i.length <= m || C.write(i, u, m, x, 23, 4);
         }
-        function B(i, u, m, k, P) {
-          P || (w(u != null, "missing value"), w(typeof k == "boolean", "missing or invalid endian"), w(m != null, "missing offset"), w(m + 7 < i.length, "Trying to write beyond buffer length"), Rt(u, 17976931348623157e292, -17976931348623157e292)), i.length <= m || C.write(i, u, m, k, 52, 8);
+        function B(i, u, m, x, k) {
+          k || (w(u != null, "missing value"), w(typeof x == "boolean", "missing or invalid endian"), w(m != null, "missing offset"), w(m + 7 < i.length, "Trying to write beyond buffer length"), Rt(u, 17976931348623157e292, -17976931348623157e292)), i.length <= m || C.write(i, u, m, x, 52, 8);
         }
         a.Buffer = S, a.SlowBuffer = S, a.INSPECT_MAX_BYTES = 50, S.poolSize = 8192, S._useTypedArrays = function() {
           try {
@@ -2605,19 +2605,19 @@ list should be an Array.`), i.length === 0)
           if (i.length === 1)
             return i[0];
           if (typeof u != "number")
-            for (P = u = 0; P < i.length; P++)
-              u += i[P].length;
-          for (var m = new S(u), k = 0, P = 0; P < i.length; P++) {
-            var E = i[P];
-            E.copy(m, k), k += E.length;
+            for (k = u = 0; k < i.length; k++)
+              u += i[k].length;
+          for (var m = new S(u), x = 0, k = 0; k < i.length; k++) {
+            var E = i[k];
+            E.copy(m, x), x += E.length;
           }
           return m;
-        }, S.prototype.write = function(i, u, m, k) {
-          isFinite(u) ? isFinite(m) || (k = m, m = void 0) : (q = k, k = u, u = m, m = q), u = Number(u) || 0;
-          var P, E, U, J, q = this.length - u;
-          switch ((!m || q < (m = Number(m))) && (m = q), k = String(k || "utf8").toLowerCase()) {
+        }, S.prototype.write = function(i, u, m, x) {
+          isFinite(u) ? isFinite(m) || (x = m, m = void 0) : (q = x, x = u, u = m, m = q), u = Number(u) || 0;
+          var k, E, U, J, q = this.length - u;
+          switch ((!m || q < (m = Number(m))) && (m = q), x = String(x || "utf8").toLowerCase()) {
             case "hex":
-              P = function(re, Q, ee, W) {
+              k = function(re, Q, ee, W) {
                 ee = Number(ee) || 0;
                 var $ = re.length - ee;
                 (!W || $ < (W = Number(W))) && (W = $), w(($ = Q.length) % 2 == 0, "Invalid hex string"), $ / 2 < W && (W = $ / 2);
@@ -2630,32 +2630,32 @@ list should be an Array.`), i.length === 0)
               break;
             case "utf8":
             case "utf-8":
-              E = this, U = u, J = m, P = S._charsWritten = Re(ne(i), E, U, J);
+              E = this, U = u, J = m, k = S._charsWritten = Re(ne(i), E, U, J);
               break;
             case "ascii":
             case "binary":
-              P = V(this, i, u, m);
+              k = V(this, i, u, m);
               break;
             case "base64":
-              E = this, U = u, J = m, P = S._charsWritten = Re(zt(i), E, U, J);
+              E = this, U = u, J = m, k = S._charsWritten = Re(zt(i), E, U, J);
               break;
             case "ucs2":
             case "ucs-2":
             case "utf16le":
             case "utf-16le":
-              P = x(this, i, u, m);
+              k = P(this, i, u, m);
               break;
             default:
               throw new Error("Unknown encoding");
           }
-          return P;
+          return k;
         }, S.prototype.toString = function(i, u, m) {
-          var k, P, E, U, J = this;
+          var x, k, E, U, J = this;
           if (i = String(i || "utf8").toLowerCase(), u = Number(u) || 0, (m = m !== void 0 ? Number(m) : J.length) === u)
             return "";
           switch (i) {
             case "hex":
-              k = function(q, re, Q) {
+              x = function(q, re, Q) {
                 var ee = q.length;
                 (!re || re < 0) && (re = 0), (!Q || Q < 0 || ee < Q) && (Q = ee);
                 for (var W = "", $ = re; $ < Q; $++)
@@ -2665,7 +2665,7 @@ list should be an Array.`), i.length === 0)
               break;
             case "utf8":
             case "utf-8":
-              k = function(q, re, Q) {
+              x = function(q, re, Q) {
                 var ee = "", W = "";
                 Q = Math.min(q.length, Q);
                 for (var $ = re; $ < Q; $++)
@@ -2675,16 +2675,16 @@ list should be an Array.`), i.length === 0)
               break;
             case "ascii":
             case "binary":
-              k = F(J, u, m);
+              x = F(J, u, m);
               break;
             case "base64":
-              P = J, U = m, k = (E = u) === 0 && U === P.length ? y.fromByteArray(P) : y.fromByteArray(P.slice(E, U));
+              k = J, U = m, x = (E = u) === 0 && U === k.length ? y.fromByteArray(k) : y.fromByteArray(k.slice(E, U));
               break;
             case "ucs2":
             case "ucs-2":
             case "utf16le":
             case "utf-16le":
-              k = function(q, re, Q) {
+              x = function(q, re, Q) {
                 for (var ee = q.slice(re, Q), W = "", $ = 0; $ < ee.length; $ += 2)
                   W += String.fromCharCode(ee[$] + 256 * ee[$ + 1]);
                 return W;
@@ -2693,26 +2693,26 @@ list should be an Array.`), i.length === 0)
             default:
               throw new Error("Unknown encoding");
           }
-          return k;
+          return x;
         }, S.prototype.toJSON = function() {
           return { type: "Buffer", data: Array.prototype.slice.call(this._arr || this, 0) };
-        }, S.prototype.copy = function(i, u, m, k) {
-          if (u = u || 0, (k = k || k === 0 ? k : this.length) !== (m = m || 0) && i.length !== 0 && this.length !== 0) {
-            w(m <= k, "sourceEnd < sourceStart"), w(0 <= u && u < i.length, "targetStart out of bounds"), w(0 <= m && m < this.length, "sourceStart out of bounds"), w(0 <= k && k <= this.length, "sourceEnd out of bounds"), k > this.length && (k = this.length);
-            var P = (k = i.length - u < k - m ? i.length - u + m : k) - m;
-            if (P < 100 || !S._useTypedArrays)
-              for (var E = 0; E < P; E++)
+        }, S.prototype.copy = function(i, u, m, x) {
+          if (u = u || 0, (x = x || x === 0 ? x : this.length) !== (m = m || 0) && i.length !== 0 && this.length !== 0) {
+            w(m <= x, "sourceEnd < sourceStart"), w(0 <= u && u < i.length, "targetStart out of bounds"), w(0 <= m && m < this.length, "sourceStart out of bounds"), w(0 <= x && x <= this.length, "sourceEnd out of bounds"), x > this.length && (x = this.length);
+            var k = (x = i.length - u < x - m ? i.length - u + m : x) - m;
+            if (k < 100 || !S._useTypedArrays)
+              for (var E = 0; E < k; E++)
                 i[E + u] = this[E + m];
             else
-              i._set(this.subarray(m, m + P), u);
+              i._set(this.subarray(m, m + k), u);
           }
         }, S.prototype.slice = function(i, u) {
           var m = this.length;
           if (i = K(i, m, 0), u = K(u, m, m), S._useTypedArrays)
             return S._augment(this.subarray(i, u));
-          for (var k = u - i, P = new S(k, void 0, !0), E = 0; E < k; E++)
-            P[E] = this[E + i];
-          return P;
+          for (var x = u - i, k = new S(x, void 0, !0), E = 0; E < x; E++)
+            k[E] = this[E + i];
+          return k;
         }, S.prototype.get = function(i) {
           return console.log(".get() is deprecated. Access using array indexes instead."), this.readUInt8(i);
         }, S.prototype.set = function(i, u) {
@@ -2778,8 +2778,8 @@ list should be an Array.`), i.length === 0)
         }, S.prototype.fill = function(i, u, m) {
           if (u = u || 0, m = m || this.length, w(typeof (i = typeof (i = i || 0) == "string" ? i.charCodeAt(0) : i) == "number" && !isNaN(i), "value is not a number"), w(u <= m, "end < start"), m !== u && this.length !== 0) {
             w(0 <= u && u < this.length, "start out of bounds"), w(0 <= m && m <= this.length, "end out of bounds");
-            for (var k = u; k < m; k++)
-              this[k] = i;
+            for (var x = u; x < m; x++)
+              this[x] = i;
           }
         }, S.prototype.inspect = function() {
           for (var i = [], u = this.length, m = 0; m < u; m++)
@@ -2814,11 +2814,11 @@ list should be an Array.`), i.length === 0)
         }
         function ne(i) {
           for (var u = [], m = 0; m < i.length; m++) {
-            var k = i.charCodeAt(m);
-            if (k <= 127)
+            var x = i.charCodeAt(m);
+            if (x <= 127)
               u.push(i.charCodeAt(m));
             else
-              for (var P = m, E = (55296 <= k && k <= 57343 && m++, encodeURIComponent(i.slice(P, m + 1)).substr(1).split("%")), U = 0; U < E.length; U++)
+              for (var k = m, E = (55296 <= x && x <= 57343 && m++, encodeURIComponent(i.slice(k, m + 1)).substr(1).split("%")), U = 0; U < E.length; U++)
                 u.push(parseInt(E[U], 16));
           }
           return u;
@@ -2826,10 +2826,10 @@ list should be an Array.`), i.length === 0)
         function zt(i) {
           return y.toByteArray(i);
         }
-        function Re(i, u, m, k) {
-          for (var P = 0; P < k && !(P + m >= u.length || P >= i.length); P++)
-            u[P + m] = i[P];
-          return P;
+        function Re(i, u, m, x) {
+          for (var k = 0; k < x && !(k + m >= u.length || k >= i.length); k++)
+            u[k + m] = i[k];
+          return k;
         }
         function It(i) {
           try {
@@ -2858,22 +2858,22 @@ list should be an Array.`), i.length === 0)
     }, { "base64-js": 2, buffer: 3, ieee754: 10, lYpoI2: 11 }], 4: [function(r, o, a) {
       (function(n, l, y, N, G, b, v, z, O) {
         var y = r("buffer").Buffer, C = 4, S = new y(C);
-        S.fill(0), o.exports = { hash: function(V, x, F, A) {
-          for (var L = x(function(s, p) {
+        S.fill(0), o.exports = { hash: function(V, P, F, A) {
+          for (var L = P(function(s, p) {
             s.length % C != 0 && (T = s.length + (C - s.length % C), s = y.concat([s, S], T));
             for (var T, R = [], I = p ? s.readInt32BE : s.readInt32LE, B = 0; B < s.length; B += C)
               R.push(I.call(s, B));
             return R;
-          }(V = y.isBuffer(V) ? V : new y(V), A), 8 * V.length), x = A, f = new y(F), g = x ? f.writeInt32BE : f.writeInt32LE, c = 0; c < L.length; c++)
+          }(V = y.isBuffer(V) ? V : new y(V), A), 8 * V.length), P = A, f = new y(F), g = P ? f.writeInt32BE : f.writeInt32LE, c = 0; c < L.length; c++)
             g.call(f, L[c], 4 * c, !0);
           return f;
         } };
       }).call(this, r("lYpoI2"), typeof self < "u" ? self : typeof window < "u" ? window : {}, r("buffer").Buffer, arguments[3], arguments[4], arguments[5], arguments[6], "/node_modules/gulp-browserify/node_modules/crypto-browserify/helpers.js", "/node_modules/gulp-browserify/node_modules/crypto-browserify");
     }, { buffer: 3, lYpoI2: 11 }], 5: [function(r, o, a) {
       (function(n, l, y, N, G, b, v, z, O) {
-        var y = r("buffer").Buffer, C = r("./sha"), S = r("./sha256"), V = r("./rng"), x = { sha1: C, sha256: S, md5: r("./md5") }, F = 64, A = new y(F);
+        var y = r("buffer").Buffer, C = r("./sha"), S = r("./sha256"), V = r("./rng"), P = { sha1: C, sha256: S, md5: r("./md5") }, F = 64, A = new y(F);
         function L(s, p) {
-          var T = x[s = s || "sha1"], R = [];
+          var T = P[s = s || "sha1"], R = [];
           return T || f("algorithm:", s, "is not yet supported"), { update: function(I) {
             return y.isBuffer(I) || (I = new y(I)), R.push(I), I.length, this;
           }, digest: function(I) {
@@ -2917,7 +2917,7 @@ list should be an Array.`), i.length === 0)
           f[g >> 5] |= 128 << g % 32, f[14 + (g + 64 >>> 9 << 4)] = g;
           for (var c = 1732584193, d = -271733879, s = -1732584194, p = 271733878, T = 0; T < f.length; T += 16) {
             var R = c, I = d, B = s, _ = p, c = V(c, d, s, p, f[T + 0], 7, -680876936), p = V(p, c, d, s, f[T + 1], 12, -389564586), s = V(s, p, c, d, f[T + 2], 17, 606105819), d = V(d, s, p, c, f[T + 3], 22, -1044525330);
-            c = V(c, d, s, p, f[T + 4], 7, -176418897), p = V(p, c, d, s, f[T + 5], 12, 1200080426), s = V(s, p, c, d, f[T + 6], 17, -1473231341), d = V(d, s, p, c, f[T + 7], 22, -45705983), c = V(c, d, s, p, f[T + 8], 7, 1770035416), p = V(p, c, d, s, f[T + 9], 12, -1958414417), s = V(s, p, c, d, f[T + 10], 17, -42063), d = V(d, s, p, c, f[T + 11], 22, -1990404162), c = V(c, d, s, p, f[T + 12], 7, 1804603682), p = V(p, c, d, s, f[T + 13], 12, -40341101), s = V(s, p, c, d, f[T + 14], 17, -1502002290), c = x(c, d = V(d, s, p, c, f[T + 15], 22, 1236535329), s, p, f[T + 1], 5, -165796510), p = x(p, c, d, s, f[T + 6], 9, -1069501632), s = x(s, p, c, d, f[T + 11], 14, 643717713), d = x(d, s, p, c, f[T + 0], 20, -373897302), c = x(c, d, s, p, f[T + 5], 5, -701558691), p = x(p, c, d, s, f[T + 10], 9, 38016083), s = x(s, p, c, d, f[T + 15], 14, -660478335), d = x(d, s, p, c, f[T + 4], 20, -405537848), c = x(c, d, s, p, f[T + 9], 5, 568446438), p = x(p, c, d, s, f[T + 14], 9, -1019803690), s = x(s, p, c, d, f[T + 3], 14, -187363961), d = x(d, s, p, c, f[T + 8], 20, 1163531501), c = x(c, d, s, p, f[T + 13], 5, -1444681467), p = x(p, c, d, s, f[T + 2], 9, -51403784), s = x(s, p, c, d, f[T + 7], 14, 1735328473), c = F(c, d = x(d, s, p, c, f[T + 12], 20, -1926607734), s, p, f[T + 5], 4, -378558), p = F(p, c, d, s, f[T + 8], 11, -2022574463), s = F(s, p, c, d, f[T + 11], 16, 1839030562), d = F(d, s, p, c, f[T + 14], 23, -35309556), c = F(c, d, s, p, f[T + 1], 4, -1530992060), p = F(p, c, d, s, f[T + 4], 11, 1272893353), s = F(s, p, c, d, f[T + 7], 16, -155497632), d = F(d, s, p, c, f[T + 10], 23, -1094730640), c = F(c, d, s, p, f[T + 13], 4, 681279174), p = F(p, c, d, s, f[T + 0], 11, -358537222), s = F(s, p, c, d, f[T + 3], 16, -722521979), d = F(d, s, p, c, f[T + 6], 23, 76029189), c = F(c, d, s, p, f[T + 9], 4, -640364487), p = F(p, c, d, s, f[T + 12], 11, -421815835), s = F(s, p, c, d, f[T + 15], 16, 530742520), c = A(c, d = F(d, s, p, c, f[T + 2], 23, -995338651), s, p, f[T + 0], 6, -198630844), p = A(p, c, d, s, f[T + 7], 10, 1126891415), s = A(s, p, c, d, f[T + 14], 15, -1416354905), d = A(d, s, p, c, f[T + 5], 21, -57434055), c = A(c, d, s, p, f[T + 12], 6, 1700485571), p = A(p, c, d, s, f[T + 3], 10, -1894986606), s = A(s, p, c, d, f[T + 10], 15, -1051523), d = A(d, s, p, c, f[T + 1], 21, -2054922799), c = A(c, d, s, p, f[T + 8], 6, 1873313359), p = A(p, c, d, s, f[T + 15], 10, -30611744), s = A(s, p, c, d, f[T + 6], 15, -1560198380), d = A(d, s, p, c, f[T + 13], 21, 1309151649), c = A(c, d, s, p, f[T + 4], 6, -145523070), p = A(p, c, d, s, f[T + 11], 10, -1120210379), s = A(s, p, c, d, f[T + 2], 15, 718787259), d = A(d, s, p, c, f[T + 9], 21, -343485551), c = L(c, R), d = L(d, I), s = L(s, B), p = L(p, _);
+            c = V(c, d, s, p, f[T + 4], 7, -176418897), p = V(p, c, d, s, f[T + 5], 12, 1200080426), s = V(s, p, c, d, f[T + 6], 17, -1473231341), d = V(d, s, p, c, f[T + 7], 22, -45705983), c = V(c, d, s, p, f[T + 8], 7, 1770035416), p = V(p, c, d, s, f[T + 9], 12, -1958414417), s = V(s, p, c, d, f[T + 10], 17, -42063), d = V(d, s, p, c, f[T + 11], 22, -1990404162), c = V(c, d, s, p, f[T + 12], 7, 1804603682), p = V(p, c, d, s, f[T + 13], 12, -40341101), s = V(s, p, c, d, f[T + 14], 17, -1502002290), c = P(c, d = V(d, s, p, c, f[T + 15], 22, 1236535329), s, p, f[T + 1], 5, -165796510), p = P(p, c, d, s, f[T + 6], 9, -1069501632), s = P(s, p, c, d, f[T + 11], 14, 643717713), d = P(d, s, p, c, f[T + 0], 20, -373897302), c = P(c, d, s, p, f[T + 5], 5, -701558691), p = P(p, c, d, s, f[T + 10], 9, 38016083), s = P(s, p, c, d, f[T + 15], 14, -660478335), d = P(d, s, p, c, f[T + 4], 20, -405537848), c = P(c, d, s, p, f[T + 9], 5, 568446438), p = P(p, c, d, s, f[T + 14], 9, -1019803690), s = P(s, p, c, d, f[T + 3], 14, -187363961), d = P(d, s, p, c, f[T + 8], 20, 1163531501), c = P(c, d, s, p, f[T + 13], 5, -1444681467), p = P(p, c, d, s, f[T + 2], 9, -51403784), s = P(s, p, c, d, f[T + 7], 14, 1735328473), c = F(c, d = P(d, s, p, c, f[T + 12], 20, -1926607734), s, p, f[T + 5], 4, -378558), p = F(p, c, d, s, f[T + 8], 11, -2022574463), s = F(s, p, c, d, f[T + 11], 16, 1839030562), d = F(d, s, p, c, f[T + 14], 23, -35309556), c = F(c, d, s, p, f[T + 1], 4, -1530992060), p = F(p, c, d, s, f[T + 4], 11, 1272893353), s = F(s, p, c, d, f[T + 7], 16, -155497632), d = F(d, s, p, c, f[T + 10], 23, -1094730640), c = F(c, d, s, p, f[T + 13], 4, 681279174), p = F(p, c, d, s, f[T + 0], 11, -358537222), s = F(s, p, c, d, f[T + 3], 16, -722521979), d = F(d, s, p, c, f[T + 6], 23, 76029189), c = F(c, d, s, p, f[T + 9], 4, -640364487), p = F(p, c, d, s, f[T + 12], 11, -421815835), s = F(s, p, c, d, f[T + 15], 16, 530742520), c = A(c, d = F(d, s, p, c, f[T + 2], 23, -995338651), s, p, f[T + 0], 6, -198630844), p = A(p, c, d, s, f[T + 7], 10, 1126891415), s = A(s, p, c, d, f[T + 14], 15, -1416354905), d = A(d, s, p, c, f[T + 5], 21, -57434055), c = A(c, d, s, p, f[T + 12], 6, 1700485571), p = A(p, c, d, s, f[T + 3], 10, -1894986606), s = A(s, p, c, d, f[T + 10], 15, -1051523), d = A(d, s, p, c, f[T + 1], 21, -2054922799), c = A(c, d, s, p, f[T + 8], 6, 1873313359), p = A(p, c, d, s, f[T + 15], 10, -30611744), s = A(s, p, c, d, f[T + 6], 15, -1560198380), d = A(d, s, p, c, f[T + 13], 21, 1309151649), c = A(c, d, s, p, f[T + 4], 6, -145523070), p = A(p, c, d, s, f[T + 11], 10, -1120210379), s = A(s, p, c, d, f[T + 2], 15, 718787259), d = A(d, s, p, c, f[T + 9], 21, -343485551), c = L(c, R), d = L(d, I), s = L(s, B), p = L(p, _);
           }
           return Array(c, d, s, p);
         }
@@ -2927,7 +2927,7 @@ list should be an Array.`), i.length === 0)
         function V(f, g, c, d, s, p, T) {
           return S(g & c | ~g & d, f, g, s, p, T);
         }
-        function x(f, g, c, d, s, p, T) {
+        function P(f, g, c, d, s, p, T) {
           return S(g & d | c & ~d, f, g, s, p, T);
         }
         function F(f, g, c, d, s, p, T) {
@@ -2955,26 +2955,26 @@ list should be an Array.`), i.length === 0)
     }, { buffer: 3, lYpoI2: 11 }], 8: [function(r, o, a) {
       (function(n, l, h, N, G, b, v, z, O) {
         var y = r("./helpers");
-        function C(x, F) {
-          x[F >> 5] |= 128 << 24 - F % 32, x[15 + (F + 64 >> 9 << 4)] = F;
-          for (var A, L, f, g = Array(80), c = 1732584193, d = -271733879, s = -1732584194, p = 271733878, T = -1009589776, R = 0; R < x.length; R += 16) {
+        function C(P, F) {
+          P[F >> 5] |= 128 << 24 - F % 32, P[15 + (F + 64 >> 9 << 4)] = F;
+          for (var A, L, f, g = Array(80), c = 1732584193, d = -271733879, s = -1732584194, p = 271733878, T = -1009589776, R = 0; R < P.length; R += 16) {
             for (var I = c, B = d, _ = s, K = p, X = T, Y = 0; Y < 80; Y++) {
-              g[Y] = Y < 16 ? x[R + Y] : V(g[Y - 3] ^ g[Y - 8] ^ g[Y - 14] ^ g[Y - 16], 1);
+              g[Y] = Y < 16 ? P[R + Y] : V(g[Y - 3] ^ g[Y - 8] ^ g[Y - 14] ^ g[Y - 16], 1);
               var H = S(S(V(c, 5), (H = d, L = s, f = p, (A = Y) < 20 ? H & L | ~H & f : !(A < 40) && A < 60 ? H & L | H & f | L & f : H ^ L ^ f)), S(S(T, g[Y]), (A = Y) < 20 ? 1518500249 : A < 40 ? 1859775393 : A < 60 ? -1894007588 : -899497514)), T = p, p = s, s = V(d, 30), d = c, c = H;
             }
             c = S(c, I), d = S(d, B), s = S(s, _), p = S(p, K), T = S(T, X);
           }
           return Array(c, d, s, p, T);
         }
-        function S(x, F) {
-          var A = (65535 & x) + (65535 & F);
-          return (x >> 16) + (F >> 16) + (A >> 16) << 16 | 65535 & A;
+        function S(P, F) {
+          var A = (65535 & P) + (65535 & F);
+          return (P >> 16) + (F >> 16) + (A >> 16) << 16 | 65535 & A;
         }
-        function V(x, F) {
-          return x << F | x >>> 32 - F;
+        function V(P, F) {
+          return P << F | P >>> 32 - F;
         }
-        o.exports = function(x) {
-          return y.hash(x, C, 20, !0);
+        o.exports = function(P) {
+          return y.hash(P, C, 20, !0);
         };
       }).call(this, r("lYpoI2"), typeof self < "u" ? self : typeof window < "u" ? window : {}, r("buffer").Buffer, arguments[3], arguments[4], arguments[5], arguments[6], "/node_modules/gulp-browserify/node_modules/crypto-browserify/sha.js", "/node_modules/gulp-browserify/node_modules/crypto-browserify");
     }, { "./helpers": 4, buffer: 3, lYpoI2: 11 }], 9: [function(r, o, a) {
@@ -2988,14 +2988,14 @@ list should be an Array.`), i.length === 0)
           F[A >> 5] |= 128 << 24 - A % 32, F[15 + (A + 64 >> 9 << 4)] = A;
           for (var d, s, p = 0; p < F.length; p += 16) {
             for (var T = g[0], R = g[1], I = g[2], B = g[3], _ = g[4], K = g[5], X = g[6], Y = g[7], H = 0; H < 64; H++)
-              c[H] = H < 16 ? F[H + p] : y(y(y((s = c[H - 2], V(s, 17) ^ V(s, 19) ^ x(s, 10)), c[H - 7]), (s = c[H - 15], V(s, 7) ^ V(s, 18) ^ x(s, 3))), c[H - 16]), L = y(y(y(y(Y, V(s = _, 6) ^ V(s, 11) ^ V(s, 25)), _ & K ^ ~_ & X), f[H]), c[H]), d = y(V(d = T, 2) ^ V(d, 13) ^ V(d, 22), T & R ^ T & I ^ R & I), Y = X, X = K, K = _, _ = y(B, L), B = I, I = R, R = T, T = y(L, d);
+              c[H] = H < 16 ? F[H + p] : y(y(y((s = c[H - 2], V(s, 17) ^ V(s, 19) ^ P(s, 10)), c[H - 7]), (s = c[H - 15], V(s, 7) ^ V(s, 18) ^ P(s, 3))), c[H - 16]), L = y(y(y(y(Y, V(s = _, 6) ^ V(s, 11) ^ V(s, 25)), _ & K ^ ~_ & X), f[H]), c[H]), d = y(V(d = T, 2) ^ V(d, 13) ^ V(d, 22), T & R ^ T & I ^ R & I), Y = X, X = K, K = _, _ = y(B, L), B = I, I = R, R = T, T = y(L, d);
             g[0] = y(T, g[0]), g[1] = y(R, g[1]), g[2] = y(I, g[2]), g[3] = y(B, g[3]), g[4] = y(_, g[4]), g[5] = y(K, g[5]), g[6] = y(X, g[6]), g[7] = y(Y, g[7]);
           }
           return g;
         }
         var S = r("./helpers"), V = function(F, A) {
           return F >>> A | F << 32 - A;
-        }, x = function(F, A) {
+        }, P = function(F, A) {
           return F >>> A;
         };
         o.exports = function(F) {
@@ -3018,11 +3018,11 @@ list should be an Array.`), i.length === 0)
             A += Math.pow(2, V), F -= g;
           }
           return (p ? -1 : 1) * A * Math.pow(2, F - V);
-        }, a.write = function(y, C, S, V, x, T) {
-          var A, L, f = 8 * T - x - 1, g = (1 << f) - 1, c = g >> 1, d = x === 23 ? Math.pow(2, -24) - Math.pow(2, -77) : 0, s = V ? 0 : T - 1, p = V ? 1 : -1, T = C < 0 || C === 0 && 1 / C < 0 ? 1 : 0;
-          for (C = Math.abs(C), isNaN(C) || C === 1 / 0 ? (L = isNaN(C) ? 1 : 0, A = g) : (A = Math.floor(Math.log(C) / Math.LN2), C * (V = Math.pow(2, -A)) < 1 && (A--, V *= 2), 2 <= (C += 1 <= A + c ? d / V : d * Math.pow(2, 1 - c)) * V && (A++, V /= 2), g <= A + c ? (L = 0, A = g) : 1 <= A + c ? (L = (C * V - 1) * Math.pow(2, x), A += c) : (L = C * Math.pow(2, c - 1) * Math.pow(2, x), A = 0)); 8 <= x; y[S + s] = 255 & L, s += p, L /= 256, x -= 8)
+        }, a.write = function(y, C, S, V, P, T) {
+          var A, L, f = 8 * T - P - 1, g = (1 << f) - 1, c = g >> 1, d = P === 23 ? Math.pow(2, -24) - Math.pow(2, -77) : 0, s = V ? 0 : T - 1, p = V ? 1 : -1, T = C < 0 || C === 0 && 1 / C < 0 ? 1 : 0;
+          for (C = Math.abs(C), isNaN(C) || C === 1 / 0 ? (L = isNaN(C) ? 1 : 0, A = g) : (A = Math.floor(Math.log(C) / Math.LN2), C * (V = Math.pow(2, -A)) < 1 && (A--, V *= 2), 2 <= (C += 1 <= A + c ? d / V : d * Math.pow(2, 1 - c)) * V && (A++, V /= 2), g <= A + c ? (L = 0, A = g) : 1 <= A + c ? (L = (C * V - 1) * Math.pow(2, P), A += c) : (L = C * Math.pow(2, c - 1) * Math.pow(2, P), A = 0)); 8 <= P; y[S + s] = 255 & L, s += p, L /= 256, P -= 8)
             ;
-          for (A = A << x | L, f += x; 0 < f; y[S + s] = 255 & A, s += p, A /= 256, f -= 8)
+          for (A = A << P | L, f += P; 0 < f; y[S + s] = 255 & A, s += p, A /= 256, f -= 8)
             ;
           y[S + s - p] |= 128 * T;
         };
@@ -3032,20 +3032,20 @@ list should be an Array.`), i.length === 0)
         var y, C, S;
         function V() {
         }
-        (n = o.exports = {}).nextTick = (C = typeof window < "u" && window.setImmediate, S = typeof window < "u" && window.postMessage && window.addEventListener, C ? function(x) {
-          return window.setImmediate(x);
-        } : S ? (y = [], window.addEventListener("message", function(x) {
-          var F = x.source;
-          F !== window && F !== null || x.data !== "process-tick" || (x.stopPropagation(), 0 < y.length && y.shift()());
-        }, !0), function(x) {
-          y.push(x), window.postMessage("process-tick", "*");
-        }) : function(x) {
-          setTimeout(x, 0);
-        }), n.title = "browser", n.browser = !0, n.env = {}, n.argv = [], n.on = V, n.addListener = V, n.once = V, n.off = V, n.removeListener = V, n.removeAllListeners = V, n.emit = V, n.binding = function(x) {
+        (n = o.exports = {}).nextTick = (C = typeof window < "u" && window.setImmediate, S = typeof window < "u" && window.postMessage && window.addEventListener, C ? function(P) {
+          return window.setImmediate(P);
+        } : S ? (y = [], window.addEventListener("message", function(P) {
+          var F = P.source;
+          F !== window && F !== null || P.data !== "process-tick" || (P.stopPropagation(), 0 < y.length && y.shift()());
+        }, !0), function(P) {
+          y.push(P), window.postMessage("process-tick", "*");
+        }) : function(P) {
+          setTimeout(P, 0);
+        }), n.title = "browser", n.browser = !0, n.env = {}, n.argv = [], n.on = V, n.addListener = V, n.once = V, n.off = V, n.removeListener = V, n.removeAllListeners = V, n.emit = V, n.binding = function(P) {
           throw new Error("process.binding is not supported");
         }, n.cwd = function() {
           return "/";
-        }, n.chdir = function(x) {
+        }, n.chdir = function(P) {
           throw new Error("process.chdir is not supported");
         };
       }).call(this, r("lYpoI2"), typeof self < "u" ? self : typeof window < "u" ? window : {}, r("buffer").Buffer, arguments[3], arguments[4], arguments[5], arguments[6], "/node_modules/gulp-browserify/node_modules/process/browser.js", "/node_modules/gulp-browserify/node_modules/process");
@@ -8691,7 +8691,7 @@ class Ws {
             }
           }
         }
-      }), x = `X-Timestamp:${/* @__PURE__ */ new Date()}\r
+      }), P = `X-Timestamp:${/* @__PURE__ */ new Date()}\r
 Content-Type:application/json; charset=utf-8\r
 Path:speech.config\r
 \r
@@ -8706,7 +8706,7 @@ ${h}`, A = () => {
         G && clearTimeout(G), G = setTimeout(() => A(), a);
       };
       C.onopen = () => {
-        C.send(x), C.send(F), L();
+        C.send(P), C.send(F), L();
       }, C.onerror = (g) => N({ error: g, data: null }), C.onclose = (g) => N({ error: g, data: null });
       let f = 0;
       C.onmessage = (g) => {
@@ -8773,8 +8773,8 @@ ${h}`, A = () => {
             const A = ut(l[O - 1]), L = await dt(A).then((s) => ht(s)), f = await this.utils.getBufferDuration(L), g = Math.ceil(f * 10 * 1e3 * 1e3), c = o[O - 1][o[O - 1].length - 1], d = g - c.end;
             G = N.end + Math.max(d, 0);
           }
-          const V = S.end - S.start, x = G + S.start, F = G + S.start + V;
-          h.push({ ...S, start: x, end: F, index: b });
+          const V = S.end - S.start, P = G + S.start, F = G + S.start + V;
+          h.push({ ...S, start: P, end: F, index: b });
         }
       }
       const v = h.map((O, y) => {
@@ -8841,14 +8841,14 @@ ${O.text}`).join(`
       f();
     }), V = () => {
       v.stop(), z && clearTimeout(z), O && clearTimeout(O);
-    }, x = async () => {
+    }, P = async () => {
       if (N && await S(), b.byteLength === 0)
         return;
       const A = new AudioContext(), L = A.createGain(), f = A.createBufferSource();
       f.connect(L), L.gain.value = 0.5, L.connect(A.destination);
       const g = () => a.rate < 1 ? (1 + a.rate) * -0.5 : a.rate === 1 ? -0.5 : (a.rate - 1) * -0.5;
       A.decodeAudioData(b, (c) => {
-        n({ audioContext: A, audioSource: f, buffer: c, text: G, start_index: l, end_index: h, onStop: V }), l = h, v = f, f.buffer = c, f.start(), z = setTimeout(() => F(), (c.duration - 5) * 1e3), O = setTimeout(() => x(), (c.duration + g()) * 1e3);
+        n({ audioContext: A, audioSource: f, buffer: c, text: G, start_index: l, end_index: h, onStop: V }), l = h, v = f, f.buffer = c, f.start(), z = setTimeout(() => F(), (c.duration - 5) * 1e3), O = setTimeout(() => P(), (c.duration + g()) * 1e3);
       });
     }, F = async (A = 3) => {
       if (y.length === 0)
@@ -8860,7 +8860,7 @@ ${O.text}`).join(`
       b = f.buffers;
     };
     return F().then((A) => {
-      x();
+      P();
     }), { onStop: V, text_list: C };
   }
 }
@@ -8939,9 +8939,9 @@ const { defineComponent: Xs } = __Context.vue, { toDisplayString: ye, createElem
           type: "primary",
           onClick(C, S) {
             S.customAttrs.value.loading = !0, r.value = r.value.trim();
-            const x = { ...v.value, text: r.value, textName: o.value }, F = JSON.stringify(x), A = l.value.findIndex((g) => g.key === F), L = r.value || "你好，喜欢我的声音请选择我哦", f = t.textSplit(L, 20).map((g) => ({ ...v.value, content: g }));
+            const P = { ...v.value, text: r.value, textName: o.value }, F = JSON.stringify(P), A = l.value.findIndex((g) => g.key === F), L = r.value || "请输入需要转语言的文本...", f = t.textSplit(L, 2e3).map((g) => ({ ...v.value, content: g }));
             t.speakArray(f).then((g) => {
-              console.log("res", g), b(g.audio), l.value.push({ key: F, output: g, input: x }), n.value = l.value[l.value.length - 1], Nl(l);
+              console.log("res", g), b(g.audio), l.value.push({ key: F, output: g, input: P }), n.value = l.value[l.value.length - 1], Nl(l);
             }).catch((g) => {
               throw g;
             }).finally(() => {
@@ -8976,8 +8976,10 @@ const { defineComponent: Xs } = __Context.vue, { toDisplayString: ye, createElem
           style: "min-width: 90px",
           type: "primary",
           onClick(C, S) {
-            G(), S.customAttrs.value.loading = !0, r.value = r.value.trim(), t.speakLongText(r.value, { roleVoice: v.value }).then((V) => {
-              console.log(V.text_list), h.push(V.onStop), S.customAttrs.value.loading = !1;
+            G(), S.customAttrs.value.loading = !0, r.value = r.value.trim();
+            const V = r.value || "请输入需要转语言的文本...";
+            t.speakLongText(V, { roleVoice: v.value }).then((P) => {
+              console.log(P.text_list), h.push(P.onStop), S.customAttrs.value.loading = !1;
             });
           }
         },
@@ -9005,7 +9007,7 @@ const { defineComponent: Xs } = __Context.vue, { toDisplayString: ye, createElem
     };
     return (C, S) => {
       var f, g;
-      const V = we("n-input"), x = we("n-button"), F = we("n-scrollbar"), A = we("n-card"), L = we("i-setting");
+      const V = we("n-input"), P = we("n-button"), F = we("n-scrollbar"), A = we("n-card"), L = we("i-setting");
       return Ce(), Te("div", al, [
         me("div", il, [
           ce(V, {
@@ -9032,7 +9034,7 @@ const { defineComponent: Xs } = __Context.vue, { toDisplayString: ye, createElem
             "content-class": "flex-1 h-full pb2 overflow-hidden"
           }, {
             "header-extra": le(() => [
-              ce(x, { onClick: O }, {
+              ce(P, { onClick: O }, {
                 default: le(() => [
                   Qs("下载字幕")
                 ]),
