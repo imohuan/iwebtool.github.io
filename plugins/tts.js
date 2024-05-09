@@ -8845,8 +8845,10 @@ ${O.text}`).join(`
       if (N && await S(), b.byteLength === 0)
         return;
       const A = new AudioContext(), L = A.createGain(), f = A.createBufferSource();
-      f.connect(L), L.gain.value = 0.5, L.connect(A.destination), A.decodeAudioData(b, (g) => {
-        n({ audioContext: A, audioSource: f, buffer: g, text: G, start_index: l, end_index: h, onStop: V }), l = h, v = f, f.buffer = g, f.start(), z = setTimeout(() => F(), (g.duration - 5) * 1e3), O = setTimeout(() => x(), (g.duration + 0.5) * 1e3);
+      f.connect(L), L.gain.value = 0.5, L.connect(A.destination);
+      const g = () => a.rate < 1 ? (1 + a.rate) * -0.5 : a.rate === 1 ? -0.5 : (a.rate - 1) * -0.5;
+      A.decodeAudioData(b, (c) => {
+        n({ audioContext: A, audioSource: f, buffer: c, text: G, start_index: l, end_index: h, onStop: V }), l = h, v = f, f.buffer = c, f.start(), z = setTimeout(() => F(), (c.duration - 5) * 1e3), O = setTimeout(() => x(), (c.duration + g()) * 1e3);
       });
     }, F = async (A = 3) => {
       if (y.length === 0)
