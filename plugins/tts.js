@@ -9070,12 +9070,12 @@ const { defineComponent: Qs } = __Context.vue, { toDisplayString: ye, createElem
                 title: "版本"
               }, {
                 "header-extra": ae(() => [
-                  Nr(" 1.0.1 ")
+                  Nr(" 1.0.2 ")
                 ]),
                 _: 1
               }),
               ie(A, {
-                class: "",
+                class: "mt-2",
                 title: "操作"
               }, {
                 default: ae(() => [
