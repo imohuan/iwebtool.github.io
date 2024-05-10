@@ -9070,7 +9070,7 @@ const { defineComponent: Qs } = __Context.vue, { toDisplayString: ye, createElem
                 title: "版本"
               }, {
                 "header-extra": ae(() => [
-                  Nr(" 1.0.0 ")
+                  Nr(" 1.0.1 ")
                 ]),
                 _: 1
               }),
