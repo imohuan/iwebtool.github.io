@@ -8906,7 +8906,7 @@ class Tt {
     this.audioSource.addEventListener(t, r);
   }
 }
-var Qs = { icon: "", name: "TTS", description: "文本转音频，生成字幕，不限字数", version: "1.0.2" };
+var Qs = { icon: "", name: "TTS", description: "文本转音频，生成字幕，不限字数", version: "1.0.3" };
 const { defineComponent: el } = __Context.vue, { toDisplayString: Se, createElementVNode: ue, resolveComponent: we, withCtx: ae, createVNode: ce, createTextVNode: tl, renderList: Nr, Fragment: gr, openBlock: Ce, createElementBlock: Te, vShow: rl, withDirectives: ol, unref: al, createCommentVNode: il, normalizeClass: nl } = __Context.vue, sl = { class: "w-full m-auto h-full flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 p2 scrollbar-y" }, ll = { class: "flex-auto min-h-[500px] md:flex-1 wh-full rounded-md" }, cl = { class: "font-mono font-bold absolute bottom-0 right-5 text-gray-400 truncate" }, ul = { class: "w-full md:w80 h-full overflow-visible md:overflow-hidden" }, dl = { class: "text-xs font-mono text-gray-500" }, hl = { class: "pb1 select-text" }, ml = { class: "w-full md:w80 h-full" }, fl = { class: "font-mono text-gray-300" }, Sl = { key: 0 }, pl = /* @__PURE__ */ ue("div", { class: "text-gray-500" }, "空", -1), Nl = [
   pl
 ], gl = ["onClick"], { ref: De, computed: yl, shallowRef: Cl, triggerRef: Tl } = __Context.vue, vl = /* @__PURE__ */ el({
@@ -9122,7 +9122,7 @@ const { defineComponent: el } = __Context.vue, { toDisplayString: Se, createElem
     };
   }
 });
-var yr = { icon: "", name: "TTS", description: "文本转音频，生成字幕，不限字数", version: "1.0.2" };
+var yr = { icon: "", name: "TTS", description: "文本转音频，生成字幕，不限字数", version: "1.0.3" };
 class bl {
   constructor() {
     le(this, "icon", "");
