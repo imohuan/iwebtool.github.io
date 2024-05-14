@@ -2,7 +2,7 @@ export const css = "\n\n";
 var s = Object.defineProperty;
 var i = (n, e, t) => e in n ? s(n, e, { enumerable: !0, configurable: !0, writable: !0, value: t }) : n[e] = t;
 var c = (n, e, t) => (i(n, typeof e != "symbol" ? e + "" : e, t), t);
-var a = { icon: "", name: "template", description: "模板", version: "1.0.3" };
+var a = { icon: "", name: "template", description: "模板", version: "1.0.4" };
 const { defineComponent: l } = __Context.vue, { unref: p, toDisplayString: r, openBlock: _, createElementBlock: d } = __Context.vue, m = /* @__PURE__ */ l({
   __name: "Page",
   setup(n) {
@@ -10,7 +10,7 @@ const { defineComponent: l } = __Context.vue, { unref: p, toDisplayString: r, op
     return (t, u) => (_(), d("div", null, r(p(e)), 1));
   }
 });
-var o = { icon: "", name: "template", description: "模板", version: "1.0.3" };
+var o = { icon: "", name: "template", description: "模板", version: "1.0.4" };
 class v {
   constructor() {
     c(this, "icon", "");
