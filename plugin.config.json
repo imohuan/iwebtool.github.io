@@ -1,7 +1,7 @@
 [
   {
-    "name": "tts",
-    "description": "文本转语音",
+    "name": "TTS",
+    "description": "文本转音频，生成字幕，不限字数",
     "script": "/plugins/tts.js"
   },
   {
