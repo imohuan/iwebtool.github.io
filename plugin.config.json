@@ -1,17 +1,33 @@
 [
   {
+    "icon": "",
     "name": "TTS",
     "description": "文本转音频，生成字幕，不限字数",
-    "script": "/plugins/tts.js"
+    "version": "1.0.3",
+    "script": "/plugins/TTS.js"
   },
   {
+    "icon": "",
     "name": "lama",
     "description": "图片涂抹修复",
+    "version": "1.0.1",
     "script": "/plugins/lama.js"
+  },
+  {
+    "icon": "",
+    "name": "comic-trans",
+    "description": "漫画翻译家",
+    "version": "1.0.0",
+    "script": "/plugins/comic-trans.js"
   },
   {
     "name": "py-tools",
     "description": "Python 工具箱，图片放大，视频重绘",
     "script": "/plugins/py-tools.js"
+  },
+  {
+    "name": "ai-story",
+    "description": "小说分镜故事，导出剪映，配合后台实现",
+    "script": "/plugins/ai-story.js"
   }
 ]
